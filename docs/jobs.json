@@ -328,33 +328,6 @@
   "first_check": true
  },
  {
-  "id": "Cisco::/job/Bangalore-India/Software-Engineer_2026644-1",
-  "company": "Cisco",
-  "title": "Software Engineer",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Engineer_2026644-1",
-  "posted": "2026-10-22T16:07:14.222241+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 0,
-  "exp_note": "cations Bachelors + 2 years of related experience OR Masters + 0 ye",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_matched": [
-   "Linux",
-   "Python"
-  ],
-  "skills_to_learn": [],
-  "match_pct": 100,
-  "priority": 7.4,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T16:07:08.457753+00:00",
-  "first_check": false
- },
- {
   "id": "Graviton Research Capital::8768396002",
   "company": "Graviton Research Capital",
   "title": "Quantitative Researcher (2027 Graduate)",
@@ -611,13 +584,16 @@
   "fit": "stretch",
   "role_type": "SWE",
   "skills_to_learn": [
+   "Go",
+   "Scala",
+   "Kubernetes",
    "Azure",
    "GCP",
-   "Kubernetes",
-   "Ruby",
-   "Scala"
+   "Ruby"
   ],
-  "match_pct": 58
+  "match_pct": 58,
+  "ai_reason": "The role requires 0-2 years of relevant work experience.",
+  "ai_by": "gemini"
  },
  {
   "id": "Rubrik::7956918",
@@ -1267,12 +1243,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Bash",
-   "Terraform"
+   "Okta",
+   "Jamf",
+   "Cisco Meraki",
+   "OSquery",
+   "Terraform",
+   "Bash"
   ],
-  "match_pct": 60
+  "match_pct": 60,
+  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "ElevenLabs::35813150-a851-4821-b732-a037b4e6c4fe",
@@ -1665,75 +1647,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Sarvam AI::e1dd678f-6e25-48b4-82d8-a1a7d10a78d6",
-  "company": "Sarvam AI",
-  "title": "Infrastructure SRE - HPC",
-  "location": "Bengaluru, Chennai",
-  "url": "https://jobs.ashbyhq.com/sarvam/e1dd678f-6e25-48b4-82d8-a1a7d10a78d6",
-  "posted": "2026-06-26T09:18:02.474000+00:00",
-  "dept": "Infrastructure ",
-  "comp": "",
-  "tier": 3,
-  "segment": "Indian SaaS/AI",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "Lambda",
-   "Networking basics",
-   "Node.js",
-   "Python",
-   "REST APIs"
-  ],
-  "priority": 7.4,
-  "est_ctc_lpa": "~25-40",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "DevOps/SRE/Cloud",
-  "skills_to_learn": [
-   "Embedded C",
-   "Kubernetes",
-   "ML basics"
-  ],
-  "match_pct": 62
- },
- {
-  "id": "Sarvam AI::fcb15601-6440-41f7-aa79-b9992057a4b2",
-  "company": "Sarvam AI",
-  "title": "Platform Engineer - AI Infrastructure",
-  "location": "Bengaluru, Chennai",
-  "url": "https://jobs.ashbyhq.com/sarvam/fcb15601-6440-41f7-aa79-b9992057a4b2",
-  "posted": "2026-06-29T08:51:22.501000+00:00",
-  "dept": "Infrastructure ",
-  "comp": "",
-  "tier": 3,
-  "segment": "Indian SaaS/AI",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "Caching",
-   "Networking basics",
-   "Node.js",
-   "Python",
-   "System design"
-  ],
-  "priority": 7.4,
-  "est_ctc_lpa": "~25-40",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "AI/ML",
-  "skills_to_learn": [
-   "Embedded C",
-   "Kubernetes",
-   "ML basics",
-   "Terraform"
-  ],
-  "match_pct": 56
- },
- {
   "id": "Sarvam AI::72783205-b637-4431-9a0e-676a8223b063",
   "company": "Sarvam AI",
   "title": "Performance Engineer, Kernels",
@@ -1941,13 +1854,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Backend",
   "skills_to_learn": [
-   "Embedded C",
    "Rust",
+   "Haskell",
+   "Go",
+   "SQLite",
+   "Embedded C",
    "Spark/PySpark"
   ],
-  "match_pct": 57
+  "match_pct": 57,
+  "ai_reason": "No explicit experience level or years of experience stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Supabase::f6035bf8-4f44-4425-9944-d5509a3c8652",
@@ -2007,13 +1925,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Bash",
+   "Terraform",
    "GCP",
-   "Terraform"
+   "CloudZero",
+   "Vantage",
+   "Hex",
+   "Bash"
   ],
-  "match_pct": 62
+  "match_pct": 62,
+  "ai_reason": "No minimum years of experience stated in the job posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Supabase::b65287c7-2071-4bc6-8717-58c090e2a372",
@@ -2112,13 +2035,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Backend",
   "skills_to_learn": [
-   "Embedded C",
+   "Rust",
    "Kubernetes",
-   "Rust"
+   "Deterministic Simulation Testi",
+   "Formal verification",
+   "Embedded databases",
+   "Embedded C"
   ],
-  "match_pct": 62
+  "match_pct": 62,
+  "ai_reason": "No experience or seniority level is explicitly stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "PayPal::/job/Chennai-Tamil-Nadu-India/Data-Engineer_R0138392",
@@ -3031,9 +2959,14 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "OpenStack",
+   "Kubeflow",
+   "OpenSearch",
    "Kubernetes"
   ],
-  "match_pct": 83
+  "match_pct": 83,
+  "ai_reason": "No experience requirement stated",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::1747487",
@@ -3064,10 +2997,16 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "Prometheus",
+   "Grafana",
    "Elasticsearch",
+   "Ceph",
+   "Infrastructure as Code",
    "Prometheus/Grafana"
   ],
-  "match_pct": 75
+  "match_pct": 75,
+  "ai_reason": "No explicit experience level or years of experience stated.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::3062022",
@@ -3137,11 +3076,16 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Kubernetes"
+   "Kubernetes",
+   "Linux administration",
+   "Python opscode",
+   "Distributed systems"
   ],
-  "match_pct": 83
+  "match_pct": 83,
+  "ai_reason": "No experience or seniority level is explicitly stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::3326693",
@@ -3173,11 +3117,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Kubernetes"
+   "Go",
+   "Ceph",
+   "OpenStack",
+   "Kubernetes",
+   "gdb"
   ],
-  "match_pct": 90
+  "match_pct": 90,
+  "ai_reason": "No specific years of experience stated.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::6635681",
@@ -3208,11 +3158,16 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "Go",
+   "OpenStack",
+   "Ceph",
    "Kubernetes"
   ],
-  "match_pct": 89
+  "match_pct": 89,
+  "ai_reason": "No experience or seniority requirements are stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::6076942",
@@ -3563,10 +3518,15 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [
-   "GCP",
-   "Kubernetes"
+   "Go",
+   "ClickHouse",
+   "Kubernetes",
+   "Google Cloud Platform",
+   "GCP"
   ],
-  "match_pct": 86
+  "match_pct": 86,
+  "ai_reason": "No experience or seniority level is stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Cloudflare::8050813",
@@ -3601,12 +3561,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Data",
   "skills_to_learn": [
-   "GCP",
-   "Kubernetes"
+   "Go",
+   "Clickhouse",
+   "Google Cloud Platform",
+   "Kubernetes",
+   "GCP"
   ],
-  "match_pct": 86
+  "match_pct": 86,
+  "ai_reason": "No experience level or seniority is specified in the job posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Doist::56d0e7bf-e681-41b0-b5d7-d835d9380c6b",
@@ -3797,13 +3762,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Backend",
   "skills_to_learn": [
-   "GCP",
-   "Kubernetes",
-   "Ruby"
+   "Ruby",
+   "Workato",
+   "Workday",
+   "Greenhouse",
+   "Slack API",
+   "GCP"
   ],
-  "match_pct": 75
+  "match_pct": 75,
+  "ai_reason": "No specific years of experience are stated for this role.",
+  "ai_by": "gemini"
  },
  {
   "id": "HackerRank::7405039",
@@ -3883,11 +3853,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Quant",
   "skills_to_learn": [
+   "Quantitative Finance",
+   "Risk Management Frameworks",
+   "IRRBB",
+   "Financial Modeling",
    "ML basics"
   ],
-  "match_pct": 83
+  "match_pct": 83,
+  "ai_reason": "No experience level or years of experience explicitly specified in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Goldman Sachs::186814",
@@ -5427,39 +5403,6 @@
   "match_pct": 86
  },
  {
-  "id": "Cisco::/job/Bangalore-India/Software-Engineer_2027309-1",
-  "company": "Cisco",
-  "title": "Software Engineer",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Engineer_2027309-1",
-  "posted": "2026-10-13T15:16:21.353763+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "Git",
-   "Linux",
-   "Networking basics",
-   "Python",
-   "System design"
-  ],
-  "priority": 7.7,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 86
- },
- {
   "id": "Cisco::/job/Bangalore-India/Software-Engineer_2027416-1",
   "company": "Cisco",
   "title": "Software Engineer",
@@ -5538,11 +5481,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Security",
   "skills_to_learn": [
+   "Axonius",
+   "Wiz",
+   "Splunk",
+   "Tines",
+   "SSPM",
    "Kubernetes"
   ],
-  "match_pct": 75
+  "match_pct": 75,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "Cisco::/job/Bangalore-India/Software-Engineer_2019628-1",
@@ -5577,13 +5527,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Full-stack",
   "skills_to_learn": [
+   "Go",
+   "Kubernetes",
+   "Go Microservices",
    "Azure",
-   "GCP",
-   "Kubernetes"
+   "GCP"
   ],
-  "match_pct": 80
+  "match_pct": 80,
+  "ai_reason": "No specific years of experience are mentioned in the requirements.",
+  "ai_by": "gemini"
  },
  {
   "id": "Cisco::/job/Bangalore-India/Software-Engineer_2025032-1",
@@ -5701,61 +5655,6 @@
   "match_pct": 73
  },
  {
-  "id": "Cisco::/job/Bangalore-India/Software-Engineer_2022199-1",
-  "company": "Cisco",
-  "title": "Software Engineer",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Engineer_2022199-1",
-  "posted": "2026-09-22T15:16:25.433148+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 0,
-  "skills_matched": [
-   "C++",
-   "Networking basics",
-   "Python"
-  ],
-  "priority": 7.4,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "Qualification MS + 0-2 years or BS + 1-3 years of experience Strong",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
- },
- {
-  "id": "Cisco::/job/Bangalore-India/Software-QA-Engineer_2015350-1",
-  "company": "Cisco",
-  "title": "Software QA Engineer",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-QA-Engineer_2015350-1",
-  "posted": "2026-09-22T15:16:25.433184+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 1,
-  "skills_matched": [
-   "Networking basics",
-   "Python"
-  ],
-  "priority": 7.4,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "related field with 1-3 years of experience Have strong programming f",
-  "fit": "stretch",
-  "role_type": "QA/Test",
-  "skills_to_learn": [],
-  "match_pct": 100
- },
- {
   "id": "Cisco::/job/Bangalore-India/Technical-Projects-Systems-Engineer_2020675",
   "company": "Cisco",
   "title": "Technical Projects Systems Engineer",
@@ -5792,36 +5691,6 @@
    "Terraform"
   ],
   "match_pct": 58
- },
- {
-  "id": "Cisco::/job/Bangalore-India/Software-Engineer---Embedded--ACL-L2-L3-Networking-Protocols--C-C-----4---8--Years_2021348-1",
-  "company": "Cisco",
-  "title": "Software Engineer | Embedded, ACL/L2/L3/Networking Protocols, C/C++ | 4 - 8  Years",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Engineer---Embedded--ACL-L2-L3-Networking-Protocols--C-C-----4---8--Years_2021348-1",
-  "posted": "2026-09-22T15:16:25.881100+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "Networking basics",
-   "System design"
-  ],
-  "priority": 7.4,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 75
  },
  {
   "id": "Cisco::/job/Bangalore-India/Technical-Projects-Systems-Engineer_2018479",
@@ -6208,9 +6077,11 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [],
-  "match_pct": 100
+  "match_pct": 100,
+  "ai_reason": "No experience or seniority requirements stated in the placeholder text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Lenskart::171",
@@ -6286,7 +6157,9 @@
   "fit": "open",
   "role_type": "Backend",
   "skills_to_learn": [],
-  "match_pct": 100
+  "match_pct": 100,
+  "ai_reason": "No experience or seniority requirements are stated in the provided text.",
+  "ai_by": "gemini"
  },
  {
   "id": "PostHog::20ab9628-20ff-4ae3-bd6a-46ae7e9dc6b8",
@@ -8701,8 +8574,13 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
+  "skills_to_learn": [
+   "Reconciliation development",
+   "IMatch"
+  ],
+  "match_pct": 100,
+  "ai_reason": "No specific experience level or years of experience are mentioned in the job description.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Chennai-DLF-IT-Park/Software--Engineer--Containers_JR-0000095657",
@@ -9513,7 +9391,9 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": 100
+  "match_pct": 100,
+  "ai_reason": "No experience or seniority requirements are explicitly stated in the job description.",
+  "ai_by": "gemini"
  },
  {
   "id": "HPE (incl. Juniper Networks)::/job/Bengaluru-Karntaka-India/Senior-Embedded-Software-Developer_1208460-3",
@@ -10360,8 +10240,14 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "Quant",
-  "skills_to_learn": [],
-  "match_pct": null
+  "skills_to_learn": [
+   "Algorithmic Trading",
+   "Stochastic Calculus",
+   "Financial Markets"
+  ],
+  "match_pct": null,
+  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Nutanix::https://jobs.jobvite.com/nutanix/job/oEKZAfwH",
@@ -10762,8 +10648,14 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "Quant",
-  "skills_to_learn": [],
-  "match_pct": 100
+  "skills_to_learn": [
+   "Financial Markets",
+   "Stochastic Models",
+   "Time Series Analysis"
+  ],
+  "match_pct": 100,
+  "ai_reason": "No prior experience required; open to engineering grads.",
+  "ai_by": "gemini"
  },
  {
   "id": "NK Securities Research::4811652101",
@@ -10926,8 +10818,14 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "Quant",
-  "skills_to_learn": [],
-  "match_pct": 100
+  "skills_to_learn": [
+   "Quantitative Finance",
+   "Alpha Generation",
+   "Financial Modeling"
+  ],
+  "match_pct": 100,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "Pure Storage::8170836",
