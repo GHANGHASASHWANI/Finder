@@ -11,12 +11,27 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0 Safari/537.36 FinderJobBot/1.0")
 
 
+# When set to a Playwright page, requests are made from inside that page (real browser, its cookies and
+# fingerprint). Used to retry sites that block plain HTTP clients (403 / bot checks / timeouts).
+VIA = {"page": None}
+_BROWSER_FETCH = """async ([u, m, b, h]) => {
+  const r = await fetch(u, {method: m, body: b, headers: h, credentials: 'include'});
+  const t = await r.text();
+  if (!r.ok) throw new Error('HTTP Error ' + r.status);
+  return t;
+}"""
+
+
 def http(url, data=None, headers=None, timeout=30):
     h = {"User-Agent": UA, "Accept": "application/json, text/html;q=0.9, */*;q=0.8"}
     h.update(headers or {})
     if data is not None and not isinstance(data, bytes):
         data = json.dumps(data).encode()
         h.setdefault("Content-Type", "application/json")
+    if VIA["page"] is not None:
+        h.pop("User-Agent", None)
+        return VIA["page"].evaluate(_BROWSER_FETCH, [url, "POST" if data is not None else "GET",
+                                                     data.decode() if data is not None else None, h])
     req = urllib.request.Request(url, data=data, headers=h)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode("utf-8", "replace")
@@ -329,6 +344,10 @@ def jsonapi(c, s):
                                 for x in loc)
             elif isinstance(loc, dict):
                 loc = ", ".join(str(v) for v in loc.values() if isinstance(v, str))
+            elif loc is not None and not isinstance(loc, str):
+                loc = str(loc)
+            if s.get("default_location") and (not loc or str(loc).strip().isdigit()):
+                loc = s["default_location"]   # e.g. Freshteam gives a numeric branch id
             jid = _path(j, f.get("id", "id")) or _path(j, f.get("url", "url"))
             if jid in seen_ids:
                 continue

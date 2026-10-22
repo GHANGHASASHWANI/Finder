@@ -10,6 +10,7 @@ Usage:
 import argparse
 import json
 import os
+import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -28,6 +29,7 @@ NOW = datetime.now(timezone.utc)
 FIRST_RUN_ALERT_DAYS = 3        # on a company's first check, alert only for jobs posted in the last N days
 MAX_ALERTS_PER_COMPANY = 15     # guards against a page redesign flooding you
 KEEP_DASHBOARD_DAYS = 10      # notifications/dashboard keep 10 days
+BLOCKED_RX = re.compile(r"403|429|timed out|Timeout|Connection reset|RemoteDisconnected", re.I)
 MAX_PAGE_DETAILS = 300          # custom career pages: open at most this many job pages per run in the browser
 
 
@@ -178,11 +180,14 @@ def main():
                 results[c["company"]] = (c, None, "%s: %s" % (type(e).__name__, str(e)[:200]))
 
     browser = pw = None
-    if (pages or args.recheck) and not args.no_browser:
+    if (pages or args.recheck or any(e and BLOCKED_RX.search(e) for _, _, e in results.values())) \
+            and not args.no_browser:
         try:
             from playwright.sync_api import sync_playwright
             pw = sync_playwright().start()
-            browser = pw.chromium.launch(headless=True)
+            # --disable-http2: some sites (Policybazaar, Tata Digital) reset HTTP/2 connections from headless Chrome
+            browser = pw.chromium.launch(headless=True, args=["--disable-http2",
+                                                              "--disable-blink-features=AutomationControlled"])
         except Exception as e:
             log("headless browser unavailable (%s); reading pages as plain HTML" % e)
     for c in pages:
@@ -190,6 +195,25 @@ def main():
             results[c["company"]] = (c, fetch(c, browser), None)
         except Exception as e:
             results[c["company"]] = (c, None, "%s: %s" % (type(e).__name__, str(e)[:200]))
+
+    # retry feeds that blocked the plain HTTP client, this time from inside a real browser tab on the careers site
+    if browser:
+        blocked = [c for name, (c, res, err) in results.items()
+                   if err and BLOCKED_RX.search(err) and c["source"]["type"] != "page" and c.get("careers_url")]
+        for c in blocked:
+            pg = browser.new_page(user_agent=sources.UA.replace(" FinderJobBot/1.0", ""))
+            try:
+                pg.goto(c["careers_url"], wait_until="domcontentloaded", timeout=45000)
+                pg.wait_for_timeout(3000)
+                sources.VIA["page"] = pg
+                results[c["company"]] = (c, fetch(c), None)
+                log("browser retry worked: %s" % c["company"])
+            except Exception as e:
+                err = results[c["company"]][2]
+                results[c["company"]] = (c, None, "%s (browser retry: %s)" % (err, str(e).splitlines()[0][:80]))
+            finally:
+                sources.VIA["page"] = None
+                pg.close()
 
     by_name = {c["company"]: c for c in companies}
     if args.recheck:

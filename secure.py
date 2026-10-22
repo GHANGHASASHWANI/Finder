@@ -37,6 +37,10 @@ def lock():
                     continue
         except Exception:
             pass
+        # never overwrite a newer encrypted copy (e.g. state pulled from GitHub) with an older local file
+        if os.path.exists(p + ".enc") and os.path.getmtime(p) < os.path.getmtime(p + ".enc"):
+            print("skipped", rel, "(encrypted copy is newer - run 'python3 secure.py unlock' first)")
+            continue
         with open(p + ".enc", "wb") as dst:
             dst.write(f.encrypt(data))
         print("locked", rel)
