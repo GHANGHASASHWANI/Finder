@@ -12,13 +12,24 @@ import finder  # noqa: E402
 from core import ai  # noqa: E402
 
 
+class Resp(io.BytesIO):
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *a):
+        self.close()
+
+
 def reply(obj):
-    return io.BytesIO(json.dumps({"choices": [{"message": {"content": json.dumps(obj)}}]}).encode())
+    return Resp(json.dumps({"choices": [{"message": {"content": json.dumps(obj)}}]}).encode())
 
 
 class T(unittest.TestCase):
     def setUp(self):
-        os.environ["GITHUB_TOKEN"] = "x"
+        os.environ["GEMINI_API_KEY"] = "x"
+        for k in ("GROQ_API_KEY", "NVIDIA_API_KEY", "OPENROUTER_API_KEY"):
+            os.environ.pop(k, None)
+        ai.SPACING_SCALE = 0
         self.real = ai.urllib.request.urlopen
         self.calls = []
 
@@ -64,8 +75,28 @@ class T(unittest.TestCase):
         self.assertEqual(len(kept), 3)
         self.assertTrue(r.disabled)
 
-    def test_no_token_means_no_calls(self):
-        os.environ.pop("GITHUB_TOKEN")
+    def test_bad_replies_keep_rule_result(self):
+        ai.urllib.request.urlopen = lambda req, timeout=0: Resp(b"")
+        r = ai.AIReviewer({"ai_max_per_run": 10}, log=lambda *a: None)
+        kept = finder.ai_pass(self.items(), r, {})
+        self.assertEqual(len(kept), 3)
+        self.assertEqual(r.errors, 2)   # only 2 open/stretch jobs to ask about
+
+    def test_falls_back_to_next_provider(self):
+        os.environ["GROQ_API_KEY"] = "y"
+
+        def fake(req, timeout=0):
+            if "googleapis" in req.full_url:
+                raise urllib.error.HTTPError("u", 429, "Too Many Requests", {}, None)
+            return reply({"fit": "open", "reason": "nothing stated"})
+        ai.urllib.request.urlopen = fake
+        r = ai.AIReviewer({}, log=lambda *a: None)
+        res = r.judge("SE", "X", "Pune", "x" * 400)
+        self.assertEqual(res["by"], "groq")
+        self.assertEqual([p.name for p in r.providers], ["groq"])
+
+    def test_no_key_means_no_calls(self):
+        os.environ.pop("GEMINI_API_KEY")
         r = ai.AIReviewer({}, log=lambda *a: None)
         self.assertFalse(r.available())
 

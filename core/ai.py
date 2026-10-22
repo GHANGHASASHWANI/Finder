@@ -1,7 +1,9 @@
-"""Second opinion from an AI model (GitHub Models, free with the Actions GITHUB_TOKEN).
+"""Second opinion from free AI models, with fallbacks across providers.
 
-Only used for jobs the keyword rules could not settle. If the token is missing, the daily limit is hit,
-or the model answers badly, the rule-based result is kept - the AI never blocks a run.
+Order: Gemini -> Groq -> NVIDIA NIM -> OpenRouter. A provider is used only if its key is set as a GitHub secret.
+When one hits its free limit (429), rejects the key, or fails 3 times in a row, the next one takes over for
+the rest of the run. If none is available, the keyword-rule result is kept - the AI never blocks a run.
+All four speak the OpenAI chat-completions format. (GitHub Models was retired by GitHub on 30 July 2026.)
 """
 import json
 import os
@@ -10,7 +12,17 @@ import time
 import urllib.error
 import urllib.request
 
-ENDPOINT = "https://models.github.ai/inference/chat/completions"
+# name, base URL, env var with the key, models to try in order, seconds between calls (free-tier pacing)
+PROVIDERS = [
+    ("gemini", "https://generativelanguage.googleapis.com/v1beta/openai", "GEMINI_API_KEY",
+     ["gemini-flash-latest", "gemini-2.5-flash", "gemini-flash-lite-latest"], 7),
+    ("groq", "https://api.groq.com/openai/v1", "GROQ_API_KEY",
+     ["openai/gpt-oss-20b", "openai/gpt-oss-120b"], 22),          # 8k tokens/minute -> ~3 calls/minute
+    ("nvidia", "https://integrate.api.nvidia.com/v1", "NVIDIA_API_KEY",
+     ["openai/gpt-oss-20b", "nvidia/nemotron-3-super-120b-a12b"], 2),
+    ("openrouter", "https://openrouter.ai/api/v1", "OPENROUTER_API_KEY", ["openrouter/free"], 4),
+]
+SPACING_SCALE = 1.0   # tests set this to 0
 
 RULES = """You screen job postings for one candidate. Decide if this job is realistic for them to apply to NOW.
 
@@ -34,58 +46,112 @@ Reply with JSON only:
   "skills_to_learn": ["up to 5 technologies the job needs that the candidate lacks"]}}"""
 
 
+class Provider:
+    def __init__(self, name, base, key, models, spacing):
+        self.name, self.base, self.key, self.models, self.spacing = name, base, key, list(models), spacing
+        self.last = 0
+        self.errors = 0
+
+
 class AIReviewer:
     def __init__(self, profile, log=print):
-        self.token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_MODELS_TOKEN")
-        self.model = profile.get("ai_model", "openai/gpt-4o-mini")
-        self.budget = int(profile.get("ai_max_per_run", 60))
-        self.candidate = profile.get("candidate_summary", "")
         self.log = log
+        self.budget = int(profile.get("ai_max_per_run", 30))
+        self.candidate = profile.get("candidate_summary", "")
         self.used = 0
-        self.disabled = not self.token or not profile.get("ai_review", True)
+        order = profile.get("ai_providers") or [p[0] for p in PROVIDERS]
+        table = {p[0]: p for p in PROVIDERS}
+        self.providers = []
+        for name in order:
+            if name in table and os.environ.get(table[name][2], "").strip():
+                n, base, env, models, spacing = table[name]
+                self.providers.append(Provider(n, base, os.environ[env].strip(), models, spacing))
+        self.disabled = not self.providers or not profile.get("ai_review", True)
+        if not self.providers and profile.get("ai_review", True):
+            log("ai review off: no AI key set (GEMINI_API_KEY / GROQ_API_KEY / NVIDIA_API_KEY / OPENROUTER_API_KEY)")
+        elif self.providers:
+            log("ai providers: %s" % " -> ".join(p.name for p in self.providers))
+
+    @property
+    def errors(self):
+        return sum(p.errors for p in self.providers) + getattr(self, "_dropped_errors", 0)
 
     def available(self):
-        return not self.disabled and self.used < self.budget
+        return not self.disabled and bool(self.providers) and self.used < self.budget
+
+    def _drop(self, why):
+        p = self.providers.pop(0)
+        self._dropped_errors = getattr(self, "_dropped_errors", 0) + p.errors
+        if not self.providers:
+            self.disabled = True
+        nxt = self.providers[0].name if self.providers else "none left, keeping rule results"
+        self.log("ai %s stopped for this run (%s) -> %s" % (p.name, why, nxt))
+
+    def _call(self, p, body):
+        req = urllib.request.Request(p.base + "/chat/completions", data=json.dumps(body).encode(), headers={
+            "Authorization": "Bearer " + p.key, "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=90) as r:
+            raw = r.read().decode("utf-8", "replace")
+        try:
+            return json.loads(raw)
+        except ValueError:
+            raise ValueError("non-JSON reply: %r" % raw[:150])
 
     def judge(self, title, company, location, desc):
         if not self.available():
             return None
-        # free tier allows 15 requests/minute: keep at most one call every 5 seconds
-        wait = 5 - (time.time() - getattr(self, "_last", 0))
-        if wait > 0:
-            time.sleep(wait)
-        self._last = time.time()
         self.used += 1
-        body = {
-            "model": self.model,
-            "temperature": 0,
-            "max_tokens": 250,
-            "response_format": {"type": "json_object"},
-            "messages": [
-                {"role": "system", "content": RULES.format(candidate=self.candidate)},
-                {"role": "user", "content": "Company: %s\nTitle: %s\nLocation: %s\n\nDescription:\n%s"
-                                            % (company, title, location, (desc or "")[:9000])},
-            ],
-        }
-        req = urllib.request.Request(ENDPOINT, data=json.dumps(body).encode(), headers={
-            "Authorization": "Bearer " + self.token, "Content-Type": "application/json",
-            "Accept": "application/json"})
-        try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                out = json.loads(r.read().decode())
-            text = out["choices"][0]["message"]["content"]
-            res = json.loads(re.search(r"\{.*\}", text, re.S).group(0))
-        except urllib.error.HTTPError as e:
-            if e.code in (401, 403, 429):
-                self.disabled = True
-                self.log("ai review stopped for this run (HTTP %d%s)" % (
-                    e.code, ", daily free limit reached" if e.code == 429 else ""))
-            return None
-        except Exception as e:
-            self.log("ai review error: %s" % str(e)[:120])
-            return None
-        if res.get("fit") not in ("fresher", "open", "stretch", "reject"):
-            return None
-        res["skills_to_learn"] = [str(s)[:30] for s in (res.get("skills_to_learn") or [])][:5]
-        res["reason"] = str(res.get("reason") or "")[:160]
-        return res
+        msgs = [
+            {"role": "system", "content": RULES.format(candidate=self.candidate)},
+            {"role": "user", "content": "Company: %s\nTitle: %s\nLocation: %s\n\nDescription:\n%s"
+                                        % (company, title, location, (desc or "")[:6000])},
+        ]
+        while self.providers:
+            p = self.providers[0]
+            wait = p.spacing * SPACING_SCALE - (time.time() - p.last)
+            if wait > 0:
+                time.sleep(wait)
+            p.last = time.time()
+            try:
+                out = self._call(p, {"model": p.models[0], "temperature": 0, "max_tokens": 1200, "messages": msgs})
+                text = out["choices"][0]["message"].get("content") or ""
+                m = re.search(r"\{.*\}", text, re.S)
+                if not m:
+                    raise ValueError("no JSON in answer: %r" % text[:120])
+                res = json.loads(m.group(0))
+            except urllib.error.HTTPError as e:
+                try:
+                    detail = e.read().decode("utf-8", "replace")[:160]
+                except Exception:
+                    detail = ""
+                if e.code == 404 and len(p.models) > 1:      # model retired -> next model, same provider
+                    self.log("ai %s: model %s not available, trying %s" % (p.name, p.models[0], p.models[1]))
+                    p.models.pop(0)
+                    continue
+                if e.code in (400, 401, 402, 403, 404, 429):
+                    self._drop("HTTP %d%s %s" % (e.code, " free limit reached" if e.code == 429 else "", detail))
+                    continue
+                if self._fail(p, "HTTP %d %s" % (e.code, detail)):
+                    continue
+                return None
+            except Exception as e:
+                if self._fail(p, str(e)[:160]):
+                    continue
+                return None
+            p.errors = 0
+            if res.get("fit") not in ("fresher", "open", "stretch", "reject"):
+                return None
+            res["skills_to_learn"] = [str(x)[:30] for x in (res.get("skills_to_learn") or [])][:5]
+            res["reason"] = str(res.get("reason") or "")[:160]
+            res["by"] = p.name
+            return res
+        return None
+
+    def _fail(self, p, msg):
+        """Returns True if the provider was dropped (caller should retry with the next one)."""
+        p.errors += 1
+        self.log("ai %s error: %s" % (p.name, msg))
+        if p.errors >= 3:
+            self._drop("3 errors in a row")
+            return True
+        return False

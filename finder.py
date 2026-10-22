@@ -134,6 +134,7 @@ def ai_pass(items, reviewer, cache):
         if not (info["fit"] == "stretch" and res["fit"] in ("open", "fresher")):
             info["fit"] = res["fit"]
         info["ai_reason"] = res.get("reason", "")
+        info["ai_by"] = res.get("by", "")
         if res.get("role_type") and res["role_type"] != "Other":
             info["role_type"] = res["role_type"]
         learn = list(dict.fromkeys((res.get("skills_to_learn") or []) + (info.get("skills_to_learn") or [])))

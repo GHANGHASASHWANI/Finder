@@ -334,7 +334,12 @@
   "Power BI/Tableau": "power ?bi|tableau"
  },
  "ai_review": true,
- "ai_model": "openai/gpt-4o-mini",
- "ai_max_per_run": 25,
- "candidate_summary": "2026 B.E. Computer Science graduate (Chandigarh University, CGPA 8.71). About 1 year as Software Developer Intern at Toddle (Node.js, GraphQL/REST APIs, PostgreSQL query optimisation, Metabase analytics). Projects: full-stack MERN apps on AWS EC2, RAG chatbots and recommendation engines with LangChain, OpenAI, pgvector and Pinecone, Socket.io. Skills: C++, JavaScript, TypeScript, Python, Java, SQL, Node.js, Express, React, Next.js, PostgreSQL, MongoDB, MySQL, Redis, AWS (EC2, S3, RDS, Lambda, SQS), Docker, CI/CD, Linux, Git, system design basics, Kafka, DSA (1000+ problems). Looking for software roles needing 0-1 years (up to 2 years counting the internship); open to SWE, backend, full-stack, AI/ML, data, DevOps/SRE and QA roles and willing to learn new tech."
+ "ai_max_per_run": 30,
+ "candidate_summary": "2026 B.E. Computer Science graduate (Chandigarh University, CGPA 8.71). About 1 year as Software Developer Intern at Toddle (Node.js, GraphQL/REST APIs, PostgreSQL query optimisation, Metabase analytics). Projects: full-stack MERN apps on AWS EC2, RAG chatbots and recommendation engines with LangChain, OpenAI, pgvector and Pinecone, Socket.io. Skills: C++, JavaScript, TypeScript, Python, Java, SQL, Node.js, Express, React, Next.js, PostgreSQL, MongoDB, MySQL, Redis, AWS (EC2, S3, RDS, Lambda, SQS), Docker, CI/CD, Linux, Git, system design basics, Kafka, DSA (1000+ problems). Looking for software roles needing 0-1 years (up to 2 years counting the internship); open to SWE, backend, full-stack, AI/ML, data, DevOps/SRE and QA roles and willing to learn new tech.",
+ "ai_providers": [
+  "gemini",
+  "groq",
+  "nvidia",
+  "openrouter"
+ ]
 }
