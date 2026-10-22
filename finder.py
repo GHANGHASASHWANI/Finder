@@ -304,6 +304,10 @@ def main():
             status[name]["new_matches"] = matched.get(name, 0)
             status[name]["rejected_by_details"] = rejected.get(name, 0)
 
+    # re-apply the location rule to everything on the dashboard (rules improve over time)
+    board = [b for b in board if b.get("company") not in by_name or
+             matcher.location_group(b.get("location"), by_name[b["company"]]["source"]["type"])]
+
     # keep files small
     cutoff = (NOW - timedelta(days=KEEP_DASHBOARD_DAYS)).isoformat()
     board = [b for b in board if b.get("found_at", "") >= cutoff]

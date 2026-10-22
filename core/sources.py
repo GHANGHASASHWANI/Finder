@@ -152,7 +152,9 @@ def lever(c, s):
         if j.get("workplaceType") == "remote" and "remote" not in loc.lower():
             loc += " (Remote)"
         out.append(mk(c, j["id"], j.get("text"), loc, j.get("hostedUrl"), iso(j.get("createdAt")),
-                      j.get("descriptionPlain") or strip_html(j.get("description")), cat.get("team")))
+                      " ".join([j.get("descriptionPlain") or strip_html(j.get("description"))] +
+                               ["%s: %s" % (x.get("text", ""), strip_html(x.get("content"))) for x in j.get("lists") or []] +
+                               [j.get("additionalPlain") or ""]), cat.get("team")))
     return out
 
 
@@ -482,7 +484,38 @@ def _visible_text(raw):
     return strip_html(raw)
 
 
-DETAIL = {"workday": _wd_detail, "smartrecruiters": _sr_detail, "pcsx": _pcsx_detail}
+_BOARD_CACHE = {}
+
+
+def _board_desc(key, loader, jid):
+    """Feeds that list every job with its description: load the board once per run, then look jobs up."""
+    if key not in _BOARD_CACHE:
+        try:
+            _BOARD_CACHE[key] = {str(j["id"]).split("::", 1)[1]: j.get("desc", "") for j in loader()}
+        except Exception:
+            _BOARD_CACHE[key] = {}
+    return _BOARD_CACHE[key].get(str(jid), "")
+
+
+def _ashby_detail(c, s, job):
+    return _board_desc(("ashby", s["org"]), lambda: ashby(c, s), job["id"].split("::", 1)[1])
+
+
+def _lever_detail(c, s, job):
+    return _board_desc(("lever", s["slug"]), lambda: lever(c, s), job["id"].split("::", 1)[1])
+
+
+def _gh_detail(c, s, job):
+    jid = job["id"].split("::", 1)[1]
+    host = "boards-api.eu.greenhouse.io" if s.get("eu") else "boards-api.greenhouse.io"
+    try:
+        return strip_html(getjson("https://%s/v1/boards/%s/jobs/%s" % (host, s["token"], jid)).get("content"))
+    except Exception:
+        return _board_desc(("gh", s["token"]), lambda: greenhouse(c, s), jid)
+
+
+DETAIL = {"workday": _wd_detail, "smartrecruiters": _sr_detail, "pcsx": _pcsx_detail,
+          "ashby": _ashby_detail, "lever": _lever_detail, "greenhouse": _gh_detail}
 
 
 def describe(company, job, browser=None):

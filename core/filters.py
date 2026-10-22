@@ -48,6 +48,11 @@ ROLE_TYPES = [
 ]
 
 
+REMOTE_WORDS_RX = re.compile(r"remote|anywhere|worldwide|world wide|global(ly)?|apac|asia(-pacific)?|work from home|"
+                             r"\bwfh\b|home[- ]based|distributed|fully|first|\bor\b|\band\b|\bteam\b|\bany\b|"
+                             r"\blocation(s)?\b|international|[^A-Za-z]+", re.I)
+
+
 def _n(x):
     return NUM.get(x.lower(), None) if not x.isdigit() else int(x)
 
@@ -93,7 +98,11 @@ class Matcher:
                     return name
             return "Other India"
         if any(r.search(l) for r in self.remote) and not any(r.search(l) for r in self.block):
-            return "Remote"
+            # only truly location-free remote jobs: "Remote", "Remote - Worldwide", "Anywhere (APAC)".
+            # "San Francisco (Remote)" or "Paris (Remote)" means remote within that country -> not for India.
+            rest = REMOTE_WORDS_RX.sub(" ", l)
+            if not re.search(r"[A-Za-z]{2,}", rest):
+                return "Remote"
         return None
 
     def prefilter(self, job, company):
