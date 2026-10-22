@@ -99,7 +99,7 @@ document.getElementById("cq").addEventListener("input",renderCompanies);
   const groups=[...new Set(JOBS.map(j=>j.location_group))];const sel=document.getElementById("loc");
   ORDER.concat(groups.filter(g=>!ORDER.includes(g))).filter(g=>groups.includes(g)).forEach(g=>sel.insertAdjacentHTML("beforeend",`<option>${esc(g)}</option>`));
   document.getElementById("updated").textContent=STATUS.updated_at?`Last checked ${ago(STATUS.updated_at)} · watching ${COMP.length||STATUS.checked||0} companies`:`Watching ${COMP.length||STATUS.checked||0} companies · waiting for the first run`;
-  if(!COMP.length)document.querySelector(".tabs").hidden=true;
+  if(!COMP.length)document.querySelector(".tabs").style.display="none";
   renderJobs();renderCompanies()})();
 </script>
 </body>
