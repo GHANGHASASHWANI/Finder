@@ -89,7 +89,9 @@ class AIReviewer:
 
     def _call(self, p, body):
         req = urllib.request.Request(p.base + "/chat/completions", data=json.dumps(body).encode(), headers={
-            "Authorization": "Bearer " + p.key, "Content-Type": "application/json"})
+            "Authorization": "Bearer " + p.key, "Content-Type": "application/json",
+            # Groq sits behind Cloudflare, which blocks Python's default user agent (error 1010)
+            "User-Agent": "Mozilla/5.0 (compatible; FinderJobBot/1.0; +https://github.com/GHANGHASASHWANI/Finder)"})
         with urllib.request.urlopen(req, timeout=90) as r:
             raw = r.read().decode("utf-8", "replace")
         try:
@@ -113,7 +115,10 @@ class AIReviewer:
                 time.sleep(wait)
             p.last = time.time()
             try:
-                out = self._call(p, {"model": p.models[0], "temperature": 0, "max_tokens": 1200, "messages": msgs})
+                body = {"model": p.models[0], "temperature": 0, "max_tokens": 2000, "messages": msgs}
+                if "gpt-oss" in p.models[0]:
+                    body["reasoning_effort"] = "low"     # reasoning models: keep thinking short so the answer fits
+                out = self._call(p, body)
                 text = out["choices"][0]["message"].get("content") or ""
                 m = re.search(r"\{.*\}", text, re.S)
                 if not m:
@@ -127,6 +132,12 @@ class AIReviewer:
                 if e.code == 404 and len(p.models) > 1:      # model retired -> next model, same provider
                     self.log("ai %s: model %s not available, trying %s" % (p.name, p.models[0], p.models[1]))
                     p.models.pop(0)
+                    continue
+                if e.code in (500, 502, 503, 504) and len(p.models) > 1 and not getattr(p, "_rotated", False):
+                    # model overloaded ("high demand") -> rotate to the provider's next model once
+                    self.log("ai %s: %s busy (HTTP %d), trying %s" % (p.name, p.models[0], e.code, p.models[1]))
+                    p.models.append(p.models.pop(0))
+                    p._rotated = True
                     continue
                 if e.code in (400, 401, 402, 403, 404, 429):
                     self._drop("HTTP %d%s %s" % (e.code, " free limit reached" if e.code == 429 else "", detail))

@@ -95,6 +95,21 @@ class T(unittest.TestCase):
         self.assertEqual(res["by"], "groq")
         self.assertEqual([p.name for p in r.providers], ["groq"])
 
+    def test_busy_model_rotates(self):
+        seen = []
+
+        def fake(req, timeout=0):
+            m = json.loads(req.data)["model"]
+            seen.append(m)
+            self.assertIn("FinderJobBot", req.get_header("User-agent"))
+            if m == "gemini-flash-latest":
+                raise urllib.error.HTTPError("u", 503, "busy", {}, io.BytesIO(b'{"error":"high demand"}'))
+            return reply({"fit": "stretch", "reason": "1-2 years"})
+        ai.urllib.request.urlopen = fake
+        r = ai.AIReviewer({}, log=lambda *a: None)
+        self.assertEqual(r.judge("SE", "X", "Pune", "x" * 400)["fit"], "stretch")
+        self.assertEqual(seen, ["gemini-flash-latest", "gemini-2.5-flash"])
+
     def test_no_key_means_no_calls(self):
         os.environ.pop("GEMINI_API_KEY")
         r = ai.AIReviewer({}, log=lambda *a: None)
