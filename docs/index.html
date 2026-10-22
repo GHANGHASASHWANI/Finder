@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finder</title>
+<style>
+:root{--bg:#f7f7f5;--card:#fff;--ink:#1d1d1b;--mute:#6b6b66;--line:#e6e5e0;--accent:#2f5fd0;--good:#1f8a4c;--warn:#b26a00;--bad:#c0392b;--chip:#efeee9}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--card:#1e1e1c;--ink:#ecebe6;--mute:#9c9b95;--line:#2e2e2b;--accent:#7ea2ff;--good:#4cc283;--warn:#e0a640;--bad:#ff7a6b;--chip:#2a2a27}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif}
+header{padding:20px 16px 8px;max-width:1100px;margin:0 auto}h1{margin:0;font-size:22px}
+.sub{color:var(--mute);font-size:13px;margin-top:2px}
+main{max-width:1100px;margin:0 auto;padding:0 16px 40px}
+.tabs{display:flex;gap:6px;margin:12px 0}.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 12px;border-radius:999px;cursor:pointer}
+.tabs button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 14px}
+input,select{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font:inherit}
+input[type=search]{flex:1;min-width:180px}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.stat b{font-size:18px;display:block}.stat span{color:var(--mute);font-size:12px}
+.grp{margin:18px 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+.job{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:8px;display:grid;grid-template-columns:1fr auto;gap:8px}
+.job.applied{border-left:4px solid var(--good)}.job.hidden{opacity:.45}
+.job a.t{color:var(--accent);font-weight:600;text-decoration:none}.job a.t:hover{text-decoration:underline}
+.meta{color:var(--mute);font-size:13px;margin-top:2px}.chips{margin-top:6px;display:flex;flex-wrap:wrap;gap:4px}
+.chip{background:var(--chip);border-radius:6px;padding:1px 7px;font-size:12px}.new{background:var(--accent);color:#fff}
+.act{display:flex;flex-direction:column;gap:6px;align-items:flex-end}.act button{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:6px;padding:3px 8px;font-size:12px;cursor:pointer}
+.score{font-weight:700;font-size:18px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:13px}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--mute);font-weight:600}
+.ok{color:var(--good)}.err{color:var(--bad)}.empty{color:var(--warn)}
+.tablewrap{overflow-x:auto}
+.none{color:var(--mute);padding:30px 0;text-align:center}
+@media (max-width:600px){.job{grid-template-columns:1fr}.act{flex-direction:row;align-items:center}}
+</style>
+</head>
+<body>
+<header><h1>Finder</h1><div class="sub" id="updated">Loading…</div></header>
+<main>
+  <div class="tabs"><button class="on" data-tab="jobs">Jobs</button><button data-tab="companies">Companies</button></div>
+  <section id="jobs">
+    <div class="stats" id="stats"></div>
+    <div class="bar">
+      <input type="search" id="q" placeholder="Search company, title, location">
+      <select id="loc"><option value="">All locations</option></select>
+      <select id="tier"><option value="">All tiers</option><option value="1">Tier 1</option><option value="2">Tier 2</option><option value="3">Tier 3</option><option value="4">Tier 4</option><option value="5">Tier 5</option></select>
+      <select id="age"><option value="3">Found in last 3 days</option><option value="7">Last 7 days</option><option value="999" selected>Last 10 days</option></select>
+      <select id="show"><option value="open">Hide hidden</option><option value="all">Show hidden</option><option value="applied">Applied only</option></select>
+    </div>
+    <div id="list"></div>
+  </section>
+  <section id="companies" hidden>
+    <div class="bar"><input type="search" id="cq" placeholder="Search companies"></div>
+    <div class="tablewrap"><table><thead><tr><th>Company</th><th>Tier</th><th>Fresher CTC (LPA)</th><th>Last check</th><th>Jobs on page</th><th>Careers page</th></tr></thead><tbody id="ctable"></tbody></table></div>
+  </section>
+</main>
+<script>
+const ORDER=["North India","Central/West India","South India","Remote","Other India","Unknown (check page)"];
+let JOBS=[],STATUS={companies:[]},COMP=[];
+const KEY="finder-marks";let marks={};try{marks=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+const saveMarks=()=>{try{localStorage.setItem(KEY,JSON.stringify(marks))}catch(e){}};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const ago=iso=>{if(!iso)return"";const h=(Date.now()-new Date(iso))/36e5;return h<1?"just now":h<24?Math.round(h)+"h ago":Math.round(h/24)+"d ago"};
+async function get(u,d){try{const r=await fetch(u+"?t="+Date.now());return r.ok?await r.json():d}catch(e){return d}}
+function renderJobs(){
+  const q=document.getElementById("q").value.toLowerCase(),loc=document.getElementById("loc").value,tier=document.getElementById("tier").value,
+    age=+document.getElementById("age").value,show=document.getElementById("show").value;
+  const rows=JOBS.filter(j=>{const m=marks[j.id];
+    if(show==="open"&&m==="hidden")return false;if(show==="applied"&&m!=="applied")return false;
+    if(loc&&j.location_group!==loc)return false;if(tier&&String(j.tier)!==tier)return false;
+    if((Date.now()-new Date(j.found_at))/864e5>age)return false;
+    return !q||(j.company+" "+j.title+" "+j.location).toLowerCase().includes(q)});
+  const by={};rows.forEach(j=>(by[j.location_group]=by[j.location_group]||[]).push(j));
+  let h="";ORDER.concat(Object.keys(by).filter(k=>!ORDER.includes(k))).forEach(g=>{if(!by[g])return;
+    by[g].sort((a,b)=>b.priority-a.priority||a.tier-b.tier);
+    h+=`<div class="grp">${esc(g)} · ${by[g].length}</div>`;
+    by[g].forEach(j=>{const m=marks[j.id]||"",fresh=(Date.now()-new Date(j.found_at))<864e5;
+      h+=`<div class="job ${m}"><div><a class="t" href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>
+      <div class="meta"><b>${esc(j.company)}</b> · Tier ${j.tier} · ${esc(j.location||j.location_group)}${j.est_ctc_lpa?" · ~"+esc(String(j.est_ctc_lpa).replace(/^~/,""))+" LPA":""}</div>
+      <div class="chips">${fresh?'<span class="chip new">new</span>':""}<span class="chip">found ${ago(j.found_at)}</span>${j.posted?`<span class="chip">posted ${esc(j.posted.slice(0,10))}</span>`:""}${j.min_years!=null?`<span class="chip">${j.min_years}+ yrs</span>`:""}${(j.skills_matched||[]).slice(0,6).map(s=>`<span class="chip">${esc(s)}</span>`).join("")}</div></div>
+      <div class="act"><span class="score" title="Priority score out of 10">${j.priority}</span>
+      <button data-id="${esc(j.id)}" data-m="applied">${m==="applied"?"✓ Applied":"Applied"}</button><button data-id="${esc(j.id)}" data-m="hidden">${m==="hidden"?"Unhide":"Hide"}</button></div></div>`})});
+  document.getElementById("list").innerHTML=h||'<div class="none">No matching jobs yet. Finder adds them here as soon as it sees them.</div>';
+  const last24=JOBS.filter(j=>(Date.now()-new Date(j.found_at))<864e5).length;
+  document.getElementById("stats").innerHTML=[[JOBS.length,"jobs found"],[last24,"in the last 24h"],[Object.values(marks).filter(v=>v==="applied").length,"applied"],[`${STATUS.ok||0}/${STATUS.checked||0}`,"career pages OK last run"]].map(([b,s])=>`<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
+}
+function renderCompanies(){
+  const q=document.getElementById("cq").value.toLowerCase();const st={};(STATUS.companies||[]).forEach(s=>st[s.company]=s);
+  document.getElementById("ctable").innerHTML=COMP.filter(c=>!q||c.company.toLowerCase().includes(q)).map(c=>{const s=st[c.company]||{};
+    const res=!s.checked_at?'<span class="empty">not checked yet</span>':s.ok?(s.empty?'<span class="empty">ok, 0 jobs</span>':`<span class="ok">ok</span>`):`<span class="err" title="${esc(s.error)}">error</span>`;
+    return `<tr><td><b>${esc(c.company)}</b><br><span class="sub">${esc(c.segment||"")}</span></td><td>${c.tier}</td><td>${esc(c.fresher_ctc_lpa||"")}</td><td>${res}<br><span class="sub">${ago(s.checked_at)}</span></td><td>${s.jobs??""}</td><td><a href="${esc(c.careers_url)}" target="_blank" rel="noopener">open</a></td></tr>`}).join("");
+}
+document.addEventListener("click",e=>{const b=e.target.closest("button[data-id]");if(b){const id=b.dataset.id,m=b.dataset.m;marks[id]=marks[id]===m?undefined:m;if(!marks[id])delete marks[id];saveMarks();renderJobs()}
+  const t=e.target.closest(".tabs button");if(t){document.querySelectorAll(".tabs button").forEach(x=>x.classList.toggle("on",x===t));
+    document.getElementById("jobs").hidden=t.dataset.tab!=="jobs";document.getElementById("companies").hidden=t.dataset.tab!=="companies"}});
+["q","loc","tier","age","show"].forEach(id=>document.getElementById(id).addEventListener("input",renderJobs));
+document.getElementById("cq").addEventListener("input",renderCompanies);
+(async()=>{[JOBS,STATUS,COMP]=await Promise.all([get("jobs.json",[]),get("status.json",{companies:[]}),get("companies.json",[])]);
+  const groups=[...new Set(JOBS.map(j=>j.location_group))];const sel=document.getElementById("loc");
+  ORDER.concat(groups.filter(g=>!ORDER.includes(g))).filter(g=>groups.includes(g)).forEach(g=>sel.insertAdjacentHTML("beforeend",`<option>${esc(g)}</option>`));
+  document.getElementById("updated").textContent=STATUS.updated_at?`Last checked ${ago(STATUS.updated_at)} · watching ${COMP.length||STATUS.checked||0} companies`:`Watching ${COMP.length||STATUS.checked||0} companies · waiting for the first run`;
+  if(!COMP.length)document.querySelector(".tabs").hidden=true;
+  renderJobs();renderCompanies()})();
+</script>
+</body>
+</html>

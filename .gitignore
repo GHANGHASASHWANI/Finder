@@ -1,0 +1,13 @@
+state/*.tmp
+__pycache__/
+*.pyc
+.DS_Store
+.finder-bundle-v2.tar.gz
+.finder-bundle.tar.gz
+
+# Private: only the encrypted .enc copies are committed
+/companies.json
+/companies.csv
+*.xlsx
+state/*.json
+docs/companies.json
