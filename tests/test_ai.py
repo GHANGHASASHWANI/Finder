@@ -44,7 +44,7 @@ class T(unittest.TestCase):
                 ({"id": "c", "title": "SDE 1", "company": "D", "fit": "fresher", "priority": 9}, d)]
 
     def test_reject_and_keep(self):
-        answers = {"Data Engineer": {"fit": "reject", "reason": "5+ years AWS"},
+        answers = {"Data Engineer": {"fit": "reject", "reason": "\"5+ years of experience\" on AWS"},
                    "Software Engineer": {"fit": "fresher", "reason": "new grads", "role_type": "Backend",
                                          "skills_to_learn": ["Go"]}}
 
@@ -109,6 +109,11 @@ class T(unittest.TestCase):
         r = ai.AIReviewer({}, log=lambda *a: None)
         self.assertEqual(r.judge("SE", "X", "Pune", "x" * 400)["fit"], "stretch")
         self.assertEqual(seen, ["gemini-flash-latest", "gemini-2.5-flash"])
+
+    def test_unquoted_reject_is_kept_as_open(self):
+        ai.urllib.request.urlopen = lambda req, timeout=0: reply({"fit": "reject", "reason": "Likely needs 2+ years"})
+        r = ai.AIReviewer({}, log=lambda *a: None)
+        self.assertEqual(r.judge("SE", "X", "Pune", "x" * 400)["fit"], "open")
 
     def test_no_key_means_no_calls(self):
         os.environ.pop("GEMINI_API_KEY")

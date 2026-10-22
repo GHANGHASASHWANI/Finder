@@ -11,3 +11,4 @@ __pycache__/
 *.xlsx
 state/*.json
 docs/companies.json
+logs.txt

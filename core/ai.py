@@ -23,6 +23,7 @@ PROVIDERS = [
     ("openrouter", "https://openrouter.ai/api/v1", "OPENROUTER_API_KEY", ["openrouter/free"], 4),
 ]
 SPACING_SCALE = 1.0   # tests set this to 0
+QUOTED = re.compile(r'["\u201c\u201d].{4,}["\u201c\u201d]')
 
 RULES = """You screen job postings for one candidate. Decide if this job is realistic for them to apply to NOW.
 
@@ -30,18 +31,22 @@ Candidate:
 {candidate}
 
 Rules:
-- "reject" if the posting requires 2+ years, a minimum of 2 years, or 3 or more years of experience anywhere
-  (even for one skill), or is clearly mid-level/senior (leads a team, mentors juniors, "experienced hire",
-  owns architecture, senior-level grade codes), or is not a software/tech role (hardware, sales, support,
-  pure business analyst).
-- "fresher" if it explicitly targets new grads / freshers / entry level / 0-1 years.
+- "reject" ONLY with explicit evidence in the posting text, and you MUST quote that exact phrase in "reason":
+  * it asks for 2+ years, a minimum of 2 years, or 3 or more years of experience (even for one skill), or
+  * it clearly describes a senior/lead role (e.g. "lead a team", "mentor engineers", "engineering leader",
+    "senior", "staff", "principal", grade codes like AVP), or
+  * it requires a degree the candidate does not have (Master's/PhD required, not "preferred"), or
+  * it is not a software/tech role (hardware, sales, pre-sales, support, pure business), or it is an internship.
+- NEVER reject because the candidate lacks a skill, language or framework - list it in "skills_to_learn" instead.
+- NEVER guess. Do not reject because experience is "likely", "typical" or "implied". If nothing explicit
+  is stated, the answer is "open".
+- "fresher" if it explicitly targets new grads / freshers / entry level / 0-1 years / recent graduates.
 - "stretch" if it asks for up to 2 years (e.g. "1-2 years", "0-2 years", "2 years", "1+ years").
-- "open" if no experience or seniority is stated and nothing suggests seniority.
-- Internship roles: "reject".
+- "open" if no experience or seniority is stated.
 
 Reply with JSON only:
 {{"fit": "fresher|open|stretch|reject", "years_required": number or null,
-  "reason": "max 15 words, quote the deciding phrase if any",
+  "reason": "max 20 words; for reject, quote the exact phrase from the posting in double quotes",
   "role_type": "SWE|Backend|Frontend|Full-stack|Mobile|AI/ML|Data|DevOps/SRE/Cloud|QA/Test|Quant|Security|Other",
   "skills_to_learn": ["up to 5 technologies the job needs that the candidate lacks"]}}"""
 
@@ -152,6 +157,9 @@ class AIReviewer:
             p.errors = 0
             if res.get("fit") not in ("fresher", "open", "stretch", "reject"):
                 return None
+            if res["fit"] == "reject" and not QUOTED.search(str(res.get("reason") or "")):
+                # a reject must quote the posting; an unsupported guess is treated as "open"
+                res["fit"], res["reason"] = "open", "AI rejected without quoting the posting - kept"
             res["skills_to_learn"] = [str(x)[:30] for x in (res.get("skills_to_learn") or [])][:5]
             res["reason"] = str(res.get("reason") or "")[:160]
             res["by"] = p.name

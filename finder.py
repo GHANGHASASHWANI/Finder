@@ -327,6 +327,8 @@ def main():
     errs = [n for n, (_, _, e) in results.items() if e]
     log("done: %d ok, %d errors, %d new matches, %d alerts" % (len(results) - len(errs), len(errs),
                                                               new_matches, len(alerts)))
+    for n in sorted(errs):
+        log("  failed: %-28s %s" % (n[:28], results[n][2][:110]))
     if args.validate:
         print("\n%-32s %-15s %6s  %s" % ("COMPANY", "TYPE", "JOBS", "RESULT"))
         for s in sorted(status.values(), key=lambda s: (s.get("ok", False), s["company"])):
