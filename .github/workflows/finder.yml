@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "Extra flags: --all, --validate, --no-notify"
+        description: "Extra flags: --all, --validate, --no-notify, --recheck"
         required: false
         default: ""
 

@@ -56,10 +56,39 @@ class T(unittest.TestCase):
 
     def test_experience(self):
         self.assertFalse(ev("Software Engineer", desc="You have 3+ years of professional software experience."))
-        self.assertTrue(ev("Software Engineer", desc="2+ years of experience"))
+        self.assertFalse(ev("Software Engineer", desc="2+ years of experience"))
+        self.assertFalse(ev("Software Engineer", desc="Minimum 2 years of experience"))
+        self.assertFalse(ev("Software Engineer", desc="1+ years of experience. 5 years of experience preferred."))
+        self.assertFalse(ev("Data Engineer", desc="experience with: 5+ years of experience in developing on AWS"))
+        self.assertFalse(ev("R&D Engineer (C++)", desc="Seniority: 5-8 years development including tools"))
+        self.assertFalse(ev("Software Engineer", desc="You will mentor junior engineers"))
         self.assertTrue(ev("Software Engineer", desc="0-2 years of experience in backend development"))
-        self.assertTrue(ev("Software Engineer", desc="1+ years of experience. 5 years of experience preferred."))
         self.assertTrue(ev("Software Engineer", desc="We were founded 10 years ago."))
+        self.assertTrue(ev("Software Engineer", desc="For over 25 years, we have built software."))
+
+    def test_fit_labels(self):
+        def fit(title, desc="", **kw):
+            j = {"id": "x", "company": "Acme", "title": title, "location": "Pune, India", "url": "u", "desc": desc}
+            j.update(kw)
+            return M.evaluate(j, CO)[1]["fit"]
+        self.assertEqual(fit("Software Engineer, New Grad 2026"), "fresher")
+        self.assertEqual(fit("Software Engineer", "0-1 years of experience"), "fresher")
+        self.assertEqual(fit("Software Engineer", "Build APIs in Node.js " * 20), "open")
+        self.assertEqual(fit("Software Engineer", "1-2 years of experience"), "stretch")
+        self.assertEqual(fit("Software Engineer", "", desc_missing=True), "unverified")
+
+    def test_title_seniority_codes(self):
+        for t in ["API Software Engineer - AVP", "Platforms-API Software Engineer - BA4", "Advanced Software Engr",
+                  "IC Design Engineer", "Application Engineering ADAS", "Network Engineering Security"]:
+            self.assertFalse(ev(t), t)
+        for t in ["SDET", "QA Automation Engineer", "AI Engineer", "Data Engineer", "DevOps Engineer"]:
+            self.assertTrue(ev(t), t)
+
+    def test_resume_match(self):
+        have, learn, pct = M.skills("Node.js, PostgreSQL, AWS, Kafka, PySpark, Airflow")
+        self.assertIn("Node.js", have)
+        self.assertIn("Airflow", learn)
+        self.assertEqual(pct, 67)
 
     def test_page_source_unknown_location(self):
         c = dict(CO, source={"type": "page"})

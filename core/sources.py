@@ -78,15 +78,16 @@ def workday_posted(text):
     return datetime.fromtimestamp(now - days * 86400, timezone.utc).isoformat()
 
 
-def mk(company, jid, title, location, url, posted=None, desc="", dept="", comp=""):
+def mk(company, jid, title, location, url, posted=None, desc="", dept="", comp="", level=""):
     return {
+        "level": level or "",
         "id": "%s::%s" % (company, jid),
         "company": company,
         "title": (title or "").strip(),
         "location": (location or "").strip(),
         "url": url,
         "posted": posted,
-        "desc": (desc or "")[:6000],
+        "desc": (desc or "")[:15000],
         "dept": dept or "",
         "comp": comp or "",
     }
@@ -182,7 +183,8 @@ def smartrecruiters(c, s):
                 loc += " (Remote)"
             out.append(mk(c, j["id"], j.get("name"), loc,
                           "https://jobs.smartrecruiters.com/%s/%s" % (s["id"], j["id"]),
-                          iso(j.get("releasedDate")), "", (j.get("department") or {}).get("label")))
+                          iso(j.get("releasedDate")), "", (j.get("department") or {}).get("label"),
+                          level=(j.get("experienceLevel") or {}).get("label")))
         offset += 100
         if len(rows) < 100 or offset >= d.get("totalFound", 0):
             break
@@ -430,3 +432,67 @@ READERS = {
     "smartrecruiters": smartrecruiters, "workday": workday, "eightfold": eightfold,
     "amazon": amazon, "atlassian": atlassian, "page": page, "pcsx": pcsx, "json": jsonapi,
 }
+
+
+# ---------------------------------------------------------------- job details (full description)
+
+def _wd_detail(c, s, job):
+    path = job["id"].split("::", 1)[1]
+    base = "https://%s.%s.myworkdayjobs.com" % (s["tenant"], s["wd"])
+    d = getjson("%s/wday/cxs/%s/%s%s" % (base, s["tenant"], s["site"], path), headers={"Accept": "application/json"})
+    return strip_html((d.get("jobPostingInfo") or {}).get("jobDescription"))
+
+
+def _sr_detail(c, s, job):
+    jid = job["id"].split("::", 1)[1]
+    d = getjson("https://api.smartrecruiters.com/v1/companies/%s/postings/%s" % (s["id"], jid))
+    sec = (d.get("jobAd") or {}).get("sections") or {}
+    return " ".join(strip_html((sec.get(k) or {}).get("text")) for k in ("jobDescription", "qualifications",
+                                                                           "additionalInformation"))
+
+
+def _pcsx_detail(c, s, job):
+    jid = job["id"].split("::", 1)[1]
+    d = getjson("https://%s/api/pcsx/position_details?position_id=%s&domain=%s&hl=en" % (s["host"], jid, s["domain"]))
+    d = d.get("data", d)
+    return strip_html(d.get("jobDescription") or d.get("job_description") or d.get("description"))
+
+
+def _visible_text(raw):
+    raw = re.sub(r"(?is)<(script|style|noscript|svg|header|footer|nav)[^>]*>.*?</\1>", " ", raw)
+    return strip_html(raw)
+
+
+DETAIL = {"workday": _wd_detail, "smartrecruiters": _sr_detail, "pcsx": _pcsx_detail}
+
+
+def describe(company, job, browser=None):
+    """Fill in job['desc'] from the job page when the feed did not include it. Returns True if text was found."""
+    if len(job.get("desc") or "") >= 300:
+        return True
+    s = company["source"]
+    text = ""
+    try:
+        if s["type"] in DETAIL:
+            text = DETAIL[s["type"]](company["company"], s, job)
+    except Exception:
+        text = ""
+    if len(text) < 300 and job.get("url", "").startswith("http"):
+        try:
+            text = _visible_text(http(job["url"], headers={"Accept": "text/html"}, timeout=25))
+        except Exception:
+            pass
+    if len(text) < 300 and browser is not None and job.get("url", "").startswith("http"):
+        pg = browser.new_page(user_agent=UA)
+        try:
+            pg.goto(job["url"], wait_until="domcontentloaded", timeout=30000)
+            pg.wait_for_timeout(2500)
+            text = re.sub(r"\s+", " ", pg.inner_text("body"))
+        except Exception:
+            pass
+        finally:
+            pg.close()
+    if len(text) >= 300:
+        job["desc"] = text[:15000]
+        return True
+    return False

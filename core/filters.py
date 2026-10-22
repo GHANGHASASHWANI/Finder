@@ -1,5 +1,55 @@
-"""Decides whether a job fits the profile, and scores it."""
+"""Decides whether a job fits the profile, labels how fresher-friendly it is, and scores it.
+
+Fit labels
+  fresher     says new grad / entry level / 0-1 years
+  open        no experience or seniority mentioned
+  stretch     asks for up to 2 years (e.g. "2 years", "1-2 years", "0-2 years", "1-3 years")
+  unverified  the job description could not be read
+Rejected: anything asking for 2+ / minimum 2 / 3 or more years anywhere, or senior wording.
+"""
 import re
+
+NUM = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
+N = r"(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten)"
+YEARS_RX = re.compile(
+    r"(?P<pre>(?:minimum|min\.?|at\s+least|over|more\s+than|in\s+excess\s+of)\s*(?:of\s*)?)?"
+    r"\(?" + N + r"\)?\s*(?P<plus>\+|plus)?\s*(?:(?:-|–|—|to)\s*" + N.replace("(", "(?P<hi>", 1) +
+    r"\s*\+?)?\s*(?:\(?\s*\+\s*\)?)?\s*(?:years?|yrs?)\b(?P<post>\s*(?:\+|or\s+more|or\s+above|plus|and\s+above))?",
+    re.I)
+# words near a "N years" that show it is about the candidate's experience (not "4-year degree", "founded 10 years ago")
+EXP_CONTEXT = re.compile(r"experience|\bexp\b|hands[- ]on|relevant|proven|professional|industry|track record|"
+                         r"seniority|expertise|proficien", re.I)
+# weaker words count only right after "N years", e.g. "5-8 years development", "3 years of coding"
+EXP_RIGHT_AFTER = re.compile(r"^\s*(of\s+)?(\w+\s+){0,2}?(develop|coding|programming|building|software|engineering|"
+                             r"working|work\b|in (a |the )?(similar|software|engineering|backend|data|it\b))", re.I)
+COMPANY_TALK = re.compile(r"\b(we|our|us|company|business|founded|established)\b", re.I)
+NOT_EXP = re.compile(r"degree|bachelor|course|program(?!m)|\bago\b|warranty|\bold\b|anniversary|of (history|legacy)", re.I)
+FRESHER_RX = re.compile(r"new[- ]?grad|fresh(er|ers)?\b|entry[- ]level|campus|early[- ]career|university grad|"
+                        r"graduate (program|engineer|hire)|recent graduate|\b0\s*(?:-|–|to)\s*1\s*(?:years?|yrs?)|"
+                        r"no (prior )?experience (is )?required|20(25|26)\s*(batch|pass|grad)", re.I)
+SENIOR_DESC_RX = re.compile(
+    r"\bsenior[- ]level\b|\bmid[- ]?(?:to[- ]senior|senior)[- ]level\b|\bmid[- ]level\b|seasoned (engineer|developer|professional)|"
+    r"extensive (professional |industry |hands[- ]on )?experience|mentor(ing|s)? (junior|other|team)|"
+    r"lead (a|the) team|team lead(ership)? experience|people management|manage (a|the) team of|"
+    r"significant (professional |industry )?experience|substantial experience|deep expertise",
+    re.I)
+
+ROLE_TYPES = [
+    ("AI/ML", r"\b(ai|ml|machine learning|genai|gen ai|llm|deep learning|nlp|computer vision|applied scien|mlops)\b"),
+    ("Data", r"\bdata (engineer|platform|pipeline)|\betl\b|pyspark|\bspark\b|big data|analytics engineer"),
+    ("DevOps/SRE/Cloud", r"devops|dev ops|\bsre\b|site reliability|platform engineer|cloud engineer|infrastructure|"
+                         r"prodops|production engineer|\bops\b"),
+    ("QA/Test", r"\bqa\b|quality|\btest|sdet|automation engineer"),
+    ("Mobile", r"android|\bios\b|mobile|flutter|react native"),
+    ("Frontend", r"front[- ]?end|\bui\b|web developer"),
+    ("Full-stack", r"full[- ]?stack"),
+    ("Backend", r"back[- ]?end|\bapi\b|server"),
+    ("Quant", r"quant|trading|low[- ]latency"),
+]
+
+
+def _n(x):
+    return NUM.get(x.lower(), None) if not x.isdigit() else int(x)
 
 
 class Matcher:
@@ -12,13 +62,15 @@ class Matcher:
         self.india = c(p["india_locations"])
         self.remote = c(p["remote_words"])
         self.block = c(p["remote_blocklist"])
-        self.skills = c(p["skills"])
         self.prio = [(name, re.compile(rx, re.I)) for name, rx in p["location_priority"]]
-        self.intern_ok = c(p.get("intern_keywords_ok", []))
         self.level_ii_ok = set(p.get("level_ii_ok_companies", []))
+        self.resume = {k: re.compile(v, re.I) for k, v in p.get("resume_skills", {}).items()}
+        self.vocab = {k: re.compile(v, re.I) for k, v in p.get("tech_vocab", {}).items()}
+        self.vocab.update(self.resume)
+        self.max_years = p.get("max_years_required", 2)
 
     # ---- title
-    def title_ok(self, title, company="", desc=""):
+    def title_ok(self, title, company=""):
         t = title or ""
         if not any(r.search(t) for r in self.inc):
             return False, "title not a software role"
@@ -34,7 +86,6 @@ class Matcher:
     def location_group(self, loc, source_type="", company_locs=""):
         l = (loc or "").strip()
         if not l:
-            # custom career pages rarely show the location in the link; trust the page's India filter
             return "Unknown (check page)" if source_type == "page" else None
         if any(r.search(l) for r in self.india):
             for name, rx in self.prio:
@@ -45,53 +96,103 @@ class Matcher:
             return "Remote"
         return None
 
+    def prefilter(self, job, company):
+        """Cheap checks on title + location only (before the job page is downloaded)."""
+        ok, why = self.title_ok(job["title"], company["company"])
+        if not ok:
+            return False, why
+        if not self.location_group(job["location"], company["source"]["type"]):
+            return False, "location not India/remote"
+        return True, ""
+
     # ---- experience
-    YEARS = re.compile(
-        r"(\d{1,2})\s*(?:\+|plus)?\s*(?:-|–|to)?\s*(\d{1,2})?\s*\+?\s*(?:years?|yrs?)(?:\s+of)?"
-        r"(?:\s+\w+){0,6}?\s+(?:experience|exp\b|industry|professional|work)", re.I)
+    def experience(self, text):
+        """Returns (verdict, min_years, snippet). verdict: 'reject' | 'stretch' | 'fresher' | 'open'."""
+        if not text:
+            return "open", None, ""
+        worst, lows, snippet = None, [], ""
+        for m in YEARS_RX.finditer(text):
+            lo = _n(m.group(2))
+            hi = _n(m.group("hi")) if m.group("hi") else None
+            if lo is None or lo > 25 or (hi is not None and (hi > 30 or hi < lo)):
+                continue
+            ctx_after = text[m.end():m.end() + 70]
+            ctx_before = text[max(0, m.start() - 40):m.start()]
+            if NOT_EXP.search(ctx_after[:18]):
+                continue
+            if lo > 15 or COMPANY_TALK.search(ctx_before[-25:] + " " + ctx_after[:35]):
+                continue   # "for over 25 years we have...", "10 years in business"
+            if not (EXP_CONTEXT.search(ctx_after) or EXP_CONTEXT.search(ctx_before) or EXP_RIGHT_AFTER.search(ctx_after)):
+                continue
+            plus = bool(m.group("plus") or m.group("pre") or m.group("post") or "+" in m.group(0))
+            if lo >= 3 or (lo == 2 and (plus or (hi or 2) > 2)):
+                v = "reject"
+            elif lo == 2 or (hi or 0) >= 2 or (lo == 1 and plus):
+                v = "stretch"   # "2 years", "1-2 years", "0-2 years", "1+ years"
+            else:
+                v = "fresher"   # "0-1 years", "1 year"
+            lows.append(lo)
+            rank = {"reject": 3, "stretch": 2, "fresher": 1}[v]
+            if worst is None or rank > worst[0]:
+                worst = (rank, v)
+                snippet = re.sub(r"\s+", " ", text[max(0, m.start() - 20):m.end() + 40]).strip()
+        if worst and worst[1] == "reject":
+            return "reject", min(lows), snippet
+        s = SENIOR_DESC_RX.search(text)
+        if s:
+            return "reject", None, re.sub(r"\s+", " ", text[max(0, s.start() - 20):s.end() + 30]).strip()
+        if worst:
+            return worst[1], min(lows), snippet
+        return "open", None, ""
 
-    def min_years(self, desc):
-        if not desc:
-            return None
-        lows = [int(m.group(1)) for m in self.YEARS.finditer(desc) if int(m.group(1)) <= 20]
-        return min(lows) if lows else None
+    # ---- resume match
+    def skills(self, text):
+        t = text or ""
+        job = {k for k, r in self.vocab.items() if r.search(t)}
+        have = sorted(k for k in job if k in self.resume)
+        learn = sorted(k for k in job if k not in self.resume)
+        pct = round(100 * len(have) / len(job)) if job else None
+        return have, learn, pct
 
-    def experience_ok(self, desc):
-        y = self.min_years(desc)
-        if y is None:
-            return True, None
-        return y <= self.p.get("max_years_required", 1), y
-
-    # ---- score
-    def skill_hits(self, text):
-        return sorted({r.pattern.replace("\\b", "").replace("\\", "") for r in self.skills if r.search(text or "")})
+    def role_type(self, title, desc=""):
+        for name, rx in ROLE_TYPES:
+            if re.search(rx, title or "", re.I):
+                return name
+        return "SWE"
 
     def evaluate(self, job, company):
         """Returns (matched: bool, enriched_job_or_reason)."""
-        ok, why = self.title_ok(job["title"], company["company"], job.get("desc"))
+        ok, why = self.prefilter(job, company)
         if not ok:
             return False, why
-        grp = self.location_group(job["location"], company["source"]["type"], company.get("india_locations"))
-        if not grp:
-            return False, "location not India/remote"
-        ok, yrs = self.experience_ok(job.get("desc"))
-        if not ok:
-            return False, "needs %s+ years" % yrs
-        hits = self.skill_hits(job["title"] + " " + job.get("desc", ""))
+        grp = self.location_group(job["location"], company["source"]["type"])
+        title, desc = job["title"], job.get("desc") or ""
+        verdict, yrs, snippet = self.experience(title + ". " + desc)
+        level = (job.get("level") or "").lower()
+        if verdict == "reject":
+            return False, "needs experience: %s" % snippet
+        if re.search(r"mid|senior|director|executive|lead", level) and verdict == "open":
+            return False, "listed as %s" % level
+        if FRESHER_RX.search(title) or FRESHER_RX.search(desc) or re.search(r"entry|intern", level):
+            fit = "fresher" if verdict != "stretch" else "stretch"
+        elif job.get("desc_missing"):
+            fit = "unverified"
+        else:
+            fit = verdict
+        have, learn, pct = self.skills(title + " " + desc)
         tier = company.get("tier", 5)
         salary_pts = {1: 10, 2: 10, 3: 8, 4: 6, 5: 4}.get(tier, 4)
-        fresher_pts = 10 if re.search(r"new grad|graduate|university|campus|early career|entry|fresher|engineer i\b|"
-                                      r"sde[- ]?(i|1)\b|associate", job["title"], re.I) else 6
-        if yrs == 0:
-            fresher_pts = 10
-        match_pts = min(10, 4 + len(hits))
+        fit_pts = {"fresher": 10, "open": 8, "stretch": 6, "unverified": 5}[fit]
+        match_pts = 5 if pct is None else round(pct / 10)
         prio_bonus = {"North India": 10, "Central/West India": 9, "South India": 8, "Remote": 8}.get(grp, 6)
-        score = round(0.35 * salary_pts + 0.30 * match_pts + 0.25 * fresher_pts + 0.10 * prio_bonus, 1)
+        score = round(0.30 * salary_pts + 0.30 * fit_pts + 0.30 * match_pts + 0.10 * prio_bonus, 1)
         j = dict(job)
         j.update({
             "tier": tier, "segment": company.get("segment", ""), "location_group": grp,
-            "min_years": yrs, "skills_matched": hits, "priority": score,
+            "min_years": yrs, "exp_note": snippet[:140], "fit": fit, "role_type": self.role_type(title, desc),
+            "skills_matched": have, "skills_to_learn": learn[:8], "match_pct": pct, "priority": score,
             "est_ctc_lpa": job.get("comp") or company.get("fresher_ctc_lpa", ""),
         })
-        j.pop("desc", None)
+        for k in ("desc", "desc_missing", "level"):
+            j.pop(k, None)
         return True, j

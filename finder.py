@@ -27,6 +27,7 @@ NOW = datetime.now(timezone.utc)
 FIRST_RUN_ALERT_DAYS = 3        # on a company's first check, alert only for jobs posted in the last N days
 MAX_ALERTS_PER_COMPANY = 15     # guards against a page redesign flooding you
 KEEP_DASHBOARD_DAYS = 10      # notifications/dashboard keep 10 days
+MAX_PAGE_DETAILS = 300          # custom career pages: open at most this many job pages per run in the browser
 
 
 def load(path, default):
@@ -81,12 +82,39 @@ def recent(posted, days):
         return False
 
 
+def read_descriptions(cands, browser, workers=16):
+    """Fetch the full description for each (company, job) that lacks one. Custom pages use the browser."""
+    need = [(c, j) for c, j in cands if len(j.get("desc") or "") < 300]
+    plain = [(c, j) for c, j in need if c["source"]["type"] != "page"]
+    pages = [(c, j) for c, j in need if c["source"]["type"] == "page"]
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        futs = {ex.submit(sources.describe, c, j): j for c, j in plain}
+        for f in as_completed(futs):
+            try:
+                if not f.result():
+                    futs[f]["desc_missing"] = True
+            except Exception:
+                futs[f]["desc_missing"] = True
+    for i, (c, j) in enumerate(pages):
+        ok = False
+        if i < MAX_PAGE_DETAILS:
+            try:
+                ok = sources.describe(c, j, browser)
+            except Exception:
+                ok = False
+        if not ok:
+            j["desc_missing"] = True
+    missing = sum(1 for _, j in need if j.get("desc_missing"))
+    log("descriptions: %d needed, %d unreadable" % (len(need), missing))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--validate", action="store_true")
     ap.add_argument("--no-notify", action="store_true")
     ap.add_argument("--no-browser", action="store_true", help="read custom pages without a headless browser")
+    ap.add_argument("--recheck", action="store_true", help="re-judge every job already on the dashboard")
     ap.add_argument("--only", action="append")
     ap.add_argument("--workers", type=int, default=16)
     args = ap.parse_args()
@@ -114,25 +142,37 @@ def main():
             except Exception as e:
                 results[c["company"]] = (c, None, "%s: %s" % (type(e).__name__, str(e)[:200]))
 
-    if pages:
-        browser = pw = None
-        if not args.no_browser:
-            try:
-                from playwright.sync_api import sync_playwright
-                pw = sync_playwright().start()
-                browser = pw.chromium.launch(headless=True)
-            except Exception as e:
-                log("headless browser unavailable (%s); reading pages as plain HTML" % e)
-        for c in pages:
-            try:
-                results[c["company"]] = (c, fetch(c, browser), None)
-            except Exception as e:
-                results[c["company"]] = (c, None, "%s: %s" % (type(e).__name__, str(e)[:200]))
-        if browser:
-            browser.close()
-            pw.stop()
+    browser = pw = None
+    if (pages or args.recheck) and not args.no_browser:
+        try:
+            from playwright.sync_api import sync_playwright
+            pw = sync_playwright().start()
+            browser = pw.chromium.launch(headless=True)
+        except Exception as e:
+            log("headless browser unavailable (%s); reading pages as plain HTML" % e)
+    for c in pages:
+        try:
+            results[c["company"]] = (c, fetch(c, browser), None)
+        except Exception as e:
+            results[c["company"]] = (c, None, "%s: %s" % (type(e).__name__, str(e)[:200]))
+
+    by_name = {c["company"]: c for c in companies}
+    if args.recheck:
+        # re-judge every job already on the dashboard with the current rules (re-reads each description)
+        old = board
+        board = []
+        cands = [(by_name[b["company"]], dict(b, desc="")) for b in old if b.get("company") in by_name]
+        log("rechecking %d dashboard jobs" % len(cands))
+        read_descriptions(cands, browser, args.workers)
+        for c, j in cands:
+            ok, info = matcher.evaluate(j, c)
+            if ok:
+                info["found_at"] = j.get("found_at")
+                board.append(info)
+        log("recheck kept %d of %d" % (len(board), len(old)))
 
     alerts, new_matches = [], 0
+    cands, first = [], {}
     for name, (c, res, err) in results.items():
         st = {"company": name, "tier": c["tier"], "type": c["source"]["type"],
               "careers_url": c.get("careers_url"), "checked_at": NOW.isoformat()}
@@ -142,28 +182,45 @@ def main():
             status[name] = st
             continue
         jobs, secs = res
-        first_time = name not in known
-        matched, sent = 0, 0
+        first[name] = name not in known
         for j in jobs:
             if not j["title"] or j["id"] in seen:
                 continue
             seen[j["id"]] = NOW.isoformat()
-            ok, info = matcher.evaluate(j, c)
-            if not ok:
-                continue
-            matched += 1
-            info["found_at"] = NOW.isoformat()
-            info["first_check"] = first_time
-            board.append(info)
-            new_matches += 1
-            if (not first_time or recent(j.get("posted"), FIRST_RUN_ALERT_DAYS)) and sent < MAX_ALERTS_PER_COMPANY:
-                alerts.append(info)
-                sent += 1
-        if jobs or not first_time:
+            if matcher.prefilter(j, c)[0]:
+                cands.append((c, j))
+        if jobs or not first[name]:
             known.setdefault(name, NOW.isoformat())
-        st.update(ok=True, error="", jobs=len(jobs), new_matches=matched, seconds=secs, last_ok=NOW.isoformat(),
-                  empty=len(jobs) == 0)
+        st.update(ok=True, error="", jobs=len(jobs), seconds=secs, last_ok=NOW.isoformat(), empty=len(jobs) == 0)
         status[name] = st
+
+    if cands:
+        log("reading %d job descriptions" % len(cands))
+        read_descriptions(cands, browser, args.workers)
+    if browser:
+        browser.close()
+        pw.stop()
+
+    sent, matched, rejected = {}, {}, {}
+    for c, j in cands:
+        name = c["company"]
+        ok, info = matcher.evaluate(j, c)
+        if not ok:
+            rejected[name] = rejected.get(name, 0) + 1
+            continue
+        matched[name] = matched.get(name, 0) + 1
+        info["found_at"] = NOW.isoformat()
+        info["first_check"] = first.get(name, False)
+        board.append(info)
+        new_matches += 1
+        if (not first.get(name) or recent(j.get("posted"), FIRST_RUN_ALERT_DAYS)) and \
+                sent.get(name, 0) < MAX_ALERTS_PER_COMPANY:
+            alerts.append(info)
+            sent[name] = sent.get(name, 0) + 1
+    for name in status:
+        if name in results and status[name].get("ok"):
+            status[name]["new_matches"] = matched.get(name, 0)
+            status[name]["rejected_by_details"] = rejected.get(name, 0)
 
     # keep files small
     cutoff = (NOW - timedelta(days=KEEP_DASHBOARD_DAYS)).isoformat()

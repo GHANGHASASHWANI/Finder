@@ -51,11 +51,17 @@ class Run(unittest.TestCase):
             raise ValueError(url)
         self._real_get = sources.getjson
         sources.getjson = fake
+        self._real_http = sources.http
+
+        def no_net(url, **kw):
+            raise OSError("no network in tests")
+        sources.http = no_net
         self.sent = []
         finder.send_all = lambda jobs, log: self.sent.extend(jobs)
 
     def tearDown(self):
         sources.getjson = self._real_get
+        sources.http = self._real_http
         finder.load = self._real_load
         shutil.rmtree(self.tmp)
 
