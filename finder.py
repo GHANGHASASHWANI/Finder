@@ -20,6 +20,7 @@ sys.path.insert(0, ROOT)
 from core import sources  # noqa: E402
 from core.filters import Matcher  # noqa: E402
 from core.notify import send_all  # noqa: E402
+from core.ai import AIReviewer  # noqa: E402
 
 STATE = os.path.join(ROOT, "state")
 DOCS = os.path.join(ROOT, "docs")
@@ -108,6 +109,38 @@ def read_descriptions(cands, browser, workers=16):
     log("descriptions: %d needed, %d unreadable" % (len(need), missing))
 
 
+def ai_pass(items, reviewer, cache):
+    """items: list of (info, desc). AI double-checks jobs the rules marked open/stretch. Returns kept infos."""
+    order = sorted(items, key=lambda x: ({"open": 0, "stretch": 1}.get(x[0].get("fit"), 9), -x[0].get("priority", 0)))
+    asked = dropped = 0
+    for info, desc in order:
+        if info.get("fit") not in ("open", "stretch") or len(desc or "") < 300:
+            continue
+        res = cache.get(info["id"])
+        if res is None:
+            if not reviewer.available():
+                continue
+            res = reviewer.judge(info["title"], info["company"], info.get("location", ""), desc)
+            if res is None:
+                continue
+            asked += 1
+            cache[info["id"]] = dict(res, at=NOW.isoformat())
+        if res["fit"] == "reject":
+            info["_drop"] = True
+            dropped += 1
+            continue
+        if not (info["fit"] == "stretch" and res["fit"] in ("open", "fresher")):
+            info["fit"] = res["fit"]
+        info["ai_reason"] = res.get("reason", "")
+        if res.get("role_type") and res["role_type"] != "Other":
+            info["role_type"] = res["role_type"]
+        learn = list(dict.fromkeys((res.get("skills_to_learn") or []) + (info.get("skills_to_learn") or [])))
+        info["skills_to_learn"] = learn[:6]
+    if asked or dropped:
+        log("ai review: asked %d, removed %d (budget used %d/%d)" % (asked, dropped, reviewer.used, reviewer.budget))
+    return [info for info, _ in items if not info.pop("_drop", False)]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--all", action="store_true")
@@ -126,6 +159,8 @@ def main():
     known = load(os.path.join(STATE, "companies.json"), {})
     board = load(os.path.join(DOCS, "jobs.json"), [])
     status = {s["company"]: s for s in load(os.path.join(STATE, "status.json"), {}).get("companies", [])}
+    ai_cache = load(os.path.join(STATE, "ai.json"), {})
+    reviewer = AIReviewer(profile, log)
 
     todo = [c for c in companies if due(c, args) and c.get("enabled", True)]
     api = [c for c in todo if c["source"]["type"] != "page"]
@@ -164,11 +199,14 @@ def main():
         cands = [(by_name[b["company"]], dict(b, desc="")) for b in old if b.get("company") in by_name]
         log("rechecking %d dashboard jobs" % len(cands))
         read_descriptions(cands, browser, args.workers)
+        items = []
         for c, j in cands:
+            desc = j.get("desc") or ""
             ok, info = matcher.evaluate(j, c)
             if ok:
                 info["found_at"] = j.get("found_at")
-                board.append(info)
+                items.append((info, desc))
+        board = ai_pass(items, reviewer, ai_cache)
         log("recheck kept %d of %d" % (len(board), len(old)))
 
     alerts, new_matches = [], 0
@@ -202,21 +240,40 @@ def main():
         pw.stop()
 
     sent, matched, rejected = {}, {}, {}
+    items = []
     for c, j in cands:
-        name = c["company"]
+        desc = j.get("desc") or ""
         ok, info = matcher.evaluate(j, c)
         if not ok:
-            rejected[name] = rejected.get(name, 0) + 1
+            rejected[c["company"]] = rejected.get(c["company"], 0) + 1
             continue
-        matched[name] = matched.get(name, 0) + 1
         info["found_at"] = NOW.isoformat()
-        info["first_check"] = first.get(name, False)
+        info["first_check"] = first.get(c["company"], False)
+        items.append((info, desc))
+    kept = ai_pass(items, reviewer, ai_cache)
+    for info in kept:
+        name = info["company"]
+        matched[name] = matched.get(name, 0) + 1
         board.append(info)
         new_matches += 1
-        if (not first.get(name) or recent(j.get("posted"), FIRST_RUN_ALERT_DAYS)) and \
+        if (not first.get(name) or recent(info.get("posted"), FIRST_RUN_ALERT_DAYS)) and \
                 sent.get(name, 0) < MAX_ALERTS_PER_COMPANY:
             alerts.append(info)
             sent[name] = sent.get(name, 0) + 1
+    # spare AI budget: double-check older dashboard jobs that were never reviewed (best first)
+    if reviewer.available():
+        todo_ai = sorted([b for b in board if b.get("fit") in ("open", "stretch") and not b.get("ai_reason")
+                          and not b.get("ai_skip") and b.get("company") in by_name],
+                         key=lambda b: -b.get("priority", 0))[:reviewer.budget - reviewer.used]
+        if todo_ai:
+            pairs = [(by_name[b["company"]], dict(b, desc="")) for b in todo_ai]
+            read_descriptions(pairs, None, args.workers)
+            for b, (_, j) in zip(todo_ai, pairs):
+                if len(j.get("desc") or "") < 300:
+                    b["ai_skip"] = True
+            ai_pass([(b, j.get("desc", "")) for b, (_, j) in zip(todo_ai, pairs)], reviewer, ai_cache)
+            board = [b for b in board if not (b["id"] in ai_cache and ai_cache[b["id"]]["fit"] == "reject")]
+
     for name in status:
         if name in results and status[name].get("ok"):
             status[name]["new_matches"] = matched.get(name, 0)
@@ -233,6 +290,8 @@ def main():
     ok_n = sum(1 for s in status.values() if s.get("ok"))
     save(os.path.join(STATE, "seen.json"), seen)
     save(os.path.join(STATE, "companies.json"), known)
+    ai_old = (NOW - timedelta(days=30)).isoformat()
+    save(os.path.join(STATE, "ai.json"), {k: v for k, v in ai_cache.items() if v.get("at", "") >= ai_old})
     save(os.path.join(DOCS, "jobs.json"), board)
     summary = {"updated_at": NOW.isoformat(), "checked": len(results), "ok": ok_n}
     # Full per-company status is private (encrypted in the repo); the public dashboard gets only the summary.

@@ -13,7 +13,7 @@ import sys
 from cryptography.fernet import Fernet
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-PRIVATE = ["companies.json", "state/seen.json", "state/companies.json", "state/status.json"]
+PRIVATE = ["companies.json", "state/seen.json", "state/companies.json", "state/status.json", "state/ai.json"]
 
 
 def key():
