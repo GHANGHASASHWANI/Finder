@@ -1,5 +1,69 @@
 [
  {
+  "id": "ElevenLabs::b380fb97-bb18-46a5-91db-5132e6693e93",
+  "company": "ElevenLabs",
+  "title": "Android Engineer - Creative App",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/elevenlabs/b380fb97-bb18-46a5-91db-5132e6693e93",
+  "posted": "2026-10-22T17:11:28.107000+00:00",
+  "dept": "Engineering & Product",
+  "comp": "",
+  "tier": 3,
+  "segment": "AI/Remote",
+  "location_group": "Remote",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "Mobile",
+  "skills_matched": [],
+  "skills_to_learn": [
+   "Kotlin",
+   "Jetpack Compose",
+   "Android SDK",
+   "Android"
+  ],
+  "match_pct": 0,
+  "priority": 5.6,
+  "est_ctc_lpa": "~30-60 (est.)",
+  "found_at": "2026-10-22T17:48:36.280765+00:00",
+  "first_check": false,
+  "ai_reason": "No experience or seniority level is explicitly stated in the job posting.",
+  "ai_by": "gemini"
+ },
+ {
+  "id": "ElevenLabs::815547bf-0ade-482d-84b0-4163ab1161e5",
+  "company": "ElevenLabs",
+  "title": "iOS Engineer - Creative App",
+  "location": "Remote",
+  "url": "https://jobs.ashbyhq.com/elevenlabs/815547bf-0ade-482d-84b0-4163ab1161e5",
+  "posted": "2026-10-22T17:12:49.379000+00:00",
+  "dept": "Engineering & Product",
+  "comp": "",
+  "tier": 3,
+  "segment": "AI/Remote",
+  "location_group": "Remote",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "Mobile",
+  "skills_matched": [],
+  "skills_to_learn": [
+   "Swift",
+   "SwiftUI",
+   "iOS Development",
+   "A/B Testing",
+   "Audio Streaming",
+   "iOS"
+  ],
+  "match_pct": 0,
+  "priority": 5.6,
+  "est_ctc_lpa": "~30-60 (est.)",
+  "found_at": "2026-10-22T17:48:36.280765+00:00",
+  "first_check": false,
+  "ai_reason": "No years of experience requirement is specified in the posting.",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Arm::https://careers.arm.com/job/austin/theorem-proving-engineer/33099/97584421536",
   "company": "Arm",
   "title": "Theorem Proving Engineer",
@@ -346,9 +410,16 @@
   "fit": "open",
   "role_type": "Quant",
   "skills_to_learn": [
+   "Financial market concepts",
+   "Market microstructure",
+   "Backtesting frameworks",
+   "Statistical hypothesis testing",
+   "Trading APIs",
    "ML basics"
   ],
-  "match_pct": 67
+  "match_pct": 67,
+  "ai_reason": "No explicit experience requirement stated",
+  "ai_by": "groq"
  },
  {
   "id": "NK Securities Research::4470772101",
@@ -377,9 +448,16 @@
   "fit": "stretch",
   "role_type": "Quant",
   "skills_to_learn": [
+   "C++",
+   "C",
+   "shell scripting",
+   "High Frequency Trading concept",
+   "Linux system programming",
    "Bash"
   ],
-  "match_pct": 80
+  "match_pct": 80,
+  "ai_reason": "0-4 years of relevant work experience",
+  "ai_by": "groq"
  },
  {
   "id": "NK Securities Research::4990740101",
@@ -441,11 +519,18 @@
   "first_check": true,
   "exp_note": "eputed institution. 0 - 3 years of relevant work experience. Proficienc",
   "fit": "stretch",
-  "role_type": "SWE",
+  "role_type": "Backend",
   "skills_to_learn": [
+   "C/C++",
+   "Linux advanced",
+   "TCP/IP & Ethernet",
+   "Parallel programming models",
+   "Shell scripting",
    "Bash"
   ],
-  "match_pct": 88
+  "match_pct": 88,
+  "ai_reason": "0 - 3 years of relevant work experience",
+  "ai_by": "groq"
  },
  {
   "id": "NK Securities Research::4519747101",
@@ -479,15 +564,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Full-stack",
   "skills_to_learn": [
+   "Django",
    "Ansible",
-   "Bash",
-   "Django/Flask",
-   "DynamoDB",
-   "Prometheus/Grafana"
+   "Grafana",
+   "Prometheus",
+   "Shell scripting",
+   "Bash"
   ],
-  "match_pct": 69
+  "match_pct": 69,
+  "ai_reason": "No explicit seniority or experience requirement",
+  "ai_by": "groq"
  },
  {
   "id": "Atlassian::26643",
@@ -1527,9 +1615,15 @@
   "fit": "open",
   "role_type": "Data",
   "skills_to_learn": [
-   "Elasticsearch"
+   "Elasticsearch",
+   "MongoDB",
+   "AWS Managed Databases",
+   "Cloud database services",
+   "Database monitoring tools"
   ],
-  "match_pct": 90
+  "match_pct": 90,
+  "ai_reason": "No explicit experience requirement",
+  "ai_by": "groq"
  },
  {
   "id": "Booking Holdings / Booking.com (Bengaluru)::29475",
@@ -2544,9 +2638,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
+  "role_type": "Backend",
+  "skills_to_learn": [
+   "Go",
+   "Java",
+   "Linux kernel internals",
+   "Distributed systems",
+   "Hypervisors"
+  ],
+  "match_pct": 100,
+  "ai_reason": "No explicit experience requirement",
+  "ai_by": "groq"
  },
  {
   "id": "Pure Storage::8212843",
@@ -2674,8 +2776,16 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
+  "skills_to_learn": [
+   "SAN",
+   "NAS",
+   "Fibre Channel",
+   "iSCSI",
+   "Linux/VMware/Windows"
+  ],
+  "match_pct": 100,
+  "ai_reason": "No experience or seniority stated",
+  "ai_by": "groq"
  },
  {
   "id": "Snowflake::23c94498-23c8-4d6e-a1d8-4355bf605663",
@@ -2752,33 +2862,6 @@
   "match_pct": null
  },
  {
-  "id": "Amazon::10580008",
-  "company": "Amazon",
-  "title": "Software Development Engineer I",
-  "location": "Hyderabad, Telangana, IND",
-  "url": "https://www.amazon.jobs/en/jobs/10580008/software-development-engineer-i",
-  "posted": "2026-10-15T00:00:00+00:00",
-  "dept": "Software Development",
-  "comp": "",
-  "tier": 1,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 1,
-  "skills_matched": [
-   "DSA",
-   "System design"
-  ],
-  "priority": 8.6,
-  "est_ctc_lpa": "28-45",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "ic Qualifications - 1+ years of non-internship professional software",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
- },
- {
   "id": "Amazon::10511883",
   "company": "Amazon",
   "title": "Software Development Engineer -I, IESP Merchant Tech",
@@ -2802,7 +2885,9 @@
   "fit": "stretch",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": 100
+  "match_pct": 100,
+  "ai_reason": "1+ years of non-internship professional software development experience",
+  "ai_by": "groq"
  },
  {
   "id": "Amazon::10551515",
@@ -2851,9 +2936,11 @@
   "first_check": true,
   "exp_note": "ing - Experience of 1 to 3 years as an SDE Preferred Qualifications - Ex",
   "fit": "stretch",
-  "role_type": "SWE",
+  "role_type": "QA/Test",
   "skills_to_learn": [],
-  "match_pct": 100
+  "match_pct": 100,
+  "ai_reason": "Experience of 1 to 3 years as an SDE",
+  "ai_by": "groq"
  },
  {
   "id": "Amazon::10531567",
@@ -2878,9 +2965,11 @@
   "first_check": true,
   "exp_note": "ing - Experience of 1 to 3 years as an SDE Preferred Qualifications - Ex",
   "fit": "stretch",
-  "role_type": "SWE",
+  "role_type": "QA/Test",
   "skills_to_learn": [],
-  "match_pct": 100
+  "match_pct": 100,
+  "ai_reason": "Experience of 1 to 3 years as an SDE",
+  "ai_by": "groq"
  },
  {
   "id": "Apna.co::CA75E8C784",
@@ -4057,37 +4146,6 @@
    "Kubernetes"
   ],
   "match_pct": 86
- },
- {
-  "id": "Microsoft::1970393557026929",
-  "company": "Microsoft",
-  "title": "Software Engineer",
-  "location": "India, Karnataka, Bangalore",
-  "url": "https://apply.careers.microsoft.com/careers/job/1970393557026929",
-  "posted": "2026-10-19T11:54:45+00:00",
-  "dept": "Software Engineering",
-  "comp": "",
-  "tier": 1,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "Java",
-   "OOP",
-   "System design"
-  ],
-  "priority": 8.6,
-  "est_ctc_lpa": "40-55",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "C#"
-  ],
-  "match_pct": 80
  },
  {
   "id": "Doist::56d0e7bf-e681-41b0-b5d7-d835d9380c6b",
@@ -7036,34 +7094,6 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null
- },
- {
-  "id": "Nvidia::/job/India-Gurugram/SAP-MM-PP-Master-Data-Engineer---Enterprise-Data-Management_JR2026497",
-  "company": "Nvidia",
-  "title": "SAP MM/PP Master Data Engineer - Enterprise Data Management",
-  "location": "India (2 Locations)",
-  "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/India-Gurugram/SAP-MM-PP-Master-Data-Engineer---Enterprise-Data-Management_JR2026497",
-  "posted": "2026-10-22T15:16:18.559190+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 3,
-  "segment": "Big Tech/MNC",
-  "location_group": "Other India",
-  "min_years": null,
-  "skills_matched": [
-   "DSA",
-   "LLMs",
-   "System design"
-  ],
-  "priority": 8.4,
-  "est_ctc_lpa": "25-40",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Data",
-  "skills_to_learn": [],
-  "match_pct": 100
  },
  {
   "id": "Nvidia::/job/India-Bengaluru/HSIO-Execution-Engineer_JR2026991",
@@ -14533,35 +14563,6 @@
   "match_pct": 83
  },
  {
-  "id": "Nutanix::https://jobs.jobvite.com/nutanix/job/oRnKAfwi",
-  "company": "Nutanix",
-  "title": "Member Of Technical Staff 4",
-  "location": "",
-  "url": "https://jobs.jobvite.com/nutanix/job/oRnKAfwi",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 3,
-  "segment": "Big Tech/MNC / Discovered - Hybrid cloud infra",
-  "location_group": "Unknown (check page)",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "DSA",
-   "Python",
-   "System design"
-  ],
-  "priority": 8.4,
-  "est_ctc_lpa": "30-40",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
- },
- {
   "id": "Nutanix::https://jobs.jobvite.com/nutanix/job/oIqXAfwp",
   "company": "Nutanix",
   "title": "Systems Reliability Engineer",
@@ -14584,9 +14585,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
+  "role_type": "DevOps/SRE/Cloud",
+  "skills_to_learn": [
+   "VMware ESXi",
+   "Layer 2/3 networking",
+   "Linux CLI administration",
+   "Storage analysis",
+   "Microsoft Azure integration"
+  ],
+  "match_pct": 100,
+  "ai_reason": "No explicit experience or seniority requirement stated",
+  "ai_by": "groq"
  },
  {
   "id": "Synopsys::https://careers.synopsys.com/software-engineering-jobs",
@@ -14902,13 +14911,19 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "stretch",
   "role_type": "AI/ML",
   "skills_to_learn": [
-   "Ruby",
-   "Rust"
+   "C++",
+   "Rust",
+   "Go",
+   "Distributed systems",
+   "Performance-critical environme",
+   "Ruby"
   ],
-  "match_pct": 78
+  "match_pct": 78,
+  "ai_reason": "Experience deploying AI systems in production (1–5 years is typical)",
+  "ai_by": "groq"
  },
  {
   "id": "Atlassian::25283",
@@ -14934,7 +14949,9 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [],
-  "match_pct": 100
+  "match_pct": 100,
+  "ai_reason": "No experience or seniority stated",
+  "ai_by": "groq"
  },
  {
   "id": "Quantbox Research::4001041101",
@@ -14962,9 +14979,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
+  "role_type": "Backend",
+  "skills_to_learn": [
+   "C++ (advanced usage)",
+   "GDB debugging",
+   "TCP/IP network programming",
+   "Concurrent multi-threaded prog",
+   "Operating systems concepts"
+  ],
+  "match_pct": 100,
+  "ai_reason": "No explicit experience requirement stated",
+  "ai_by": "groq"
  },
  {
   "id": "Squarepoint Capital::1433622",
@@ -14990,7 +15015,9 @@
   "fit": "open",
   "role_type": "Quant",
   "skills_to_learn": [],
-  "match_pct": 100
+  "match_pct": 100,
+  "ai_reason": "No explicit experience requirement found",
+  "ai_by": "groq"
  },
  {
   "id": "WorldQuant::4715001006",
@@ -15018,37 +15045,6 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "Quant",
-  "skills_to_learn": [],
-  "match_pct": 100
- },
- {
-  "id": "Pure Storage::8226182",
-  "company": "Pure Storage",
-  "title": "Member of Technical Staff - FlashArray",
-  "location": "Bangalore, India",
-  "url": "https://job-boards.greenhouse.io/purestorage/jobs/8226182",
-  "posted": "2026-10-05T01:52:22-04:00",
-  "dept": "Engineering",
-  "comp": "",
-  "tier": 3,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "Docker",
-   "Java",
-   "Linux",
-   "Python",
-   "System design"
-  ],
-  "priority": 8.6,
-  "est_ctc_lpa": "35-45",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": 100
  },
@@ -15081,69 +15077,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
- },
- {
-  "id": "Pure Storage::8131745",
-  "company": "Pure Storage",
-  "title": "MTS-Exa",
-  "location": "Bangalore, India",
-  "url": "https://job-boards.greenhouse.io/purestorage/jobs/8131745",
-  "posted": "2026-09-03T05:38:10-04:00",
-  "dept": "Engineering",
-  "comp": "",
-  "tier": 3,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "DSA",
+  "role_type": "Backend",
+  "skills_to_learn": [
+   "Go",
    "Java",
-   "Linux",
-   "OOP",
-   "Python",
-   "System design"
+   "Linux kernel internals",
+   "Distributed systems",
+   "Hypervisors"
   ],
-  "priority": 8.6,
-  "est_ctc_lpa": "35-45",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
- },
- {
-  "id": "Pure Storage::8172524",
-  "company": "Pure Storage",
-  "title": "Systems Engineer",
-  "location": "Remote, Malaysia",
-  "url": "https://job-boards.greenhouse.io/purestorage/jobs/8172524",
-  "posted": "2026-09-02T22:24:22-04:00",
-  "dept": "Sales",
-  "comp": "",
-  "tier": 3,
-  "segment": "Big Tech/MNC",
-  "location_group": "Remote",
-  "min_years": null,
-  "skills_matched": [
-   "Linux",
-   "Networking basics",
-   "System design"
-  ],
-  "priority": 8.6,
-  "est_ctc_lpa": "35-45",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
+  "match_pct": 100,
+  "ai_reason": "No explicit experience requirement",
+  "ai_by": "groq"
  },
  {
   "id": "iRage::https://www.irage.in/job_descriptions.php?jd_id=43",
@@ -15167,8 +15111,16 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
+  "role_type": "Security",
+  "skills_to_learn": [
+   "CISA",
+   "CISM",
+   "penetration testing",
+   "cloud security",
+   "DevSecOps"
+  ],
+  "match_pct": 100,
+  "ai_reason": "No explicit experience requirement",
+  "ai_by": "groq"
  }
 ]
