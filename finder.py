@@ -333,6 +333,9 @@ def main():
                                                               new_matches, len(alerts)))
     for n in sorted(errs):
         log("  failed: %-28s %s" % (n[:28], results[n][2][:110]))
+    zero = sorted(n for n, (_, res, e) in results.items() if not e and res and not res[0])
+    if zero:
+        log("  0 jobs found (page may have changed): %s" % ", ".join(zero))
     if args.validate:
         print("\n%-32s %-15s %6s  %s" % ("COMPANY", "TYPE", "JOBS", "RESULT"))
         for s in sorted(status.values(), key=lambda s: (s.get("ok", False), s["company"])):

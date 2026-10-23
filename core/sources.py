@@ -505,10 +505,25 @@ def google(c, s):
     return out
 
 
+def cards(c, s):
+    """Static career pages with job cards but no per-job links: {"url", "card_regex"} with named groups
+    title, location (optional) and link (optional)."""
+    raw = http(s["url"], headers={"Accept": "text/html"})
+    out = []
+    for m in re.finditer(s["card_regex"], raw, re.S | re.I):
+        g = m.groupdict()
+        title = html.unescape(strip_html(g.get("title") or "")).strip()
+        loc = html.unescape(strip_html(g.get("location") or "")).strip()
+        link = urllib.parse.urljoin(s["url"], html.unescape(g["link"])) if g.get("link") else s["url"]
+        if title:
+            out.append(mk(c, "%s|%s" % (title, loc), title, loc, link))
+    return out
+
+
 READERS = {
     "greenhouse": greenhouse, "lever": lever, "ashby": ashby, "workable": workable,
     "smartrecruiters": smartrecruiters, "workday": workday, "eightfold": eightfold,
-    "amazon": amazon, "atlassian": atlassian, "page": page, "pcsx": pcsx, "json": jsonapi, "google": google,
+    "amazon": amazon, "atlassian": atlassian, "page": page, "pcsx": pcsx, "json": jsonapi, "google": google, "cards": cards,
 }
 
 
