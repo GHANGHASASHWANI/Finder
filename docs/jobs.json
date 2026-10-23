@@ -1,5 +1,462 @@
 [
  {
+  "id": "BlackRock::/job/Mumbai-India/Research-Engineer--Portfolio-Management-Group--Associate_R265897",
+  "company": "BlackRock",
+  "title": "Research Engineer, Portfolio Management Group (PMG Tech), Associate",
+  "location": "Mumbai, India",
+  "url": "https://blackrock.wd1.myworkdayjobs.com/en-US/BlackRock_Professional/job/Mumbai-India/Research-Engineer--Portfolio-Management-Group--Associate_R265897",
+  "posted": "2026-10-23T13:17:13.215619+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 4,
+  "segment": "Quant/Finance",
+  "location_group": "Central/West India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "AI/ML",
+  "skills_matched": [
+   "CI/CD",
+   "Docker",
+   "LLMs",
+   "Python",
+   "RAG",
+   "SQL",
+   "System design"
+  ],
+  "skills_to_learn": [
+   "Snowflake",
+   "BigQuery",
+   "Google Cloud Platform",
+   "Snowpark",
+   "Embedded C",
+   "GCP"
+  ],
+  "match_pct": 64,
+  "priority": 6.9,
+  "est_ctc_lpa": "~18-25",
+  "found_at": "2026-10-23T13:17:08.090376+00:00",
+  "first_check": false,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
+ },
+ {
+  "id": "Cisco::/job/Bangalore-India/Cloud-Engineer_2025418-1",
+  "company": "Cisco",
+  "title": "Cloud Engineer",
+  "location": "Bangalore, India",
+  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Cloud-Engineer_2025418-1",
+  "posted": "2026-10-23T13:17:13.332206+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 4,
+  "segment": "Big Tech/MNC",
+  "location_group": "South India",
+  "min_years": 1,
+  "exp_note": "al experience, with 1-3 years of professional backend software develo",
+  "fit": "stretch",
+  "role_type": "DevOps/SRE/Cloud",
+  "skills_matched": [
+   "AWS",
+   "CI/CD",
+   "Docker",
+   "Git",
+   "Java",
+   "Kafka",
+   "LLMs",
+   "Microservices",
+   "MongoDB",
+   "Next.js",
+   "PostgreSQL",
+   "Python",
+   "REST APIs",
+   "React",
+   "Redis",
+   "S3",
+   "TypeScript",
+   "WebSockets"
+  ],
+  "skills_to_learn": [
+   "Quarkus",
+   "gRPC",
+   "Protocol Buffers",
+   "Kubernetes",
+   "Helm",
+   "Azure"
+  ],
+  "match_pct": 72,
+  "priority": 6.5,
+  "est_ctc_lpa": "~18-28",
+  "found_at": "2026-10-23T13:17:08.090376+00:00",
+  "first_check": false,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
+ },
+ {
+  "id": "Siemens Healthineers::P-101006",
+  "company": "Siemens Healthineers",
+  "title": "Software Developer - C#",
+  "location": "Bengaluru, Karnataka, India",
+  "url": "https://careers.siemens-healthineers.com/global/en/job/P-101006",
+  "posted": "2026-10-23T09:30:44.493000+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 5,
+  "segment": "MNC Engineering",
+  "location_group": "South India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "unverified",
+  "role_type": "SWE",
+  "skills_matched": [],
+  "skills_to_learn": [
+   "C#"
+  ],
+  "match_pct": 0,
+  "priority": 3.5,
+  "est_ctc_lpa": "~6-10",
+  "found_at": "2026-10-23T13:17:08.090376+00:00",
+  "first_check": false
+ },
+ {
+  "id": "Mastercard::/job/Pune-India/Software-Engineer-I---Java-Full-Stack-React-Angular_R-294544",
+  "company": "Mastercard",
+  "title": "Software Engineer I - Java Full Stack React/Angular",
+  "location": "Pune, India",
+  "url": "https://mastercard.wd1.myworkdayjobs.com/en-US/CorporateCareers/job/Pune-India/Software-Engineer-I---Java-Full-Stack-React-Angular_R-294544",
+  "posted": "2026-10-23T13:17:18.181656+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 4,
+  "segment": "Quant/Finance",
+  "location_group": "Central/West India",
+  "min_years": 1,
+  "exp_note": "t You • 6 months to 1 year of overall career experience into Softw",
+  "fit": "fresher",
+  "role_type": "Full-stack",
+  "skills_matched": [
+   "CI/CD",
+   "Java",
+   "Microservices",
+   "OOP",
+   "React"
+  ],
+  "skills_to_learn": [
+   "Angular",
+   "Cassandra",
+   "Spring"
+  ],
+  "match_pct": 62,
+  "priority": 7.5,
+  "est_ctc_lpa": "~15-22",
+  "found_at": "2026-10-23T13:17:08.090376+00:00",
+  "first_check": false
+ },
+ {
+  "id": "Barclays::/job/Chennai-DLF-IT-Park/Software-Engineer---JAVA_JR-0000125339",
+  "company": "Barclays",
+  "title": "Software Engineer - JAVA",
+  "location": "Chennai, DLF IT Park",
+  "url": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Chennai-DLF-IT-Park/Software-Engineer---JAVA_JR-0000125339",
+  "posted": "2026-10-23T13:17:20.266860+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 5,
+  "segment": "Quant/Finance",
+  "location_group": "South India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "fresher",
+  "role_type": "SWE",
+  "skills_matched": [
+   "AWS",
+   "CI/CD",
+   "Docker",
+   "Git",
+   "Java",
+   "Kafka",
+   "Microservices",
+   "MySQL",
+   "PostgreSQL",
+   "REST APIs",
+   "System design"
+  ],
+  "skills_to_learn": [
+   "Azure",
+   "GCP",
+   "Jenkins",
+   "Kubernetes",
+   "Prometheus/Grafana",
+   "Spring"
+  ],
+  "match_pct": 65,
+  "priority": 6.8,
+  "est_ctc_lpa": "~12-18",
+  "found_at": "2026-10-23T13:17:08.090376+00:00",
+  "first_check": false
+ },
+ {
+  "id": "Barclays::/job/Chennai-DLF-IT-Park/Software-Engineer---JAVA_JR-0000125347",
+  "company": "Barclays",
+  "title": "Software Engineer - JAVA",
+  "location": "Chennai, DLF IT Park",
+  "url": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Chennai-DLF-IT-Park/Software-Engineer---JAVA_JR-0000125347",
+  "posted": "2026-10-23T13:17:20.266864+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 5,
+  "segment": "Quant/Finance",
+  "location_group": "South India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "fresher",
+  "role_type": "SWE",
+  "skills_matched": [
+   "AWS",
+   "CI/CD",
+   "Docker",
+   "Git",
+   "Java",
+   "Kafka",
+   "Microservices",
+   "MySQL",
+   "PostgreSQL",
+   "REST APIs",
+   "System design"
+  ],
+  "skills_to_learn": [
+   "Azure",
+   "GCP",
+   "Jenkins",
+   "Kubernetes",
+   "Prometheus/Grafana",
+   "Spring"
+  ],
+  "match_pct": 65,
+  "priority": 6.8,
+  "est_ctc_lpa": "~12-18",
+  "found_at": "2026-10-23T13:17:08.090376+00:00",
+  "first_check": false
+ },
+ {
+  "id": "Barclays::/job/Chennai-DLF-IT-Park/Software-Engineer---JAVA_JR-0000125348",
+  "company": "Barclays",
+  "title": "Software Engineer - JAVA",
+  "location": "Chennai, DLF IT Park",
+  "url": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Chennai-DLF-IT-Park/Software-Engineer---JAVA_JR-0000125348",
+  "posted": "2026-10-23T13:17:20.266868+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 5,
+  "segment": "Quant/Finance",
+  "location_group": "South India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "fresher",
+  "role_type": "SWE",
+  "skills_matched": [
+   "AWS",
+   "CI/CD",
+   "Docker",
+   "Git",
+   "Java",
+   "Kafka",
+   "Microservices",
+   "MySQL",
+   "PostgreSQL",
+   "REST APIs",
+   "System design"
+  ],
+  "skills_to_learn": [
+   "Azure",
+   "GCP",
+   "Jenkins",
+   "Kubernetes",
+   "Prometheus/Grafana",
+   "Spring"
+  ],
+  "match_pct": 65,
+  "priority": 6.8,
+  "est_ctc_lpa": "~12-18",
+  "found_at": "2026-10-23T13:17:08.090376+00:00",
+  "first_check": false
+ },
+ {
+  "id": "Deutsche Bank::/job/Mumbai-Nirlon-Knowledge-Park/Graduate-2027_R0446459",
+  "company": "Deutsche Bank",
+  "title": "Graduate 2027",
+  "location": "Mumbai, Nirlon Knowledge Park",
+  "url": "https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/job/Mumbai-Nirlon-Knowledge-Park/Graduate-2027_R0446459",
+  "posted": "2026-10-23T13:17:23.866653+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 5,
+  "segment": "Quant/Finance",
+  "location_group": "Central/West India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "fresher",
+  "role_type": "SWE",
+  "skills_matched": [
+   "REST APIs"
+  ],
+  "skills_to_learn": [
+   "Power BI/Tableau"
+  ],
+  "match_pct": 50,
+  "priority": 6.6,
+  "est_ctc_lpa": "~14-20",
+  "found_at": "2026-10-23T13:17:08.090376+00:00",
+  "first_check": false
+ },
+ {
+  "id": "HPE (incl. Juniper Networks)::/job/Bengaluru-Karntaka-India/Test-Automation--L2--L3-Protocols_1212151-2",
+  "company": "HPE (incl. Juniper Networks)",
+  "title": "Test Automation_ L2/ L3 Protocols",
+  "location": "Bengaluru, Karnātaka, India",
+  "url": "https://hpe.wd5.myworkdayjobs.com/en-US/Jobsathpe/job/Bengaluru-Karntaka-India/Test-Automation--L2--L3-Protocols_1212151-2",
+  "posted": "2026-10-23T13:17:19.751346+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 4,
+  "segment": "Big Tech/MNC",
+  "location_group": "South India",
+  "min_years": 1,
+  "exp_note": "or a related field. Minimum 1-2 years of hands-on software development experi",
+  "fit": "stretch",
+  "role_type": "QA/Test",
+  "skills_matched": [
+   "Linux",
+   "Networking basics",
+   "Python"
+  ],
+  "skills_to_learn": [
+   "L2/L3 networking protocols",
+   "TCP/IP routing",
+   "Network routers/switches",
+   "Kubernetes",
+   "Red Hat OS internals"
+  ],
+  "match_pct": 75,
+  "priority": 6.8,
+  "est_ctc_lpa": "~15-25",
+  "found_at": "2026-10-23T13:17:08.090376+00:00",
+  "first_check": false,
+  "ai_reason": "Minimum 1-2 years of hands-on software development experience",
+  "ai_by": "gemini"
+ },
+ {
+  "id": "HPE (incl. Juniper Networks)::/job/Chennai-Tamil-Nadu-India/WLAN-Engineer_1217772",
+  "company": "HPE (incl. Juniper Networks)",
+  "title": "WLAN Engineer",
+  "location": "India (2 Locations)",
+  "url": "https://hpe.wd5.myworkdayjobs.com/en-US/Jobsathpe/job/Chennai-Tamil-Nadu-India/WLAN-Engineer_1217772",
+  "posted": "2026-10-23T13:17:19.751351+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 4,
+  "segment": "Big Tech/MNC",
+  "location_group": "Other India",
+  "min_years": 0,
+  "exp_note": "uivalent. Typically 0-2 years experience. Knowledge and Skills: Exper",
+  "fit": "stretch",
+  "role_type": "SWE",
+  "skills_matched": [
+   "Networking basics"
+  ],
+  "skills_to_learn": [
+   "Wireless Networking",
+   "WLAN Protocols",
+   "Hardware Design",
+   "Electrical Engineering",
+   "RF Engineering"
+  ],
+  "match_pct": 100,
+  "priority": 7.2,
+  "est_ctc_lpa": "~15-25",
+  "found_at": "2026-10-23T13:17:08.090376+00:00",
+  "first_check": false,
+  "ai_reason": "Typically 0-2 years experience.",
+  "ai_by": "gemini"
+ },
+ {
+  "id": "Palo Alto Networks::https://jobs.paloaltonetworks.com/en/job/bengaluru/it-software-engineer/47263/102321720368",
+  "company": "Palo Alto Networks",
+  "title": "IT Software Engineer Bangalore, Karnātaka, India IT",
+  "location": "",
+  "url": "https://jobs.paloaltonetworks.com/en/job/bengaluru/it-software-engineer/47263/102321720368",
+  "posted": null,
+  "dept": "",
+  "comp": "",
+  "tier": 3,
+  "segment": "Big Tech/MNC",
+  "location_group": "Unknown (check page)",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "fresher",
+  "role_type": "SWE",
+  "skills_matched": [
+   "AWS",
+   "CI/CD",
+   "Docker",
+   "Git",
+   "GraphQL",
+   "JavaScript",
+   "LLMs",
+   "LangChain",
+   "Python",
+   "RAG",
+   "REST APIs",
+   "TypeScript",
+   "Vector DBs"
+  ],
+  "skills_to_learn": [
+   "Azure",
+   "GCP",
+   "Ruby"
+  ],
+  "match_pct": 81,
+  "priority": 8.4,
+  "est_ctc_lpa": "25-40",
+  "found_at": "2026-10-23T13:17:08.090376+00:00",
+  "first_check": false
+ },
+ {
+  "id": "Synopsys::https://careers.synopsys.com/job/ho-chi-minh-city/applications-engineering-engineer-19447/44408/102322183104",
+  "company": "Synopsys",
+  "title": "Applications Engineering Engineer - 19447",
+  "location": "",
+  "url": "https://careers.synopsys.com/job/ho-chi-minh-city/applications-engineering-engineer-19447/44408/102322183104",
+  "posted": null,
+  "dept": "",
+  "comp": "",
+  "tier": 4,
+  "segment": "Big Tech/MNC",
+  "location_group": "Unknown (check page)",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "SWE",
+  "skills_matched": [
+   "Linux",
+   "Python"
+  ],
+  "skills_to_learn": [
+   "ASIC Design",
+   "Verilog",
+   "Physical Design",
+   "TCL",
+   "Semiconductor Tools"
+  ],
+  "match_pct": 100,
+  "priority": 7.8,
+  "est_ctc_lpa": "~15-24",
+  "found_at": "2026-10-23T13:17:08.090376+00:00",
+  "first_check": false,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Cloudflare::8312256",
   "company": "Cloudflare",
   "title": "Software Engineer, Agentic Commerce",
@@ -1230,44 +1687,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Ema::6d5f59a2-68c0-49ea-b575-478f0ae3b75c",
-  "company": "Ema",
-  "title": "Site Reliability Engineer",
-  "location": "India - Bengaluru",
-  "url": "https://jobs.ashbyhq.com/ema/6d5f59a2-68c0-49ea-b575-478f0ae3b75c",
-  "posted": "2026-06-10T09:57:53.674000+00:00",
-  "dept": "Engineering",
-  "comp": "",
-  "tier": 3,
-  "segment": "Indian SaaS/AI",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "AWS",
-   "CI/CD",
-   "Docker",
-   "Git",
-   "System design"
-  ],
-  "priority": 6.8,
-  "est_ctc_lpa": "~30-40",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "DevOps/SRE/Cloud",
-  "skills_to_learn": [
-   "Ansible",
-   "Azure",
-   "GCP",
-   "Jenkins",
-   "Kubernetes",
-   "Prometheus/Grafana",
-   "Terraform"
-  ],
-  "match_pct": 42
- },
- {
   "id": "ElevenLabs::9aca205e-b2bc-405b-85d6-3d2aadbe49b1",
   "company": "ElevenLabs",
   "title": "IT Engineer",
@@ -2125,14 +2544,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Ansible",
-   "Azure",
    "Kubernetes",
-   "Terraform"
+   "Terraform",
+   "Ansible",
+   "OpenShift",
+   "Portworx",
+   "Azure"
   ],
-  "match_pct": 43
+  "match_pct": 43,
+  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Pure Storage::8170887",
@@ -2493,14 +2916,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Go",
+   "Rust",
+   "LXD",
    "Kubernetes",
-   "Ruby",
-   "Rust"
+   "OpenStack",
+   "Ruby"
   ],
-  "match_pct": 60
+  "match_pct": 60,
+  "ai_reason": "No specific experience level or number of years is stated in the job description.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::3821346",
@@ -2599,13 +3026,16 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Backend",
   "skills_to_learn": [
+   "Golang",
    "Flutter",
    "Go",
    "Rust"
   ],
-  "match_pct": 62
+  "match_pct": 62,
+  "ai_reason": "No experience or seniority explicitly required as they hire engineers of all levels.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::8249005",
@@ -2914,14 +3344,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Backend",
   "skills_to_learn": [
-   "Flutter",
-   "Go",
+   "Golang",
+   "Rust",
    "Kubernetes",
-   "Rust"
+   "gRPC",
+   "Debian/Ubuntu packaging",
+   "Flutter"
   ],
-  "match_pct": 64
+  "match_pct": 64,
+  "ai_reason": "This is a general track role spanning all levels of seniority with no explicit experience minimum stated.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::5146620",
@@ -3225,12 +3659,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Bash",
-   "Embedded C"
+   "UEFI",
+   "ACPI",
+   "Coreboot",
+   "Firmware Test Suite",
+   "Linux Kernel Development",
+   "Bash"
   ],
-  "match_pct": 60
+  "match_pct": 60,
+  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::2925180",
@@ -4076,36 +4516,6 @@
    "Terraform"
   ],
   "match_pct": 57
- },
- {
-  "id": "MindTickle::d62b36db-b088-48c7-a606-4ed458e30208",
-  "company": "MindTickle",
-  "title": "Security and Automation Engineer",
-  "location": "Pune, Maharashtra",
-  "url": "https://jobs.lever.co/mindtickle/d62b36db-b088-48c7-a606-4ed458e30208",
-  "posted": "2026-08-21T13:36:26.910000+00:00",
-  "dept": "Information Security & Privacy",
-  "comp": "",
-  "tier": 4,
-  "segment": "Indian SaaS/AI / Discovered - Sales-enablement SaaS",
-  "location_group": "Central/West India",
-  "min_years": 1,
-  "skills_matched": [
-   "CI/CD",
-   "Git",
-   "Python"
-  ],
-  "priority": 6.9,
-  "est_ctc_lpa": "~18-25",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "ly. What You Bring: 1-3 years in security engineering, automation/Dev",
-  "fit": "stretch",
-  "role_type": "QA/Test",
-  "skills_to_learn": [
-   "GCP"
-  ],
-  "match_pct": 75
  },
  {
   "id": "Observe.AI::5432596008",
@@ -5315,9 +5725,16 @@
   "fit": "stretch",
   "role_type": "SWE",
   "skills_to_learn": [
+   "Siemens Teamcenter",
+   "Active Workspace",
+   "BMIDE",
+   "Enterprise PLM",
+   "Supply Chain IT Systems",
    "Power BI/Tableau"
   ],
-  "match_pct": 90
+  "match_pct": 90,
+  "ai_reason": "Experience: 1-3 years of experience in an IT analyst, software developer, or system configurator role.",
+  "ai_by": "gemini"
  },
  {
   "id": "Cisco::/job/Bangalore-India/Software-Engineer_2028048-1",
@@ -5348,9 +5765,12 @@
   "fit": "stretch",
   "role_type": "SWE",
   "skills_to_learn": [
+   "Golang",
    "Go"
   ],
-  "match_pct": 86
+  "match_pct": 86,
+  "ai_reason": "Bachelor’s (0 to 2 years Experience)",
+  "ai_by": "gemini"
  },
  {
   "id": "Cisco::/job/Bangalore-India/Software-Engineer_2027416-1",
@@ -5566,43 +5986,6 @@
    "Ruby"
   ],
   "match_pct": 71
- },
- {
-  "id": "Cisco::/job/Bangalore-India/Software-Engineering-Technical-Leader---Networking---Security-Protocols--AI--Cloud---Virtualization---10-to-14-years_2022119",
-  "company": "Cisco",
-  "title": "Software Engineering Technical Leader - Networking & Security Protocols, AI, Cloud & Virtualization - 10 to 14 years",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Engineering-Technical-Leader---Networking---Security-Protocols--AI--Cloud---Virtualization---10-to-14-years_2022119",
-  "posted": "2026-09-22T15:16:24.912132+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "AWS",
-   "Docker",
-   "LLMs",
-   "Linux",
-   "Networking basics",
-   "Python",
-   "REST APIs",
-   "System design"
-  ],
-  "priority": 7.1,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "AI/ML",
-  "skills_to_learn": [
-   "Azure",
-   "GCP",
-   "Kubernetes"
-  ],
-  "match_pct": 73
  },
  {
   "id": "Cisco::/job/Bangalore-India/Technical-Projects-Systems-Engineer_2020675",
@@ -6338,13 +6721,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Security",
   "skills_to_learn": [
-   "Azure",
-   "Bash",
-   "GCP"
+   "Identity and Access Management",
+   "Security Frameworks (NIST, CIS",
+   "Vulnerability Assessment Tools",
+   "Network Security",
+   "Endpoint Security",
+   "Azure"
   ],
-  "match_pct": 67
+  "match_pct": 67,
+  "ai_reason": "No experience or seniority requirements are stated in the job posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Ubisoft India::744000155789969",
@@ -7498,39 +7886,6 @@
   "match_pct": null
  },
  {
-  "id": "Bosch Global Software Technologies::744000152329808",
-  "company": "Bosch Global Software Technologies",
-  "title": "Quality Engineer",
-  "location": "hosur road bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000152329808",
-  "posted": "2026-09-29T06:00:00.642000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "CI/CD",
-   "Docker",
-   "Git",
-   "Linux",
-   "Python",
-   "REST APIs"
-  ],
-  "priority": 7.1,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "QA/Test",
-  "skills_to_learn": [
-   "Selenium"
-  ],
-  "match_pct": 86
- },
- {
   "id": "Bosch Global Software Technologies::744000152327948",
   "company": "Bosch Global Software Technologies",
   "title": "C# & C++ developer",
@@ -8216,12 +8571,16 @@
   "fit": "open",
   "role_type": "Full-stack",
   "skills_to_learn": [
+   "Spring Boot",
+   "Java",
+   "Hibernate",
    "Angular",
    "Kubernetes",
-   "Ruby",
-   "Spring"
+   "Ruby"
   ],
-  "match_pct": 80
+  "match_pct": 80,
+  "ai_reason": "No experience or seniority requirements are stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Automation-Engineer_JR-0000069743",
@@ -8323,9 +8682,14 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [
+   "Spring Boot",
+   "Oracle DB",
+   "Java",
    "Spring"
   ],
-  "match_pct": 83
+  "match_pct": 83,
+  "ai_reason": "No experience or seniority explicitly stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Full-Stack-Developer_JR-0000119927-3",
@@ -8393,11 +8757,16 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Azure",
-   "Jenkins",
-   "ML basics"
+   "Incident Management",
+   "Site Reliability Engineering",
+   "Capacity Planning",
+   "Monitoring Tools",
+   "Production Support",
+   "Azure"
   ],
-  "match_pct": 81
+  "match_pct": 81,
+  "ai_reason": "No experience or seniority requirements stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Recon-Developer_JR-0000102834",
@@ -8680,9 +9049,15 @@
   "fit": "open",
   "role_type": "QA/Test",
   "skills_to_learn": [
-   "Selenium"
+   "Cucumber/Gherkin",
+   "Selenium",
+   "Global PayPlus",
+   "Connect Direct",
+   "MQ middleware"
   ],
-  "match_pct": 83
+  "match_pct": 83,
+  "ai_reason": "No experience or seniority requirements are explicitly stated in the job description.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Cloud-Data-Engineer_JR-0000117802-1",
@@ -9000,40 +9375,6 @@
   "match_pct": 60
  },
  {
-  "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Platform-Engineering_JR-0000100184",
-  "company": "Barclays",
-  "title": "Platform Engineering",
-  "location": "Pune, Gera Commerzone SEZ",
-  "url": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Pune-Gera-Commerzone-SEZ/Platform-Engineering_JR-0000100184",
-  "posted": "2026-09-22T15:16:36.596719+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Quant/Finance",
-  "location_group": "Central/West India",
-  "min_years": null,
-  "skills_matched": [
-   "Docker",
-   "LLMs",
-   "LangChain",
-   "Python",
-   "System design",
-   "Vector DBs"
-  ],
-  "priority": 6.9,
-  "est_ctc_lpa": "~12-18",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "DevOps/SRE/Cloud",
-  "skills_to_learn": [
-   "Kubernetes",
-   "Ruby"
-  ],
-  "match_pct": 75
- },
- {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/IFC---Service-Engineer_JR-0000117024-1",
   "company": "Barclays",
   "title": "IFC - Service Engineer",
@@ -9190,7 +9531,8 @@
    "ML basics",
    "Spring"
   ],
-  "match_pct": 80
+  "match_pct": 80,
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Full-Stack-Developer_JR-0000106341",
@@ -9228,7 +9570,8 @@
    "React Native",
    "Spring"
   ],
-  "match_pct": 83
+  "match_pct": 83,
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/System-Engineer_JR-0000102152-4",
@@ -9606,7 +9949,8 @@
    "ML basics",
    "Power BI/Tableau"
   ],
-  "match_pct": 60
+  "match_pct": 60,
+  "ai_skip": true
  },
  {
   "id": "Mastercard::/job/Pune-India/Software-Engineer_R-290463",
@@ -9801,9 +10145,16 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "OpenTelemetry",
+   "Grafana",
+   "ClickHouse",
+   "Cribl",
+   "BigPanda",
    "Prometheus/Grafana"
   ],
-  "match_pct": 88
+  "match_pct": 88,
+  "ai_reason": "No specific years of experience or seniority restrictions mentioned in the posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "LSEG::/job/IND-Bangalore-A-RMZ-Infinity/Software-Engineer_R0122852",
