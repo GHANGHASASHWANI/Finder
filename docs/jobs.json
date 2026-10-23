@@ -1,5 +1,42 @@
 [
  {
+  "id": "Cloudflare::8312256",
+  "company": "Cloudflare",
+  "title": "Software Engineer, Agentic Commerce",
+  "location": "In-Office",
+  "url": "https://boards.greenhouse.io/cloudflare/jobs/8312256?gh_jid=8312256",
+  "posted": "2026-10-22T19:15:11-04:00",
+  "dept": "Emerging Technology and Incubation",
+  "comp": "",
+  "tier": 4,
+  "segment": "AI/Remote",
+  "location_group": "Other India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "Backend",
+  "skills_matched": [
+   "JavaScript",
+   "System design",
+   "TypeScript"
+  ],
+  "skills_to_learn": [
+   "Rust",
+   "Cloudflare Workers",
+   "Durable Objects",
+   "Cryptographic authorization",
+   "Payment protocols (x402, ACP)",
+   "Ruby"
+  ],
+  "match_pct": 60,
+  "priority": 6.6,
+  "est_ctc_lpa": "~20-30 (est.)",
+  "found_at": "2026-10-23T04:22:22.207534+00:00",
+  "first_check": false,
+  "ai_reason": "No years of experience or seniority level explicitly mentioned in the posting.",
+  "ai_by": "gemini"
+ },
+ {
   "id": "ElevenLabs::b380fb97-bb18-46a5-91db-5132e6693e93",
   "company": "ElevenLabs",
   "title": "Android Engineer - Creative App",
@@ -244,7 +281,7 @@
   "min_years": 1,
   "exp_note": "them. Requirements: Minimum 1 year of experience with Java MVC frameworks",
   "fit": "stretch",
-  "role_type": "SWE",
+  "role_type": "Backend",
   "skills_matched": [
    "Caching",
    "Docker",
@@ -259,15 +296,20 @@
    "System design"
   ],
   "skills_to_learn": [
+   "Spring",
+   "Django",
+   "Golang",
+   "RabbitMQ",
    "Django/Flask",
-   "Go",
-   "Spring"
+   "Go"
   ],
   "match_pct": 79,
   "priority": 7.2,
   "est_ctc_lpa": "~30-45",
   "found_at": "2026-10-22T16:48:31.996480+00:00",
-  "first_check": true
+  "first_check": true,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "Zepto::https://www.instahyre.com/job-433568-data-scientist-at-zepto-gurgaon/",
@@ -314,18 +356,24 @@
   "min_years": null,
   "exp_note": "",
   "fit": "open",
-  "role_type": "DevOps/SRE/Cloud",
+  "role_type": "Backend",
   "skills_matched": [
    "C++",
    "Caching",
    "SQL"
   ],
-  "skills_to_learn": [],
+  "skills_to_learn": [
+   "C",
+   "C++",
+   "Systems Programming"
+  ],
   "match_pct": 100,
   "priority": 7.2,
   "est_ctc_lpa": "12-18",
   "found_at": "2026-10-22T16:48:31.996480+00:00",
-  "first_check": true
+  "first_check": true,
+  "ai_reason": "No experience or seniority requirements are stated in the job description.",
+  "ai_by": "gemini"
  },
  {
   "id": "Graviton Research Capital::8768396002",
@@ -1346,7 +1394,9 @@
   "skills_to_learn": [
    "Rust"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "ElevenLabs::a03536c8-8728-4007-aef2-460def03173e",
@@ -1563,46 +1613,6 @@
   "match_pct": 83,
   "ai_reason": "AI rejected without quoting the posting - kept",
   "ai_by": "gemini"
- },
- {
-  "id": "Sarvam AI::b2201b5e-1e96-497a-962c-bca1768f75fd",
-  "company": "Sarvam AI",
-  "title": "Embedded Infrastructure Engineer, Chanakya",
-  "location": "Delhi",
-  "url": "https://jobs.ashbyhq.com/sarvam/b2201b5e-1e96-497a-962c-bca1768f75fd",
-  "posted": "2026-04-17T12:01:22.644000+00:00",
-  "dept": "Engineering",
-  "comp": "",
-  "tier": 3,
-  "segment": "Indian SaaS/AI",
-  "location_group": "North India",
-  "min_years": null,
-  "skills_matched": [
-   "Docker",
-   "Kafka",
-   "MongoDB",
-   "PostgreSQL",
-   "Python",
-   "S3",
-   "Vector DBs"
-  ],
-  "priority": 7.3,
-  "est_ctc_lpa": "~25-40",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "DevOps/SRE/Cloud",
-  "skills_to_learn": [
-   "Airflow",
-   "Elasticsearch",
-   "Embedded C",
-   "Kubernetes",
-   "Spark/PySpark",
-   "Terraform",
-   "dbt"
-  ],
-  "match_pct": 50
  },
  {
   "id": "Sarvam AI::87d5a5af-ea7d-4b94-a0fa-81dc64e54907",
@@ -1891,13 +1901,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Kubernetes",
-   "Prometheus/Grafana",
-   "Terraform"
+   "Terraform",
+   "Pulumi",
+   "Prometheus",
+   "Grafana",
+   "Prometheus/Grafana"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "Supabase::fab1525f-3d89-4d1c-9094-84d21647415e",
@@ -2002,12 +2017,16 @@
   "fit": "open",
   "role_type": "Data",
   "skills_to_learn": [
-   "Bash",
-   "GCP",
+   "BigQuery",
+   "dbt",
    "Terraform",
-   "dbt"
+   "GCP",
+   "CloudZero",
+   "Bash"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No experience or seniority requirements are stated in the job posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Supabase::7c5eb3fc-1087-4c1c-b3a2-a19fe01dd259",
@@ -2361,7 +2380,9 @@
   "fit": "stretch",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_reason": "Basic Qualifications - 1+ years of non-internship professional software development experience",
+  "ai_by": "gemini"
  },
  {
   "id": "Amazon::10572929",
@@ -2507,12 +2528,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "Linux packaging (Debian, RPM, ",
+   "Yocto",
+   "Bootloaders and firmware",
+   "Graphics stacks",
    "Embedded C",
    "Kubernetes"
   ],
-  "match_pct": 71
+  "match_pct": 71,
+  "ai_reason": "No experience or seniority level is explicitly stated in the job description.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::4857458",
@@ -2923,13 +2950,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Security",
   "skills_to_learn": [
-   "PHP",
-   "Ruby",
-   "Rust"
+   "Rust",
+   "Go",
+   "Linux Kernel",
+   "Cryptographic APIs",
+   "FIPS Compliance",
+   "PHP"
   ],
-  "match_pct": 67
+  "match_pct": 67,
+  "ai_reason": "No minimum years of experience or seniority is stated in the job posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::4468036",
@@ -3359,64 +3391,6 @@
   "match_pct": 60
  },
  {
-  "id": "Cloudflare::8043339",
-  "company": "Cloudflare",
-  "title": "Forward Deployed Engineer, Professional Services",
-  "location": "Distributed",
-  "url": "https://boards.greenhouse.io/cloudflare/jobs/8043339?gh_jid=8043339",
-  "posted": "2026-08-26T10:18:44-04:00",
-  "dept": "Professional Services",
-  "comp": "",
-  "tier": 4,
-  "segment": "AI/Remote",
-  "location_group": "Remote",
-  "min_years": null,
-  "skills_matched": [
-   "Networking basics",
-   "System design"
-  ],
-  "priority": 7.1,
-  "est_ctc_lpa": "~20-30 (est.)",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Terraform"
-  ],
-  "match_pct": 67
- },
- {
-  "id": "Cloudflare::8043305",
-  "company": "Cloudflare",
-  "title": "Forward Deployed Engineer, Professional Services",
-  "location": "Distributed",
-  "url": "https://boards.greenhouse.io/cloudflare/jobs/8043305?gh_jid=8043305",
-  "posted": "2026-09-23T15:27:31-04:00",
-  "dept": "Professional Services",
-  "comp": "",
-  "tier": 4,
-  "segment": "AI/Remote",
-  "location_group": "Remote",
-  "min_years": null,
-  "skills_matched": [
-   "Networking basics",
-   "System design"
-  ],
-  "priority": 7.1,
-  "est_ctc_lpa": "~20-30 (est.)",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Terraform"
-  ],
-  "match_pct": 67
- },
- {
   "id": "Cloudflare::8264687",
   "company": "Cloudflare",
   "title": "Software Engineer, Agentic Discovery",
@@ -3444,9 +3418,15 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [
-   "Rust"
+   "Rust",
+   "Cloudflare Workers",
+   "Model Context Protocol (MCP)",
+   "WebMCP",
+   "Distributed Systems"
   ],
-  "match_pct": 83
+  "match_pct": 83,
+  "ai_reason": "No experience or seniority requirements are stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Cloudflare::7377424",
@@ -3476,12 +3456,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Backend",
   "skills_to_learn": [
+   "Go",
+   "Prometheus",
+   "Grafana",
    "Kubernetes",
+   "RPC",
    "Prometheus/Grafana"
   ],
-  "match_pct": 78
+  "match_pct": 78,
+  "ai_reason": "No experience or seniority is stated for this role.",
+  "ai_by": "gemini"
  },
  {
   "id": "Cloudflare::8022909",
@@ -3930,42 +3916,6 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null
- },
- {
-  "id": "Goldman Sachs::122958",
-  "company": "Goldman Sachs",
-  "title": "Compliance-Bengaluru-Associate-Software Engineering",
-  "location": "Bengaluru",
-  "url": "https://higher.gs.com/roles/122958",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Quant/Finance",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "Express",
-   "GraphQL",
-   "Java",
-   "JavaScript",
-   "Kafka",
-   "React",
-   "TypeScript"
-  ],
-  "priority": 7.1,
-  "est_ctc_lpa": "~25-32",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Elasticsearch",
-   "Kubernetes",
-   "ML basics"
-  ],
-  "match_pct": 70
  },
  {
   "id": "Goldman Sachs::122565",
@@ -5950,35 +5900,6 @@
   "match_pct": null
  },
  {
-  "id": "Cadence::/job/PUNE-05/Computational-Aeroelasticity-Developer_R55704",
-  "company": "Cadence",
-  "title": "Computational Aeroelasticity Developer",
-  "location": "PUNE 05",
-  "url": "https://cadence.wd1.myworkdayjobs.com/en-US/External_Careers/job/PUNE-05/Computational-Aeroelasticity-Developer_R55704",
-  "posted": "2026-10-08T15:16:21.083743+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "Central/West India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "Python"
-  ],
-  "priority": 7.2,
-  "est_ctc_lpa": "~15-25",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Flutter"
-  ],
-  "match_pct": 67
- },
- {
   "id": "JPMorgan Chase::210800119",
   "company": "JPMorgan Chase",
   "title": "Applied AI /ML Associate",
@@ -6264,39 +6185,6 @@
   "match_pct": 43
  },
  {
-  "id": "Paytm::fffdcfb1-fd6e-4401-b059-500838a6db0e",
-  "company": "Paytm",
-  "title": "Backend - TL/STL",
-  "location": "Bangalore, Karnataka, Noida, Uttar Pradesh",
-  "url": "https://jobs.lever.co/paytm/fffdcfb1-fd6e-4401-b059-500838a6db0e",
-  "posted": "2025-06-04T11:55:06.653000+00:00",
-  "dept": "Travel",
-  "comp": "",
-  "tier": 5,
-  "segment": "Indian Consumer/Fintech",
-  "location_group": "North India",
-  "min_years": null,
-  "skills_matched": [
-   "AWS",
-   "Caching",
-   "Java",
-   "LLMs",
-   "Microservices",
-   "System design"
-  ],
-  "priority": 7.3,
-  "est_ctc_lpa": "~14-20",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Backend",
-  "skills_to_learn": [
-   "Spring"
-  ],
-  "match_pct": 86
- },
- {
   "id": "Nasdaq::/job/India---Bangalore---Karnataka/Nasdaq-Campus-Program----2027_R0027122-2",
   "company": "Nasdaq",
   "title": "Nasdaq Campus Program  - 2027",
@@ -6457,32 +6345,6 @@
    "GCP"
   ],
   "match_pct": 67
- },
- {
-  "id": "Sabre::/job/Bengaluru-Karnataka-India/Payments-Delivery-Engineer_JR108797-1",
-  "company": "Sabre",
-  "title": "Payments Delivery Engineer",
-  "location": "Bengaluru, Karnataka, India",
-  "url": "https://sabre.wd1.myworkdayjobs.com/en-US/SabreJobs/job/Bengaluru-Karnataka-India/Payments-Delivery-Engineer_JR108797-1",
-  "posted": "2026-09-30T15:16:34.421445+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "System design"
-  ],
-  "priority": 7.4,
-  "est_ctc_lpa": "~8-12",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
  },
  {
   "id": "Ubisoft India::744000155789969",
@@ -7399,8 +7261,14 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
+  "skills_to_learn": [
+   "VS Code Extension APIs",
+   "Language Server Protocol",
+   "Webviews"
+  ],
+  "match_pct": 100,
+  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Bosch Global Software Technologies::744000153372798",
@@ -7451,8 +7319,16 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
+  "skills_to_learn": [
+   "CCTV",
+   "Video Analytics",
+   "SAP-EWM",
+   "Networking",
+   "WMS"
+  ],
+  "match_pct": 100,
+  "ai_reason": "No specific years of experience or seniority level is stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Bosch Global Software Technologies::744000152597350",
@@ -7708,32 +7584,6 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null
- },
- {
-  "id": "Bosch Global Software Technologies::744000150077901",
-  "company": "Bosch Global Software Technologies",
-  "title": "2026 EGM Ethernet Validation Engineer for SDV project in Braking System",
-  "location": "coimbatore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000150077901",
-  "posted": "2026-09-17T11:21:13.022000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "Python"
-  ],
-  "priority": 7.4,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
  },
  {
   "id": "Bosch Global Software Technologies::744000149849174",
@@ -8681,9 +8531,15 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [
+   "Tableau",
+   "Power BI",
+   "ServiceNow",
+   "Tableau Server Administration",
    "Power BI/Tableau"
   ],
-  "match_pct": 88
+  "match_pct": 88,
+  "ai_reason": "No experience or seniority requirements are stated.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/IFC---Cloud-Data-Engineer_JR-0000133706-1",
@@ -9204,11 +9060,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "Geneos ITRS",
+   "AppDynamics",
+   "Autosys",
+   "MSSQL",
+   "OpenShift",
    "Hadoop"
   ],
-  "match_pct": 86
+  "match_pct": 86,
+  "ai_reason": "No explicit experience requirement stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/DevOps-Engineer_JR-0000116538-1",
@@ -9422,9 +9285,16 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [
+   "Embedded Linux",
+   "RTOS",
+   "Device Drivers",
+   "Networking Protocols",
+   "MACsec",
    "Embedded C"
   ],
-  "match_pct": 80
+  "match_pct": 80,
+  "ai_reason": "No experience or seniority is stated in the job description.",
+  "ai_by": "gemini"
  },
  {
   "id": "HPE (incl. Juniper Networks)::/job/Chennai-Tamil-Nadu-India/WLAN-Engineer_1217768-2",
@@ -9449,8 +9319,16 @@
   "exp_note": "lent qualification. 0–2 years of relevant experience in engineering,",
   "fit": "stretch",
   "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
+  "skills_to_learn": [
+   "Wireless Networking",
+   "WLAN",
+   "RF Engineering",
+   "Hardware Testing",
+   "Systems Engineering"
+  ],
+  "match_pct": 100,
+  "ai_reason": "The posting specifies '0–2 years of relevant experience'.",
+  "ai_by": "gemini"
  },
  {
   "id": "HPE (incl. Juniper Networks)::/job/Chennai-Tamil-Nadu-India/Software-Consulting-Engineer_1217809-2",
@@ -9476,7 +9354,8 @@
   "fit": "stretch",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": 100
+  "match_pct": 100,
+  "ai_skip": true
  },
  {
   "id": "HPE (incl. Juniper Networks)::/job/Chennai-Tamil-Nadu-India/WLAN-Engineer_1209106-2",
@@ -9501,8 +9380,15 @@
   "exp_note": "uivalent. Typically 0-2 years experience. Knowledge and Skills: Exper",
   "fit": "stretch",
   "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
+  "skills_to_learn": [
+   "WLAN protocols",
+   "Networking principles",
+   "Hardware design tools",
+   "RF engineering basics"
+  ],
+  "match_pct": 100,
+  "ai_reason": "Typically 0-2 years experience.",
+  "ai_by": "gemini"
  },
  {
   "id": "HPE (incl. Juniper Networks)::/job/Bengaluru-Karntaka-India/Cloud-Developer---Data-Engineer_1215670-2",
@@ -9752,7 +9638,8 @@
    "Angular",
    "Spring"
   ],
-  "match_pct": 67
+  "match_pct": 67,
+  "ai_skip": true
  },
  {
   "id": "Mastercard::/job/Pune-India/Software-Engineer--DevSecOps-_R-289609-1",
@@ -9784,7 +9671,8 @@
    "Ansible",
    "Kubernetes"
   ],
-  "match_pct": 67
+  "match_pct": 67,
+  "ai_skip": true
  },
  {
   "id": "LSEG::/job/IND-BLR-Divyasree-Technopolis/Site-Reliability-Engineer---DevOps-Engineer_R0117320",
