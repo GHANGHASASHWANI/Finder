@@ -19,8 +19,8 @@ concurrency:
 
 jobs:
   run:
-    runs-on: ubuntu-latest
-    timeout-minutes: 45
+    runs-on: ubuntu-24.04     # pinned: playwright 1.47 deps may not install on Ubuntu 26 (ubuntu-latest from Oct 2026)
+    timeout-minutes: 120      # a --recheck can take longer than a normal run
     steps:
       - uses: actions/checkout@v6
 
@@ -69,6 +69,9 @@ jobs:
           git config user.email "finder-bot@users.noreply.github.com"
           git add companies.json.enc state/*.enc docs/index.html docs/jobs.json docs/status.json
           git commit -m "Finder run $(date -u +%Y-%m-%dT%H:%MZ)" || echo "nothing new"
-          git pull --rebase -X ours || true
-          git push
+          # if someone pushed meanwhile, replay this run on top; on a clash keep THIS run's state (it is newer)
+          for i in 1 2 3; do
+            git pull --rebase -X theirs && git push && break
+            echo "push failed, retrying ($i)"; sleep 10
+          done
 

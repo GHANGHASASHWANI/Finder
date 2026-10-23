@@ -15,7 +15,7 @@ import urllib.request
 # name, base URL, env var with the key, models to try in order, seconds between calls (free-tier pacing)
 PROVIDERS = [
     ("gemini", "https://generativelanguage.googleapis.com/v1beta/openai", "GEMINI_API_KEY",
-     ["gemini-flash-latest", "gemini-2.5-flash", "gemini-flash-lite-latest"], 7),
+     ["gemini-flash-latest", "gemini-flash-lite-latest"], 7),     # gemini-2.5-flash: 404 since Oct 2026
     ("groq", "https://api.groq.com/openai/v1", "GROQ_API_KEY",
      ["openai/gpt-oss-20b", "openai/gpt-oss-120b"], 22),          # 8k tokens/minute -> ~3 calls/minute
     ("nvidia", "https://integrate.api.nvidia.com/v1", "NVIDIA_API_KEY",
@@ -97,7 +97,7 @@ class AIReviewer:
             "Authorization": "Bearer " + p.key, "Content-Type": "application/json",
             # Groq sits behind Cloudflare, which blocks Python's default user agent (error 1010)
             "User-Agent": "Mozilla/5.0 (compatible; FinderJobBot/1.0; +https://github.com/GHANGHASASHWANI/Finder)"})
-        with urllib.request.urlopen(req, timeout=90) as r:
+        with urllib.request.urlopen(req, timeout=45) as r:
             raw = r.read().decode("utf-8", "replace")
         try:
             return json.loads(raw)
@@ -151,6 +151,11 @@ class AIReviewer:
                     continue
                 return None
             except Exception as e:
+                if "timed out" in str(e) and len(p.models) > 1 and not getattr(p, "_rotated", False):
+                    self.log("ai %s: %s timed out, trying %s" % (p.name, p.models[0], p.models[1]))
+                    p.models.append(p.models.pop(0))
+                    p._rotated = True
+                    continue
                 if self._fail(p, str(e)[:160]):
                     continue
                 return None

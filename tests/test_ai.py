@@ -108,7 +108,7 @@ class T(unittest.TestCase):
         ai.urllib.request.urlopen = fake
         r = ai.AIReviewer({}, log=lambda *a: None)
         self.assertEqual(r.judge("SE", "X", "Pune", "x" * 400)["fit"], "stretch")
-        self.assertEqual(seen, ["gemini-flash-latest", "gemini-2.5-flash"])
+        self.assertEqual(seen, ["gemini-flash-latest", "gemini-flash-lite-latest"])
 
     def test_unquoted_reject_is_kept_as_open(self):
         ai.urllib.request.urlopen = lambda req, timeout=0: reply({"fit": "reject", "reason": "Likely needs 2+ years"})

@@ -89,6 +89,11 @@ def send_all(jobs, log=print):
             log("telegram: sent %d" % len(jobs))
         except Exception as ex:
             log("telegram failed: %s" % ex)
+    for name, keys in (("telegram", ("TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID")),
+                       ("email", ("SMTP_USER", "SMTP_PASS", "EMAIL_TO"))):
+        missing = [k for k in keys if not env.get(k)]
+        if missing and len(missing) < len(keys):    # all missing = channel switched off on purpose
+            log("%s: not sent - secret(s) missing: %s" % (name, ", ".join(missing)))
     if env.get("SMTP_USER") and env.get("SMTP_PASS") and env.get("EMAIL_TO"):
         try:
             email(jobs, env["SMTP_USER"], env["SMTP_PASS"], env["EMAIL_TO"],

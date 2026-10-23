@@ -423,35 +423,92 @@ def page(c, s, browser=None):
                     pass
             pg.wait_for_timeout(2500)
             links = pg.eval_on_selector_all(
-                "a[href]", "els => els.map(e => [e.href, (e.innerText || e.textContent || '').trim()])")
+                "a[href]", "els => els.map(e => [e.href, (e.innerText || e.textContent || '').trim(), "
+                           "e.getAttribute('aria-label') || e.getAttribute('title') || ''])")
         finally:
             pg.close()
     else:
         raw = http(url)
-        for href, text in re.findall(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', raw, re.I | re.S):
-            links.append([urllib.parse.urljoin(url, html.unescape(href)), strip_html(text)])
+        for tag, text in re.findall(r'(<a[^>]+href="[^"]+"[^>]*>)(.*?)</a>', raw, re.I | re.S):
+            href = re.search(r'href="([^"]+)"', tag).group(1)
+            label = re.search(r'(?:aria-label|title)="([^"]+)"', tag)
+            links.append([urllib.parse.urljoin(url, html.unescape(href)),
+                          re.sub(r"<(br|/p|/div|/h\d)[^>]*>", "\n", text), html.unescape(label.group(1)) if label else ""])
+    return page_jobs(c, s, url, links)
+
+
+GENERIC_LINK_TEXT = re.compile(r"^(learn more|apply( now)?|view( job| details| role)?|read more|details|know more|"
+                               r"see (job|role|details)|open|more)$", re.I)
+
+
+LABEL_TITLE = re.compile(r"^(?:learn more about|view job description for|view details for|view details of|"
+                         r"apply (?:for|to)|view|open|read more about)\s+(.{4,140})$", re.I)
+LOC_HINT = re.compile(INDIA_RX.pattern + r"|remote|hybrid|anywhere|worldwide", re.I)
+
+
+def page_jobs(c, s, url, links):
+    """links: [href, visible text, aria-label/title]. Turns job-looking links into jobs."""
     out, seen = [], set()
     rx = re.compile(s["link_regex"], re.I) if s.get("link_regex") else JOBLINK
-    for href, text in links:
-        text = re.sub(r"\s+", " ", text or "").strip()
-        first = text.split(" • ")[0]
-        if not (4 <= len(first) <= 140) or not href.startswith("http"):
-            continue
-        if not rx.search(href):
+    for item in links:
+        href, text = item[0], item[1] or ""
+        label = ((item[2] if len(item) > 2 else "") or "").strip()
+        if not href.startswith("http") or not rx.search(href):
             continue
         key = href.split("#")[0]
         if key in seen or key.rstrip("/") == url.rstrip("/"):
             continue
+        lines = [re.sub(r"^icon", "", re.sub(r"\s+", " ", x)).strip() for x in re.split(r"[\r\n]+", text)]
+        lines = [x for x in lines if len(x) >= 3 and not x.isdigit() and not GENERIC_LINK_TEXT.match(x)]
+        m = LABEL_TITLE.match(label)
+        if m:                                   # "View job description for X", "Learn more about X"
+            first = m.group(1).strip()
+        elif lines:
+            first = lines[0].split(" • ")[0].strip()
+        elif label:
+            first = label
+        else:
+            continue
+        if len(first) > 140:                    # card text = "Title: long description..." -> keep the title part
+            first = re.split(r":\s|\s[-–|]\s", first)[0][:140]
+        if len(first) < 4:
+            continue
         seen.add(key)
-        # the rest of the link text often carries the location
-        out.append(mk(c, key, first[:140], text[len(first):].strip(" •|-,")[:200], key))
+        # location: a line that looks like a place; otherwise leave empty ("check page")
+        parts = [p for x in lines for p in re.split(r"\s[•|·]\s", x)]
+        loc = next((p for p in parts if p != first and len(p) <= 80 and LOC_HINT.search(p)), "")
+        out.append(mk(c, key, first, loc.strip(" •|-,"), key))
+    return out
+
+
+def google(c, s):
+    """Google careers: the results page is server-rendered; each card has title, location and min. qualifications."""
+    base = "https://www.google.com/about/careers/applications/"
+    out, ids = [], set()
+    for n in range(1, s.get("max_pages", 15) + 1):
+        raw = http(s["url"] + "&page=%d" % n, headers={"Accept": "text/html", "Accept-Language": "en-US,en;q=0.9"})
+        cards = raw.split('<h3 class="QJPWVe">')[1:]
+        fresh = 0
+        for card in cards:
+            m = re.search(r'href="(jobs/results/(\d+)-[^"]+)"', card)
+            if not m or m.group(2) in ids:
+                continue
+            ids.add(m.group(2))
+            fresh += 1
+            title = html.unescape(card.split("</h3>", 1)[0]).strip()
+            loc = re.search(r'<span class="r0wTof[^"]*">([^<]+)</span>', card)
+            link = base + html.unescape(m.group(1)).split("?")[0]
+            out.append(mk(c, m.group(2), title, html.unescape(loc.group(1)) if loc else "India", link, None,
+                          strip_html(card.split('href="jobs/results/', 1)[0])))
+        if not fresh:
+            break
     return out
 
 
 READERS = {
     "greenhouse": greenhouse, "lever": lever, "ashby": ashby, "workable": workable,
     "smartrecruiters": smartrecruiters, "workday": workday, "eightfold": eightfold,
-    "amazon": amazon, "atlassian": atlassian, "page": page, "pcsx": pcsx, "json": jsonapi,
+    "amazon": amazon, "atlassian": atlassian, "page": page, "pcsx": pcsx, "json": jsonapi, "google": google,
 }
 
 

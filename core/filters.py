@@ -24,15 +24,21 @@ EXP_RIGHT_AFTER = re.compile(r"^\s*(of\s+)?(\w+\s+){0,2}?(develop|coding|program
                              r"working|work\b|in (a |the )?(similar|software|engineering|backend|data|it\b))", re.I)
 COMPANY_TALK = re.compile(r"\b(we|our|us|company|business|founded|established)\b", re.I)
 NOT_EXP = re.compile(r"degree|bachelor|course|program(?!m)|\bago\b|warranty|\bold\b|anniversary|of (history|legacy)", re.I)
-FRESHER_RX = re.compile(r"new[- ]?grad|fresh(er|ers)?\b|entry[- ]level|campus|early[- ]career|university grad|"
-                        r"graduate (program|engineer|hire)|recent graduate|\b0\s*(?:-|–|to)\s*1\s*(?:years?|yrs?)|"
-                        r"no (prior )?experience (is )?required|20(25|26)\s*(batch|pass|grad)", re.I)
+FRESHER_RX = re.compile(r"new[- ]?grads?\b|\bfreshers?\b|entry[- ]level|campus (hire|hiring|recruit|drive|program)|"
+                        r"early[- ]career|university grad|graduate (program|engineer|hire|trainee)|recent(ly)? graduat|"
+                        r"\b0\s*(?:-|–|to)\s*1\s*(?:years?|yrs?)|no (prior )?experience (is )?required|"
+                        r"20(25|26)\s*(batch|pass|grad)", re.I)
+# senior wording that is unambiguous wherever it appears
 SENIOR_DESC_RX = re.compile(
     r"\bsenior[- ]level\b|\bmid[- ]?(?:to[- ]senior|senior)[- ]level\b|\bmid[- ]level\b|seasoned (engineer|developer|professional)|"
-    r"extensive (professional |industry |hands[- ]on )?experience|mentor(ing|s)? (junior|other|team)|"
-    r"lead (a|the) team|team lead(ership)? experience|people management|manage (a|the) team of|"
-    r"significant (professional |industry )?experience|substantial experience|deep expertise",
-    re.I)
+    r"mentor(ing|s)? (junior|other) (engineers|developers|team members)|lead (a|the) team of|team lead(ership)? experience|"
+    r"people management|manage (a|the) team of|experienced hire", re.I)
+# wording that is senior only when it describes the candidate ("you have extensive experience"),
+# not company boilerplate ("our extensive experience in fintech")
+SENIOR_ASK_RX = re.compile(r"extensive (professional |industry |hands[- ]on )?experience|significant (professional |industry )?"
+                           r"experience|substantial experience|deep expertise|proven track record of leading", re.I)
+ASKS_CANDIDATE = re.compile(r"\b(you|your|candidate|applicant|should|must|require[sd]?|need|bring|ideal|looking for|"
+                            r"have|possess)\b", re.I)
 
 ROLE_TYPES = [
     ("AI/ML", r"\b(ai|ml|machine learning|genai|gen ai|llm|deep learning|nlp|computer vision|applied scien|mlops)\b"),
@@ -148,6 +154,12 @@ class Matcher:
         if worst and worst[1] == "reject":
             return "reject", min(lows), snippet
         s = SENIOR_DESC_RX.search(text)
+        if not s:
+            for m in SENIOR_ASK_RX.finditer(text):
+                before = text[max(0, m.start() - 60):m.start()]
+                if ASKS_CANDIDATE.search(before) and not re.search(r"\b(our|we)\b", before[-25:], re.I):
+                    s = m
+                    break
         if s:
             return "reject", None, re.sub(r"\s+", " ", text[max(0, s.start() - 20):s.end() + 30]).strip()
         if worst:
