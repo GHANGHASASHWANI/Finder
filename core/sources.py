@@ -118,7 +118,11 @@ def greenhouse(c, s):
         return greenhouse_board(c, s)
     out = []
     for j in d.get("jobs", []):
-        out.append(mk(c, j["id"], j.get("title"), (j.get("location") or {}).get("name"),
+        loc = (j.get("location") or {}).get("name") or ""
+        offices = "; ".join(o.get("name", "") for o in j.get("offices") or [] if o.get("name"))
+        if offices and not re.search(r"[A-Za-z]{3,}", re.sub(r"(?i)in[- ]office|hybrid|remote|office|onsite|on-site", "", loc)):
+            loc = "%s (%s)" % (offices, loc) if loc else offices   # "In-Office" alone says nothing: use the offices
+        out.append(mk(c, j["id"], j.get("title"), loc,
                       j.get("absolute_url"), iso(j.get("first_published") or j.get("updated_at")),
                       strip_html(j.get("content")),
                       ", ".join(x.get("name", "") for x in j.get("departments") or [])))
