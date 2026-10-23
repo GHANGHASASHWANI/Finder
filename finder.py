@@ -22,6 +22,8 @@ from core import sources  # noqa: E402
 from core.filters import Matcher  # noqa: E402
 from core.notify import send_all  # noqa: E402
 from core.ai import AIReviewer  # noqa: E402
+from core import resume as cv  # noqa: E402
+from core import referral  # noqa: E402
 
 STATE = os.path.join(ROOT, "state")
 DOCS = os.path.join(ROOT, "docs")
@@ -143,6 +145,46 @@ def ai_pass(items, reviewer, cache):
     if asked or dropped:
         log("ai review: asked %d, removed %d (budget used %d/%d)" % (asked, dropped, reviewer.used, reviewer.budget))
     return [info for info, _ in items if not info.pop("_drop", False)]
+
+
+def make_resumes(alerts, desc_by_id, profile, reviewer, args):
+    """Tailored PDF resume for the best new jobs (sent on Telegram right after each job)."""
+    limit = int(profile.get("resume_max_per_run", 5))
+    master = cv.load_master(ROOT)
+    picks = [j for j in sorted(alerts, key=lambda j: -j.get("priority", 0))
+             if j.get("fit") in ("fresher", "open", "stretch") and len(desc_by_id.get(j["id"]) or "") >= 300][:limit]
+    if not (master and picks and limit and profile.get("tailored_resumes", True)):
+        if not master and picks:
+            log("resumes: skipped - resume.json not found (encrypted master resume missing)")
+        return
+    reviewer.budget = reviewer.used + 2 * limit      # resume + referral message per job: their own small budget
+    reviewer.disabled = not reviewer.providers
+    try:
+        from playwright.sync_api import sync_playwright
+        pw = sync_playwright().start()
+        browser = pw.chromium.launch(headless=True)
+    except Exception as e:
+        log("resumes: browser unavailable (%s)" % e)
+        return
+    made = 0
+    try:
+        for j in picks:
+            try:
+                r = cv.make(reviewer, browser, master, j, desc_by_id[j["id"]])
+            except Exception as e:
+                log("resumes: %s failed (%s)" % (j["company"], str(e)[:120]))
+                continue
+            if r:
+                j["_resume"] = r
+                made += 1
+                try:
+                    j["_referral"] = referral.write(reviewer, r["data"], j, desc_by_id[j["id"]])
+                except Exception as e:
+                    log("referral: %s failed (%s)" % (j["company"], str(e)[:120]))
+    finally:
+        browser.close()
+        pw.stop()
+    log("resumes: made %d tailored PDF%s" % (made, "s" if made != 1 else ""))
 
 
 def main():
@@ -276,6 +318,7 @@ def main():
         info["found_at"] = NOW.isoformat()
         info["first_check"] = first.get(c["company"], False)
         items.append((info, desc))
+    desc_by_id = {info["id"]: desc for info, desc in items}
     kept = ai_pass(items, reviewer, ai_cache)
     for info in kept:
         name = info["company"]
@@ -344,6 +387,7 @@ def main():
                 print("%-32s %-15s %6s  %s" % (s["company"][:32], s["type"], s.get("jobs", 0),
                                               "ok" if s.get("ok") else s.get("error", "")[:80]))
     elif not args.no_notify:
+        make_resumes(alerts, desc_by_id, profile, reviewer, args)
         send_all(alerts, log)
 
 

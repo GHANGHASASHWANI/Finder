@@ -108,15 +108,9 @@ class AIReviewer:
         except ValueError:
             raise ValueError("non-JSON reply: %r" % raw[:150])
 
-    def judge(self, title, company, location, desc):
-        if not self.available():
-            return None
-        self.used += 1
-        msgs = [
-            {"role": "system", "content": RULES.format(candidate=self.candidate)},
-            {"role": "user", "content": "Company: %s\nTitle: %s\nLocation: %s\n\nDescription:\n%s"
-                                        % (company, title, location, (desc or "")[:6000])},
-        ]
+    def ask_json(self, system, user, max_tokens=2000, temperature=0):
+        """One chat call with provider/model fallback. Returns (dict, provider_name) or (None, None)."""
+        msgs = [{"role": "system", "content": system}, {"role": "user", "content": user}]
         while self.providers:
             p = self.providers[0]
             wait = p.spacing * SPACING_SCALE - (time.time() - p.last)
@@ -124,7 +118,7 @@ class AIReviewer:
                 time.sleep(wait)
             p.last = time.time()
             try:
-                body = {"model": p.models[0], "temperature": 0, "max_tokens": 2000, "messages": msgs}
+                body = {"model": p.models[0], "temperature": temperature, "max_tokens": max_tokens, "messages": msgs}
                 if "gpt-oss" in p.models[0]:
                     body["reasoning_effort"] = "low"     # reasoning models: keep thinking short so the answer fits
                 out = self._call(p, body)
@@ -153,7 +147,7 @@ class AIReviewer:
                     continue
                 if self._fail(p, "HTTP %d %s" % (e.code, detail)):
                     continue
-                return None
+                return None, None
             except Exception as e:
                 if "timed out" in str(e) and len(p.models) > 1 and not getattr(p, "_rotated", False):
                     self.log("ai %s: %s timed out, trying %s" % (p.name, p.models[0], p.models[1]))
@@ -162,18 +156,27 @@ class AIReviewer:
                     continue
                 if self._fail(p, str(e)[:160]):
                     continue
-                return None
+                return None, None
             p.errors = 0
-            if res.get("fit") not in ("fresher", "open", "stretch", "reject"):
-                return None
-            if res["fit"] == "reject" and not QUOTED.search(str(res.get("reason") or "")):
-                # a reject must quote the posting; an unsupported guess is treated as "open"
-                res["fit"], res["reason"] = "open", "AI rejected without quoting the posting - kept"
-            res["skills_to_learn"] = [str(x)[:30] for x in (res.get("skills_to_learn") or [])][:5]
-            res["reason"] = str(res.get("reason") or "")[:160]
-            res["by"] = p.name
-            return res
-        return None
+            return res, p.name
+        return None, None
+
+    def judge(self, title, company, location, desc):
+        if not self.available():
+            return None
+        self.used += 1
+        res, by = self.ask_json(RULES.format(candidate=self.candidate),
+                                "Company: %s\nTitle: %s\nLocation: %s\n\nDescription:\n%s"
+                                % (company, title, location, (desc or "")[:6000]))
+        if res is None or res.get("fit") not in ("fresher", "open", "stretch", "reject"):
+            return None
+        if res["fit"] == "reject" and not QUOTED.search(str(res.get("reason") or "")):
+            # a reject must quote the posting; an unsupported guess is treated as "open"
+            res["fit"], res["reason"] = "open", "AI rejected without quoting the posting - kept"
+        res["skills_to_learn"] = [str(x)[:30] for x in (res.get("skills_to_learn") or [])][:5]
+        res["reason"] = str(res.get("reason") or "")[:160]
+        res["by"] = by
+        return res
 
     def _fail(self, p, msg):
         """Returns True if the provider was dropped (caller should retry with the next one)."""

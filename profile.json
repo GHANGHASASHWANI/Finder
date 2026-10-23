@@ -341,5 +341,7 @@
   "groq",
   "nvidia",
   "openrouter"
- ]
+ ],
+ "tailored_resumes": true,
+ "resume_max_per_run": 5
 }
