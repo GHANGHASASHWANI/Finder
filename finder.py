@@ -113,10 +113,11 @@ def read_descriptions(cands, browser, workers=16):
 
 def ai_pass(items, reviewer, cache):
     """items: list of (info, desc). AI double-checks jobs the rules marked open/stretch. Returns kept infos."""
-    order = sorted(items, key=lambda x: ({"open": 0, "stretch": 1}.get(x[0].get("fit"), 9), -x[0].get("priority", 0)))
+    order = sorted(items, key=lambda x: ({"open": 0, "stretch": 1, "fresher": 2}.get(x[0].get("fit"), 9),
+                                         -x[0].get("priority", 0)))
     asked = dropped = 0
     for info, desc in order:
-        if info.get("fit") not in ("open", "stretch") or len(desc or "") < 300:
+        if info.get("fit") not in ("open", "stretch", "fresher") or len(desc or "") < 300:
             continue
         res = cache.get(info["id"])
         if res is None:
@@ -287,7 +288,7 @@ def main():
             sent[name] = sent.get(name, 0) + 1
     # spare AI budget: double-check older dashboard jobs that were never reviewed (best first)
     if reviewer.available():
-        todo_ai = sorted([b for b in board if b.get("fit") in ("open", "stretch") and not b.get("ai_reason")
+        todo_ai = sorted([b for b in board if b.get("fit") in ("open", "stretch", "fresher") and not b.get("ai_reason")
                           and not b.get("ai_skip") and b.get("company") in by_name],
                          key=lambda b: -b.get("priority", 0))[:reviewer.budget - reviewer.used]
         if todo_ai:

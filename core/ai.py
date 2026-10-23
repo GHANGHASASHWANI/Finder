@@ -23,7 +23,7 @@ PROVIDERS = [
     ("openrouter", "https://openrouter.ai/api/v1", "OPENROUTER_API_KEY", ["openrouter/free"], 4),
 ]
 SPACING_SCALE = 1.0   # tests set this to 0
-QUOTED = re.compile(r'["\u201c\u201d].{4,}["\u201c\u201d]')
+QUOTED = re.compile(r'["\u201c\u2018].{4,}?["\u201d\u2019]|"[^"]{4,}"|(?<![A-Za-z])\'[^\']{4,}\'(?![A-Za-z])')
 
 RULES = """You screen job postings for one candidate. Decide if this job is realistic for them to apply to NOW.
 
@@ -36,7 +36,11 @@ Rules:
   * it clearly describes a senior/lead role (e.g. "lead a team", "mentor engineers", "engineering leader",
     "senior", "staff", "principal", grade codes like AVP), or
   * it requires a degree the candidate does not have (Master's/PhD required, not "preferred"), or
-  * it is not a software/tech role (hardware, sales, pre-sales, support, pure business), or it is an internship.
+  * it is not a software/tech role (hardware, sales, pre-sales, support, pure business), or it is an internship, or
+  * it says a specialised DOMAIN background is "essential", "must" or "required" that the candidate clearly lacks and
+    cannot pick up in a few weeks - e.g. optical networking (DWDM, ROADM), RF/wireless PHY, VLSI/ASIC, automotive
+    ADAS/AUTOSAR, SAP/Salesforce functional consulting, mainframe/COBOL, telecom protocols (L2/L3, MPLS).
+    Ordinary tools, languages and frameworks (Go, Kubernetes, Spark, Selenium...) are NOT domain expertise.
 - NEVER reject because the candidate lacks a skill, language or framework - list it in "skills_to_learn" instead.
 - NEVER guess. Do not reject because experience is "likely", "typical" or "implied". If nothing explicit
   is stated, the answer is "open".

@@ -171,7 +171,7 @@
   "mysore",
   "mysuru",
   "\\bind\\b",
-  "\\bin-",
+  "\\bin-[a-z]{2}\\b",
   "\\bindia\\b",
   "faridabad",
   "ghaziabad",

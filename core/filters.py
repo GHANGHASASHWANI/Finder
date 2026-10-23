@@ -22,7 +22,8 @@ EXP_CONTEXT = re.compile(r"experience|\bexp\b|hands[- ]on|relevant|proven|profes
 # weaker words count only right after "N years", e.g. "5-8 years development", "3 years of coding"
 EXP_RIGHT_AFTER = re.compile(r"^\s*(of\s+)?(\w+\s+){0,2}?(develop|coding|programming|building|software|engineering|"
                              r"working|work\b|in (a |the )?(similar|software|engineering|backend|data|it\b))", re.I)
-COMPANY_TALK = re.compile(r"\b(we|our|us|company|business|founded|established)\b", re.I)
+COMPANY_TALK = re.compile(r"\b(founded|established|in business|ago|history|since|legacy|we have been|we've been|"
+                          r"for over|for more than|our (team|company|journey|founders|clients) (has|have))\b", re.I)
 NOT_EXP = re.compile(r"degree|bachelor|course|program(?!m)|\bago\b|warranty|\bold\b|anniversary|of (history|legacy)", re.I)
 FRESHER_RX = re.compile(r"new[- ]?grads?\b|\bfreshers?\b|entry[- ]level|campus (hire|hiring|recruit|drive|program)|"
                         r"early[- ]career|university grad|graduate (program|engineer|hire|trainee)|recent(ly)? graduat|"
@@ -59,6 +60,12 @@ REMOTE_WORDS_RX = re.compile(r"remote|anywhere|worldwide|world wide|global(ly)?|
                              r"\blocation(s)?\b|international|[^A-Za-z]+", re.I)
 
 
+GENERIC_INCLUDES = {"new grad", "graduate", "university", "campus", "early career", "fresher", "entry[- ]level",
+                    "junior", "\\bjr\\.?\\b"}
+TECH_WORD = re.compile(r"software|engineer|develop|technolog|\btech\b|programm|\bit\b|data|\bai\b|\bml\b|cloud|"
+                       r"cyber|security|digital|computer|sde|swe|quant|analytics|platform", re.I)
+
+
 def _n(x):
     return NUM.get(x.lower(), None) if not x.isdigit() else int(x)
 
@@ -83,8 +90,11 @@ class Matcher:
     # ---- title
     def title_ok(self, title, company=""):
         t = title or ""
-        if not any(r.search(t) for r in self.inc):
+        hits = [r for r in self.inc if r.search(t)]
+        if not hits:
             return False, "title not a software role"
+        if all(r.pattern in GENERIC_INCLUDES for r in hits) and not TECH_WORD.search(t):
+            return False, "fresher program title without a tech word"
         for r in self.exc:
             if r.search(t):
                 if company in self.level_ii_ok and re.search(r"\bii\b|\b2\b", t, re.I) and \

@@ -477,6 +477,10 @@ def page_jobs(c, s, url, links):
         # location: a line that looks like a place; otherwise leave empty ("check page")
         parts = [p for x in lines for p in re.split(r"\s[•|·]\s", x)]
         loc = next((p for p in parts if p != first and len(p) <= 80 and LOC_HINT.search(p)), "")
+        if not loc:   # TalentBrew/Phenom-style URLs carry the city: /job/<city>/<title>/<id>/<id>
+            m = re.search(r"/jobs?/([a-z][a-z-]{2,40})/[^/]+/\d+/\d+", key, re.I)
+            if m:
+                loc = m.group(1).replace("-", " ").title()
         out.append(mk(c, key, first, loc.strip(" •|-,"), key))
     return out
 

@@ -12,3 +12,8 @@ __pycache__/
 state/*.json
 docs/companies.json
 logs.txt
+
+# personal files - never publish (resume has phone/email)
+Claude outputs/
+*.docx
+*.pdf

@@ -46,7 +46,8 @@ class T(unittest.TestCase):
     def test_reject_and_keep(self):
         answers = {"Data Engineer": {"fit": "reject", "reason": "\"5+ years of experience\" on AWS"},
                    "Software Engineer": {"fit": "fresher", "reason": "new grads", "role_type": "Backend",
-                                         "skills_to_learn": ["Go"]}}
+                                         "skills_to_learn": ["Go"]},
+                   "SDE 1": {"fit": "fresher", "reason": "new grads"}}
 
         def fake(req, timeout=0):
             body = json.loads(req.data)
@@ -60,10 +61,10 @@ class T(unittest.TestCase):
         self.assertEqual([k["id"] for k in kept], ["b", "c"])
         self.assertEqual(kept[0]["fit"], "fresher")
         self.assertEqual(kept[0]["role_type"], "Backend")
-        self.assertEqual(len(self.calls), 2)          # fresher job not sent to AI
+        self.assertEqual(len(self.calls), 3)          # fresher jobs are double-checked too
         # cached: no new calls the second time, same result
         kept = finder.ai_pass(self.items(), r, cache)
-        self.assertEqual(len(self.calls), 2)
+        self.assertEqual(len(self.calls), 3)
         self.assertEqual([k["id"] for k in kept], ["b", "c"])
 
     def test_rate_limit_keeps_rule_result(self):
@@ -80,7 +81,8 @@ class T(unittest.TestCase):
         r = ai.AIReviewer({"ai_max_per_run": 10}, log=lambda *a: None)
         kept = finder.ai_pass(self.items(), r, {})
         self.assertEqual(len(kept), 3)
-        self.assertEqual(r.errors, 2)   # only 2 open/stretch jobs to ask about
+        self.assertEqual(r.errors, 3)   # 3 bad replies in a row -> AI stops, rule results kept
+        self.assertTrue(r.disabled)
 
     def test_falls_back_to_next_provider(self):
         os.environ["GROQ_API_KEY"] = "y"
