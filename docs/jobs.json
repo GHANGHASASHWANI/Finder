@@ -44,7 +44,7 @@
   "location_group": "South India",
   "min_years": 1,
   "exp_note": "actical experience. 1 year of experience in one or more programmin",
-  "fit": "fresher",
+  "fit": "stretch",
   "role_type": "SWE",
   "skills_matched": [
    "C++",
@@ -53,13 +53,17 @@
    "Python"
   ],
   "skills_to_learn": [
+   "Go",
+   "Kubernetes",
    "GCP"
   ],
   "match_pct": 80,
   "priority": 9.2,
   "est_ctc_lpa": "35-50",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true
+  "first_check": true,
+  "ai_reason": "Requires 1 year of experience in one or more programming languages",
+  "ai_by": "gemini"
  },
  {
   "id": "Google::122710813273137862",
@@ -75,7 +79,7 @@
   "location_group": "South India",
   "min_years": 1,
   "exp_note": "actical experience. 1 year of experience with software development",
-  "fit": "fresher",
+  "fit": "stretch",
   "role_type": "SWE",
   "skills_matched": [
    "C++",
@@ -83,12 +87,17 @@
    "JavaScript",
    "Python"
   ],
-  "skills_to_learn": [],
+  "skills_to_learn": [
+   "Large-scale distributed system",
+   "Information retrieval"
+  ],
   "match_pct": 100,
   "priority": 9.8,
   "est_ctc_lpa": "35-50",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true
+  "first_check": true,
+  "ai_reason": "Job requires '1 year of experience with software development'",
+  "ai_by": "gemini"
  },
  {
   "id": "Google::138674961899233990",
@@ -104,7 +113,7 @@
   "location_group": "South India",
   "min_years": 1,
   "exp_note": "actical experience. 1 year of experience with software development",
-  "fit": "fresher",
+  "fit": "stretch",
   "role_type": "SWE",
   "skills_matched": [
    "C++",
@@ -117,7 +126,9 @@
   "priority": 9.8,
   "est_ctc_lpa": "35-50",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true
+  "first_check": true,
+  "ai_reason": "Requires 1 year of experience with software development.",
+  "ai_by": "gemini"
  },
  {
   "id": "Cisco::/job/Bangalore-India/Software-engineer-test_2003235",
@@ -209,7 +220,7 @@
   "min_years": 0,
   "exp_note": "resh graduates with 0 years of experience. ( Linux and Windows know",
   "fit": "fresher",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_matched": [
    "AWS",
    "CI/CD",
@@ -220,16 +231,19 @@
   ],
   "skills_to_learn": [
    "Ansible",
+   "Kubernetes",
+   "Zabbix",
    "Azure",
-   "GCP",
    "Jenkins",
-   "Kubernetes"
+   "GCP"
   ],
   "match_pct": 55,
   "priority": 7.4,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true
+  "first_check": true,
+  "ai_reason": "Open to fresh graduates with 0 years of experience",
+  "ai_by": "gemini"
  },
  {
   "id": "Micron::44400508",
@@ -647,36 +661,6 @@
   "first_check": true
  },
  {
-  "id": "Qualcomm::446721218767",
-  "company": "Qualcomm",
-  "title": "Engineer - RF SW - M.Tech - Communication background - 2025/26",
-  "location": "Hyderabad, Telangāna, India",
-  "url": "https://careers.qualcomm.com/careers/job/446721218767",
-  "posted": "2026-10-21T00:00:00+00:00",
-  "dept": "Software Engineering",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 0,
-  "exp_note": "eers at levels with 0-1 yrs of experience, with knowledge of RF and",
-  "fit": "fresher",
-  "role_type": "SWE",
-  "skills_matched": [
-   "C++",
-   "DSA",
-   "REST APIs"
-  ],
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 75,
-  "priority": 8.0,
-  "est_ctc_lpa": "~15-24",
-  "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true
- },
- {
   "id": "Qualcomm::446720486356",
   "company": "Qualcomm",
   "title": "DDR tools and System development engineer",
@@ -808,36 +792,6 @@
   "first_check": true
  },
  {
-  "id": "Qualcomm::446719783487",
-  "company": "Qualcomm",
-  "title": "2027 Campus Hire_ Engineer_ HW",
-  "location": "Bangalore, India; Hyderabad, Telangāna, India",
-  "url": "https://careers.qualcomm.com/careers/job/446719783487",
-  "posted": "2026-09-30T00:00:00+00:00",
-  "dept": "Hardware Engineering",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
-  "skills_matched": [
-   "C++",
-   "Networking basics",
-   "REST APIs"
-  ],
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 75,
-  "priority": 8.0,
-  "est_ctc_lpa": "~15-24",
-  "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true
- },
- {
   "id": "Qualcomm::446720892993",
   "company": "Qualcomm",
   "title": "Engineer",
@@ -964,14 +918,19 @@
    "REST APIs"
   ],
   "skills_to_learn": [
-   "Android",
-   "Embedded C"
+   "Embedded C",
+   "Device Drivers",
+   "RTOS",
+   "Linux Kernel",
+   "Android"
   ],
   "match_pct": 71,
   "priority": 7.7,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true
+  "first_check": true,
+  "ai_reason": "Explicitly targets campus graduates for entry-level engineering roles.",
+  "ai_by": "gemini"
  },
  {
   "id": "Qualcomm::446719784235",
@@ -988,7 +947,7 @@
   "min_years": null,
   "exp_note": "",
   "fit": "fresher",
-  "role_type": "SWE",
+  "role_type": "Embedded SW",
   "skills_matched": [
    "C++",
    "DSA",
@@ -997,6 +956,10 @@
    "REST APIs"
   ],
   "skills_to_learn": [
+   "Embedded C++",
+   "Device Drivers",
+   "RTOS",
+   "Linux Kernel",
    "Android",
    "Embedded C"
   ],
@@ -1004,37 +967,9 @@
   "priority": 7.7,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true
- },
- {
-  "id": "Qualcomm::446719783557",
-  "company": "Qualcomm",
-  "title": "2027 Campus Hire_ Associate Engineer_ HW",
-  "location": "Bangalore, India; Chennai, Tamil Nādu, India",
-  "url": "https://careers.qualcomm.com/careers/job/446719783557",
-  "posted": "2026-09-09T00:00:00+00:00",
-  "dept": "Hardware Engineering",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
-  "skills_matched": [
-   "C++",
-   "Networking basics",
-   "REST APIs"
-  ],
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 75,
-  "priority": 8.0,
-  "est_ctc_lpa": "~15-24",
-  "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true
+  "first_check": true,
+  "ai_reason": "Targeted at campus graduates and entry-level associate software engineers.",
+  "ai_by": "gemini"
  },
  {
   "id": "Qualcomm::446720545289",
@@ -1465,7 +1400,7 @@
   "location_group": "Central/West India",
   "min_years": 1,
   "exp_note": "t You • 6 months to 1 year of overall career experience into Softw",
-  "fit": "fresher",
+  "fit": "stretch",
   "role_type": "Full-stack",
   "skills_matched": [
    "CI/CD",
@@ -1475,6 +1410,9 @@
    "React"
   ],
   "skills_to_learn": [
+   "Java",
+   "Spring Boot",
+   "React",
    "Angular",
    "Cassandra",
    "Spring"
@@ -1483,7 +1421,9 @@
   "priority": 7.5,
   "est_ctc_lpa": "~15-22",
   "found_at": "2026-10-23T13:17:08.090376+00:00",
-  "first_check": false
+  "first_check": false,
+  "ai_reason": "6 months to 1 year of overall career experience into Software Engineering",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Chennai-DLF-IT-Park/Software-Engineer---JAVA_JR-0000125339",
@@ -1726,8 +1666,8 @@
   "location_group": "Unknown (check page)",
   "min_years": null,
   "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
+  "fit": "open",
+  "role_type": "AI/ML",
   "skills_matched": [
    "AWS",
    "CI/CD",
@@ -1744,15 +1684,20 @@
    "Vector DBs"
   ],
   "skills_to_learn": [
-   "Azure",
-   "GCP",
-   "Ruby"
+   "LangGraph",
+   "AutoGen",
+   "CrewAI",
+   "Model Context Protocol",
+   "Cursor",
+   "Azure"
   ],
   "match_pct": 81,
   "priority": 8.4,
   "est_ctc_lpa": "25-40",
   "found_at": "2026-10-23T13:17:08.090376+00:00",
-  "first_check": false
+  "first_check": false,
+  "ai_reason": "No experience or seniority requirement is stated in the job posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Synopsys::https://careers.synopsys.com/job/ho-chi-minh-city/applications-engineering-engineer-19447/44408/102322183104",
@@ -2033,36 +1978,6 @@
   "first_check": true,
   "ai_reason": "AI rejected without quoting the posting - kept",
   "ai_by": "gemini"
- },
- {
-  "id": "Zepto::https://www.instahyre.com/job-433568-data-scientist-at-zepto-gurgaon/",
-  "company": "Zepto",
-  "title": "Data Scientist Zepto Gurgaon",
-  "location": "",
-  "url": "https://www.instahyre.com/job-433568-data-scientist-at-zepto-gurgaon/",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 3,
-  "segment": "Indian Consumer/Fintech",
-  "location_group": "Unknown (check page)",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
-  "skills_matched": [
-   "Docker",
-   "Python",
-   "SQL"
-  ],
-  "skills_to_learn": [
-   "ML basics"
-  ],
-  "match_pct": 75,
-  "priority": 8.4,
-  "est_ctc_lpa": "~30-45",
-  "found_at": "2026-10-22T16:48:31.996480+00:00",
-  "first_check": true
  },
  {
   "id": "SAP Labs India::https://jobs.sap.com/en/jobs/744000157143970/platform-engineer-for-hana-cloud-sql-optimizer/",
@@ -2431,9 +2346,13 @@
   "fit": "fresher",
   "role_type": "Quant",
   "skills_to_learn": [
+   "Q/KDB+",
+   "Quantitative Finance",
    "Bash"
   ],
-  "match_pct": 80
+  "match_pct": 80,
+  "ai_reason": "targets highly motivated graduates or early career professionals",
+  "ai_by": "gemini"
  },
  {
   "id": "Squarepoint Capital::239376",
@@ -2492,7 +2411,8 @@
   "fit": "fresher",
   "role_type": "Quant",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_skip": true
  },
  {
   "id": "Trexquant::098ED84D17",
@@ -2686,13 +2606,16 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
+  "fit": "open",
+  "role_type": "Full-stack",
   "skills_to_learn": [
    "Angular",
+   "Java",
    "C#"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No experience requirement or seniority level is stated in the job posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Millennium (India Technology Centre)::755958887561",
@@ -2715,12 +2638,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
+  "fit": "open",
   "role_type": "Quant",
   "skills_to_learn": [
+   "Quantitative Finance",
+   "Statistical Modeling",
+   "Time Series Analysis",
+   "Advanced Statistics",
    "C#"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No experience or seniority requirements specified in the provided text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Millennium (India Technology Centre)::755958887553",
@@ -2743,12 +2672,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
+  "fit": "open",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "Infrastructure as Code",
+   "Kubernetes",
+   "Terraform",
+   "CI/CD pipelines",
    "C#"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No experience requirement or seniority level is stated in the provided text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Millennium (India Technology Centre)::755958855585",
@@ -2772,12 +2707,19 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
+  "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [
+   "Advanced C++",
+   "Low-level programming",
+   "Multi-threading",
+   "Memory management",
+   "Data structures and algorithms",
    "C#"
   ],
-  "match_pct": 67
+  "match_pct": 67,
+  "ai_reason": "No experience or seniority requirements are stated in the posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Millennium (India Technology Centre)::755958689237",
@@ -2800,12 +2742,19 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
+  "fit": "open",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "Network Security",
+   "Firewalls",
+   "SIEM",
+   "IDS/IPS",
+   "VPN",
    "C#"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No experience requirements or details are explicitly stated in the job posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Millennium (India Technology Centre)::755958563745",
@@ -2828,12 +2777,17 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
+  "fit": "open",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "Hardware Maintenance",
+   "Networking",
+   "Datacenter Operations",
    "C#"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No experience requirements specified in the job posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Millennium (India Technology Centre)::755957214656",
@@ -2856,12 +2810,15 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
+  "fit": "open",
   "role_type": "Full-stack",
   "skills_to_learn": [
-   "C#"
+   "C#",
+   ".NET"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No experience or seniority requirements are stated in the provided text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Millennium (India Technology Centre)::755955794650",
@@ -2884,12 +2841,19 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
+  "fit": "open",
+  "role_type": "Security",
   "skills_to_learn": [
+   "Threat Intelligence",
+   "SIEM Tools",
+   "Incident Response",
+   "Security Information",
+   "Malware Analysis",
    "C#"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No experience requirements or seniority levels are mentioned in the provided text snippet.",
+  "ai_by": "gemini"
  },
  {
   "id": "Millennium (India Technology Centre)::755953842041",
@@ -2913,12 +2877,16 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
+  "fit": "open",
+  "role_type": "Backend",
   "skills_to_learn": [
+   "Java",
+   "Spring Boot",
    "C#"
   ],
-  "match_pct": 67
+  "match_pct": 67,
+  "ai_reason": "No experience requirement or seniority level is stated in the job posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Optiver::8602146002",
@@ -3236,7 +3204,8 @@
   "fit": "fresher",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_skip": true
  },
  {
   "id": "Booking Holdings / Booking.com (Bengaluru)::30416",
@@ -3257,10 +3226,12 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
+  "fit": "open",
+  "role_type": "Backend",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_reason": "No experience or seniority level is stated in the provided job description text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Adobe::/job/Bangalore/Conversation-AI-Engineer_R172109",
@@ -4258,13 +4229,19 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
+  "fit": "open",
+  "role_type": "Backend",
   "skills_to_learn": [
    "Go",
+   "LXC/LXD",
+   "CUDA",
+   "Linux containers",
+   "C",
    "ML basics"
   ],
-  "match_pct": 67
+  "match_pct": 67,
+  "ai_reason": "Open to junior and entry-level roles with no specific experience minimum required.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::5146709",
@@ -4462,12 +4439,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "fresher",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "Linux Kernel",
+   "Kernel Patching",
+   "Device Drivers",
    "Bash",
+   "Low-level Systems",
    "Embedded C"
   ],
-  "match_pct": 71
+  "match_pct": 71,
+  "ai_reason": "We hire candidates of all experience levels from recent university graduates through seasoned industry experts",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::5191982",
@@ -4535,14 +4518,19 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
+  "fit": "open",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Flutter",
-   "Go",
-   "Rust"
+   "Rust",
+   "Golang",
+   "eBPF",
+   "Profile guided optimization",
+   "Assembly language",
+   "Flutter"
   ],
-  "match_pct": 73
+  "match_pct": 73,
+  "ai_reason": "No specific years of experience or seniority level required in the text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::5703396",
@@ -4998,12 +4986,16 @@
   "first_check": true,
   "exp_note": "",
   "fit": "fresher",
-  "role_type": "Mobile",
+  "role_type": "Frontend",
   "skills_to_learn": [
    "Flutter",
+   "CSS",
+   "Vanilla Framework",
    "Kubernetes"
   ],
-  "match_pct": 71
+  "match_pct": 71,
+  "ai_reason": "For the entry level position in this advert",
+  "ai_by": "gemini"
  },
  {
   "id": "Constructor::4e7cfde4-c2ba-4251-b95f-7bcf9793984a",
@@ -5088,13 +5080,19 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
+  "fit": "open",
   "role_type": "Data",
   "skills_to_learn": [
+   "Power BI",
+   "Microsoft Fabric",
    "Azure",
+   "Data Modeling",
+   "Data Warehousing",
    "Power BI/Tableau"
   ],
-  "match_pct": 60
+  "match_pct": 60,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "Doist::56d0e7bf-e681-41b0-b5d7-d835d9380c6b",
