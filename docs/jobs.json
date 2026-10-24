@@ -1279,14 +1279,20 @@
    "Python"
   ],
   "skills_to_learn": [
-   "Embedded C",
-   "ML basics"
+   "CMOS circuit design",
+   "Cadence Virtuoso",
+   "SRAM/ROM design",
+   "VLSI",
+   "Perl",
+   "Embedded C"
   ],
   "match_pct": 60,
   "priority": 6.4,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": false
+  "first_check": false,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "BlackRock::/job/Mumbai-India/Research-Engineer--Portfolio-Management-Group--Associate_R265897",
@@ -1831,34 +1837,6 @@
   "first_check": false,
   "ai_reason": "No years of experience requirement is specified in the posting.",
   "ai_by": "gemini"
- },
- {
-  "id": "Arm::https://careers.arm.com/job/austin/theorem-proving-engineer/33099/97584421536",
-  "company": "Arm",
-  "title": "Theorem Proving Engineer",
-  "location": "",
-  "url": "https://careers.arm.com/job/austin/theorem-proving-engineer/33099/97584421536",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "Unknown (check page)",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_matched": [
-   "DSA"
-  ],
-  "skills_to_learn": [
-   "ML basics"
-  ],
-  "match_pct": 50,
-  "priority": 6.3,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T17:15:52.975660+00:00",
-  "first_check": false
  },
  {
   "id": "Arm::https://careers.arm.com/job/lund/compiler-engineer-machine-learning/33099/94847322016",
@@ -6599,7 +6577,9 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_reason": "No experience or seniority requirements stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::29718",
@@ -6648,8 +6628,16 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
+  "skills_to_learn": [
+   "Workday",
+   "People Analytics",
+   "HRIS",
+   "Business Process Configuration",
+   "Reports"
+  ],
+  "match_pct": null,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "Cisco::/job/Bangalore-India/Software-Engineer_2026818-1",
@@ -7033,39 +7021,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Cisco::/job/Bangalore-India/Software-Engineer_2014239-1",
-  "company": "Cisco",
-  "title": "Software Engineer",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Engineer_2014239-1",
-  "posted": "2026-09-24T15:16:23.923248+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 0,
-  "skills_matched": [
-   "JavaScript",
-   "Networking basics",
-   "Node.js",
-   "React",
-   "TypeScript"
-  ],
-  "priority": 6.5,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "ations: Bachelors + 2 years of related experience OR Masters + 0 ye",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Angular",
-   "Ruby"
-  ],
-  "match_pct": 71
- },
- {
   "id": "Cisco::/job/Bangalore-India/Technical-Projects-Systems-Engineer_2020675",
   "company": "Cisco",
   "title": "Technical Projects Systems Engineer",
@@ -7316,35 +7271,6 @@
   "match_pct": null
  },
  {
-  "id": "Nvidia::/job/India-Bengaluru/HSIO-Execution-Engineer_JR2026991",
-  "company": "Nvidia",
-  "title": "HSIO Execution Engineer",
-  "location": "India, Bengaluru",
-  "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/India-Bengaluru/HSIO-Execution-Engineer_JR2026991",
-  "posted": "2026-10-08T15:16:20.137214+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 3,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "Linux"
-  ],
-  "priority": 6.5,
-  "est_ctc_lpa": "25-40",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Android",
-   "iOS"
-  ],
-  "match_pct": 33
- },
- {
   "id": "Fyle::VN42030",
   "company": "Fyle",
   "title": "Web Developer",
@@ -7576,12 +7502,16 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Full-stack",
   "skills_to_learn": [
+   "Storybook",
+   "PostHog analytics",
    "Django/Flask",
    "Spark/PySpark"
   ],
-  "match_pct": 67
+  "match_pct": 67,
+  "ai_reason": "No experience or seniority requirements stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Sourcegraph::6103628004",
@@ -7714,11 +7644,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Backend",
   "skills_to_learn": [
+   "WinDBG",
+   "Windows Driver Frameworks",
+   "Audio subsystem architecture",
+   "SoC architecture",
    "Embedded C"
   ],
-  "match_pct": 67
+  "match_pct": 67,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "JioHotstar (JioStar, incl. Disney Star)::/job/Bengaluru/Security-Engineer--Enterprise-_JR10173",
@@ -8107,41 +8043,6 @@
   "match_pct": 50
  },
  {
-  "id": "Bosch Global Software Technologies::744000155720828",
-  "company": "Bosch Global Software Technologies",
-  "title": "Embedded_C++ Developer_EBH",
-  "location": "hosur road bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000155720828",
-  "posted": "2026-10-15T10:13:19.189000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "CI/CD",
-   "Git",
-   "Linux",
-   "OOP",
-   "Python"
-  ],
-  "priority": 6.5,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Bash",
-   "Embedded C",
-   "Jenkins"
-  ],
-  "match_pct": 67
- },
- {
   "id": "Bosch Global Software Technologies::744000155420099",
   "company": "Bosch Global Software Technologies",
   "title": "Test Engineer -MBD/MiL/SiL",
@@ -8247,39 +8148,6 @@
   "match_pct": 67
  },
  {
-  "id": "Bosch Global Software Technologies::744000154955389",
-  "company": "Bosch Global Software Technologies",
-  "title": "Embedded C++ Developer_ECT1",
-  "location": "hosur road bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154955389",
-  "posted": "2026-10-12T08:42:15.366000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "CI/CD",
-   "DSA",
-   "LLMs",
-   "System design"
-  ],
-  "priority": 6.5,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Embedded C",
-   "ML basics"
-  ],
-  "match_pct": 71
- },
- {
   "id": "Bosch Global Software Technologies::744000154656049",
   "company": "Bosch Global Software Technologies",
   "title": "Automotive Systems Diagnostic and troubleshooting Engineer",
@@ -8304,35 +8172,6 @@
   "match_pct": null
  },
  {
-  "id": "Bosch Global Software Technologies::744000154653834",
-  "company": "Bosch Global Software Technologies",
-  "title": "Vehicle Diagnostics Engineer, COB",
-  "location": "coimbatore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154653834",
-  "posted": "2026-10-09T11:43:36.903000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "Python",
-   "SQL"
-  ],
-  "priority": 6.5,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "C#"
-  ],
-  "match_pct": 67
- },
- {
   "id": "Bosch Global Software Technologies::744000154649239",
   "company": "Bosch Global Software Technologies",
   "title": "Automotive Systems Diagnostic and troubleshooting Engineer",
@@ -8355,35 +8194,6 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null
- },
- {
-  "id": "Bosch Global Software Technologies::744000154604338",
-  "company": "Bosch Global Software Technologies",
-  "title": "Security Function developer",
-  "location": "bengaluru, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154604338",
-  "posted": "2026-10-09T07:26:23.476000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "Git",
-   "Python"
-  ],
-  "priority": 6.5,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 67
  },
  {
   "id": "Bosch Global Software Technologies::744000154603648",
@@ -8501,35 +8311,6 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null
- },
- {
-  "id": "Bosch Global Software Technologies::744000153372859",
-  "company": "Bosch Global Software Technologies",
-  "title": "Software Developer",
-  "location": "hosur road bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000153372859",
-  "posted": "2026-10-04T13:16:38.537000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "Networking basics",
-   "Python"
-  ],
-  "priority": 6.5,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 67
  },
  {
   "id": "Bosch Global Software Technologies::744000153372868",
@@ -8743,35 +8524,6 @@
   "match_pct": 50
  },
  {
-  "id": "Bosch Global Software Technologies::744000152431390",
-  "company": "Bosch Global Software Technologies",
-  "title": "Software Developer",
-  "location": "hosur road bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000152431390",
-  "posted": "2026-09-29T13:15:58.190000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "Networking basics",
-   "Python"
-  ],
-  "priority": 6.5,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 67
- },
- {
   "id": "Bosch Global Software Technologies::744000152388899",
   "company": "Bosch Global Software Technologies",
   "title": "2026/03: HW Developer (PS-DC Projects)",
@@ -8929,35 +8681,6 @@
   "match_pct": 50
  },
  {
-  "id": "Bosch Global Software Technologies::744000146393239",
-  "company": "Bosch Global Software Technologies",
-  "title": "ServiceNow Service Portal Developer",
-  "location": "coimbatore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000146393239",
-  "posted": "2026-08-31T05:00:43.552000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "JavaScript",
-   "REST APIs"
-  ],
-  "priority": 6.5,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Angular"
-  ],
-  "match_pct": 67
- },
- {
   "id": "Bosch Global Software Technologies::744000145907468",
   "company": "Bosch Global Software Technologies",
   "title": "Radar Signal Processing System Engineering",
@@ -8982,35 +8705,6 @@
   "match_pct": null
  },
  {
-  "id": "Bosch Global Software Technologies::744000145334448",
-  "company": "Bosch Global Software Technologies",
-  "title": "Test Automation Engineer",
-  "location": "hosur road bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000145334448",
-  "posted": "2026-08-24T17:27:26.420000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "CI/CD",
-   "Java"
-  ],
-  "priority": 6.5,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "QA/Test",
-  "skills_to_learn": [
-   "C#"
-  ],
-  "match_pct": 67
- },
- {
   "id": "Bosch Global Software Technologies::744000138994648",
   "company": "Bosch Global Software Technologies",
   "title": "Cost engineering and Benchmarking",
@@ -9033,35 +8727,6 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null
- },
- {
-  "id": "Bosch Global Software Technologies::744000138989578",
-  "company": "Bosch Global Software Technologies",
-  "title": "VM Brakes - ASW Algorithm Software Developer [Indian OEM]",
-  "location": "coimbatore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000138989578",
-  "posted": "2026-07-22T05:07:21.206000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "DSA"
-  ],
-  "priority": 6.5,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 67
  },
  {
   "id": "Bosch Global Software Technologies::744000127855103",
@@ -9089,12 +8754,14 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Ansible",
    "Bash"
   ],
-  "match_pct": 71
+  "match_pct": 71,
+  "ai_reason": "No experience or seniority requirements are explicitly stated in the job posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Siemens Healthineers::P-100197",
@@ -9496,7 +9163,8 @@
    "Power BI/Tableau",
    "Prometheus/Grafana"
   ],
-  "match_pct": 57
+  "match_pct": 57,
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Chennai-DLF-IT-Park/Data-Engineer_JR-0000115254",
@@ -9711,10 +9379,16 @@
   "fit": "open",
   "role_type": "QA/Test",
   "skills_to_learn": [
-   "Jenkins",
-   "Selenium"
+   "Selenium",
+   "Cucumber",
+   "TestNG",
+   "REST Assured",
+   "JIRA",
+   "Jenkins"
   ],
-  "match_pct": 71
+  "match_pct": 71,
+  "ai_reason": "No minimum years of experience stated in the job description.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Software-Engineer_JR-0000120497-1",
@@ -9788,14 +9462,16 @@
   "fit": "open",
   "role_type": "Data",
   "skills_to_learn": [
-   "Bash",
    "Databricks",
    "Hadoop",
-   "Kubernetes",
-   "ML basics",
-   "Spark/PySpark"
+   "Spark",
+   "Hive",
+   "OpenShift",
+   "Bash"
   ],
-  "match_pct": 60
+  "match_pct": 60,
+  "ai_reason": "No specific experience years stated",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Colleague-Experience-Analytics---Adoption-Engineer_JR-0000123921",
@@ -9860,12 +9536,16 @@
   "fit": "open",
   "role_type": "Data",
   "skills_to_learn": [
-   "Bash",
-   "ML basics",
-   "Power BI/Tableau",
-   "Snowflake"
+   "Qlik Sense",
+   "QlikView",
+   "Snowflake",
+   "ETL",
+   "Data Warehousing",
+   "Bash"
   ],
-  "match_pct": 73
+  "match_pct": 73,
+  "ai_reason": "No experience or seniority requirements specified in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Test-Engineer_JR-0000119044",
@@ -10004,10 +9684,16 @@
   "fit": "open",
   "role_type": "QA/Test",
   "skills_to_learn": [
-   "Playwright/Cypress",
-   "Selenium"
+   "Selenium",
+   "Cucumber",
+   "Playwright",
+   "Cypress",
+   "Karate",
+   "Playwright/Cypress"
   ],
-  "match_pct": 60
+  "match_pct": 60,
+  "ai_reason": "No specific experience or seniority level is stated in the job description.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Cloud-Data-Engineer_JR-0000118605-1",
@@ -10148,12 +9834,16 @@
   "fit": "open",
   "role_type": "Data",
   "skills_to_learn": [
-   "ML basics",
-   "Power BI/Tableau",
    "Snowflake",
-   "Spark/PySpark"
+   "PySpark",
+   "Tableau",
+   "Power BI",
+   "Apache Iceberg",
+   "ML basics"
   ],
-  "match_pct": 60
+  "match_pct": 60,
+  "ai_reason": "No specific experience level or seniority is explicitly stated in the posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Software-Engineer_JR-0000094150-1",
@@ -10181,10 +9871,16 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [
+   "Oracle",
+   "Unix shell scripting",
+   "Oracle Watchlist Screening",
+   "Machine Learning",
    "Bash",
    "ML basics"
   ],
-  "match_pct": 60
+  "match_pct": 60,
+  "ai_reason": "No specific experience years or seniority level is stated in the job description.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/IFC---Service-Engineer_JR-0000117024-1",
@@ -10530,13 +10226,18 @@
   "first_check": true,
   "exp_note": "sirable. Typically, 1-3 years’ experience. Knowledge and Skills: Prog",
   "fit": "stretch",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "Golang",
+   "Kubernetes",
+   "OpenVZ",
+   "KVM",
    "Azure",
-   "Go",
-   "Kubernetes"
+   "Go"
   ],
-  "match_pct": 73
+  "match_pct": 73,
+  "ai_reason": "Typically, 1-3 years’ experience.",
+  "ai_by": "gemini"
  },
  {
   "id": "HPE (incl. Juniper Networks)::/job/Bengaluru-Karntaka-India/Fullstack-Developer_1210369-2",
@@ -10835,10 +10536,16 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Prometheus/Grafana",
-   "Terraform"
+   "Cribl",
+   "OpenTelemetry",
+   "ClickHouse",
+   "Terraform",
+   "Grafana",
+   "Prometheus/Grafana"
   ],
-  "match_pct": 67
+  "match_pct": 67,
+  "ai_reason": "No specific experience years required; title says Senior Associate but body has no minimum years.",
+  "ai_by": "gemini"
  },
  {
   "id": "LSEG::/job/IND-BLR-Divyasree-Technopolis/Site-Reliability-Engineer_R0121179-1",
@@ -10952,16 +10659,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Azure",
-   "Bash",
-   "Jenkins",
+   "Rust",
    "Kubernetes",
-   "ML basics",
-   "Rust"
+   "Azure",
+   "Shell scripting",
+   "OAuth",
+   "Bash"
   ],
-  "match_pct": 70
+  "match_pct": 70,
+  "ai_reason": "No specific years of experience or seniority stated.",
+  "ai_by": "gemini"
  },
  {
   "id": "LSEG::/job/GBR-London-10-Paternoster-Square/Machine-Learning-Quality-Engineer_R0120981-1",
@@ -11058,12 +10767,16 @@
   "fit": "open",
   "role_type": "QA/Test",
   "skills_to_learn": [
-   "Bash",
-   "C#",
+   "Protractor",
+   "Selenium",
+   "Mocha",
+   "ISTQB certification",
    "Jenkins",
-   "Selenium"
+   "Bash"
   ],
-  "match_pct": 73
+  "match_pct": 73,
+  "ai_reason": "No experience or seniority requirements stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Deutsche Bank::/job/Bangalore-Velankani-ISC/Site-Reliability-Engineer_R0448537",
@@ -11358,30 +11071,6 @@
    "Embedded C"
   ],
   "match_pct": 0
- },
- {
-  "id": "Synopsys::https://careers.synopsys.com/applications-engineering-jobs",
-  "company": "Synopsys",
-  "title": "Applications Engineering",
-  "location": "",
-  "url": "https://careers.synopsys.com/applications-engineering-jobs",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "Unknown (check page)",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 6.3,
-  "est_ctc_lpa": "~15-24",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
  },
  {
   "id": "Synopsys::https://careers.synopsys.com/rd-engineering-jobs",
