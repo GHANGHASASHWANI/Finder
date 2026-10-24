@@ -1,5 +1,52 @@
 [
  {
+  "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Full-Stack-Engineer_JR-0000123256-1",
+  "company": "Barclays",
+  "title": "Full Stack Engineer",
+  "location": "Pune, Gera Commerzone SEZ",
+  "url": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Pune-Gera-Commerzone-SEZ/Full-Stack-Engineer_JR-0000123256-1",
+  "posted": "2026-10-24T12:35:24.824327+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 5,
+  "segment": "Quant/Finance",
+  "location_group": "Central/West India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "Full-stack",
+  "skills_matched": [
+   "AWS",
+   "CI/CD",
+   "Caching",
+   "Docker",
+   "Git",
+   "Java",
+   "JavaScript",
+   "Kafka",
+   "Microservices",
+   "REST APIs",
+   "React",
+   "SQL",
+   "System design"
+  ],
+  "skills_to_learn": [
+   "Java",
+   "Spring Boot",
+   "Hibernate",
+   "OpenShift",
+   "Angular",
+   "Selenium"
+  ],
+  "match_pct": 81,
+  "priority": 6.9,
+  "est_ctc_lpa": "~12-18",
+  "found_at": "2026-10-24T12:35:13.039292+00:00",
+  "first_check": false,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Google::105109659337007814",
   "company": "Google",
   "title": "Cloud AI Engineer (English)",
@@ -976,42 +1023,19 @@
    "REST APIs"
   ],
   "skills_to_learn": [
-   "Embedded C"
+   "DSP",
+   "Embedded C",
+   "Real-time Operating Systems",
+   "Audio DSP",
+   "Trace32"
   ],
   "match_pct": 67,
   "priority": 6.5,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true
- },
- {
-  "id": "Qualcomm::446720858537",
-  "company": "Qualcomm",
-  "title": "Camera Firmware Engineer",
-  "location": "Hyderabad, Telangāna, India",
-  "url": "https://careers.qualcomm.com/careers/job/446720858537",
-  "posted": "2026-08-31T00:00:00+00:00",
-  "dept": "Systems Engineering",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 1,
-  "exp_note": "skills. Looking for 1-3 years of relevant industry experience Minimum",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_matched": [
-   "C++",
-   "REST APIs"
-  ],
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 67,
-  "priority": 6.5,
-  "est_ctc_lpa": "~15-24",
-  "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true
+  "first_check": true,
+  "ai_reason": "Requires 1+ years of experience on DSP/Embedded processor.",
+  "ai_by": "gemini"
  },
  {
   "id": "Qualcomm::446717819532",
@@ -1028,7 +1052,7 @@
   "min_years": 0,
   "exp_note": "imum Qualifications 0-2 years of experience in multimedia/embedded te",
   "fit": "stretch",
-  "role_type": "SWE",
+  "role_type": "AI/ML",
   "skills_matched": [
    "C++",
    "CI/CD",
@@ -1037,14 +1061,20 @@
    "REST APIs"
   ],
   "skills_to_learn": [
-   "Embedded C",
-   "Jenkins"
+   "Embedded Systems",
+   "Image Processing",
+   "Computer Vision",
+   "SIMD",
+   "Jenkins",
+   "Embedded C"
   ],
   "match_pct": 71,
   "priority": 6.5,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true
+  "first_check": true,
+  "ai_reason": "0-2 years of experience in multimedia/embedded technologies",
+  "ai_by": "gemini"
  },
  {
   "id": "Qualcomm::446719672012",
@@ -1565,19 +1595,26 @@
   "location_group": "Central/West India",
   "min_years": null,
   "exp_note": "",
-  "fit": "fresher",
+  "fit": "open",
   "role_type": "SWE",
   "skills_matched": [
    "REST APIs"
   ],
   "skills_to_learn": [
+   "Financial analysis",
+   "Wealth management",
+   "MS Project",
+   "Tableau",
+   "VBA",
    "Power BI/Tableau"
   ],
   "match_pct": 50,
   "priority": 6.6,
   "est_ctc_lpa": "~14-20",
   "found_at": "2026-10-23T13:17:08.090376+00:00",
-  "first_check": false
+  "first_check": false,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "HPE (incl. Juniper Networks)::/job/Bengaluru-Karntaka-India/Test-Automation--L2--L3-Protocols_1212151-2",
@@ -1838,21 +1875,27 @@
   "min_years": null,
   "exp_note": "",
   "fit": "open",
-  "role_type": "AI/ML",
+  "role_type": "Software Engineering",
   "skills_matched": [
    "C++",
    "CI/CD",
    "Python"
   ],
   "skills_to_learn": [
-   "Embedded C",
-   "ML basics"
+   "Compilers",
+   "Embedded C/C++",
+   "RTOS",
+   "Bare-metal",
+   "Computer Architecture",
+   "Embedded C"
   ],
   "match_pct": 60,
   "priority": 6.6,
   "est_ctc_lpa": "~18-28",
   "found_at": "2026-10-22T17:15:52.975660+00:00",
-  "first_check": false
+  "first_check": false,
+  "ai_reason": "No minimum years of experience are specified in the job posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Darwinbox::a6964f4f2d9b04",
@@ -4414,12 +4457,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Security",
   "skills_to_learn": [
-   "Ansible",
-   "Bash"
+   "C",
+   "OpenSSL",
+   "Linux security APIs",
+   "Shell scripting",
+   "FIPS 140-3",
+   "Ansible"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No experience or seniority level is explicitly stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::5151903",
@@ -4569,14 +4618,16 @@
   "fit": "open",
   "role_type": "AI/ML",
   "skills_to_learn": [
-   "Airflow",
-   "Azure",
-   "GCP",
    "Kubernetes",
-   "ML basics",
-   "dbt"
+   "Airflow",
+   "Apache Trino",
+   "MLflow",
+   "dbt",
+   "Azure"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No specific years of experience or seniority are stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Canonical::5143074",
@@ -5210,31 +5261,8 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": null
- },
- {
-  "id": "Broadcom (incl. VMware)::/job/IND-Bangalore-Electronic-City---S1/R-D-Engineer_R026551-6",
-  "company": "Broadcom (incl. VMware)",
-  "title": "R&D Engineer",
-  "location": "IND-Bangalore Electronic City - S1",
-  "url": "https://broadcom.wd1.myworkdayjobs.com/en-US/External_Career/job/IND-Bangalore-Electronic-City---S1/R-D-Engineer_R026551-6",
-  "posted": "2026-09-22T15:16:20.398738+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 6.5,
-  "est_ctc_lpa": "~18-30",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_skip": true
  },
  {
   "id": "GitLab::8775507002",
@@ -5340,11 +5368,15 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Full-stack",
   "skills_to_learn": [
-   "Ruby"
+   "Ruby",
+   "Customer-facing tools",
+   "HR tech APIs"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No explicit experience requirement stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Goldman Sachs::180778",
@@ -5406,7 +5438,9 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_reason": "No experience or seniority level is explicitly stated in the posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Goldman Sachs::122565",
@@ -5430,7 +5464,9 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_reason": "No experience or seniority level is stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "American Express::26014930",
@@ -6218,7 +6254,9 @@
   "fit": "open",
   "role_type": "AI/ML",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_reason": "No experience or seniority stated.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::30404",
@@ -6242,7 +6280,9 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_reason": "No experience or seniority requirements specified in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::30384",
@@ -6266,7 +6306,9 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_reason": "No experience or seniority explicitly stated in the snippet.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::30385",
@@ -6290,7 +6332,9 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_reason": "No experience or seniority stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::30373",
@@ -6314,7 +6358,9 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_reason": "No experience or seniority stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::30400",
@@ -6338,7 +6384,9 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::28864",
@@ -6362,7 +6410,9 @@
   "fit": "open",
   "role_type": "Backend",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_reason": "No experience or seniority requirements are stated in the posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::30130",
@@ -6438,9 +6488,16 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
+  "role_type": "Security",
+  "skills_to_learn": [
+   "Threat Intelligence",
+   "SIEM",
+   "Python",
+   "Malware Analysis"
+  ],
+  "match_pct": null,
+  "ai_reason": "No experience or seniority level is stated in the provided text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::30327",
@@ -6516,7 +6573,9 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [],
-  "match_pct": null
+  "match_pct": null,
+  "ai_reason": "No experience or seniority explicitly stated in the brief description.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::30169",
@@ -8133,32 +8192,6 @@
   "match_pct": null
  },
  {
-  "id": "Bosch Global Software Technologies::744000154989438",
-  "company": "Bosch Global Software Technologies",
-  "title": "Model Based Development Engineer",
-  "location": "bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154989438",
-  "posted": "2026-10-12T11:06:43.801000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": 1,
-  "skills_matched": [
-   "Python"
-  ],
-  "priority": 6.8,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "B.Tech Experience : 1-3 years Mandatory/requires Skills : Strong unde",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100
- },
- {
   "id": "Bosch Global Software Technologies::744000154985628",
   "company": "Bosch Global Software Technologies",
   "title": "Test Engineer -MBD/MiL/SiL",
@@ -8375,36 +8408,6 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null
- },
- {
-  "id": "Bosch Global Software Technologies::744000154399049",
-  "company": "Bosch Global Software Technologies",
-  "title": "Research Engineer:  AI/ML enhanced control engineering",
-  "location": "bengaluru, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154399049",
-  "posted": "2026-10-08T10:17:58.408000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "Python",
-   "System design"
-  ],
-  "priority": 6.8,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "AI/ML",
-  "skills_to_learn": [
-   "ML basics"
-  ],
-  "match_pct": 75
  },
  {
   "id": "Bosch Global Software Technologies::744000153674539",
@@ -9008,41 +9011,6 @@
   "match_pct": 67
  },
  {
-  "id": "Bosch Global Software Technologies::744000143513618",
-  "company": "Bosch Global Software Technologies",
-  "title": "Embedded_Linux_Developer_JCIH_ECT",
-  "location": "coimbatore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000143513618",
-  "posted": "2026-08-14T13:06:47.080000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "CI/CD",
-   "Docker",
-   "LLMs",
-   "Linux",
-   "Networking basics",
-   "System design"
-  ],
-  "priority": 6.8,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Embedded C",
-   "ML basics"
-  ],
-  "match_pct": 78
- },
- {
   "id": "Bosch Global Software Technologies::744000138994648",
   "company": "Bosch Global Software Technologies",
   "title": "Cost engineering and Benchmarking",
@@ -9437,7 +9405,8 @@
   "skills_to_learn": [
    "Angular"
   ],
-  "match_pct": 80
+  "match_pct": 80,
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Full-Stack-Developer_JR-0000126582",
@@ -9597,36 +9566,6 @@
   "match_pct": 83,
   "ai_reason": "No experience or seniority explicitly stated in the posting.",
   "ai_by": "gemini"
- },
- {
-  "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Full-Stack-Developer_JR-0000119927-3",
-  "company": "Barclays",
-  "title": "Full Stack Developer",
-  "location": "India (2 Locations)",
-  "url": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Pune-Gera-Commerzone-SEZ/Full-Stack-Developer_JR-0000119927-3",
-  "posted": "2026-10-21T15:16:29.095548+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Quant/Finance",
-  "location_group": "Other India",
-  "min_years": null,
-  "skills_matched": [
-   "Microservices",
-   "REST APIs",
-   "System design"
-  ],
-  "priority": 6.6,
-  "est_ctc_lpa": "~12-18",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Full-stack",
-  "skills_to_learn": [
-   "Spring"
-  ],
-  "match_pct": 75
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/GTSM---Site-Reliability-Engineer---CB-P_JR-0000106664",
@@ -10169,12 +10108,16 @@
   "fit": "open",
   "role_type": "Full-stack",
   "skills_to_learn": [
+   "Java",
+   "Spring Boot",
    "Angular",
-   "Azure",
    "Kubernetes",
-   "Spring"
+   "Oracle",
+   "Azure"
   ],
-  "match_pct": 73
+  "match_pct": 73,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Mumbai-Nirlon-Knowledge-Park-BX-9th--11-12-floor/Data-Engineer---Analyst_JR-0000110756",
@@ -10557,49 +10500,6 @@
   "match_pct": 100,
   "ai_reason": "Typically 0-2 years experience.",
   "ai_by": "gemini"
- },
- {
-  "id": "HPE (incl. Juniper Networks)::/job/Bengaluru-Karntaka-India/Cloud-Developer---Data-Engineer_1215670-2",
-  "company": "HPE (incl. Juniper Networks)",
-  "title": "Cloud Developer / Data Engineer",
-  "location": "Bengaluru, Karnātaka, India",
-  "url": "https://hpe.wd5.myworkdayjobs.com/en-US/Jobsathpe/job/Bengaluru-Karntaka-India/Cloud-Developer---Data-Engineer_1215670-2",
-  "posted": "2026-10-13T15:16:27.655759+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "AWS",
-   "CI/CD",
-   "Docker",
-   "Java",
-   "Kafka",
-   "LLMs",
-   "Linux",
-   "Networking basics",
-   "Python",
-   "System design"
-  ],
-  "priority": 6.8,
-  "est_ctc_lpa": "~15-25",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Data",
-  "skills_to_learn": [
-   "Azure",
-   "Bash",
-   "Elasticsearch",
-   "GCP",
-   "Kubernetes",
-   "Scala",
-   "Spark/PySpark"
-  ],
-  "match_pct": 59
  },
  {
   "id": "HPE (incl. Juniper Networks)::/job/Bengaluru-Karntaka-India/Cloud-Developer--Virtualization_1211072-2",
@@ -11087,11 +10987,16 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "AI/ML",
+  "role_type": "QA/Test",
   "skills_to_learn": [
+   "LLM evaluation frameworks",
+   "Agentic system testing",
+   "Test automation pipelines",
    "ML basics"
   ],
-  "match_pct": 75
+  "match_pct": 75,
+  "ai_reason": "No specific experience level or years of experience stated in the job description.",
+  "ai_by": "gemini"
  },
  {
   "id": "LSEG::/job/IND-BLR-Divyasree-Technopolis/Security-Engineer_R0110262-1",
