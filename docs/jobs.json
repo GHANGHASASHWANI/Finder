@@ -1906,35 +1906,6 @@
   "first_check": true
  },
  {
-  "id": "Siemens Healthineers::P-100696",
-  "company": "Siemens Healthineers",
-  "title": "Automation Test Professional - Playwright + Selenium + Python",
-  "location": "Bangalore Division, Karnataka, India",
-  "url": "https://careers.siemens-healthineers.com/global/en/job/P-100696",
-  "posted": "2026-10-09T00:00:00+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "QA/Test",
-  "skills_matched": [
-   "Python"
-  ],
-  "skills_to_learn": [
-   "Playwright/Cypress",
-   "Selenium"
-  ],
-  "match_pct": 33,
-  "priority": 5.3,
-  "est_ctc_lpa": "~6-10",
-  "found_at": "2026-10-22T16:48:31.996480+00:00",
-  "first_check": false
- },
- {
   "id": "Zepto::https://www.instahyre.com/job-417841-software-engineer-at-zepto-bangalore/",
   "company": "Zepto",
   "title": "Software Engineer Zepto Bangalore",
@@ -3073,9 +3044,14 @@
   "fit": "open",
   "role_type": "Full-stack",
   "skills_to_learn": [
+   "Audio Processing",
+   "Stem Separation",
+   "MIDI Transcription",
    "ML basics"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No specific years of experience or seniority are stated in the posting requirements.",
+  "ai_by": "gemini"
  },
  {
   "id": "ElevenLabs::1b90a2b2-1352-458d-b2b7-3900f6e02df5",
@@ -5726,7 +5702,9 @@
    "ML basics",
    "Ruby"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements stated in the job posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::QE01",
@@ -5778,11 +5756,16 @@
   "fit": "open",
   "role_type": "QA/Test",
   "skills_to_learn": [
+   "Automation Testing",
+   "Selenium",
+   "Postman",
+   "JMeter",
    "Embedded C",
-   "ML basics",
-   "Ruby"
+   "ML basics"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements specified in the text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::SDE-L01",
@@ -5894,7 +5877,9 @@
    "ML basics",
    "Ruby"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements are stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::SDE-A01",
@@ -5946,11 +5931,15 @@
   "fit": "open",
   "role_type": "Backend",
   "skills_to_learn": [
+   "Payment Gateways",
+   "PSP Integrations",
    "Embedded C",
    "ML basics",
    "Ruby"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience requirement stated in the job posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::SRE01",
@@ -6720,12 +6709,16 @@
   "fit": "stretch",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Elasticsearch",
    "Kubernetes",
-   "Prometheus/Grafana",
-   "Spring"
+   "Java Spring",
+   "Prometheus",
+   "Elasticsearch",
+   "Grafana",
+   "Prometheus/Grafana"
   ],
-  "match_pct": 43
+  "match_pct": 43,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "Cisco::/job/Bangalore-India/IT-Software-Engineer_2026189",
@@ -6805,61 +6798,6 @@
   "match_pct": 86,
   "ai_reason": "Bachelor’s (0 to 2 years Experience)",
   "ai_by": "gemini"
- },
- {
-  "id": "Cisco::/job/Bangalore-India/Software-Engineer_2027416-1",
-  "company": "Cisco",
-  "title": "Software Engineer",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Engineer_2027416-1",
-  "posted": "2026-10-13T15:16:21.889152+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 2,
-  "skills_matched": [
-   "Networking basics",
-   "React"
-  ],
-  "priority": 5.6,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "chelors degree with 2 years of experience. Or Masters degree. • Exp",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Embedded C",
-   "Playwright/Cypress",
-   "Ruby"
-  ],
-  "match_pct": 40
- },
- {
-  "id": "Cisco::/job/Bangalore-India/Software-Engineer_2024889-2",
-  "company": "Cisco",
-  "title": "Software Engineer",
-  "location": "India (2 Locations)",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Engineer_2024889-2",
-  "posted": "2026-10-12T15:16:21.889190+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "Other India",
-  "min_years": 0,
-  "skills_matched": [],
-  "priority": 5.7,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "ions: • Bachelors + 2 years of related experience OR Masters + 0 ye",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
  },
  {
   "id": "Cisco::/job/Bangalore-India/Security-Engineer_2025487-1",
@@ -7072,39 +7010,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "CleverTap::12616",
-  "company": "CleverTap",
-  "title": "DevOps Engineer",
-  "location": "Mumbai, Maharashtra, India",
-  "url": "https://careers.kula.ai/clevertap/12616",
-  "posted": "2025-08-26T11:21:53+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Indian SaaS/AI / Discovered - Martech SaaS",
-  "location_group": "Central/West India",
-  "min_years": 1,
-  "skills_matched": [
-   "AWS",
-   "Docker",
-   "Java",
-   "REST APIs"
-  ],
-  "priority": 5.7,
-  "est_ctc_lpa": "~14-20",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "tical experience. - 1 to 3 years of experience working into DevOps. - Ex",
-  "fit": "stretch",
-  "role_type": "DevOps/SRE/Cloud",
-  "skills_to_learn": [
-   "Go",
-   "Kubernetes",
-   "Terraform"
-  ],
-  "match_pct": 57
- },
- {
   "id": "FamPay::8b4517b2-b038-4f57-b7ef-d2cc8ee588f7",
   "company": "FamPay",
   "title": "QA Engineer- 1",
@@ -7225,9 +7130,15 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "Frontend",
-  "skills_to_learn": [],
-  "match_pct": null
+  "role_type": "Full-stack",
+  "skills_to_learn": [
+   "Webflow",
+   "SEO",
+   "Marketing Automation"
+  ],
+  "match_pct": null,
+  "ai_reason": "No experience or seniority requirements stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "JPMorgan Chase::210800119",
@@ -7476,14 +7387,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Azure",
-   "GCP",
+   "Go",
+   "Terraform",
    "Kubernetes",
-   "Terraform"
+   "GCP",
+   "Azure"
   ],
-  "match_pct": 43
+  "match_pct": 43,
+  "ai_reason": "No specific years of experience or seniority explicitly stated in qualifications.",
+  "ai_by": "gemini"
  },
  {
   "id": "Intel::/job/India-Bangalore/AI-System-Performance-Engineer_JR0288211",
@@ -8030,56 +7944,15 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
- },
- {
-  "id": "Bosch Global Software Technologies::744000154649239",
-  "company": "Bosch Global Software Technologies",
-  "title": "Automotive Systems Diagnostic and troubleshooting Engineer",
-  "location": "bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154649239",
-  "posted": "2026-10-09T11:28:03.320000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 5.9,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
- },
- {
-  "id": "Bosch Global Software Technologies::744000154603648",
-  "company": "Bosch Global Software Technologies",
-  "title": "Automotive Diagnostic and troubleshooting Engineer for EV & HEV Systems",
-  "location": "bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154603648",
-  "posted": "2026-10-09T07:23:18.855000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 5.9,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
+  "skills_to_learn": [
+   "Automotive diagnostics",
+   "OBD-II",
+   "Vehicle electrical systems",
+   "Authoring tools"
+  ],
+  "match_pct": null,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "Bosch Global Software Technologies::744000153674539",
@@ -8119,30 +7992,6 @@
   "match_pct": 56,
   "ai_reason": "No specific experience or seniority level is stated in the job description.",
   "ai_by": "gemini"
- },
- {
-  "id": "Bosch Global Software Technologies::744000153404468",
-  "company": "Bosch Global Software Technologies",
-  "title": "Cost Engineering & Benchmarking",
-  "location": "bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000153404468",
-  "posted": "2026-10-05T05:25:14.335000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 5.9,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
  },
  {
   "id": "Bosch Global Software Technologies::744000153372868",
@@ -8242,30 +8091,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Bosch Global Software Technologies::744000152597350",
-  "company": "Bosch Global Software Technologies",
-  "title": "IN_Bosch Rexroth India_Engineer - Testing",
-  "location": "Sanand Ahmedabad, GUJARAT, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000152597350",
-  "posted": "2026-09-30T06:21:08.009000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "Central/West India",
-  "min_years": 1,
-  "skills_matched": [],
-  "priority": 5.4,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "xperience required: 1 to 2 years of hands-on experience with Hydraulic p",
-  "fit": "stretch",
-  "role_type": "QA/Test",
-  "skills_to_learn": [],
-  "match_pct": null
- },
- {
   "id": "Bosch Global Software Technologies::744000152510308",
   "company": "Bosch Global Software Technologies",
   "title": "C# & C++ developer",
@@ -8303,34 +8128,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Bosch Global Software Technologies::744000152438015",
-  "company": "Bosch Global Software Technologies",
-  "title": "C# & WPF,  Autofac developer",
-  "location": "hosur road bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000152438015",
-  "posted": "2026-09-29T13:27:33.386000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "Git"
-  ],
-  "priority": 5.9,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "C#"
-  ],
-  "match_pct": 50
- },
- {
   "id": "Bosch Global Software Technologies::744000152388899",
   "company": "Bosch Global Software Technologies",
   "title": "2026/03: HW Developer (PS-DC Projects)",
@@ -8351,32 +8148,14 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
- },
- {
-  "id": "Bosch Global Software Technologies::744000151005470",
-  "company": "Bosch Global Software Technologies",
-  "title": "FEA Engineer",
-  "location": "Bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000151005470",
-  "posted": "2026-09-22T11:20:40.936000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 5.9,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
+  "skills_to_learn": [
+   "LTspice",
+   "PCB Design",
+   "Power Electronics"
+  ],
+  "match_pct": null,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "Bosch Global Software Technologies::744000149849174",
@@ -8405,30 +8184,6 @@
   "match_pct": 0
  },
  {
-  "id": "Bosch Global Software Technologies::744000148921619",
-  "company": "Bosch Global Software Technologies",
-  "title": "VM Brakes BSW Developer Indian OEM",
-  "location": "coimbatore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000148921619",
-  "posted": "2026-09-11T04:43:46.131000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 5.9,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
- },
- {
   "id": "Bosch Global Software Technologies::744000147162938",
   "company": "Bosch Global Software Technologies",
   "title": "Product Stability Test Engineer",
@@ -8455,54 +8210,6 @@
    "Android"
   ],
   "match_pct": 50
- },
- {
-  "id": "Bosch Global Software Technologies::744000145907468",
-  "company": "Bosch Global Software Technologies",
-  "title": "Radar Signal Processing System Engineering",
-  "location": "bengaluru, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000145907468",
-  "posted": "2026-08-27T07:11:19.436000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 5.9,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
- },
- {
-  "id": "Bosch Global Software Technologies::744000138994648",
-  "company": "Bosch Global Software Technologies",
-  "title": "Cost engineering and Benchmarking",
-  "location": "bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000138994648",
-  "posted": "2026-07-22T05:30:39.239000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 5.9,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null
  },
  {
   "id": "Bosch Global Software Technologies::744000127855103",
@@ -8662,11 +8369,14 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Backend",
   "skills_to_learn": [
+   "Django",
    "Django/Flask"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Siemens Healthineers::P-100743",
@@ -8968,11 +8678,16 @@
   "fit": "open",
   "role_type": "Data",
   "skills_to_learn": [
+   "Power BI",
+   "Tableau",
+   "Teradata",
+   "Data Product operating models",
    "Embedded C",
-   "ML basics",
-   "Power BI/Tableau"
+   "ML basics"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No specific years of experience or seniority level is stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Application-Developer_JR-0000034273-1",
@@ -9272,12 +8987,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Data",
   "skills_to_learn": [
-   "Azure",
-   "Power BI/Tableau"
+   "Microsoft Viva",
+   "Microsoft Fabric",
+   "Power BI",
+   "Azure Data Services",
+   "Workforce Analytics",
+   "Azure"
   ],
-  "match_pct": 33
+  "match_pct": 33,
+  "ai_reason": "No explicit experience requirement stated in the description.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Chennai-DLF-IT-Park/Data-Engineer_JR-0000131242",
@@ -9469,16 +9190,16 @@
   "fit": "open",
   "role_type": "Data",
   "skills_to_learn": [
-   "Azure",
-   "Bash",
+   "PySpark",
    "Databricks",
-   "GCP",
+   "Teradata",
    "Hadoop",
-   "ML basics",
-   "Spark/PySpark",
-   "dbt"
+   "DBT",
+   "Azure"
   ],
-  "match_pct": 33
+  "match_pct": 33,
+  "ai_reason": "No specific years of experience or seniority stated.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/BCS-Prodops-Shift-Lead_JR-0000106179",
@@ -10061,16 +9782,16 @@
   "fit": "stretch",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Ansible",
-   "Azure",
-   "Cassandra",
-   "Databricks",
-   "Django/Flask",
-   "Elasticsearch",
-   "Go",
-   "Kubernetes"
+   "Golang",
+   "Kubernetes",
+   "Prometheus",
+   "Grafana",
+   "Terraform",
+   "Ansible"
   ],
-  "match_pct": 48
+  "match_pct": 48,
+  "ai_reason": "Explicitly requests '0–2 years of hands-on experience'",
+  "ai_by": "gemini"
  },
  {
   "id": "Mastercard::/job/Pune-India/Software-Engineer-I-1_R-293576-1",
@@ -10259,12 +9980,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Data",
   "skills_to_learn": [
-   "Power BI/Tableau",
-   "Snowflake"
+   "Snowflake",
+   "Power BI",
+   "Data Modeling",
+   "ETL",
+   "Finance/Billing processes",
+   "Power BI/Tableau"
   ],
-  "match_pct": 50
+  "match_pct": 50,
+  "ai_reason": "No experience or seniority requirements specified in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "LSEG::/job/IND-BLR-Divyasree-Technopolis/Observability-Platform-Engineer_R0121185-1",
@@ -10878,7 +10605,8 @@
   "skills_to_learn": [
    "Embedded C"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_skip": true
  },
  {
   "id": "Icertis::https://iaaviz.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Jobs-at-Icertis/jobs?lastSelectedFacet=CATEGORIES&selectedCategoriesFacet=300000003426001",
