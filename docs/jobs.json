@@ -1,5 +1,36 @@
 [
  {
+  "id": "Siemens Healthineers::P-100894",
+  "company": "Siemens Healthineers",
+  "title": "Software Developer (C#,.Net,Angular,Azure)",
+  "location": "Bengaluru, Karnataka, India",
+  "url": "https://careers.siemens-healthineers.com/global/en/job/P-100894",
+  "posted": "2026-10-25T00:00:00+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 5,
+  "segment": "MNC Engineering",
+  "location_group": "South India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "Full-stack",
+  "skills_matched": [],
+  "skills_to_learn": [
+   "C#",
+   ".NET",
+   "Angular",
+   "Azure"
+  ],
+  "match_pct": 0,
+  "priority": 4.4,
+  "est_ctc_lpa": "~6-10",
+  "found_at": "2026-10-25T18:57:33.970318+00:00",
+  "first_check": false,
+  "ai_reason": "No experience level or seniority requirements specified.",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Full-Stack-Engineer_JR-0000123256-1",
   "company": "Barclays",
   "title": "Full Stack Engineer",
@@ -7126,10 +7157,16 @@
   "fit": "stretch",
   "role_type": "QA/Test",
   "skills_to_learn": [
+   "Appium",
+   "Selenium",
+   "Postman",
+   "Jira",
    "Android",
    "iOS"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "Explicitly targets entry-level candidates by asking for \"0-4 Years experience\"",
+  "ai_by": "gemini"
  },
  {
   "id": "Dell Technologies::299942",
@@ -7973,58 +8010,6 @@
   "match_pct": null
  },
  {
-  "id": "Bosch Global Software Technologies::744000155420099",
-  "company": "Bosch Global Software Technologies",
-  "title": "Test Engineer -MBD/MiL/SiL",
-  "location": "bengaluru, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000155420099",
-  "posted": "2026-10-14T06:42:59.128000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": 1,
-  "skills_matched": [],
-  "priority": 3.8,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "files. Experience: 1-3 years Mandatory/requires Skills : Mandatory E",
-  "fit": "stretch",
-  "role_type": "QA/Test",
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 0
- },
- {
-  "id": "Bosch Global Software Technologies::744000154985628",
-  "company": "Bosch Global Software Technologies",
-  "title": "Test Engineer -MBD/MiL/SiL",
-  "location": "bengaluru, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154985628",
-  "posted": "2026-10-12T10:47:47.770000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": 1,
-  "skills_matched": [],
-  "priority": 3.8,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "cience Experience : 1-3 years Mandatory/requires Skills : Mandatory E",
-  "fit": "stretch",
-  "role_type": "QA/Test",
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 0
- },
- {
   "id": "Bosch Global Software Technologies::744000154656049",
   "company": "Bosch Global Software Technologies",
   "title": "Automotive Systems Diagnostic and troubleshooting Engineer",
@@ -8346,32 +8331,6 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null
- },
- {
-  "id": "Siemens Healthineers::P-100465",
-  "company": "Siemens Healthineers",
-  "title": "Software Developer - C# Full Stack",
-  "location": "Bengaluru, Karnataka, India",
-  "url": "https://careers.siemens-healthineers.com/global/en/job/P-100465",
-  "posted": "2026-10-08T00:00:00+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 4.4,
-  "est_ctc_lpa": "~6-10",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Full-stack",
-  "skills_to_learn": [
-   "C#"
-  ],
-  "match_pct": 0
  },
  {
   "id": "Siemens Healthineers::P-100804",
@@ -10247,11 +10206,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Security",
   "skills_to_learn": [
+   "Active Directory",
+   "PowerShell",
+   "ServiceNow",
+   "ITIL",
+   "Power BI",
    "Power BI/Tableau"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience level or years of experience are explicitly stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "LSEG::/job/IND-Bangalore-A-RMZ-Infinity/Agile-Test-Automation-Engineer--Quality-Assurance_R0108606-1",
