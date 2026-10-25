@@ -5614,11 +5614,16 @@
   "fit": "open",
   "role_type": "QA/Test",
   "skills_to_learn": [
-   "Embedded C",
-   "ML basics",
-   "Ruby"
+   "Selenium",
+   "TestNG",
+   "Postman",
+   "Appium",
+   "JMeter",
+   "Embedded C"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience requirements specified in the posting",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::DEV-BE01",
@@ -5642,11 +5647,16 @@
   "fit": "open",
   "role_type": "Backend",
   "skills_to_learn": [
+   "Functional Programming",
+   "Haskell",
+   "PureScript",
+   "Scala",
    "Embedded C",
-   "ML basics",
-   "Ruby"
+   "ML basics"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements are stated in the posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::DEV-BE02",
@@ -5670,11 +5680,16 @@
   "fit": "open",
   "role_type": "Backend",
   "skills_to_learn": [
+   "Functional Programming",
+   "Haskell",
+   "PureScript",
    "Embedded C",
    "ML basics",
    "Ruby"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No specific experience or seniority requirements are stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::DEV-FE02",
@@ -5728,11 +5743,16 @@
   "fit": "open",
   "role_type": "QA/Test",
   "skills_to_learn": [
-   "Embedded C",
-   "ML basics",
-   "Ruby"
+   "Selenium",
+   "Appium",
+   "Postman",
+   "Jest",
+   "JMeter",
+   "Embedded C"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements specified in the text",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::QE03",
@@ -5789,11 +5809,16 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [
+   "Functional Programming",
+   "PureScript",
+   "Haskell",
    "Embedded C",
    "ML basics",
    "Ruby"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements are stated in the provided text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::SRE03",
@@ -5817,11 +5842,16 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "Prometheus",
+   "Grafana",
+   "Terraform",
+   "Kubernetes",
    "Embedded C",
-   "ML basics",
-   "Ruby"
+   "ML basics"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements specified in the provided text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::DEV-FE04",
@@ -5845,11 +5875,16 @@
   "fit": "open",
   "role_type": "Frontend",
   "skills_to_learn": [
+   "React Native",
+   "Redux",
+   "Web Performance Optimization",
+   "CSS Architecture",
    "Embedded C",
-   "ML basics",
-   "Ruby"
+   "ML basics"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements specified in the posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::DEV-BE04",
@@ -5903,11 +5938,16 @@
   "fit": "open",
   "role_type": "AI/ML",
   "skills_to_learn": [
-   "Embedded C",
-   "ML basics",
-   "Ruby"
+   "PyTorch",
+   "TensorFlow",
+   "MLflow",
+   "Hugging Face",
+   "LLMOps",
+   "Embedded C"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements specified in the job posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::DEV-BE03",
@@ -5963,11 +6003,16 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Embedded C",
-   "ML basics",
-   "Ruby"
+   "Kubernetes",
+   "Prometheus",
+   "Grafana",
+   "Terraform",
+   "Ansible",
+   "Embedded C"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements specified in the job posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::SRE02",
@@ -5991,11 +6036,16 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "Kubernetes",
+   "Prometheus",
+   "Grafana",
+   "Terraform",
    "Embedded C",
-   "ML basics",
-   "Ruby"
+   "ML basics"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements are stated in the posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::DEV-FE01",
@@ -6019,11 +6069,16 @@
   "fit": "open",
   "role_type": "Frontend",
   "skills_to_learn": [
+   "React Native",
+   "Redux",
+   "HTML/CSS",
+   "Webpack",
    "Embedded C",
-   "ML basics",
-   "Ruby"
+   "ML basics"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements specified in the posting",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::ME02",
@@ -6047,11 +6102,16 @@
   "fit": "open",
   "role_type": "AI/ML",
   "skills_to_learn": [
+   "TensorFlow",
+   "PyTorch",
+   "MLflow",
    "Embedded C",
    "ML basics",
    "Ruby"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements specified in the job posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::ME01",
@@ -6079,7 +6139,9 @@
    "ML basics",
    "Ruby"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements specified in the job posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::DEV-FE03",
@@ -6103,11 +6165,16 @@
   "fit": "open",
   "role_type": "Frontend",
   "skills_to_learn": [
+   "React Native",
+   "Redux",
+   "Web Performance Optimization",
+   "CSS Architecture",
    "Embedded C",
-   "ML basics",
-   "Ruby"
+   "ML basics"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements specified in the job description.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::QE02",
@@ -6131,11 +6198,16 @@
   "fit": "open",
   "role_type": "QA/Test",
   "skills_to_learn": [
-   "Embedded C",
-   "ML basics",
-   "Ruby"
+   "Automation Testing",
+   "Selenium",
+   "Postman",
+   "Appium",
+   "JMeter",
+   "Embedded C"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience level is specified in the job posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::AE02",
@@ -6163,7 +6235,9 @@
    "ML basics",
    "Ruby"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements specified in the job posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Juspay::AE01",
@@ -6191,7 +6265,9 @@
    "ML basics",
    "Ruby"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements specified in the posting",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::30453",
@@ -6425,9 +6501,14 @@
   "fit": "open",
   "role_type": "Mobile",
   "skills_to_learn": [
-   "Android"
+   "Android",
+   "Kotlin",
+   "Java",
+   "Mobile Architecture"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements stated in the provided text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::30282",
@@ -6482,9 +6563,14 @@
   "fit": "open",
   "role_type": "Mobile",
   "skills_to_learn": [
+   "Swift",
+   "Objective-C",
+   "iOS Development",
    "iOS"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority stated.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::30326",
@@ -6508,9 +6594,16 @@
   "fit": "open",
   "role_type": "Mobile",
   "skills_to_learn": [
+   "Swift",
+   "Objective-C",
+   "iOS SDK",
+   "Xcode",
+   "CocoaPods",
    "iOS"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirement stated in the description.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::30323",
@@ -6588,7 +6681,9 @@
   "skills_to_learn": [
    "ML basics"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority requirements are stated in the job posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::29295",
@@ -7269,9 +7364,15 @@
   "fit": "open",
   "role_type": "Mobile",
   "skills_to_learn": [
+   "Swift",
+   "Objective-C",
+   "iOS Development",
+   "Xcode",
    "iOS"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience requirements or details are provided in the truncated job posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Lenskart::352",
@@ -8052,9 +8153,15 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [
-   "Embedded C"
+   "ASCET/MATLAB",
+   "ISO 26262",
+   "Embedded C",
+   "AUTOSAR",
+   "CANalyzer"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_by": "gemini"
  },
  {
   "id": "Bosch Global Software Technologies::744000152838649",
@@ -8158,60 +8265,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Bosch Global Software Technologies::744000149849174",
-  "company": "Bosch Global Software Technologies",
-  "title": "2026_Embedded_Application_SW_Developer_COB_EBG2",
-  "location": "coimbatore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000149849174",
-  "posted": "2026-09-16T12:07:07.237000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 4.4,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 0
- },
- {
-  "id": "Bosch Global Software Technologies::744000147162938",
-  "company": "Bosch Global Software Technologies",
-  "title": "Product Stability Test Engineer",
-  "location": "telangana, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000147162938",
-  "posted": "2026-09-03T07:03:39.489000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "Other India",
-  "min_years": 1,
-  "skills_matched": [
-   "Python"
-  ],
-  "priority": 5.1,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "requires Skills : · 1–3 years of experience in product testing / mobi",
-  "fit": "stretch",
-  "role_type": "QA/Test",
-  "skills_to_learn": [
-   "Android"
-  ],
-  "match_pct": 50
- },
- {
   "id": "Bosch Global Software Technologies::744000127855103",
   "company": "Bosch Global Software Technologies",
   "title": "Linux Administrator + DevSecOps Engineer",
@@ -8245,33 +8298,6 @@
   "match_pct": 71,
   "ai_reason": "No experience or seniority requirements are explicitly stated in the job posting.",
   "ai_by": "gemini"
- },
- {
-  "id": "Siemens Healthineers::P-100197",
-  "company": "Siemens Healthineers",
-  "title": "Software Developer (C#,.Net,Angular)",
-  "location": "Bengaluru, Karnataka, India",
-  "url": "https://careers.siemens-healthineers.com/global/en/job/P-100197",
-  "posted": "2026-09-30T00:00:00+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 4.4,
-  "est_ctc_lpa": "~6-10",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Angular",
-   "C#"
-  ],
-  "match_pct": 0
  },
  {
   "id": "Siemens Healthineers::P-100159",
@@ -9224,9 +9250,15 @@
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Azure",
+   "PowerShell",
+   "Citrix",
+   "Splunk",
+   "Exchange",
    "GCP"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/SP-Financing---Full-Stack-Developer_JR-0000101597-2",
@@ -10495,32 +10527,6 @@
   "ai_by": "groq"
  },
  {
-  "id": "Synopsys::https://careers.synopsys.com/software-engineering-jobs",
-  "company": "Synopsys",
-  "title": "Software Engineering",
-  "location": "",
-  "url": "https://careers.synopsys.com/software-engineering-jobs",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "Unknown (check page)",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 4.8,
-  "est_ctc_lpa": "~15-24",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Embedded C"
-  ],
-  "match_pct": 0
- },
- {
   "id": "Synopsys::https://careers.synopsys.com/job/hsinchu/site-reliability-associate/44408/102279058384",
   "company": "Synopsys",
   "title": "Site Reliability, Associate",
@@ -10579,7 +10585,8 @@
   "skills_to_learn": [
    "Embedded C"
   ],
-  "match_pct": 0
+  "match_pct": 0,
+  "ai_skip": true
  },
  {
   "id": "Texas Instruments::https://careers.ti.com/en/sites/CX/pages/students-new-grads/?location=India",
@@ -10654,13 +10661,18 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Full-stack",
   "skills_to_learn": [
+   "MCP servers",
+   "Prompt Engineering",
+   "Client-facing communication",
    "Embedded C",
    "ML basics",
    "Ruby"
   ],
-  "match_pct": 25
+  "match_pct": 25,
+  "ai_reason": "No specific experience level or years of experience required in the provided posting text.",
+  "ai_by": "gemini"
  },
  {
   "id": "Graviton Research Capital::4004918002",
