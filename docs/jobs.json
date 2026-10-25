@@ -1,5 +1,40 @@
 [
  {
+  "id": "Salesforce::/job/India---Hyderabad/Product-Security-Engineer_JR355204",
+  "company": "Salesforce",
+  "title": "Product Security Engineer",
+  "location": "India - Hyderabad",
+  "url": "https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/India---Hyderabad/Product-Security-Engineer_JR355204",
+  "posted": "2026-10-25T22:25:08.356280+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 3,
+  "segment": "Big Tech/MNC",
+  "location_group": "South India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "Security",
+  "skills_matched": [
+   "System design"
+  ],
+  "skills_to_learn": [
+   "Application Security",
+   "Threat Modeling",
+   "Penetration Testing",
+   "Security Incident Response",
+   "Cloud Security",
+   "Ruby"
+  ],
+  "match_pct": 50,
+  "priority": 7.1,
+  "est_ctc_lpa": "30-45",
+  "found_at": "2026-10-25T22:25:04.084720+00:00",
+  "first_check": false,
+  "ai_reason": "No specific years of experience are mentioned in the requirements.",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Siemens Healthineers::P-100894",
   "company": "Siemens Healthineers",
   "title": "Software Developer (C#,.Net,Angular,Azure)",
