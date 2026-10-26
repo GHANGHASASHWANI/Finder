@@ -1,5 +1,40 @@
 [
  {
+  "id": "Micron::45118242",
+  "company": "Micron",
+  "title": "Process Control System Engineer",
+  "location": "Hyderabad, Telangana, India",
+  "url": "https://careers.micron.com/careers/job/45118242",
+  "posted": "2026-10-26T00:00:00+00:00",
+  "dept": "Assembly & Test",
+  "comp": "",
+  "tier": 4,
+  "segment": "Big Tech/MNC",
+  "location_group": "South India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "Data",
+  "skills_matched": [
+   "Python",
+   "SQL"
+  ],
+  "skills_to_learn": [
+   "R",
+   "C#",
+   "Hadoop",
+   "Semiconductor manufacturing",
+   "ML basics"
+  ],
+  "match_pct": 40,
+  "priority": 6.2,
+  "est_ctc_lpa": "~15-24",
+  "found_at": "2026-10-26T04:19:39.383846+00:00",
+  "first_check": false,
+  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Salesforce::/job/India---Hyderabad/Product-Security-Engineer_JR355204",
   "company": "Salesforce",
   "title": "Product Security Engineer",
