@@ -1,5 +1,31 @@
 [
  {
+  "id": "Siemens Healthineers::P-100662",
+  "company": "Siemens Healthineers",
+  "title": "Software Developer (C#,.Net)",
+  "location": "Bengaluru, Karnataka, India",
+  "url": "https://careers.siemens-healthineers.com/global/en/job/P-100662",
+  "posted": "2026-10-26T00:00:00+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 5,
+  "segment": "MNC Engineering",
+  "location_group": "South India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "unverified",
+  "role_type": "SWE",
+  "skills_matched": [],
+  "skills_to_learn": [
+   "C#"
+  ],
+  "match_pct": 0,
+  "priority": 3.5,
+  "est_ctc_lpa": "~6-10",
+  "found_at": "2026-10-26T20:58:17.735585+00:00",
+  "first_check": false
+ },
+ {
   "id": "Docusign::29590",
   "company": "Docusign",
   "title": "Software Engineer",
