@@ -1,5 +1,51 @@
 [
  {
+  "id": "LSEG::/job/IND-BLR-Divyasree-Technopolis/Associate-Software-Engineer_R0124079",
+  "company": "LSEG",
+  "title": "Associate Software Engineer",
+  "location": "IND-BLR-Divyasree Technopolis",
+  "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-BLR-Divyasree-Technopolis/Associate-Software-Engineer_R0124079",
+  "posted": "2026-10-29T05:23:45.819921+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 5,
+  "segment": "Quant/Finance",
+  "location_group": "Other India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "fresher",
+  "role_type": "SWE",
+  "skills_matched": [
+   "AWS",
+   "C++",
+   "CI/CD",
+   "DSA",
+   "Docker",
+   "Git",
+   "Java",
+   "Lambda",
+   "PostgreSQL",
+   "Python",
+   "REST APIs",
+   "SQL"
+  ],
+  "skills_to_learn": [
+   "Python",
+   "AWS Lambda",
+   "pytest",
+   "Terraform",
+   "Docker",
+   "C#"
+  ],
+  "match_pct": 67,
+  "priority": 6.9,
+  "est_ctc_lpa": "~10-15",
+  "found_at": "2026-10-29T05:23:28.376201+00:00",
+  "first_check": false,
+  "ai_reason": "Explicitly targets early-career software engineers and new graduates.",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Stripe::8130876",
   "company": "Stripe",
   "title": "Software Engineer, New Grad",
@@ -569,8 +615,11 @@
    "System design"
   ],
   "skills_to_learn": [
-   "No-code AI tools",
+   "no-code platforms",
+   "product management",
    "GTM strategy",
+   "analytics",
+   "No-code AI tools",
    "Product management"
   ],
   "match_pct": 100,
@@ -578,7 +627,7 @@
   "est_ctc_lpa": "~25-32",
   "found_at": "2026-10-27T14:18:13.437448+00:00",
   "first_check": false,
-  "ai_reason": "No specific years of experience stated; seeks early-career builders who ship AI solutions.",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
@@ -1900,6 +1949,10 @@
    "LLMs"
   ],
   "skills_to_learn": [
+   "Gemini Enterprise",
+   "LlamaIndex",
+   "AutoGen",
+   "Agent Development Kits",
    "Google Cloud Platform",
    "Vertex AI"
   ],
@@ -1908,7 +1961,7 @@
   "est_ctc_lpa": "35-50",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "Targeted at early experience level for Bachelor's graduates in Computer Science.",
+  "ai_reason": "Targeted at early experience professionals.",
   "ai_by": "gemini"
  },
  {
@@ -1943,41 +1996,7 @@
   "est_ctc_lpa": "35-50",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "Requires 1 year of experience in one or more programming languages",
-  "ai_by": "gemini"
- },
- {
-  "id": "Google::122710813273137862",
-  "company": "Google",
-  "title": "Software Engineer, Search",
-  "location": "Bengaluru, Karnataka, India",
-  "url": "https://www.google.com/about/careers/applications/jobs/results/122710813273137862-software-engineer-search",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 1,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 1,
-  "exp_note": "actical experience. 1 year of experience with software development",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_matched": [
-   "C++",
-   "Java",
-   "JavaScript",
-   "Python"
-  ],
-  "skills_to_learn": [
-   "Large-scale distributed system",
-   "Information retrieval"
-  ],
-  "match_pct": 100,
-  "priority": 9.8,
-  "est_ctc_lpa": "35-50",
-  "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true,
-  "ai_reason": "Job requires '1 year of experience with software development'",
+  "ai_reason": "Requires 1 year of experience, which matches the candidate's internship experience.",
   "ai_by": "gemini"
  },
  {
@@ -3004,40 +3023,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "LinkedIn::https://in.linkedin.com/jobs/view/software-engineer-ios-at-linkedin-4478748682?position=10&pageNum=0&refId=M2ywtBB9YyqCOLHWk7nETA%3D%3D&trackingId=Sx%2Bt6l5RGZf90Utm5eD05Q%3D%3D",
-  "company": "LinkedIn",
-  "title": "Software Engineer_iOS",
-  "location": "",
-  "url": "https://in.linkedin.com/jobs/view/software-engineer-ios-at-linkedin-4478748682?position=10&pageNum=0&refId=M2ywtBB9YyqCOLHWk7nETA%3D%3D&trackingId=Sx%2Bt6l5RGZf90Utm5eD05Q%3D%3D",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 1,
-  "segment": "Big Tech/MNC",
-  "location_group": "Unknown (check page)",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Mobile",
-  "skills_matched": [
-   "Networking basics"
-  ],
-  "skills_to_learn": [
-   "Swift",
-   "Objective-C",
-   "iOS development",
-   "UIKit",
-   "SwiftUI"
-  ],
-  "match_pct": 100,
-  "priority": 9.0,
-  "est_ctc_lpa": "40-50",
-  "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": false,
-  "ai_reason": "No experience or seniority requirements stated in the generic text.",
-  "ai_by": "gemini"
- },
- {
   "id": "Dolat Capital::https://careers.dolatalgotech.in/open-roles/quantitative-analyst",
   "company": "Dolat Capital",
   "title": "Quantitative Analyst",
@@ -3061,16 +3046,17 @@
    "Python"
   ],
   "skills_to_learn": [
-   "MATLAB",
    "R",
-   "Quantitative Finance"
+   "MATLAB",
+   "Quantitative Finance",
+   "Statistics"
   ],
   "match_pct": 100,
   "priority": 9.3,
   "est_ctc_lpa": "~20-40",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "Explicitly allows 0-1 years experience range in application form.",
+  "ai_reason": "Entry-level quantitative analyst role welcoming fresh graduates.",
   "ai_by": "gemini"
  },
  {
@@ -4002,15 +3988,16 @@
   "fit": "open",
   "role_type": "Security",
   "skills_to_learn": [
+   "Penetration Testing",
    "Burp Suite",
-   "Metasploit",
-   "OWASP ZAP",
-   "Nmap",
-   "Wireshark"
+   "OWASP Top 10",
+   "Network Security",
+   "Vulnerability Assessment",
+   "Metasploit"
   ],
   "match_pct": 100,
-  "ai_reason": "no experience requirement stated",
-  "ai_by": "nvidia"
+  "ai_reason": "Job description contains only company boilerplate and generic talent community links, no requirements stated.",
+  "ai_by": "gemini"
  },
  {
   "id": "Quantbox Research::4001979101",
@@ -4152,11 +4139,12 @@
   "role_type": "Quant",
   "skills_to_learn": [
    "Q/KDB+",
+   "Financial markets",
    "Quantitative Finance",
    "Bash"
   ],
   "match_pct": 80,
-  "ai_reason": "targets highly motivated graduates or early career professionals",
+  "ai_reason": "Targeting graduates and early career professionals with a CS or STEM background.",
   "ai_by": "gemini"
  },
  {
@@ -4182,16 +4170,17 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "fresher",
   "role_type": "Quant",
   "skills_to_learn": [
-   "Advanced Statistics",
    "Financial Engineering",
    "Econometrics",
+   "Statistical Trading Models",
+   "Advanced Statistics",
    "Market Microstructure"
   ],
   "match_pct": 100,
-  "ai_reason": "No experience or seniority requirements specified in the posting.",
+  "ai_reason": "Matches fresher profile with CS degree and C++/Python programming skills.",
   "ai_by": "gemini"
  },
  {
@@ -4271,13 +4260,15 @@
   "fit": "open",
   "role_type": "Quant",
   "skills_to_learn": [
+   "Quantitative Finance",
    "Linear Algebra",
    "Statistics",
+   "Unix",
    "Financial Mathematics",
    "ML basics"
   ],
   "match_pct": 75,
-  "ai_reason": "No experience or seniority level is stated in the posting.",
+  "ai_reason": "No experience required, open to graduates in analytical fields.",
   "ai_by": "gemini"
  },
  {
@@ -4386,7 +4377,7 @@
    "MCP"
   ],
   "match_pct": 100,
-  "ai_reason": "No experience or seniority requirements are stated.",
+  "ai_reason": "No experience level or degree specified; AI-native platform role matching candidate's stack.",
   "ai_by": "gemini"
  },
  {
@@ -4515,15 +4506,15 @@
   "fit": "open",
   "role_type": "SWE",
   "skills_to_learn": [
+   "Low Latency Programming",
+   "Advanced C++ Templates",
+   "Concurrency",
    "Advanced C++",
    "Low-level programming",
-   "Multi-threading",
-   "Memory management",
-   "Data structures and algorithms",
-   "C#"
+   "Multi-threading"
   ],
   "match_pct": 67,
-  "ai_reason": "No experience or seniority requirements are stated in the posting text.",
+  "ai_reason": "No experience requirements or qualifications are stated in the provided text snippet, making it open.",
   "ai_by": "gemini"
  },
  {
@@ -4690,7 +4681,7 @@
    "C#"
   ],
   "match_pct": 67,
-  "ai_reason": "No experience requirement or seniority level is stated in the job posting text.",
+  "ai_reason": "Job posting lacks experience requirements and detailed description.",
   "ai_by": "gemini"
  },
  {
@@ -4788,10 +4779,12 @@
   "role_type": "Full-stack",
   "skills_to_learn": [
    "MCP",
+   "Multimodal generation",
+   "Advanced WebSockets",
    "WebSockets"
   ],
   "match_pct": 100,
-  "ai_reason": "No specific experience or seniority requirements are stated.",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
@@ -4824,7 +4817,8 @@
   ],
   "match_pct": 100,
   "ai_reason": "No experience or seniority requirements are stated in the job description.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "ElevenLabs::10e6475e-67ef-4621-8718-7b087c354651",
@@ -4952,7 +4946,8 @@
   ],
   "match_pct": 100,
   "ai_reason": "No experience or seniority is stated in the posting.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Expedia Group::/job/India---Gurgaon/Data-Engineer-1_R-110060",
@@ -5259,17 +5254,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Backend",
   "skills_to_learn": [
-   "Postgres internals",
    "Raft",
    "Paxos",
-   "Distributed transactions",
-   "Stream processing"
+   "Distributed Databases",
+   "Stream Processing",
+   "Network Protocols",
+   "Postgres internals"
   ],
   "match_pct": 100,
-  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_reason": "mid-level duties: This role requires deep technical expertise in distributed databases and systems.",
   "ai_by": "gemini"
  },
  {
@@ -5448,16 +5444,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Backend",
   "skills_to_learn": [
+   "Python packaging",
+   "asyncio",
+   "library authoring",
+   "Advanced Python typing",
    "Python typing",
-   "Library authoring",
-   "Python asyncio",
-   "Python packaging"
+   "Library authoring"
   ],
   "match_pct": 100,
-  "ai_reason": "No experience or seniority requirement is stated in the job posting.",
+  "ai_reason": "mid-level duties: Have authored or maintained a published library with a public API and users outside your own company.",
   "ai_by": "gemini"
  },
  {
@@ -5636,18 +5634,19 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
-  "role_type": "Backend",
+  "fit": "doubtful",
+  "role_type": "SWE",
   "skills_to_learn": [
+   "C",
    "Go",
-   "Java",
-   "Linux kernel internals",
-   "Distributed systems",
-   "Hypervisors"
+   "Distributed Systems",
+   "Linux Kernel",
+   "Hypervisors",
+   "Java"
   ],
   "match_pct": 100,
-  "ai_reason": "No explicit experience requirement",
-  "ai_by": "groq"
+  "ai_reason": "mid-level duties: Collaborate & Mentor: Partner with multidisciplinary engineering peers to review code, refine architecture",
+  "ai_by": "gemini"
  },
  {
   "id": "Pure Storage::8212843",
@@ -5791,18 +5790,19 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_to_learn": [
    "SAN",
    "NAS",
+   "VMware",
    "Fibre Channel",
    "iSCSI",
    "Linux/VMware/Windows"
   ],
   "match_pct": 100,
-  "ai_reason": "No experience or seniority stated",
-  "ai_by": "groq"
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: it is not a software/tech role",
+  "ai_by": "gemini"
  },
  {
   "id": "Amazon::10511883",
@@ -12137,18 +12137,19 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "fresher",
   "role_type": "Quant",
   "skills_to_learn": [
    "R",
+   "NISM certification",
+   "Financial Markets",
    "Finance fundamentals",
    "Derivatives knowledge",
-   "Market microstructure",
-   "Bloomberg API"
+   "Market microstructure"
   ],
   "match_pct": 100,
-  "ai_reason": "No experience requirement stated",
-  "ai_by": "nvidia"
+  "ai_reason": "Junior role open to strong quantitative aptitude and Python skills.",
+  "ai_by": "gemini"
  },
  {
   "id": "iRage::https://www.irage.in/job_descriptions.php?jd_id=6",
@@ -12468,12 +12469,15 @@
   "fit": "open",
   "role_type": "Quant",
   "skills_to_learn": [
+   "Stochastic models",
+   "Time series analysis",
+   "Statistical inference",
+   "Financial markets",
    "Financial Markets",
-   "Stochastic Models",
-   "Time Series Analysis"
+   "Stochastic Models"
   ],
   "match_pct": 100,
-  "ai_reason": "No prior experience required; open to engineering grads.",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
@@ -12506,16 +12510,16 @@
   "fit": "stretch",
   "role_type": "AI/ML",
   "skills_to_learn": [
-   "C++",
    "Rust",
    "Go",
    "Distributed systems",
+   "C++",
    "Performance-critical environme",
    "Ruby"
   ],
   "match_pct": 78,
-  "ai_reason": "Experience deploying AI systems in production (1–5 years is typical)",
-  "ai_by": "groq"
+  "ai_reason": "Asks for 1-5 years experience, which stretches the candidate's 1-year internship background.",
+  "ai_by": "gemini"
  },
  {
   "id": "Atlassian::25283",
@@ -12543,7 +12547,8 @@
   "skills_to_learn": [],
   "match_pct": 100,
   "ai_reason": "No experience or seniority stated",
-  "ai_by": "groq"
+  "ai_by": "groq",
+  "ai_skip": true
  },
  {
   "id": "Quantbox Research::4001041101",
@@ -12571,79 +12576,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "Backend",
+  "role_type": "SWE",
   "skills_to_learn": [
+   "Low-latency programming",
+   "Network programming (TCP/IP)",
    "C++ (advanced usage)",
    "GDB debugging",
    "TCP/IP network programming",
-   "Concurrent multi-threaded prog",
-   "Operating systems concepts"
+   "Concurrent multi-threaded prog"
   ],
   "match_pct": 100,
-  "ai_reason": "No explicit experience requirement stated",
-  "ai_by": "groq"
- },
- {
-  "id": "Squarepoint Capital::1433622",
-  "company": "Squarepoint Capital",
-  "title": "Quant Developer (Python)",
-  "location": "London, Montreal, Warsaw, Hong Kong, Singapore, Madrid, Houston, Bangalore",
-  "url": "https://www.squarepoint-capital.com/open-opportunities?id=1433622&gh_jid=1433622",
-  "posted": "2019-10-23T15:06:31-04:00",
-  "dept": "Technology",
-  "comp": "",
-  "tier": 2,
-  "segment": "Quant/Finance",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "Python"
-  ],
-  "priority": 9.2,
-  "est_ctc_lpa": "~40-60",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Quant",
-  "skills_to_learn": [],
-  "match_pct": 100,
-  "ai_reason": "No explicit experience requirement found",
-  "ai_by": "groq"
- },
- {
-  "id": "WorldQuant::4715001006",
-  "company": "WorldQuant",
-  "title": "Quantitative Researcher - IPM (India)",
-  "location": "Mumbai",
-  "url": "https://job-boards.greenhouse.io/worldquant/jobs/4715001006",
-  "posted": "2026-09-21T04:28:48-04:00",
-  "dept": "Portfolio Management Division",
-  "comp": "",
-  "tier": 2,
-  "segment": "Quant/Finance",
-  "location_group": "Central/West India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "Linux",
-   "Python",
-   "Redis"
-  ],
-  "priority": 9.3,
-  "est_ctc_lpa": "~25-40",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Quant",
-  "skills_to_learn": [
-   "Quantitative Finance",
-   "Alpha Generation",
-   "Financial Modeling"
-  ],
-  "match_pct": 100,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "Open to new graduates and students with relevant tech skills.",
   "ai_by": "gemini"
  },
  {
@@ -12708,17 +12651,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Security",
   "skills_to_learn": [
-   "CISA",
-   "CISM",
-   "penetration testing",
-   "cloud security",
-   "DevSecOps"
+   "Penetration Testing",
+   "CISA certification",
+   "CISM certification",
+   "Vulnerability Management",
+   "DevSecOps",
+   "CISA"
   ],
   "match_pct": 100,
-  "ai_reason": "No explicit experience requirement",
-  "ai_by": "groq"
+  "ai_reason": "mid-level duties: We are looking for a highly skilled Security Engineer with strong expertise in audits",
+  "ai_by": "gemini"
  }
 ]
