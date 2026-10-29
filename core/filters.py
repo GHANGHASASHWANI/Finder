@@ -74,6 +74,20 @@ SOFTWARE_WORD = re.compile(r"software|develop|programm|backend|back-end|frontend
                            r"\\bios\\b|api|systems engineer|compiler|quant|analytics|forward deployed|member of technical", re.I)
 
 
+# advanced degree as a hard requirement ("Education: Ph.D. in ...", "Master's degree required")
+DEGREE_RX = re.compile(
+    r"(education|required|requirement|minimum|must have|qualification)s?\s*:?[^.\n]{0,40}\b(ph\.?\s?d|doctora)|"
+    r"\b(ph\.?\s?d|doctoral degree|doctorate)\b[^.\n]{0,30}\b(required|is a must|is mandatory)|"
+    r"\b(master'?s|m\.?\s?tech|m\.?e\.)\s*(degree)?\s*(is\s*)?(required|mandatory|is a must)|"
+    r"minimum (of )?(a )?master'?s", re.I)
+NOT_ONLY_DEGREE = re.compile(r"bachelor|b\.?\s?tech|b\.?e\.?\b|or equivalent|preferred|a plus|nice to have", re.I)
+# signs a job with no listed location is based abroad
+FOREIGN_PAY = re.compile(r"\b(CAD|USD|EUR|GBP|AUD|SGD|CHF)\s?\$?\s?\d|US\$\s?\d|[€£]\s?\d|\$\s?\d{2,3},\d{3}")
+INDIA_PAY = re.compile(r"₹|\bINR\b|\blpa\b|lakh", re.I)
+BASED_IN = re.compile(r"(based (out of|in|at)|located in|work from) (our )?([A-Z][a-zA-Z .]+?)( office|,|\.)")
+LOCATIONS_LINE = re.compile(r"\blocations?\s*:\s*([^\n]{3,120})", re.I)
+
+
 def _n(x):
     return NUM.get(x.lower(), None) if not x.isdigit() else int(x)
 
@@ -201,6 +215,26 @@ class Matcher:
                 return name
         return "SWE"
 
+    def abroad(self, desc):
+        """For jobs without a listed location: does the description say it is based outside India?"""
+        india = lambda t: any(r.search(t) for r in self.india)
+        m = BASED_IN.search(desc)
+        if m and not india(m.group(4)):
+            return "based in %s" % m.group(4).strip()
+        for m in LOCATIONS_LINE.finditer(desc):
+            if not india(m.group(1)) and not re.search(r"remote|anywhere|worldwide", m.group(1), re.I):
+                return "locations: %s" % m.group(1).strip()[:60]
+        if FOREIGN_PAY.search(desc) and not INDIA_PAY.search(desc):
+            return "pay listed in a foreign currency"
+        return ""
+
+    def degree_block(self, desc):
+        for m in DEGREE_RX.finditer(desc or ""):
+            around = desc[max(0, m.start() - 60):m.end() + 60]
+            if not NOT_ONLY_DEGREE.search(around):
+                return re.sub(r"\s+", " ", around).strip()
+        return ""
+
     def evaluate(self, job, company):
         """Returns (matched: bool, enriched_job_or_reason)."""
         ok, why = self.prefilter(job, company)
@@ -208,6 +242,13 @@ class Matcher:
             return False, why
         grp = self.location_group(job["location"], company["source"]["type"])
         title, desc = job["title"], job.get("desc") or ""
+        if grp.startswith("Unknown") and desc:
+            where = self.abroad(desc)
+            if where:
+                return False, "not India: %s" % where
+        deg = self.degree_block(desc)
+        if deg:
+            return False, "needs an advanced degree: %s" % deg
         verdict, yrs, snippet = self.experience(title + ". " + desc)
         level = (job.get("level") or "").lower()
         if verdict == "reject":

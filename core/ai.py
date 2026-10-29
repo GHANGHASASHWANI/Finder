@@ -58,6 +58,8 @@ Quote the phrase that decided the level in "level_quote".
 Reply with JSON only:
 {{"fit": "fresher|open|stretch|reject", "years_required": number or null,
   "level": "entry|mid|senior", "level_quote": "exact phrase from the posting",
+  "based_in": "country where the role is based (e.g. India, Canada) or 'remote-global' or 'unclear'",
+  "degree_required": "none|bachelor|master|phd  (only if REQUIRED, not preferred)",
   "reason": "max 20 words; for reject, quote the exact phrase from the posting in double quotes",
   "role_type": "SWE|Backend|Frontend|Full-stack|Mobile|AI/ML|Data|DevOps/SRE/Cloud|QA/Test|Quant|Security|Other",
   "skills_to_learn": ["up to 5 technologies the job needs that the candidate lacks"]}}"""
@@ -184,6 +186,11 @@ class AIReviewer:
         res["skills_to_learn"] = [str(x)[:30] for x in (res.get("skills_to_learn") or [])][:5]
         res["reason"] = str(res.get("reason") or "")[:160]
         res["level"] = res.get("level") if res.get("level") in ("entry", "mid", "senior") else ""
+        based = str(res.get("based_in") or "").strip().lower()
+        if based and based not in ("india", "unclear", "remote-global", "remote", "global") and "india" not in based:
+            res["fit"], res["reason"] = "reject", "based in %s" % res["based_in"]
+        if str(res.get("degree_required") or "").lower() in ("master", "phd"):
+            res["fit"], res["reason"] = "reject", "requires a %s degree" % res["degree_required"]
         res["level_quote"] = str(res.get("level_quote") or "")[:160]
         res["by"] = by
         return res
