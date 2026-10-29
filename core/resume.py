@@ -129,7 +129,7 @@ def tailor(reviewer, master, job, desc, mode="normal"):
     m = {k: v for k, v in master.items() if k not in ("name", "contact", "education")}
     user = "MASTER RESUME:\n%s\n\nJOB: %s at %s (%s)\n\nPOSTING:\n%s" % (
         json.dumps(m, ensure_ascii=False), job["title"], job["company"], job.get("location", ""), (desc or "")[:7000])
-    res, by = reviewer.ask_json(TAILOR + (MAX if mode == "max" else ""), user, max_tokens=5000, temperature=0.2)
+    res, by = reviewer.ask_json(TAILOR + (MAX if mode == "max" else ""), user, max_tokens=3500, temperature=0.2)
     if not isinstance(res, dict):
         return None, None
     strs = lambda x: [str(k).strip()[:40] for k in (x or []) if isinstance(k, str) and k.strip()]

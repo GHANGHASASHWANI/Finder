@@ -33,7 +33,7 @@ Reply with JSON only."""
 
 
 def job_code(url):
-    m = re.search(r"(?:_|/)(R-?\d{4,}|JR-\d{6,}|P-\d{4,}|\d{6,})(?:[-_/?]|$)", url or "")
+    m = re.search(r"(?:_|/)(JR-?\d{5,}|R-?\d{4,}|P-\d{4,}|\d{6,})(?:[-_/?]|$)", url or "")
     return m.group(1) if m else ""
 
 

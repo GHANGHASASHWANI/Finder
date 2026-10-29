@@ -78,6 +78,8 @@ class AIReviewer:
         self.budget = int(profile.get("ai_max_per_run", 30))
         self.candidate = profile.get("candidate_summary", "")
         self.used = 0
+        self.timeout = int(profile.get("ai_timeout", 45))
+        self.wait_on_limit = int(profile.get("ai_wait_on_limit", 0))   # bot: wait out a per-minute limit
         order = profile.get("ai_providers") or [p[0] for p in PROVIDERS]
         table = {p[0]: p for p in PROVIDERS}
         self.providers = []
@@ -111,7 +113,7 @@ class AIReviewer:
             "Authorization": "Bearer " + p.key, "Content-Type": "application/json",
             # Groq sits behind Cloudflare, which blocks Python's default user agent (error 1010)
             "User-Agent": "Mozilla/5.0 (compatible; FinderJobBot/1.0; +https://github.com/GHANGHASASHWANI/Finder)"})
-        with urllib.request.urlopen(req, timeout=45) as r:
+        with urllib.request.urlopen(req, timeout=self.timeout) as r:
             raw = r.read().decode("utf-8", "replace")
         try:
             return json.loads(raw)
@@ -128,7 +130,9 @@ class AIReviewer:
                 time.sleep(wait)
             p.last = time.time()
             try:
-                body = {"model": p.models[0], "temperature": temperature, "max_tokens": max_tokens, "messages": msgs}
+                # Groq's free tier counts max_tokens against an 8k tokens/minute budget: ask for less there
+                mt = min(max_tokens, 2500) if p.name == "groq" else max_tokens
+                body = {"model": p.models[0], "temperature": temperature, "max_tokens": mt, "messages": msgs}
                 if "gpt-oss" in p.models[0]:
                     body["reasoning_effort"] = "low"     # reasoning models: keep thinking short so the answer fits
                 out = self._call(p, body)
@@ -151,6 +155,15 @@ class AIReviewer:
                     self.log("ai %s: %s busy (HTTP %d), trying %s" % (p.name, p.models[0], e.code, p.models[1]))
                     p.models.append(p.models.pop(0))
                     p._rotated = True
+                    continue
+                if e.code == 429 and self.wait_on_limit and getattr(p, "_waited", 0) < 2:
+                    # per-minute free limit (e.g. two bot runs at once): wait it out instead of giving up
+                    p._waited = getattr(p, "_waited", 0) + 1
+                    self.log("ai %s: rate limited, waiting %ds" % (p.name, self.wait_on_limit))
+                    time.sleep(self.wait_on_limit)
+                    continue
+                if e.code == 413 or (e.code == 400 and "too large" in detail.lower()):
+                    self._drop("request too large for this provider's free tier")
                     continue
                 if e.code in (400, 401, 402, 403, 404, 429):
                     self._drop("HTTP %d%s %s" % (e.code, " free limit reached" if e.code == 429 else "", detail))

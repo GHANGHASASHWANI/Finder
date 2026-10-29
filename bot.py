@@ -166,6 +166,11 @@ def handle(url, reviewer, browser, master, outdir):
         return
     log("tailoring for %s - %s" % (job["company"], job["title"]))
     r = cv.make(reviewer, browser, master, job, job["desc"], outdir=outdir, mode="max")
+    if not r and reviewer.providers:     # one more try after a pause (busy model, per-minute limit)
+        log("retrying %s in 30s" % job["company"])
+        time.sleep(30)
+        reviewer.disabled = False
+        r = cv.make(reviewer, browser, master, job, job["desc"], outdir=outdir, mode="max")
     if not r:
         say("The AI couldn't tailor a resume right now (free limit or outage). Send the link again in a while.")
         return
@@ -204,7 +209,9 @@ def main():
 
 def answer(work, ups, acknowledged=False):
     profile = json.load(open(os.path.join(ROOT, "profile.json")))
-    profile["ai_max_per_run"] = 2 * max(1, sum(len(URL_RX.findall(t)) for _, t in work)) + 2
+    profile["ai_max_per_run"] = 3 * max(1, sum(len(URL_RX.findall(t)) for _, t in work)) + 3
+    profile["ai_timeout"] = 120          # a full resume is a long answer; slower models need time
+    profile["ai_wait_on_limit"] = 45     # several links at once can hit a per-minute limit: wait, don't fail
     reviewer = AIReviewer(profile, log)
     master = cv.load_master(ROOT)
     from playwright.sync_api import sync_playwright
@@ -222,6 +229,8 @@ def answer(work, ups, acknowledged=False):
                 if not acknowledged:
                     say("Got it - working on %d job%s..." % (len(urls), "s" if len(urls) > 1 else ""))
                 for url in urls[:5]:
+                    if not reviewer.providers or reviewer.disabled:
+                        reviewer = AIReviewer(profile, log)      # fresh start for the next link
                     try:
                         handle(url.rstrip(").,"), reviewer, browser, master, outdir)
                     except Exception as e:
