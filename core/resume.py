@@ -138,15 +138,21 @@ def tailor(reviewer, master, job, desc, mode="normal"):
     if mode == "max":
         tech, practice = strs(res.get("tech_keywords"))[:40], strs(res.get("practice_keywords"))[:25]
         kws = list(dict.fromkeys(tech + practice + kws))
+        # Ashu asked for every ATS keyword (29-30 Oct): anything the AI left out goes into the skills section
         missing_tech = coverage(data, tech)[1]
-        if missing_tech:   # any technology the AI left out goes into the skills section
+        if missing_tech:
             data["skills"] = data["skills"][:6] + [["Additional Technologies", ", ".join(missing_tech)]]
+        missing_rest = coverage(data, list(dict.fromkeys(practice + kws)))[1]
+        if missing_rest:
+            data["skills"] = data["skills"] + [["Additional Skills", ", ".join(missing_rest)]]
     return data, kws
 
 
 def coverage(data, keywords):
     text = json.dumps(data, ensure_ascii=False).lower()
-    hit = [k for k in keywords if k.lower() in text or all(w in text for w in re.findall(r"[a-z0-9+#.]+", k.lower()))]
+    stem = lambda w: w[:7] if len(w) > 7 else w      # "development" ~ "developer", "testing" ~ "tests"
+    hit = [k for k in keywords if k.lower() in text or
+           all(stem(w) in text for w in re.findall(r"[a-z0-9+#.]+", k.lower()))]
     return hit, [k for k in keywords if k not in hit]
 
 
