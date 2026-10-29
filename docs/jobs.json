@@ -1,5 +1,38 @@
 [
  {
+  "id": "Google::108715629858431686",
+  "company": "Google",
+  "title": "Cloud Engineer, Data and AI",
+  "location": "Gurgaon, Haryana, India",
+  "url": "https://www.google.com/about/careers/applications/jobs/results/108715629858431686-cloud-engineer-data-and-ai",
+  "posted": null,
+  "dept": "",
+  "comp": "",
+  "tier": 1,
+  "segment": "Big Tech/MNC",
+  "location_group": "North India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "AI/ML",
+  "skills_matched": [
+   "Python"
+  ],
+  "skills_to_learn": [
+   "Scala",
+   "R",
+   "Gemini models",
+   "Gemini Enterprise"
+  ],
+  "match_pct": 50,
+  "priority": 7.9,
+  "est_ctc_lpa": "35-50",
+  "found_at": "2026-10-29T20:59:00.354520+00:00",
+  "first_check": false,
+  "ai_reason": "Entry-level cloud data and AI role matching candidate profile well.",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Booking Holdings / Booking.com (Bengaluru)::30504",
   "company": "Booking Holdings / Booking.com (Bengaluru)",
   "title": "Software Engineering - IC - E",
@@ -1111,43 +1144,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Pure Storage::8312377",
-  "company": "Pure Storage",
-  "title": "Member of Technical Staff- Firmware Engineer",
-  "location": "Bangalore, India",
-  "url": "https://job-boards.greenhouse.io/purestorage/jobs/8312377",
-  "posted": "2026-10-27T04:40:33-04:00",
-  "dept": "Engineering",
-  "comp": "",
-  "tier": 3,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_matched": [
-   "C++",
-   "DSA",
-   "Python"
-  ],
-  "skills_to_learn": [
-   "Embedded C/C++",
-   "NAND Flash",
-   "NVMe/PCIe",
-   "Firmware Simulation",
-   "Hardware Bring-up",
-   "Embedded C"
-  ],
-  "match_pct": 75,
-  "priority": 8.0,
-  "est_ctc_lpa": "35-45",
-  "found_at": "2026-10-27T14:18:13.437448+00:00",
-  "first_check": false,
-  "ai_reason": "No experience or seniority level is explicitly specified in the posting.",
-  "ai_by": "gemini"
- },
- {
   "id": "Rippling::acf82f7d-5595-47c4-8e08-45c9d9a93529",
   "company": "Rippling",
   "title": "Software Engineer I - FullStack",
@@ -1768,7 +1764,7 @@
   "location_group": "South India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "DevOps/SRE/Cloud",
   "skills_matched": [
    "Linux",
@@ -1776,16 +1772,17 @@
   ],
   "skills_to_learn": [
    "JUNOS",
-   "VMware ESX",
+   "VMware ESX vCenter",
    "Networking hardware",
-   "Linux configuration"
+   "Linux configuration",
+   "VMware ESX"
   ],
   "match_pct": 100,
   "priority": 8.0,
   "est_ctc_lpa": "~15-25",
   "found_at": "2026-10-26T15:14:24.258244+00:00",
   "first_check": false,
-  "ai_reason": "No experience requirement stated",
+  "ai_reason": "mid-level duties: Lab Administrators are expected to mentor and teach Jr. Lab Administrators",
   "ai_by": "gemini"
  },
  {
@@ -2595,7 +2592,7 @@
   "location_group": "Other India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_matched": [
    "LLMs"
@@ -2606,7 +2603,7 @@
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: it is not a software/tech role",
   "ai_by": "gemini"
  },
  {
@@ -2737,40 +2734,6 @@
   ],
   "match_pct": null,
   "priority": 6.5,
-  "est_ctc_lpa": "~15-24",
-  "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
-  "id": "Micron::44146156",
-  "company": "Micron",
-  "title": "Engineer – PDE Process Control Systems",
-  "location": "Hyderabad, Telangana, India",
-  "url": "https://careers.micron.com/careers/job/44146156",
-  "posted": "2026-08-28T00:00:00+00:00",
-  "dept": "Assembly & Test",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_matched": [
-   "Python",
-   "SQL"
-  ],
-  "skills_to_learn": [
-   "TCAD",
-   "HSPICE",
-   "MATLAB",
-   "JMP"
-  ],
-  "match_pct": 100,
-  "priority": 8.0,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
@@ -3348,41 +3311,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Qualcomm::446719672012",
-  "company": "Qualcomm",
-  "title": "STA Engineer",
-  "location": "Chennai, Tamil Nādu, India",
-  "url": "https://careers.qualcomm.com/careers/job/446719672012",
-  "posted": "2026-07-14T00:00:00+00:00",
-  "dept": "Hardware Engineering",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_matched": [
-   "Python",
-   "REST APIs"
-  ],
-  "skills_to_learn": [
-   "PrimeTime",
-   "Tempus",
-   "TCL",
-   "VLSI",
-   "STA"
-  ],
-  "match_pct": 100,
-  "priority": 8.0,
-  "est_ctc_lpa": "~15-24",
-  "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
   "id": "Qualcomm::446717035100",
   "company": "Qualcomm",
   "title": "Engineer - AI Orchestration (Windows)",
@@ -3945,7 +3873,7 @@
   "min_years": null,
   "exp_note": "",
   "fit": "open",
-  "role_type": "AI/ML",
+  "role_type": "SWE",
   "skills_matched": [
    "AWS",
    "CI/CD",
@@ -3974,7 +3902,7 @@
   "est_ctc_lpa": "25-40",
   "found_at": "2026-10-23T13:17:08.090376+00:00",
   "first_check": false,
-  "ai_reason": "No experience or seniority requirement is stated in the job posting.",
+  "ai_reason": "General job board landing page without specific experience requirements or job description.",
   "ai_by": "gemini"
  },
  {
@@ -4277,44 +4205,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "NK Securities Research::4470772101",
-  "company": "NK Securities Research",
-  "title": "Quant Researcher",
-  "location": "Gurugram, Haryana, India",
-  "url": "https://job-boards.eu.greenhouse.io/nksecuritiesresearch/jobs/4470772101",
-  "posted": "2024-11-20T04:18:51-05:00",
-  "dept": "",
-  "comp": "",
-  "tier": 2,
-  "segment": "Quant/Finance",
-  "location_group": "North India",
-  "min_years": 0,
-  "skills_matched": [
-   "C++",
-   "DSA",
-   "Linux",
-   "Python"
-  ],
-  "priority": 8.2,
-  "est_ctc_lpa": "~50-100",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "eading institution. 0-4 years of relevant work experience. Exceptiona",
-  "fit": "stretch",
-  "role_type": "Quant",
-  "skills_to_learn": [
-   "C++",
-   "C",
-   "shell scripting",
-   "High Frequency Trading concept",
-   "Linux system programming",
-   "Bash"
-  ],
-  "match_pct": 80,
-  "ai_reason": "0-4 years of relevant work experience",
-  "ai_by": "groq"
- },
- {
   "id": "NK Securities Research::4519747101",
   "company": "NK Securities Research",
   "title": "Software Developer Platform",
@@ -4356,8 +4246,8 @@
    "Bash"
   ],
   "match_pct": 69,
-  "ai_reason": "No explicit seniority or experience requirement",
-  "ai_by": "groq"
+  "ai_reason": "No experience level is specified, making it open to qualified new graduates.",
+  "ai_by": "gemini"
  },
  {
   "id": "Atlassian::26643",
@@ -4421,6 +4311,8 @@
   "role_type": "Quant",
   "skills_to_learn": [
    "R",
+   "Quantitative Finance",
+   "Algorithmic Trading",
    "ML basics"
   ],
   "match_pct": 75,
@@ -4703,7 +4595,7 @@
    "Bash"
   ],
   "match_pct": 60,
-  "ai_reason": "No years of experience requirement is explicitly stated in the job description.",
+  "ai_reason": "No years of experience explicitly stated.",
   "ai_by": "gemini"
  },
  {
@@ -4729,18 +4621,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "QA/Test",
   "skills_to_learn": [
-   "Networking",
-   "Ethernet",
-   "TCP/IP",
-   "BGP",
+   "Networking protocols",
    "IXIA",
-   "Embedded C"
+   "Spirent",
+   "L2-L3 protocols",
+   "OSPF/BGP",
+   "Networking"
   ],
   "match_pct": 75,
-  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: It says networking industry experience is required, which the candidate lacks.",
   "ai_by": "gemini"
  },
  {
@@ -4798,14 +4690,14 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "Full-stack",
+  "role_type": "Backend",
   "skills_to_learn": [
-   "Angular",
    "Java",
+   "Angular",
    "C#"
   ],
   "match_pct": 50,
-  "ai_reason": "No experience requirement or seniority level is stated in the job posting text.",
+  "ai_reason": "No experience requirements or seniority constraints are mentioned in the posting text.",
   "ai_by": "gemini"
  },
  {
@@ -4829,17 +4721,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Quant",
   "skills_to_learn": [
    "Quantitative Finance",
-   "Statistical Modeling",
+   "Statistics",
+   "Stochastic Calculus",
    "Time Series Analysis",
-   "Advanced Statistics",
-   "C#"
+   "Statistical Modeling",
+   "Advanced Statistics"
   ],
   "match_pct": 50,
-  "ai_reason": "No experience or seniority requirements specified in the provided text.",
+  "ai_reason": "mid-level duties: Quantitative Researcher",
   "ai_by": "gemini"
  },
  {
@@ -4869,11 +4762,12 @@
    "Infrastructure as Code",
    "Kubernetes",
    "Terraform",
+   "CI/CD",
    "CI/CD pipelines",
    "C#"
   ],
   "match_pct": 50,
-  "ai_reason": "No experience requirement or seniority level is stated in the provided text.",
+  "ai_reason": "Job posting lacks experience requirements or job description text.",
   "ai_by": "gemini"
  },
  {
@@ -4936,15 +4830,15 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Network Security",
+   "Network Security Protocols",
    "Firewalls",
-   "SIEM",
-   "IDS/IPS",
    "VPN",
-   "C#"
+   "SIEM Tools",
+   "Network Monitoring",
+   "Network Security"
   ],
   "match_pct": 50,
-  "ai_reason": "No experience requirements or details are explicitly stated in the job posting text.",
+  "ai_reason": "The job description is incomplete and contains no explicit experience requirements or seniority exclusions.",
   "ai_by": "gemini"
  },
  {
@@ -5010,7 +4904,7 @@
    ".NET"
   ],
   "match_pct": 50,
-  "ai_reason": "No experience or seniority requirements are stated in the provided text.",
+  "ai_reason": "No experience requirements or seniority constraints are specified in the truncated description.",
   "ai_by": "gemini"
  },
  {
@@ -5035,17 +4929,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "Security",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "Security Information and Event",
    "Threat Intelligence",
    "SIEM Tools",
-   "Incident Response",
-   "Security Information",
+   "IDS/IPS",
    "Malware Analysis",
-   "C#"
+   "Incident Response"
   ],
   "match_pct": 50,
-  "ai_reason": "No experience requirements or seniority levels are mentioned in the provided text snippet.",
+  "ai_reason": "No experience requirements or seniority constraints are specified in the job listing text.",
   "ai_by": "gemini"
  },
  {
@@ -5475,87 +5369,8 @@
   ],
   "match_pct": 83,
   "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
-  "id": "Sarvam AI::87d5a5af-ea7d-4b94-a0fa-81dc64e54907",
-  "company": "Sarvam AI",
-  "title": "Strategic Deployment Engineer, Chanakya",
-  "location": "Delhi",
-  "url": "https://jobs.ashbyhq.com/sarvam/87d5a5af-ea7d-4b94-a0fa-81dc64e54907",
-  "posted": "2026-04-17T20:02:28.261000+00:00",
-  "dept": "Deployment Engineering",
-  "comp": "",
-  "tier": 3,
-  "segment": "Indian SaaS/AI",
-  "location_group": "North India",
-  "min_years": null,
-  "skills_matched": [
-   "CI/CD",
-   "Docker",
-   "LLMs",
-   "Linux",
-   "Networking basics",
-   "Python",
-   "RAG",
-   "REST APIs"
-  ],
-  "priority": 8.2,
-  "est_ctc_lpa": "~25-40",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "DevOps/SRE/Cloud",
-  "skills_to_learn": [
-   "vLLM",
-   "TGI",
-   "Ollama",
-   "Model Context Protocol (MCP)",
-   "Enterprise On-Prem Deployments",
-   "Embedded C"
-  ],
-  "match_pct": 80,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
-  "id": "Sarvam AI::72783205-b637-4431-9a0e-676a8223b063",
-  "company": "Sarvam AI",
-  "title": "Performance Engineer, Kernels",
-  "location": "Bengaluru, Chennai",
-  "url": "https://jobs.ashbyhq.com/sarvam/72783205-b637-4431-9a0e-676a8223b063",
-  "posted": "2026-08-10T06:26:37.057000+00:00",
-  "dept": "Infrastructure ",
-  "comp": "",
-  "tier": 3,
-  "segment": "Indian SaaS/AI",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "Git",
-   "LLMs",
-   "Node.js",
-   "REST APIs"
-  ],
-  "priority": 8.0,
-  "est_ctc_lpa": "~25-40",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "AI/ML",
-  "skills_to_learn": [
-   "CUDA",
-   "CUTLASS",
-   "PTX",
-   "Nsight Compute",
-   "NCCL",
-   "ML basics"
-  ],
-  "match_pct": 80,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Rippling::472ecc5e-9610-477b-bbb9-8b075c8f5a67",
@@ -5589,7 +5404,8 @@
   ],
   "match_pct": 100,
   "ai_reason": "1-2 years experience",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Supabase::3b5d54ca-741b-45ac-bd3f-31605a0d3541",
@@ -5615,16 +5431,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "AI/ML",
   "skills_to_learn": [
+   "LLM evaluation frameworks",
+   "Agent runtimes",
+   "Workflow orchestration",
    "PostgreSQL architecture",
    "Edge functions",
-   "Advanced agent evaluation fram",
-   "GCP"
+   "Advanced agent evaluation fram"
   ],
   "match_pct": 80,
-  "ai_reason": "No experience or seniority level is stated in the posting.",
+  "ai_reason": "mid-level duties: You will be the only engineer on this platform. You will close open architecture decisions yourself, own the infrastructure end to end",
   "ai_by": "gemini"
  },
  {
@@ -5965,7 +5783,8 @@
   ],
   "match_pct": 100,
   "ai_reason": "Requires 1+ years relevant experience which matches candidate's internship and total background.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Pure Storage::8108379",
@@ -6089,7 +5908,7 @@
    "Vue"
   ],
   "match_pct": 80,
-  "ai_reason": "No experience or seniority requirement is stated in the job description.",
+  "ai_reason": "No experience or degree requirement specified.",
   "ai_by": "gemini"
  },
  {
@@ -6116,17 +5935,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "DevOps/SRE/Cloud",
+  "role_type": "SWE",
   "skills_to_learn": [
-   "Firmware",
-   "PCIe",
+   "C++",
    "BMC",
    "BIOS",
+   "PCIe",
    "I2C",
-   "Embedded C"
+   "Firmware"
   ],
   "match_pct": 75,
-  "ai_reason": "No experience level or seniority explicitly stated in the job description.",
+  "ai_reason": "No experience or seniority is stated in the posting.",
   "ai_by": "gemini"
  },
  {
@@ -6155,16 +5974,16 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Backend",
   "skills_to_learn": [
    "Go",
    "Kubernetes",
-   "OpenShift",
    "OpenStack",
-   "Nutanix"
+   "Nutanix",
+   "OpenShift"
   ],
   "match_pct": 83,
-  "ai_reason": "No experience or seniority requirement is stated in the posting.",
+  "ai_reason": "No experience level is specified in the posting.",
   "ai_by": "gemini"
  },
  {
@@ -7821,12 +7640,13 @@
   "skills_to_learn": [
    "Twilio",
    "Amazon Connect",
+   "SIP",
    "LlamaIndex",
    "SIP/CCaaS/PSTN",
    "Zapier/n8n"
   ],
   "match_pct": 100,
-  "ai_reason": "The posting asks for '1-5 years in conversational AI, solution engineering, system integration, or delivering AI/LLM-based applications'.",
+  "ai_reason": "Job asks for 1-5 years experience.",
   "ai_by": "gemini"
  },
  {
@@ -8711,9 +8531,13 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "AI/ML",
-  "skills_to_learn": [],
+  "skills_to_learn": [
+   "LLMOps",
+   "Vector Databases",
+   "Prompt Engineering"
+  ],
   "match_pct": 100,
-  "ai_reason": "No experience or seniority mentioned in the posting snippet.",
+  "ai_reason": "GenAI role with no explicit experience requirements stated.",
   "ai_by": "gemini"
  },
  {
