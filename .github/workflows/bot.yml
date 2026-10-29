@@ -1,58 +1,54 @@
 name: Finder bot
 
-# Answers job links you send to your Telegram bot with a tailored resume + referral messages.
+# Started instantly by the Cloudflare relay (cloudflare/worker.js) when you send a job link to your Telegram bot.
+# Replies with a tailored resume PDF + referral messages, usually ~3 minutes after your message.
 on:
-  schedule:
-    - cron: "*/10 * * * *"     # GitHub may delay this by a few minutes
+  repository_dispatch:
+    types: [job-link]
   workflow_dispatch:
+    inputs:
+      text:
+        description: "Job link(s) to process (for testing)"
+        required: true
 
 permissions:
   contents: read
 
 concurrency:
-  group: finder-bot
+  group: finder-bot-${{ github.run_id }}     # each message gets its own run, so replies never queue
   cancel-in-progress: false
 
 jobs:
   answer:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v6
 
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-
-      - name: Any new messages?
-        id: check
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python bot.py --check >> "$GITHUB_OUTPUT"
+          cache: pip
 
       - name: Cache headless browser
-        if: steps.check.outputs.has_work == 'true'
         uses: actions/cache@v6
         with:
           path: ~/.cache/ms-playwright
           key: playwright-1.47.0
 
       - name: Install
-        if: steps.check.outputs.has_work == 'true'
         run: |
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
 
       - name: Decrypt resume and company list
-        if: steps.check.outputs.has_work == 'true'
         env:
           FINDER_KEY: ${{ secrets.FINDER_KEY }}
         run: python secure.py unlock
 
       - name: Answer
-        if: steps.check.outputs.has_work == 'true'
         env:
+          BOT_TEXT: ${{ github.event.client_payload.text || github.event.inputs.text }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

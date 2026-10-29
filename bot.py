@@ -186,6 +186,10 @@ def handle(url, reviewer, browser, master, outdir):
 def main():
     if not (TOKEN and CHAT):
         sys.exit("TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set")
+    pushed = os.environ.get("BOT_TEXT", "")
+    if pushed:
+        # instant mode: the Cloudflare relay received the message and passed it in (no polling needed)
+        return answer([(None, pushed)], [], acknowledged=True)
     ups = updates()
     work = [(i, t) for i, t in ups if t]
     if "--check" in sys.argv:
@@ -195,6 +199,10 @@ def main():
         return
     if not ups:
         return
+    answer(work, ups)
+
+
+def answer(work, ups, acknowledged=False):
     profile = json.load(open(os.path.join(ROOT, "profile.json")))
     profile["ai_max_per_run"] = 2 * max(1, sum(len(URL_RX.findall(t)) for _, t in work)) + 2
     reviewer = AIReviewer(profile, log)
@@ -211,14 +219,16 @@ def main():
             elif not master:
                 say("resume.json is missing on the server (is FINDER_KEY set and resume.json.enc pushed?)")
             else:
-                say("Got it - working on %d job%s..." % (len(urls), "s" if len(urls) > 1 else ""))
+                if not acknowledged:
+                    say("Got it - working on %d job%s..." % (len(urls), "s" if len(urls) > 1 else ""))
                 for url in urls[:5]:
                     try:
                         handle(url.rstrip(").,"), reviewer, browser, master, outdir)
                     except Exception as e:
                         log("failed %s: %s" % (url, e))
                         say("Something went wrong with %s: %s" % (html.escape(url), html.escape(str(e)[:150])))
-            confirm(uid)                 # mark this message as answered
+            if uid is not None:
+                confirm(uid)             # polling mode: mark this message as answered
     finally:
         browser.close()
         pw.stop()
