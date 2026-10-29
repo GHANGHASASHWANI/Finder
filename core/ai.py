@@ -48,8 +48,16 @@ Rules:
 - "stretch" if it asks for up to 2 years (e.g. "1-2 years", "0-2 years", "2 years", "1+ years").
 - "open" if no experience or seniority is stated.
 
+Also judge "level": who the role is really pitched at, from its responsibilities, even when no years are stated:
+- "entry": juniors are welcome - learning, working under guidance, small/medium features, new-grad language.
+- "mid": expects someone who already works independently - owns services/systems end to end, leads designs,
+  drives roadmaps or other teams, deep expertise in an area, interviews/mentors others, on-call ownership.
+- "senior": leads people, strategy, architecture across teams, executive stakeholders.
+Quote the phrase that decided the level in "level_quote".
+
 Reply with JSON only:
 {{"fit": "fresher|open|stretch|reject", "years_required": number or null,
+  "level": "entry|mid|senior", "level_quote": "exact phrase from the posting",
   "reason": "max 20 words; for reject, quote the exact phrase from the posting in double quotes",
   "role_type": "SWE|Backend|Frontend|Full-stack|Mobile|AI/ML|Data|DevOps/SRE/Cloud|QA/Test|Quant|Security|Other",
   "skills_to_learn": ["up to 5 technologies the job needs that the candidate lacks"]}}"""
@@ -172,9 +180,11 @@ class AIReviewer:
             return None
         if res["fit"] == "reject" and not QUOTED.search(str(res.get("reason") or "")):
             # a reject must quote the posting; an unsupported guess is treated as "open"
-            res["fit"], res["reason"] = "open", "AI rejected without quoting the posting - kept"
+            res["fit"], res["reason"] = "doubtful", "AI thinks it is not a fit but quoted nothing: " + str(res.get("reason") or "")[:100]
         res["skills_to_learn"] = [str(x)[:30] for x in (res.get("skills_to_learn") or [])][:5]
         res["reason"] = str(res.get("reason") or "")[:160]
+        res["level"] = res.get("level") if res.get("level") in ("entry", "mid", "senior") else ""
+        res["level_quote"] = str(res.get("level_quote") or "")[:160]
         res["by"] = by
         return res
 

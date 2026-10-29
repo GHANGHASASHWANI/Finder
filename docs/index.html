@@ -24,7 +24,7 @@ input[type=search]{flex:1;min-width:180px}
 .job a.t{color:var(--accent);font-weight:600;text-decoration:none}.job a.t:hover{text-decoration:underline}
 .meta{color:var(--mute);font-size:13px;margin-top:2px}.chips{margin-top:6px;display:flex;flex-wrap:wrap;gap:4px}
 .chip{background:var(--chip);border-radius:6px;padding:1px 7px;font-size:12px}.new{background:var(--accent);color:#fff}
-.fit-fresher{background:#d9f2e3;color:#14592f}.fit-open{background:#dce6fb;color:#1f3f8f}.fit-stretch{background:#fbecd0;color:#7a4a00}.fit-unverified{background:var(--chip);color:var(--mute)}
+.fit-fresher{background:#d9f2e3;color:#14592f}.fit-open{background:#dce6fb;color:#1f3f8f}.fit-stretch{background:#fbecd0;color:#7a4a00}.fit-unverified{background:var(--chip);color:var(--mute)}.fit-doubtful{background:#f6dcdc;color:#7a1f1f}
 @media (prefers-color-scheme:dark){.fit-fresher{background:#173a26;color:#7fe0a8}.fit-open{background:#1c2a4a;color:#a9c1ff}.fit-stretch{background:#3d2d10;color:#f2c472}}
 .learn{border:1px dashed var(--line);background:transparent}.note{color:var(--mute);font-size:12px;margin-top:4px}
 .act{display:flex;flex-direction:column;gap:6px;align-items:flex-end}.act button{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:6px;padding:3px 8px;font-size:12px;cursor:pointer}
@@ -46,7 +46,7 @@ th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line);vertic
     <div class="bar">
       <input type="search" id="q" placeholder="Search company, title, location">
       <select id="loc"><option value="">All locations</option></select>
-      <select id="fit"><option value="">All fit</option><option value="fresher">Fresher</option><option value="open">Open (no exp. mentioned)</option><option value="stretch">Stretch (up to 2 yrs)</option><option value="unverified">Unverified</option></select>
+      <select id="fit"><option value="good" selected>Likely fit (hide mid-level)</option><option value="">All fit</option><option value="fresher">Fresher</option><option value="open">Open (no exp. mentioned)</option><option value="stretch">Stretch (up to 2 yrs)</option><option value="unverified">Unverified</option><option value="doubtful">Likely mid-level</option></select>
       <select id="role"><option value="">All role types</option></select>
       <select id="tier"><option value="">All tiers</option><option value="1">Tier 1</option><option value="2">Tier 2</option><option value="3">Tier 3</option><option value="4">Tier 4</option><option value="5">Tier 5</option></select>
       <select id="age"><option value="3">Found in last 3 days</option><option value="7">Last 7 days</option><option value="999" selected>Last 10 days</option></select>
@@ -60,7 +60,7 @@ th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line);vertic
   </section>
 </main>
 <script>
-const FITS={fresher:"Fresher",open:"Open",stretch:"Stretch ≤2 yrs",unverified:"Unverified"};
+const FITS={fresher:"Fresher",open:"Open",stretch:"Stretch ≤2 yrs",unverified:"Unverified",doubtful:"Likely mid-level"};
 const ORDER=["North India","Central/West India","South India","Remote","Other India","Unknown (check page)"];
 let JOBS=[],STATUS={companies:[]},COMP=[];
 const KEY="finder-marks";let marks={};try{marks=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
@@ -73,7 +73,7 @@ function renderJobs(){
     age=+document.getElementById("age").value,show=document.getElementById("show").value;
   const rows=JOBS.filter(j=>{const m=marks[j.id];
     if(show==="open"&&m==="hidden")return false;if(show==="applied"&&m!=="applied")return false;
-    if(loc&&j.location_group!==loc)return false;if(fit&&(j.fit||"unverified")!==fit)return false;if(role&&j.role_type!==role)return false;if(tier&&String(j.tier)!==tier)return false;
+    if(loc&&j.location_group!==loc)return false;if(fit==="good"?(j.fit==="doubtful"):(fit&&(j.fit||"unverified")!==fit))return false;if(role&&j.role_type!==role)return false;if(tier&&String(j.tier)!==tier)return false;
     if((Date.now()-new Date(j.found_at))/864e5>age)return false;
     return !q||(j.company+" "+j.title+" "+j.location).toLowerCase().includes(q)});
   const by={};rows.forEach(j=>(by[j.location_group]=by[j.location_group]||[]).push(j));

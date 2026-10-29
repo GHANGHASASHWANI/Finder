@@ -44,7 +44,7 @@ def _numbers(text):
     return set(n.rstrip(".,") for n in NUM.findall(text or ""))
 
 
-def _safe(master, ai):
+def _safe(master, ai, allow_new_work_claims=False):
     """Merge the AI version onto the master; anything that changes facts falls back to the master."""
     out = copy.deepcopy(master)
     master_nums = _numbers(json.dumps(master))
@@ -61,9 +61,32 @@ def _safe(master, ai):
         res = [x for x in res if x]
         return res if len(res) >= 2 else orig
 
+    words = lambda t: set(w for w in re.findall(r"[a-z0-9+#.]{3,}", t.lower()))
+
+    def same_claim(orig_list, new):
+        """Work-experience bullets may be reworded, not given new claims: most of a new bullet's words must
+        come from one of the real bullets."""
+        nw = words(new)
+        if not nw:
+            return False
+        novel = nw - set().union(*(words(o) for o in orig_list))
+        return len(novel) <= 4 and max(len(nw & words(o)) / len(nw) for o in orig_list) >= 0.6
+
+    added = []
     for i, e in enumerate(out.get("experience", [])):
         try:
-            e["bullets"] = merge(e["bullets"], ai["experience"][i]["bullets"], 4)
+            if allow_new_work_claims:
+                # Ashu reviews every resume himself: new claims are allowed, but listed so he can check them
+                new = [x if ok_text(x) else None for x in ai["experience"][i]["bullets"]]
+                for x in new:
+                    if x and not same_claim(e["bullets"], x):
+                        added.append(x)
+            else:
+                new = [x if (ok_text(x) and same_claim(e["bullets"], x)) else None for x in ai["experience"][i]["bullets"]]
+            new = [x if x else (e["bullets"][k] if k < len(e["bullets"]) else None) for k, x in enumerate(new[:4])]
+            new = [x for x in new if x]
+            if len(new) >= 2:
+                e["bullets"] = new
         except (KeyError, IndexError, TypeError):
             pass
     for i, p in enumerate(out.get("projects", [])):
@@ -84,22 +107,41 @@ def _safe(master, ai):
     ach = [x for x in (ai.get("achievements") or []) if ok_text(x)]
     if ach:
         out["achievements"] = ach[:2]
+    out["_added_claims"] = added
     return out
 
 
-def tailor(reviewer, master, job, desc):
-    """Returns (resume_dict, keywords) or (None, None)."""
+MAX = """
+MAXIMUM KEYWORD MODE (the candidate picked this job and wants every keyword covered):
+- Use EVERY technology, language, framework, tool, platform and methodology from the posting somewhere: skills
+  first, then the project tech lines and project bullets, then the summary.
+- Also return "tech_keywords": every technology/tool/platform/language/framework named in the posting, and
+  "practice_keywords": every other important skill/practice/domain term (e.g. threat modeling, capital markets).
+- You may also add work the candidate likely did at Toddle that the posting asks for (the candidate reviews every
+  resume and removes anything untrue), but never invent numbers or metrics."""
+
+
+def tailor(reviewer, master, job, desc, mode="normal"):
+    """Returns (resume_dict, keywords) or (None, None). mode="max": cover every technology keyword."""
     if not reviewer.available():
         return None, None
     reviewer.used += 1
     m = {k: v for k, v in master.items() if k not in ("name", "contact", "education")}
     user = "MASTER RESUME:\n%s\n\nJOB: %s at %s (%s)\n\nPOSTING:\n%s" % (
         json.dumps(m, ensure_ascii=False), job["title"], job["company"], job.get("location", ""), (desc or "")[:7000])
-    res, by = reviewer.ask_json(TAILOR, user, max_tokens=4000, temperature=0.2)
+    res, by = reviewer.ask_json(TAILOR + (MAX if mode == "max" else ""), user, max_tokens=5000, temperature=0.2)
     if not isinstance(res, dict):
         return None, None
-    kws = [str(k)[:40] for k in (res.get("keywords") or []) if isinstance(k, str)][:25]
-    return _safe(master, res), kws
+    strs = lambda x: [str(k).strip()[:40] for k in (x or []) if isinstance(k, str) and k.strip()]
+    kws = strs(res.get("keywords"))[:25]
+    data = _safe(master, res, allow_new_work_claims=(mode == "max"))
+    if mode == "max":
+        tech, practice = strs(res.get("tech_keywords"))[:40], strs(res.get("practice_keywords"))[:25]
+        kws = list(dict.fromkeys(tech + practice + kws))
+        missing_tech = coverage(data, tech)[1]
+        if missing_tech:   # any technology the AI left out goes into the skills section
+            data["skills"] = data["skills"][:6] + [["Additional Technologies", ", ".join(missing_tech)]]
+    return data, kws
 
 
 def coverage(data, keywords):
@@ -166,7 +208,9 @@ def to_html(d, fs=10):
 def render_pdf(browser, data, path):
     """Renders a one-page A4 PDF (shrinks the font slightly, then trims, if it overflows)."""
     d = copy.deepcopy(data)
-    page = browser.new_page()
+    # measure at the printed width: A4 210mm - 2 x 12mm margins = 186mm (~703px). A wider default viewport
+    # wraps fewer lines and under-counts the height, which let 2-page resumes through.
+    page = browser.new_page(viewport={"width": 703, "height": 1000})
     try:
         for attempt in range(8):
             fs = max(9.0, 10 - 0.25 * attempt)
@@ -190,9 +234,9 @@ def render_pdf(browser, data, path):
     return path
 
 
-def make(reviewer, browser, master, job, desc, outdir=None):
+def make(reviewer, browser, master, job, desc, outdir=None, mode="normal"):
     """Full pipeline for one job. Returns dict(path, covered, total, missing) or None."""
-    data, kws = tailor(reviewer, master, job, desc)
+    data, kws = tailor(reviewer, master, job, desc, mode)
     if not data:
         return None
     outdir = outdir or tempfile.mkdtemp(prefix="resumes-")
@@ -204,4 +248,5 @@ def make(reviewer, browser, master, job, desc, outdir=None):
         n += 1
     render_pdf(browser, data, path)
     hit, miss = coverage(data, kws)
-    return {"path": path, "covered": len(hit), "total": len(kws), "missing": miss[:6], "data": data}
+    return {"path": path, "covered": len(hit), "total": len(kws), "missing": miss[:12], "data": data,
+            "added": data.pop("_added_claims", [])}

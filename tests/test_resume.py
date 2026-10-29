@@ -24,7 +24,7 @@ class T(unittest.TestCase):
         ai = copy.deepcopy(MASTER)
         ai["experience"][0]["org"] = "Google"
         ai["experience"][0]["roles"] = [["Senior Engineer", "2020 - Present"]]
-        ai["experience"][0]["bullets"] = ["Shipped 900 APIs.", "Reduced latency by 75% using Spring Boot.", "Built analytics for 50+ customers."]
+        ai["experience"][0]["bullets"] = ["Shipped 900 APIs.", "Cut API latency by 75%.", "Built analytics with Kubernetes, Kafka, NIST and threat modeling for 50+ customers."]
         ai["education"] = []
         ai["projects"][0]["tech"] = "Java 17, Spring Boot"
         ai["projects"][0]["name"] = "Totally Different"
@@ -33,7 +33,8 @@ class T(unittest.TestCase):
         self.assertEqual(e["org"], "Toddle")
         self.assertEqual(e["roles"], MASTER["experience"][0]["roles"])
         self.assertEqual(e["bullets"][0], "Shipped 50+ APIs for 500+ schools.")      # invented "900" -> master kept
-        self.assertEqual(e["bullets"][1], "Reduced latency by 75% using Spring Boot.")  # reworded, same numbers -> ok
+        self.assertEqual(e["bullets"][1], "Cut API latency by 75%.")                     # reworded -> ok
+        self.assertEqual(e["bullets"][2], "Built analytics for 50+ customers.")           # new claims at work -> master
         self.assertEqual(out["education"], MASTER["education"])
         self.assertEqual(out["projects"][0]["tech"], "Java 17, Spring Boot")
         self.assertEqual(out["projects"][0]["name"], "GreenByte - E-Waste")            # project names stay

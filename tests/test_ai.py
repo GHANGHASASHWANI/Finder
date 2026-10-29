@@ -112,10 +112,10 @@ class T(unittest.TestCase):
         self.assertEqual(r.judge("SE", "X", "Pune", "x" * 400)["fit"], "stretch")
         self.assertEqual(seen, ["gemini-flash-latest", "gemini-flash-lite-latest"])
 
-    def test_unquoted_reject_is_kept_as_open(self):
+    def test_unquoted_reject_is_kept_as_doubtful(self):
         ai.urllib.request.urlopen = lambda req, timeout=0: reply({"fit": "reject", "reason": "Likely needs 2+ years"})
         r = ai.AIReviewer({}, log=lambda *a: None)
-        self.assertEqual(r.judge("SE", "X", "Pune", "x" * 400)["fit"], "open")
+        self.assertEqual(r.judge("SE", "X", "Pune", "x" * 400)["fit"], "doubtful")
 
     def test_no_key_means_no_calls(self):
         os.environ.pop("GEMINI_API_KEY")

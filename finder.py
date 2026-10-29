@@ -122,6 +122,8 @@ def ai_pass(items, reviewer, cache):
         if info.get("fit") not in ("open", "stretch", "fresher") or len(desc or "") < 300:
             continue
         res = cache.get(info["id"])
+        if res is not None and "level" not in res:
+            res = None                   # answered before the AI judged seniority: ask again
         if res is None:
             if not reviewer.available():
                 continue
@@ -136,6 +138,9 @@ def ai_pass(items, reviewer, cache):
             continue
         if not (info["fit"] == "stretch" and res["fit"] in ("open", "fresher")):
             info["fit"] = res["fit"]
+        if info["fit"] == "open" and res.get("level") in ("mid", "senior"):
+            info["fit"] = "doubtful"     # no years stated, but the duties are mid/senior level
+            res = dict(res, reason="%s-level duties: %s" % (res["level"], res.get("level_quote") or res.get("reason", "")))
         info["ai_reason"] = res.get("reason", "")
         info["ai_by"] = res.get("by", "")
         if res.get("role_type") and res["role_type"] != "Other":
@@ -325,13 +330,16 @@ def main():
         matched[name] = matched.get(name, 0) + 1
         board.append(info)
         new_matches += 1
+        if info.get("fit") == "doubtful":
+            continue                     # on the dashboard only
         if (not first.get(name) or recent(info.get("posted"), FIRST_RUN_ALERT_DAYS)) and \
                 sent.get(name, 0) < MAX_ALERTS_PER_COMPANY:
             alerts.append(info)
             sent[name] = sent.get(name, 0) + 1
     # spare AI budget: double-check older dashboard jobs that were never reviewed (best first)
     if reviewer.available():
-        todo_ai = sorted([b for b in board if b.get("fit") in ("open", "stretch", "fresher") and not b.get("ai_reason")
+        todo_ai = sorted([b for b in board if b.get("fit") in ("open", "stretch", "fresher")
+                          and (not b.get("ai_reason") or "level" not in ai_cache.get(b["id"], {}))
                           and not b.get("ai_skip") and b.get("company") in by_name],
                          key=lambda b: -b.get("priority", 0))[:reviewer.budget - reviewer.used]
         if todo_ai:

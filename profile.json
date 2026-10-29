@@ -142,7 +142,26 @@
   "\\bdft\\b",
   "\\bsoc\\b",
   "post[- ]silicon",
-  "\\banalyst avp\\b"
+  "\\banalyst avp\\b",
+  "facilities",
+  "cost engineer",
+  "industrial engineer",
+  "process control",
+  "\\blab engineer",
+  "maintenance",
+  "onsite service",
+  "field service",
+  "project quality",
+  "quality engineer(?!ing)",
+  "requirements engineer",
+  "licensing",
+  "\\bsap\\b",
+  "\\bbasis\\b",
+  "sterling",
+  "data center technician",
+  "\\bplc\\b",
+  "\\bscada\\b",
+  "validation engineer"
  ],
  "level_ii_ok_companies": [
   "Google",
@@ -342,6 +361,6 @@
   "nvidia",
   "openrouter"
  ],
- "tailored_resumes": true,
+ "tailored_resumes": false,
  "resume_max_per_run": 5
 }

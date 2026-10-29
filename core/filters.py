@@ -33,7 +33,9 @@ FRESHER_RX = re.compile(r"new[- ]?grads?\b|\bfreshers?\b|entry[- ]level|campus (
 SENIOR_DESC_RX = re.compile(
     r"\bsenior[- ]level\b|\bmid[- ]?(?:to[- ]senior|senior)[- ]level\b|\bmid[- ]level\b|seasoned (engineer|developer|professional)|"
     r"mentor(ing|s)? (junior|other) (engineers|developers|team members)|lead (a|the) team of|team lead(ership)? experience|"
-    r"people management|manage (a|the) team of|experienced hire", re.I)
+    r"people management|manage (a|the) team of|experienced hire|c-suite|executive (forums|leadership|stakeholders)|"
+    r"leading investigations|lead(ing)? (the )?investigations|proven track record of (identifying|leading|delivering|driving)",
+    re.I)
 # wording that is senior only when it describes the candidate ("you have extensive experience"),
 # not company boilerplate ("our extensive experience in fintech")
 SENIOR_ASK_RX = re.compile(r"extensive (professional |industry |hands[- ]on )?experience|significant (professional |industry )?"
@@ -66,6 +68,12 @@ TECH_WORD = re.compile(r"software|engineer|develop|technolog|\btech\b|programm|\
                        r"cyber|security|digital|computer|sde|swe|quant|analytics|platform", re.I)
 
 
+SOFTWARE_WORD = re.compile(r"software|develop|programm|backend|back-end|frontend|front-end|full[- ]?stack|\\bsde\\b|"
+                           r"\\bswe\\b|data|\\bml\\b|\\bai\\b|machine learning|cloud|devops|\\bsre\\b|site reliability|"
+                           r"platform|infrastructure|automation|sdet|\\bqa\\b|security|application|web|mobile|android|"
+                           r"\\bios\\b|api|systems engineer|compiler|quant|analytics|forward deployed|member of technical", re.I)
+
+
 def _n(x):
     return NUM.get(x.lower(), None) if not x.isdigit() else int(x)
 
@@ -95,6 +103,8 @@ class Matcher:
             return False, "title not a software role"
         if all(r.pattern in GENERIC_INCLUDES for r in hits) and not TECH_WORD.search(t):
             return False, "fresher program title without a tech word"
+        if all(r.pattern in ("engineer", "\\btest(ing)?\\b") for r in hits) and not SOFTWARE_WORD.search(t):
+            return False, "engineer title without a software word"
         for r in self.exc:
             if r.search(t):
                 if company in self.level_ii_ok and re.search(r"\bii\b|\b2\b", t, re.I) and \
