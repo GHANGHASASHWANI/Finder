@@ -1,5 +1,84 @@
 [
  {
+  "id": "PayPal::/job/Bangalore-Karnataka-India/Software-Engineer---iOS_R0138550-1",
+  "company": "PayPal",
+  "title": "Software Engineer - iOS",
+  "location": "India (2 Locations)",
+  "url": "https://paypal.wd1.myworkdayjobs.com/en-US/jobs/job/Bangalore-Karnataka-India/Software-Engineer---iOS_R0138550-1",
+  "posted": "2026-10-30T20:38:16.812856+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 3,
+  "segment": "Quant/Finance",
+  "location_group": "Other India",
+  "min_years": 1,
+  "exp_note": "mum Qualifications: 1+ years relevant experience and a Bachelor’s de",
+  "fit": "stretch",
+  "role_type": "Mobile",
+  "skills_matched": [
+   "CI/CD",
+   "GraphQL",
+   "Networking basics",
+   "REST APIs"
+  ],
+  "skills_to_learn": [
+   "Swift",
+   "SwiftUI",
+   "UIKit",
+   "Core Bluetooth",
+   "Objective-C",
+   "iOS"
+  ],
+  "match_pct": 67,
+  "priority": 6.9,
+  "est_ctc_lpa": "~25-35",
+  "found_at": "2026-10-30T20:38:12.264411+00:00",
+  "first_check": false,
+  "ai_reason": "open",
+  "ai_by": "gemini"
+ },
+ {
+  "id": "PayPal::/job/Bangalore-Karnataka-India/Software-Engineer---Backend--Java-_R0138270-1",
+  "company": "PayPal",
+  "title": "Software Engineer - Backend (Java)",
+  "location": "Bangalore, Karnataka, India",
+  "url": "https://paypal.wd1.myworkdayjobs.com/en-US/jobs/job/Bangalore-Karnataka-India/Software-Engineer---Backend--Java-_R0138270-1",
+  "posted": "2026-10-30T20:38:16.812869+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 3,
+  "segment": "Quant/Finance",
+  "location_group": "South India",
+  "min_years": 1,
+  "exp_note": "mum Qualifications: 1+ years relevant experience and a Bachelor’s de",
+  "fit": "stretch",
+  "role_type": "Backend",
+  "skills_matched": [
+   "DSA",
+   "Java",
+   "Microservices",
+   "OOP",
+   "REST APIs",
+   "SQL",
+   "System design"
+  ],
+  "skills_to_learn": [
+   "Java",
+   "Spring framework",
+   "J2EE",
+   "Design Patterns",
+   "Microservices",
+   "Spring"
+  ],
+  "match_pct": 88,
+  "priority": 7.7,
+  "est_ctc_lpa": "~25-35",
+  "found_at": "2026-10-30T20:38:12.264411+00:00",
+  "first_check": false,
+  "ai_reason": "Role asks for 1+ years relevant experience",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Graviton Research Capital::6947471002",
   "company": "Graviton Research Capital",
   "title": "Quantitative Analyst",
@@ -960,7 +1039,7 @@
   "est_ctc_lpa": "~15-22",
   "found_at": "2026-10-28T15:00:03.131111+00:00",
   "first_check": false,
-  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_reason": "Open software engineering role suitable for a recent graduate with relevant programming skills.",
   "ai_by": "gemini"
  },
  {
@@ -1097,7 +1176,7 @@
   "location_group": "South India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "stretch",
   "role_type": "Backend",
   "skills_matched": [
    "Docker",
@@ -1106,16 +1185,17 @@
   "skills_to_learn": [
    "Ruby",
    "Go",
-   "Ruby on Rails",
-   "CI/CD pipelines",
-   "Infrastructure as Code"
+   "CI/CD tooling",
+   "Infrastructure as Code",
+   "Observability tools",
+   "Ruby on Rails"
   ],
   "match_pct": 67,
   "priority": 7.1,
   "est_ctc_lpa": "~20-30 (intermediate)",
   "found_at": "2026-10-28T05:12:15.031930+00:00",
   "first_check": false,
-  "ai_reason": "no experience or seniority explicitly stated",
+  "ai_reason": "Job requires large-scale systems and CI/CD pipeline experience, fitting a stretch profile for a recent grad with 1 year internship.",
   "ai_by": "gemini"
  },
  {
@@ -1241,76 +1321,6 @@
   "first_check": false
  },
  {
-  "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Test-Automation-Engineer_JR-0000126267-1",
-  "company": "Barclays",
-  "title": "Test Automation Engineer",
-  "location": "Pune, Gera Commerzone SEZ",
-  "url": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Pune-Gera-Commerzone-SEZ/Test-Automation-Engineer_JR-0000126267-1",
-  "posted": "2026-10-27T20:33:55.806569+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Quant/Finance",
-  "location_group": "Central/West India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "QA/Test",
-  "skills_matched": [
-   "CI/CD",
-   "Java",
-   "Kafka",
-   "Python",
-   "REST APIs",
-   "System design"
-  ],
-  "skills_to_learn": [
-   "Selenium",
-   "BDD/Gherkin",
-   "Blockchain testing",
-   "Performance testing"
-  ],
-  "match_pct": 86,
-  "priority": 7.2,
-  "est_ctc_lpa": "~12-18",
-  "found_at": "2026-10-27T20:33:42.420790+00:00",
-  "first_check": false,
-  "ai_reason": "No experience or seniority level is explicitly stated in the posting.",
-  "ai_by": "gemini"
- },
- {
-  "id": "SAP Labs India::https://jobs.sap.com/en/jobs/744000158099766/junior-developer-abap-kernel-ccplusplus/",
-  "company": "SAP Labs India",
-  "title": "Junior Developer ABAP Kernel (C/C++)",
-  "location": "",
-  "url": "https://jobs.sap.com/en/jobs/744000158099766/junior-developer-abap-kernel-ccplusplus/",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Big Tech/MNC",
-  "location_group": "Unknown (check page)",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "fresher",
-  "role_type": "Backend",
-  "skills_matched": [
-   "C++",
-   "CI/CD",
-   "System design"
-  ],
-  "skills_to_learn": [
-   "ABAP"
-  ],
-  "match_pct": 100,
-  "priority": 7.2,
-  "est_ctc_lpa": "12-18",
-  "found_at": "2026-10-27T20:33:42.420790+00:00",
-  "first_check": false,
-  "ai_reason": "Junior Developer role targeting university graduates with C/C++ knowledge.",
-  "ai_by": "gemini"
- },
- {
   "id": "Atlassian::26676",
   "company": "Atlassian",
   "title": "Backend Software Engineer",
@@ -1428,18 +1438,18 @@
   ],
   "skills_to_learn": [
    "Golang",
-   "Python (Django)",
-   "React Native",
+   "Django",
    "Flink",
-   "Django/Flask",
-   "Go"
+   "React Native",
+   "Python (Django)",
+   "Django/Flask"
   ],
   "match_pct": 67,
   "priority": 7.1,
   "est_ctc_lpa": "~35-50",
   "found_at": "2026-10-27T14:18:13.437448+00:00",
   "first_check": false,
-  "ai_reason": "The posting asks for \"1+ years of professional software engineering experience\", which fits the candidate's internship experience.",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
@@ -1477,7 +1487,8 @@
   "found_at": "2026-10-27T14:18:13.437448+00:00",
   "first_check": false,
   "ai_reason": "Job asks for 1-2 years of professional software development experience.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Nvidia::/job/India-Pune/Software-QA-Test-and-Tools-Developer---Automotive-Platform_JR2028816",
@@ -1618,7 +1629,8 @@
   "found_at": "2026-10-27T14:18:13.437448+00:00",
   "first_check": false,
   "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Chennai-DLF-IT-Park/Data-Engineer_JR-0000115259",
@@ -1842,7 +1854,7 @@
   "location_group": "Other India",
   "min_years": null,
   "exp_note": "",
-  "fit": "fresher",
+  "fit": "open",
   "role_type": "QA/Test",
   "skills_matched": [
    "C++",
@@ -1850,17 +1862,19 @@
    "SQL"
   ],
   "skills_to_learn": [
+   "Automation Testing",
+   "Selenium",
+   "Python/Java Testing Frameworks",
    "C#",
    "Perl",
-   "Oracle",
-   "SECS/GEM"
+   "Oracle"
   ],
   "match_pct": 75,
   "priority": 7.2,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-27T04:38:28.149330+00:00",
   "first_check": false,
-  "ai_reason": "FRESH GRADUATES MAY APPLY",
+  "ai_reason": "Entry-level automation role with no explicitly stated experience requirements or disqualifying criteria.",
   "ai_by": "gemini"
  },
  {
@@ -2070,7 +2084,8 @@
   "found_at": "2026-10-26T15:14:24.258244+00:00",
   "first_check": false,
   "ai_reason": "Typically 0-2 years experience",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Siemens Healthineers::P-100809",
@@ -2522,7 +2537,7 @@
   "location_group": "South India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Security",
   "skills_matched": [
    "System design"
@@ -2531,16 +2546,16 @@
    "Application Security",
    "Threat Modeling",
    "Penetration Testing",
-   "Security Incident Response",
-   "Cloud Security",
-   "Ruby"
+   "Attack Surface Management",
+   "Vulnerability Assessment",
+   "Security Incident Response"
   ],
   "match_pct": 50,
   "priority": 7.1,
   "est_ctc_lpa": "30-45",
   "found_at": "2026-10-25T22:25:04.084720+00:00",
   "first_check": false,
-  "ai_reason": "No specific years of experience are mentioned in the requirements.",
+  "ai_reason": "mid-level duties: The ideal candidate will have a proven track record of identifying systemic risk through uncovering of underlying common patterns representing systemic flaws",
   "ai_by": "gemini"
  },
  {
@@ -2766,7 +2781,7 @@
   "min_years": null,
   "exp_note": "",
   "fit": "open",
-  "role_type": "Full-stack",
+  "role_type": "SWE",
   "skills_matched": [
    "AWS",
    "DSA",
@@ -2794,7 +2809,7 @@
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "No experience or seniority level is explicitly stated in the job description.",
+  "ai_reason": "No experience requirements or seniority constraints stated.",
   "ai_by": "gemini"
  },
  {
@@ -3590,7 +3605,7 @@
   "min_years": 1,
   "exp_note": "imum Qualifications 1+ year of industry experience (or strong inter",
   "fit": "stretch",
-  "role_type": "Software Engineering",
+  "role_type": "SWE",
   "skills_matched": [
    "C++",
    "DSA",
@@ -3603,19 +3618,19 @@
    "REST APIs"
   ],
   "skills_to_learn": [
-   "C++",
+   "C",
    "CMake",
    "ONNX Runtime",
+   "SNPE",
    "QNN",
-   "Windows DLLs",
-   "ML basics"
+   "C++"
   ],
   "match_pct": 90,
   "priority": 7.1,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "Requires '1+ year of industry experience (or strong internship/research experience)'",
+  "ai_reason": "",
   "ai_by": "gemini"
  },
  {
@@ -4122,7 +4137,8 @@
   "found_at": "2026-10-23T13:17:08.090376+00:00",
   "first_check": false,
   "ai_reason": "Typically 0-2 years experience.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Palo Alto Networks::https://jobs.paloaltonetworks.com/en/job/bengaluru/it-software-engineer/47263/102321720368",
@@ -4319,85 +4335,6 @@
   "est_ctc_lpa": "~12-18",
   "found_at": "2026-10-22T16:48:31.996480+00:00",
   "first_check": true
- },
- {
-  "id": "Zepto::https://www.instahyre.com/job-417841-software-engineer-at-zepto-bangalore/",
-  "company": "Zepto",
-  "title": "Software Engineer Zepto Bangalore",
-  "location": "",
-  "url": "https://www.instahyre.com/job-417841-software-engineer-at-zepto-bangalore/",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 3,
-  "segment": "Indian Consumer/Fintech",
-  "location_group": "Unknown (check page)",
-  "min_years": 1,
-  "exp_note": "them. Requirements: Minimum 1 year of experience with Java MVC frameworks",
-  "fit": "stretch",
-  "role_type": "Backend",
-  "skills_matched": [
-   "Caching",
-   "Docker",
-   "Java",
-   "Kafka",
-   "MongoDB",
-   "MySQL",
-   "OOP",
-   "PostgreSQL",
-   "Python",
-   "Redis",
-   "System design"
-  ],
-  "skills_to_learn": [
-   "Spring",
-   "Django",
-   "Golang",
-   "RabbitMQ",
-   "Django/Flask",
-   "Go"
-  ],
-  "match_pct": 79,
-  "priority": 7.2,
-  "est_ctc_lpa": "~30-45",
-  "found_at": "2026-10-22T16:48:31.996480+00:00",
-  "first_check": true,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
-  "id": "SAP Labs India::https://jobs.sap.com/en/jobs/744000157143970/platform-engineer-for-hana-cloud-sql-optimizer/",
-  "company": "SAP Labs India",
-  "title": "Platform Engineer for HANA Cloud SQL Optimizer",
-  "location": "",
-  "url": "https://jobs.sap.com/en/jobs/744000157143970/platform-engineer-for-hana-cloud-sql-optimizer/",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Big Tech/MNC",
-  "location_group": "Unknown (check page)",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Backend",
-  "skills_matched": [
-   "C++",
-   "Caching",
-   "SQL"
-  ],
-  "skills_to_learn": [
-   "C",
-   "C++",
-   "Systems Programming"
-  ],
-  "match_pct": 100,
-  "priority": 7.2,
-  "est_ctc_lpa": "12-18",
-  "found_at": "2026-10-22T16:48:31.996480+00:00",
-  "first_check": true,
-  "ai_reason": "No experience or seniority requirements are stated in the job description.",
-  "ai_by": "gemini"
  },
  {
   "id": "Graviton Research Capital::8768396002",
@@ -5364,13 +5301,13 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Full-stack",
   "skills_to_learn": [
    "Rust"
   ],
   "match_pct": 50,
-  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_reason": "mid-level duties: You’ve shipped and run production systems end to end.",
   "ai_by": "gemini"
  },
  {
@@ -5793,43 +5730,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Supabase::f6035bf8-4f44-4425-9944-d5509a3c8652",
-  "company": "Supabase",
-  "title": "Release Engineer",
-  "location": "Remote, Global",
-  "url": "https://jobs.ashbyhq.com/supabase/f6035bf8-4f44-4425-9944-d5509a3c8652",
-  "posted": "2026-07-27T11:06:59.312000+00:00",
-  "dept": "Engineering",
-  "comp": "",
-  "tier": 3,
-  "segment": "AI/Remote",
-  "location_group": "Remote",
-  "min_years": null,
-  "skills_matched": [
-   "AWS",
-   "PostgreSQL",
-   "Vector DBs"
-  ],
-  "priority": 7.1,
-  "est_ctc_lpa": "~30-60 (USD remote, est.)",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "DevOps/SRE/Cloud",
-  "skills_to_learn": [
-   "Kubernetes",
-   "Terraform",
-   "Pulumi",
-   "Prometheus",
-   "Grafana",
-   "Prometheus/Grafana"
-  ],
-  "match_pct": 50,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
   "id": "Supabase::fab1525f-3d89-4d1c-9094-84d21647415e",
   "company": "Supabase",
   "title": "FinOps Engineer",
@@ -5931,18 +5831,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Data",
   "skills_to_learn": [
-   "BigQuery",
    "dbt",
+   "BigQuery",
    "Terraform",
    "GCP",
-   "CloudZero",
-   "Bash"
+   "Cloud Cost Management Platform",
+   "CloudZero"
   ],
   "match_pct": 50,
-  "ai_reason": "No experience or seniority requirements are stated in the job posting.",
+  "ai_reason": "mid-level duties: Prior experience spanning data analytics, data engineering, or data science in a FinOps, cloud cost management, or cloud governance context.",
   "ai_by": "gemini"
  },
  {
@@ -6308,7 +6208,7 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null,
-  "ai_reason": "Basic Qualifications - 1+ years of non-internship professional software development experience",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
@@ -9657,9 +9557,11 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "Backend",
-  "skills_to_learn": [],
+  "skills_to_learn": [
+   "Java"
+  ],
   "match_pct": 100,
-  "ai_reason": "No experience or seniority requirements are stated in the provided text.",
+  "ai_reason": "Job description details failed to load, but title is open for a backend role.",
   "ai_by": "gemini"
  },
  {
@@ -10302,15 +10204,16 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "stretch",
   "role_type": "SWE",
   "skills_to_learn": [
-   "VS Code Extension APIs",
+   "VS Code Extension API",
    "Language Server Protocol",
-   "Webviews"
+   "Webviews",
+   "VS Code Extension APIs"
   ],
   "match_pct": 100,
-  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
@@ -10366,17 +10269,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_to_learn": [
-   "CCTV",
-   "Video Analytics",
+   "CCTV systems",
    "SAP-EWM",
+   "Video Analytics",
    "Networking",
-   "WMS"
+   "WMS",
+   "CCTV"
   ],
   "match_pct": 100,
-  "ai_reason": "No specific years of experience or seniority level is stated in the posting.",
+  "ai_reason": "mid-level duties: Project management experience, including planning, execution, and coordination of teams",
   "ai_by": "gemini"
  },
  {
@@ -11103,7 +11007,8 @@
   ],
   "match_pct": 88,
   "ai_reason": "No experience or seniority requirements are stated.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/IFC---Cloud-Data-Engineer_JR-0000133706-1",
@@ -11565,7 +11470,7 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Geneos ITRS",
@@ -11576,7 +11481,7 @@
    "Hadoop"
   ],
   "match_pct": 86,
-  "ai_reason": "No explicit experience requirement stated in the posting.",
+  "ai_reason": "mid-level duties: They lead and supervise a team, guiding and supporting professional development",
   "ai_by": "gemini"
  },
  {
@@ -11720,18 +11625,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_to_learn": [
    "Embedded Linux",
    "RTOS",
    "Device Drivers",
-   "Networking Protocols",
+   "L2 Protocols",
    "MACsec",
-   "Embedded C"
+   "Networking Protocols"
   ],
   "match_pct": 80,
-  "ai_reason": "No experience or seniority is stated in the job description.",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: telecom protocols (L2/L3, MPLS) domain background that the candidate lacks",
   "ai_by": "gemini"
  },
  {
@@ -11758,14 +11663,15 @@
   "fit": "stretch",
   "role_type": "SWE",
   "skills_to_learn": [
+   "WLAN protocols",
+   "Hardware testing",
+   "RF engineering fundamentals",
    "Wireless Networking",
    "WLAN",
-   "RF Engineering",
-   "Hardware Testing",
-   "Systems Engineering"
+   "RF Engineering"
   ],
   "match_pct": 100,
-  "ai_reason": "The posting specifies '0–2 years of relevant experience'.",
+  "ai_reason": "Role asks for 0-2 years of experience.",
   "ai_by": "gemini"
  },
  {
@@ -11826,7 +11732,8 @@
   ],
   "match_pct": 100,
   "ai_reason": "Typically 0-2 years experience.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "HPE (incl. Juniper Networks)::/job/Bengaluru-Karntaka-India/Cloud-Developer--Virtualization_1211072-2",
