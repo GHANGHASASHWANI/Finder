@@ -1,5 +1,257 @@
 [
  {
+  "id": "Graviton Research Capital::6947471002",
+  "company": "Graviton Research Capital",
+  "title": "Quantitative Analyst",
+  "location": "Gurugram, Haryana, India",
+  "url": "https://job-boards.greenhouse.io/gravitonresearchcapital/jobs/6947471002",
+  "posted": "2023-10-03T07:14:35-04:00",
+  "dept": "Quantitative Trading ",
+  "comp": "",
+  "tier": 2,
+  "segment": "Quant/Finance",
+  "location_group": "North India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "Quant",
+  "skills_matched": [
+   "C++",
+   "Linux",
+   "Python",
+   "System design"
+  ],
+  "skills_to_learn": [
+   "Perl",
+   "Shell scripting",
+   "market microstructure"
+  ],
+  "match_pct": 100,
+  "priority": 9.4,
+  "est_ctc_lpa": "~50-90",
+  "found_at": "2026-10-30T14:58:28.747930+00:00",
+  "first_check": false,
+  "ai_reason": "Engineering degree required, candidate has strong C++ and Python skills.",
+  "ai_by": "gemini"
+ },
+ {
+  "id": "Rubrik::8256407",
+  "company": "Rubrik",
+  "title": "Software Engineer- SaaS O365",
+  "location": "Bangalore",
+  "url": "https://www.rubrik.com/company/careers/departments/job.8256407?gh_jid=8256407",
+  "posted": "2026-10-06T06:14:01-04:00",
+  "dept": "Engineering",
+  "comp": "",
+  "tier": 1,
+  "segment": "Big Tech/MNC / Discovered - Infra/Storage SaaS",
+  "location_group": "South India",
+  "min_years": 0,
+  "exp_note": "ce or related field 0-2 years of relevant work experience, Proficienc",
+  "fit": "stretch",
+  "role_type": "SWE",
+  "skills_matched": [
+   "AWS",
+   "C++",
+   "Docker",
+   "Java",
+   "Microservices",
+   "Python",
+   "System design"
+  ],
+  "skills_to_learn": [
+   "Go",
+   "Kubernetes",
+   "Scala",
+   "Azure",
+   "GCP"
+  ],
+  "match_pct": 64,
+  "priority": 7.4,
+  "est_ctc_lpa": "45-55",
+  "found_at": "2026-10-30T14:58:28.747930+00:00",
+  "first_check": false,
+  "ai_reason": "Experience requirement matches candidate profile.",
+  "ai_by": "gemini"
+ },
+ {
+  "id": "Infoblox::7988",
+  "company": "Infoblox",
+  "title": "Associate Software Engineer (Golang AND K8s AND Agentic AI)",
+  "location": "Bangalore, Karnataka, India",
+  "url": "https://efpv.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/7988",
+  "posted": "2026-10-30T00:00:00+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 4,
+  "segment": "Big Tech/MNC",
+  "location_group": "South India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "unverified",
+  "role_type": "AI/ML",
+  "skills_matched": [],
+  "skills_to_learn": [
+   "Go",
+   "Kubernetes"
+  ],
+  "match_pct": 0,
+  "priority": 4.1,
+  "est_ctc_lpa": "~15-25",
+  "found_at": "2026-10-30T14:58:28.747930+00:00",
+  "first_check": false
+ },
+ {
+  "id": "Cisco::/job/Bangalore-India/Software-Engineer_2026640-2",
+  "company": "Cisco",
+  "title": "Software Engineer",
+  "location": "Bangalore, India",
+  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Engineer_2026640-2",
+  "posted": "2026-10-30T14:58:34.424093+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 4,
+  "segment": "Big Tech/MNC",
+  "location_group": "South India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "fresher",
+  "role_type": "SWE",
+  "skills_matched": [
+   "Linux",
+   "Networking basics",
+   "Python"
+  ],
+  "skills_to_learn": [
+   "Cisco IOS XE",
+   "L2/L3 networking protocols",
+   "Linux kernel/system programmin",
+   "iOS"
+  ],
+  "match_pct": 75,
+  "priority": 7.4,
+  "est_ctc_lpa": "~18-28",
+  "found_at": "2026-10-30T14:58:28.747930+00:00",
+  "first_check": false,
+  "ai_reason": "Targets new graduates with Bachelor's or Master's degrees.",
+  "ai_by": "gemini"
+ },
+ {
+  "id": "Cisco::/job/Bangalore-India/Software-Engineer_2030171-1",
+  "company": "Cisco",
+  "title": "Software Engineer",
+  "location": "Bangalore, India",
+  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Engineer_2030171-1",
+  "posted": "2026-10-30T14:58:34.424100+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 4,
+  "segment": "Big Tech/MNC",
+  "location_group": "South India",
+  "min_years": 1,
+  "exp_note": "related field, with 1–3 years of relevant experience. Strong Python s",
+  "fit": "stretch",
+  "role_type": "AI/ML",
+  "skills_matched": [
+   "C++",
+   "DSA",
+   "Java",
+   "LLMs",
+   "Networking basics",
+   "Python",
+   "RAG"
+  ],
+  "skills_to_learn": [
+   "PyTorch",
+   "TensorFlow",
+   "Hugging Face",
+   "TensorFlow Lite",
+   "LangGraph",
+   "Embedded C"
+  ],
+  "match_pct": 64,
+  "priority": 6.2,
+  "est_ctc_lpa": "~18-28",
+  "found_at": "2026-10-30T14:58:28.747930+00:00",
+  "first_check": false,
+  "ai_reason": "It asks for \"1–3 years of relevant experience\", which is a stretch.",
+  "ai_by": "gemini"
+ },
+ {
+  "id": "LSEG::/job/IND-Bangalore-A-RMZ-Infinity/QA-Automation-Engineer_R0122889",
+  "company": "LSEG",
+  "title": "QA Automation Engineer",
+  "location": "IND-Bangalore-A, RMZ Infinity",
+  "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-Bangalore-A-RMZ-Infinity/QA-Automation-Engineer_R0122889",
+  "posted": "2026-10-30T14:58:46.324627+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 5,
+  "segment": "Quant/Finance",
+  "location_group": "South India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "QA/Test",
+  "skills_matched": [
+   "Git",
+   "Java",
+   "Python"
+  ],
+  "skills_to_learn": [
+   "Jenkins"
+  ],
+  "match_pct": 75,
+  "priority": 6.8,
+  "est_ctc_lpa": "~10-15",
+  "found_at": "2026-10-30T14:58:28.747930+00:00",
+  "first_check": false
+ },
+ {
+  "id": "Intuit::https://jobs.intuit.com/job/bengaluru/software-engineer-1/27595/102630301968",
+  "company": "Intuit",
+  "title": "Software Engineer 1",
+  "location": "Bangalore, India",
+  "url": "https://jobs.intuit.com/job/bengaluru/software-engineer-1/27595/102630301968",
+  "posted": null,
+  "dept": "",
+  "comp": "",
+  "tier": 3,
+  "segment": "Big Tech/MNC",
+  "location_group": "South India",
+  "min_years": 0,
+  "exp_note": "es Qualifications ● At least 0 – 3 years’ experience developing web, software, o",
+  "fit": "stretch",
+  "role_type": "Full-stack",
+  "skills_matched": [
+   "AWS",
+   "GraphQL",
+   "Java",
+   "JavaScript",
+   "LLMs",
+   "OOP",
+   "REST APIs",
+   "React",
+   "Redux",
+   "SQL"
+  ],
+  "skills_to_learn": [
+   "Java",
+   "Spring",
+   "React",
+   "Redux",
+   "Kubernetes",
+   "ML basics"
+  ],
+  "match_pct": 77,
+  "priority": 7.4,
+  "est_ctc_lpa": "28-38",
+  "found_at": "2026-10-30T14:58:28.747930+00:00",
+  "first_check": false,
+  "ai_reason": "The role asks for 0-3 years of experience, making it a slight stretch.",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Western Digital / Sandisk::744000158656277",
   "company": "Western Digital / Sandisk",
   "title": "Engineer, Data Analytics Engineering",
@@ -725,7 +977,7 @@
   "location_group": "South India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "fresher",
   "role_type": "AI/ML",
   "skills_matched": [
    "DSA",
@@ -736,15 +988,16 @@
    "Scala",
    "Spark",
    "Hadoop",
-   "ML basics",
-   "Spark/PySpark"
+   "TensorFlow",
+   "Google Cloud Platform",
+   "ML basics"
   ],
   "match_pct": 43,
   "priority": 7.4,
   "est_ctc_lpa": "35-50",
   "found_at": "2026-10-28T15:00:03.131111+00:00",
   "first_check": false,
-  "ai_reason": "No minimum years of experience stated in the posting.",
+  "ai_reason": "Explicitly targets early experience and a bachelor's degree.",
   "ai_by": "gemini"
  },
  {
@@ -778,45 +1031,6 @@
   "found_at": "2026-10-28T15:00:03.131111+00:00",
   "first_check": false,
   "ai_reason": "No experience or seniority requirements are stated in the posting text.",
-  "ai_by": "gemini"
- },
- {
-  "id": "Cisco::/job/Bangalore-India/Software-Engineer_2023169-2",
-  "company": "Cisco",
-  "title": "Software Engineer",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Engineer_2023169-2",
-  "posted": "2026-10-28T15:00:10.271953+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_matched": [
-   "C++",
-   "LLMs",
-   "Linux",
-   "Networking basics",
-   "Python",
-   "System design"
-  ],
-  "skills_to_learn": [
-   "C",
-   "Networking protocols",
-   "UNIX system programming",
-   "Go",
-   "iOS"
-  ],
-  "match_pct": 75,
-  "priority": 7.4,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-28T15:00:03.131111+00:00",
-  "first_check": false,
-  "ai_reason": "AI rejected without quoting the posting - kept",
   "ai_by": "gemini"
  },
  {
@@ -1611,7 +1825,7 @@
   "est_ctc_lpa": "~22-28",
   "found_at": "2026-10-27T04:38:28.149330+00:00",
   "first_check": false,
-  "ai_reason": "6 months to 2 years of experience working on large-scale applications",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
@@ -2611,16 +2825,16 @@
    "Ansible",
    "Kubernetes",
    "Zabbix",
+   "RH Satellite",
    "Azure",
-   "Jenkins",
-   "GCP"
+   "Jenkins"
   ],
   "match_pct": 55,
   "priority": 7.4,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "Open to fresh graduates with 0 years of experience",
+  "ai_reason": "Targeting fresh graduates with 0 years of experience.",
   "ai_by": "gemini"
  },
  {
@@ -2697,7 +2911,7 @@
   "location_group": "South India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_matched": [
    "C++",
@@ -2710,6 +2924,7 @@
    "CAD/EDA tools",
    "MATLAB",
    "Simulation",
+   "PLM/ALM tools",
    "ML basics"
   ],
   "match_pct": 80,
@@ -2717,7 +2932,7 @@
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: it is not a software/tech role (hardware, sales, pre-sales, support, pure business)",
   "ai_by": "gemini"
  },
  {
@@ -3003,7 +3218,7 @@
   "min_years": null,
   "exp_note": "",
   "fit": "open",
-  "role_type": "SWE",
+  "role_type": "Embedded/SWE",
   "skills_matched": [
    "DSA",
    "Linux",
@@ -3013,16 +3228,17 @@
   "skills_to_learn": [
    "Embedded systems",
    "RTOS",
+   "JTAG",
    "UEFI",
-   "T32 debugger",
-   "Embedded C"
+   "T32",
+   "T32 debugger"
   ],
   "match_pct": 80,
   "priority": 7.4,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "No experience or seniority level is stated in the posting.",
+  "ai_reason": "Role requires embedded systems and C/Python skills matching candidate profile.",
   "ai_by": "gemini"
  },
  {
@@ -3084,15 +3300,16 @@
   ],
   "skills_to_learn": [
    "Systems Engineering",
-   "Hardware/Software validation",
-   "Algorithms"
+   "Hardware Architecture",
+   "Algorithms",
+   "Hardware/Software validation"
   ],
   "match_pct": 100,
   "priority": 7.4,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "Targeted at campus hires with a Bachelor's degree in Computer Science.",
+  "ai_reason": "Targeted at campus hires requiring a bachelor's degree with no prior experience needed.",
   "ai_by": "gemini"
  },
  {
@@ -4366,12 +4583,12 @@
    "Go",
    "Scala",
    "Kubernetes",
+   "Microservices",
    "Azure",
-   "GCP",
-   "Ruby"
+   "GCP"
   ],
   "match_pct": 58,
-  "ai_reason": "The role requires 0-2 years of relevant work experience.",
+  "ai_reason": "The role asks for 0-2 years of experience, matching the candidate's internship eligibility.",
   "ai_by": "gemini"
  },
  {
@@ -5048,15 +5265,15 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Okta",
    "Jamf",
+   "Okta",
    "Cisco Meraki",
    "OSquery",
-   "Terraform",
-   "Bash"
+   "Santa",
+   "Terraform"
   ],
   "match_pct": 60,
-  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_reason": "No years of experience or degree requirements stated; relevant IT/DevOps role.",
   "ai_by": "gemini"
  },
  {
@@ -5561,18 +5778,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Backend",
   "skills_to_learn": [
    "Rust",
-   "Haskell",
-   "Go",
    "SQLite",
-   "Embedded C",
-   "Spark/PySpark"
+   "Turso",
+   "Haskell",
+   "GoTrue",
+   "Go"
   ],
   "match_pct": 57,
-  "ai_reason": "No explicit experience level or years of experience stated in the posting.",
+  "ai_reason": "mid-level duties: You'll own large areas end to end and make real decisions from day one.",
   "ai_by": "gemini"
  },
  {
@@ -5643,12 +5860,12 @@
    "Terraform",
    "GCP",
    "CloudZero",
-   "Vantage",
-   "Hex",
-   "Bash"
+   "AWS Cost Explorer",
+   "Python",
+   "Vantage"
   ],
   "match_pct": 62,
-  "ai_reason": "No minimum years of experience stated in the job posting.",
+  "ai_reason": "No experience or degree requirement is stated.",
   "ai_by": "gemini"
  },
  {
@@ -5753,18 +5970,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Backend",
   "skills_to_learn": [
    "Rust",
-   "Kubernetes",
    "Deterministic Simulation Testi",
-   "Formal verification",
    "Embedded databases",
+   "Kubernetes",
+   "Formal verification",
    "Embedded C"
   ],
   "match_pct": 62,
-  "ai_reason": "No experience or seniority level is explicitly stated in the posting.",
+  "ai_reason": "mid-level duties: Have written databases before, and/or other high-stakes low-level systems",
   "ai_by": "gemini"
  },
  {
@@ -6326,12 +6543,12 @@
    "Golang",
    "Rust",
    "Bash",
+   "Linux internals",
    "Embedded C",
-   "Go",
-   "Kubernetes"
+   "Go"
   ],
   "match_pct": 55,
-  "ai_reason": "We are hiring 2025 and 2026 Graduate Software Engineers",
+  "ai_reason": "Targeting 2025 and 2026 graduates for an entry-level software engineering role.",
   "ai_by": "gemini"
  },
  {
@@ -6715,10 +6932,11 @@
    "OpenStack",
    "Kubeflow",
    "OpenSearch",
+   "Advanced Linux Networking",
    "Kubernetes"
   ],
   "match_pct": 83,
-  "ai_reason": "No experience requirement stated",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
@@ -6758,7 +6976,7 @@
    "Prometheus/Grafana"
   ],
   "match_pct": 75,
-  "ai_reason": "No explicit experience level or years of experience stated.",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
@@ -6838,7 +7056,7 @@
    "Distributed systems"
   ],
   "match_pct": 83,
-  "ai_reason": "No experience or seniority level is explicitly stated in the posting.",
+  "ai_reason": "No experience level is stated, making it open to apply.",
   "ai_by": "gemini"
  },
  {
@@ -7316,18 +7534,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Backend",
   "skills_to_learn": [
    "Ruby",
    "Workato",
    "Workday",
    "Greenhouse",
-   "Slack API",
-   "GCP"
+   "Model Context Protocol",
+   "Slack API"
   ],
   "match_pct": 75,
-  "ai_reason": "No specific years of experience are stated for this role.",
+  "ai_reason": "mid-level duties: working alongside our Lead People Systems Engineer, you’ll design, build and maintain",
   "ai_by": "gemini"
  },
  {
@@ -7387,17 +7605,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Quant",
   "skills_to_learn": [
    "Quantitative Finance",
+   "IRRBB frameworks",
+   "Risk Modeling",
    "Risk Management Frameworks",
    "IRRBB",
-   "Financial Modeling",
-   "ML basics"
+   "Financial Modeling"
   ],
   "match_pct": 83,
-  "ai_reason": "No experience level or years of experience explicitly specified in the posting.",
+  "ai_reason": "mid-level duties: Analyst / Associate",
   "ai_by": "gemini"
  },
  {
@@ -8938,43 +9157,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Cisco::/job/Bangalore-India/Security-Engineer_2025487-1",
-  "company": "Cisco",
-  "title": "Security Engineer",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Security-Engineer_2025487-1",
-  "posted": "2026-10-08T15:16:21.889298+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "CI/CD",
-   "Python",
-   "System design"
-  ],
-  "priority": 7.4,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Security",
-  "skills_to_learn": [
-   "Axonius",
-   "Wiz",
-   "Splunk",
-   "Tines",
-   "SSPM",
-   "Kubernetes"
-  ],
-  "match_pct": 75,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
   "id": "Cisco::/job/Bangalore-India/Software-Engineer_2019628-1",
   "company": "Cisco",
   "title": "Software Engineer",
@@ -9017,7 +9199,8 @@
   ],
   "match_pct": 80,
   "ai_reason": "No specific years of experience are mentioned in the requirements.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Cisco::/job/Bangalore-India/Software-Engineer_2025032-1",
