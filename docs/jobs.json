@@ -1,5 +1,47 @@
 [
  {
+  "id": "Western Digital / Sandisk::744000158656277",
+  "company": "Western Digital / Sandisk",
+  "title": "Engineer, Data Analytics Engineering",
+  "location": "Bengaluru, KA, in",
+  "url": "https://jobs.smartrecruiters.com/WesternDigital/744000158656277",
+  "posted": "2026-10-30T02:22:21.249000+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 5,
+  "segment": "Big Tech/MNC",
+  "location_group": "South India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "Data",
+  "skills_matched": [
+   "AWS",
+   "Java",
+   "LLMs",
+   "LangChain",
+   "Python",
+   "REST APIs",
+   "System design",
+   "Vector DBs"
+  ],
+  "skills_to_learn": [
+   "Apache Spark",
+   "Apache Airflow",
+   "Scala",
+   "Hadoop",
+   "Azure OpenAI",
+   "Airflow"
+  ],
+  "match_pct": 57,
+  "priority": 6.2,
+  "est_ctc_lpa": "~15-20",
+  "found_at": "2026-10-30T05:22:57.186570+00:00",
+  "first_check": false,
+  "ai_reason": "Data analytics engineering role matching candidate's Java, Python, AWS, and GenAI skills.",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Google::108715629858431686",
   "company": "Google",
   "title": "Cloud Engineer, Data and AI",
@@ -618,14 +660,15 @@
   "skills_to_learn": [
    "Go",
    "Terraform",
-   "Distributed Systems"
+   "Distributed Systems",
+   "Database Proxies"
   ],
   "match_pct": 83,
   "priority": 7.4,
   "est_ctc_lpa": "~35-50",
   "found_at": "2026-10-28T15:00:03.131111+00:00",
   "first_check": false,
-  "ai_reason": "1-2 years experience working with fast growing, top tier product companies",
+  "ai_reason": "The role requires 1-2 years experience, fitting the candidate's internship-backed profile.",
   "ai_by": "gemini"
  },
  {
@@ -1077,7 +1120,8 @@
   "found_at": "2026-10-27T14:18:13.437448+00:00",
   "first_check": false,
   "ai_reason": "No experience or seniority requirements are stated in the job posting.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Booking Holdings / Booking.com (Bengaluru)::30238",
@@ -1093,11 +1137,12 @@
   "location_group": "South India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "DevOps/SRE/Cloud",
   "skills_matched": [],
   "skills_to_learn": [
    "SAP Basis",
+   "SAP Workload Automation",
    "Workload Automation"
   ],
   "match_pct": null,
@@ -1105,7 +1150,7 @@
   "est_ctc_lpa": "~30-45",
   "found_at": "2026-10-27T14:18:13.437448+00:00",
   "first_check": false,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: it is not a software/tech role (hardware, sales, pre-sales, support, pure business), or it is an int",
   "ai_by": "gemini"
  },
  {
@@ -2697,6 +2742,8 @@
   "skills_to_learn": [
    "Quality Assurance",
    "Statistical Process Control",
+   "ISO regulations",
+   "GMPs",
    "GMP",
    "ISO Regulations"
   ],
@@ -2705,7 +2752,7 @@
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "No experience or seniority is stated in the job description.",
+  "ai_reason": "No experience level or years required stated in posting.",
   "ai_by": "gemini"
  },
  {
@@ -3187,6 +3234,7 @@
    "Device Drivers",
    "RTOS",
    "Linux Kernel",
+   "Wireless Protocols",
    "Android"
   ],
   "match_pct": 71,
@@ -3194,7 +3242,7 @@
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "Explicitly targets campus graduates for entry-level engineering roles.",
+  "ai_reason": "Explicitly targets new graduates and campus hires.",
   "ai_by": "gemini"
  },
  {
@@ -3212,7 +3260,7 @@
   "min_years": null,
   "exp_note": "",
   "fit": "fresher",
-  "role_type": "Embedded SW",
+  "role_type": "SWE",
   "skills_matched": [
    "C++",
    "DSA",
@@ -3221,19 +3269,19 @@
    "REST APIs"
   ],
   "skills_to_learn": [
-   "Embedded C++",
+   "Embedded C",
    "Device Drivers",
    "RTOS",
    "Linux Kernel",
-   "Android",
-   "Embedded C"
+   "Wireless Protocols",
+   "Embedded C++"
   ],
   "match_pct": 71,
   "priority": 7.7,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "Targeted at campus graduates and entry-level associate software engineers.",
+  "ai_reason": "Targeted at campus graduates and freshers entering software engineering.",
   "ai_by": "gemini"
  },
  {
@@ -3616,7 +3664,8 @@
   "found_at": "2026-10-23T13:17:08.090376+00:00",
   "first_check": false,
   "ai_reason": "6 months to 1 year of overall career experience into Software Engineering",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Chennai-DLF-IT-Park/Software-Engineer---JAVA_JR-0000125339",
@@ -3903,41 +3952,6 @@
   "found_at": "2026-10-23T13:17:08.090376+00:00",
   "first_check": false,
   "ai_reason": "General job board landing page without specific experience requirements or job description.",
-  "ai_by": "gemini"
- },
- {
-  "id": "Synopsys::https://careers.synopsys.com/job/ho-chi-minh-city/applications-engineering-engineer-19447/44408/102322183104",
-  "company": "Synopsys",
-  "title": "Applications Engineering Engineer - 19447",
-  "location": "",
-  "url": "https://careers.synopsys.com/job/ho-chi-minh-city/applications-engineering-engineer-19447/44408/102322183104",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "Unknown (check page)",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_matched": [
-   "Linux",
-   "Python"
-  ],
-  "skills_to_learn": [
-   "ASIC Design",
-   "Verilog",
-   "Physical Design",
-   "TCL",
-   "Semiconductor Tools"
-  ],
-  "match_pct": 100,
-  "priority": 7.8,
-  "est_ctc_lpa": "~15-24",
-  "found_at": "2026-10-23T13:17:08.090376+00:00",
-  "first_check": false,
-  "ai_reason": "AI rejected without quoting the posting - kept",
   "ai_by": "gemini"
  },
  {
@@ -4384,18 +4398,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Backend",
   "skills_to_learn": [
    "Golang",
    "OIDC/OAuth 2.0",
    "SAML 2.0",
-   "Applied Cryptography / PKI",
+   "PKI/Cryptography",
    "Active Directory",
-   "Bash"
+   "Applied Cryptography / PKI"
   ],
   "match_pct": 50,
-  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_reason": "mid-level duties: be able to work independently",
   "ai_by": "gemini"
  },
  {
@@ -4994,17 +5008,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Data Center Hardware",
    "Structured Cabling",
+   "Network Equipment",
+   "Server Maintenance",
    "Fiber Testing",
-   "Cisco/Arista/Juniper",
-   "Hardware Break-Fix"
+   "Cisco/Arista/Juniper"
   ],
   "match_pct": null,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: it is not a software/tech role",
   "ai_by": "gemini"
  },
  {
@@ -5331,7 +5346,7 @@
   "role_type": "Backend",
   "skills_to_learn": [],
   "match_pct": null,
-  "ai_reason": "No experience or seniority level is stated in the provided job description text.",
+  "ai_reason": "Job description has very little detail provided, treating as open.",
   "ai_by": "gemini"
  },
  {
@@ -5508,17 +5523,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Go",
    "Kubernetes",
    "Terraform",
-   "Cilium",
-   "Vitess"
+   "Vitess",
+   "CSI drivers",
+   "Cilium"
   ],
   "match_pct": 67,
-  "ai_reason": "No experience or seniority level is stated in the posting.",
+  "ai_reason": "mid-level duties: own the deployment and operational infrastructure",
   "ai_by": "gemini"
  },
  {
@@ -6242,44 +6258,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Canonical::4857458",
-  "company": "Canonical",
-  "title": "Go (Golang) Software Engineer, Developer Tooling and Containers",
-  "location": "Home Based - APAC",
-  "url": "https://job-boards.greenhouse.io/canonical/jobs/4857458",
-  "posted": "2023-08-21T12:57:05-04:00",
-  "dept": "Charm Engineering",
-  "comp": "",
-  "tier": 4,
-  "segment": "AI/Remote",
-  "location_group": "Remote",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "Docker",
-   "Linux",
-   "Python"
-  ],
-  "priority": 7.7,
-  "est_ctc_lpa": "~15-30 (est.)",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Backend",
-  "skills_to_learn": [
-   "Go",
-   "LXC/LXD",
-   "CUDA",
-   "Linux containers",
-   "C",
-   "ML basics"
-  ],
-  "match_pct": 67,
-  "ai_reason": "Open to junior and entry-level roles with no specific experience minimum required.",
-  "ai_by": "gemini"
- },
- {
   "id": "Canonical::5146709",
   "company": "Canonical",
   "title": "Golang Engineer",
@@ -6492,17 +6470,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "fresher",
-  "role_type": "DevOps/SRE/Cloud",
+  "role_type": "Backend",
   "skills_to_learn": [
    "Linux Kernel",
    "Kernel Patching",
    "Device Drivers",
    "Bash",
-   "Low-level Systems",
-   "Embedded C"
+   "C",
+   "Low-level Systems"
   ],
   "match_pct": 71,
-  "ai_reason": "We hire candidates of all experience levels from recent university graduates through seasoned industry experts",
+  "ai_reason": "Explicitly targets recent university graduates for kernel engineering.",
   "ai_by": "gemini"
  },
  {
@@ -6540,7 +6518,7 @@
    "Kubernetes"
   ],
   "match_pct": 88,
-  "ai_reason": "It covers all levels of seniority and does not state a minimum experience requirement.",
+  "ai_reason": "General selection track covering all levels with no minimum experience stated.",
   "ai_by": "gemini"
  },
  {
@@ -6577,12 +6555,12 @@
    "Rust",
    "Golang",
    "eBPF",
-   "Profile guided optimization",
-   "Assembly language",
-   "Flutter"
+   "Assembly",
+   "Kernel internals",
+   "Profile guided optimization"
   ],
   "match_pct": 73,
-  "ai_reason": "No specific years of experience or seniority level required in the text.",
+  "ai_reason": "No experience requirements stated; candidate fits CS degree and technical skills.",
   "ai_by": "gemini"
  },
  {
@@ -6816,13 +6794,14 @@
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Go",
-   "C",
    "OpenStack",
    "Kubernetes",
-   "Ceph"
+   "Ceph",
+   "Debian packaging",
+   "C"
   ],
   "match_pct": 90,
-  "ai_reason": "No specific years of experience stated.",
+  "ai_reason": "No specific experience years required, explicitly welcomes graduates.",
   "ai_by": "gemini"
  },
  {
@@ -6894,14 +6873,14 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Go",
    "Ceph",
    "OpenStack",
    "Kubernetes",
+   "Go",
    "gdb"
   ],
   "match_pct": 90,
-  "ai_reason": "No specific years of experience stated.",
+  "ai_reason": "Open role for software engineers with Linux and open-source background, no explicit experience minimum stated.",
   "ai_by": "gemini"
  },
  {
@@ -6936,12 +6915,13 @@
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Go",
-   "OpenStack",
    "Ceph",
+   "OpenStack",
+   "KVM",
    "Kubernetes"
   ],
   "match_pct": 89,
-  "ai_reason": "No experience or seniority requirements are stated in the posting.",
+  "ai_reason": "No experience requirement stated; open to new graduates and associates.",
   "ai_by": "gemini"
  },
  {
@@ -7045,16 +7025,17 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "fresher",
+  "fit": "open",
   "role_type": "Frontend",
   "skills_to_learn": [
    "Flutter",
    "CSS",
    "Vanilla Framework",
+   "Accessibility (a11y)",
    "Kubernetes"
   ],
   "match_pct": 71,
-  "ai_reason": "For the entry level position in this advert",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
@@ -7156,7 +7137,8 @@
   ],
   "match_pct": 60,
   "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Doist::56d0e7bf-e681-41b0-b5d7-d835d9380c6b",
@@ -9404,9 +9386,11 @@
   "exp_note": "",
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
-  "skills_to_learn": [],
+  "skills_to_learn": [
+   "Advanced Database Tuning"
+  ],
   "match_pct": 100,
-  "ai_reason": "No experience or seniority requirements stated in the placeholder text.",
+  "ai_reason": "Job description could not be loaded from the posting text, making experience and requirements unclear.",
   "ai_by": "gemini"
  },
  {
@@ -10819,7 +10803,8 @@
   ],
   "match_pct": 100,
   "ai_reason": "No specific experience level or years of experience are mentioned in the job description.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Chennai-DLF-IT-Park/Software--Engineer--Containers_JR-0000095657",
@@ -11527,34 +11512,6 @@
   ],
   "match_pct": 83,
   "ai_skip": true
- },
- {
-  "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/System-Engineer_JR-0000102152-4",
-  "company": "Barclays",
-  "title": "System Engineer",
-  "location": "Pune, Gera Commerzone SEZ",
-  "url": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Pune-Gera-Commerzone-SEZ/System-Engineer_JR-0000102152-4",
-  "posted": "2026-09-22T15:16:40.971407+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Quant/Finance",
-  "location_group": "Central/West India",
-  "min_years": null,
-  "skills_matched": [
-   "System design"
-  ],
-  "priority": 7.5,
-  "est_ctc_lpa": "~12-18",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": 100,
-  "ai_reason": "No experience or seniority requirements are explicitly stated in the job description.",
-  "ai_by": "gemini"
  },
  {
   "id": "HPE (incl. Juniper Networks)::/job/Bengaluru-Karntaka-India/Senior-Embedded-Software-Developer_1208460-3",
@@ -12400,54 +12357,14 @@
   "fit": "open",
   "role_type": "Quant",
   "skills_to_learn": [
-   "Algorithmic Trading",
+   "Quantitative Trading",
+   "Financial Markets",
    "Stochastic Calculus",
-   "Financial Markets"
+   "Time-series Analysis",
+   "Algorithmic Trading"
   ],
   "match_pct": null,
-  "ai_reason": "No experience or seniority is stated in the posting.",
-  "ai_by": "gemini"
- },
- {
-  "id": "Nutanix::https://jobs.jobvite.com/nutanix/job/oEKZAfwH",
-  "company": "Nutanix",
-  "title": "Software Development Tester Co-Op",
-  "location": "",
-  "url": "https://jobs.jobvite.com/nutanix/job/oEKZAfwH",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 3,
-  "segment": "Big Tech/MNC / Discovered - Hybrid cloud infra",
-  "location_group": "Unknown (check page)",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "DSA",
-   "Docker",
-   "Git",
-   "Java",
-   "JavaScript",
-   "Networking basics",
-   "Python",
-   "System design"
-  ],
-  "priority": 7.8,
-  "est_ctc_lpa": "30-40",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "QA/Test",
-  "skills_to_learn": [
-   "Testing Methodologies",
-   "Test Automation",
-   "Go",
-   "Bash",
-   "Kubernetes"
-  ],
-  "match_pct": 82,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "No experience or degree requirement stated; strong quantitative background needed.",
   "ai_by": "gemini"
  },
  {
@@ -12475,17 +12392,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_to_learn": [
    "C",
-   "Distributed Systems",
-   "File Systems",
-   "Zookeeper",
-   "Cassandra"
+   "C++",
+   "Kernel",
+   "Storage",
+   "Virtualization",
+   "Distributed Systems"
   ],
   "match_pct": 83,
-  "ai_reason": "No experience or seniority is stated for this entry-level MTS 1 role.",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: The job listing no longer exists",
   "ai_by": "gemini"
  },
  {
