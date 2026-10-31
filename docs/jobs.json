@@ -682,7 +682,8 @@
   "priority": 6.2,
   "est_ctc_lpa": "~18-28",
   "found_at": "2026-10-29T15:08:03.684082+00:00",
-  "first_check": false
+  "first_check": false,
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Software-Technical-Analyst_JR-0000126163",
@@ -1580,7 +1581,7 @@
   "min_years": null,
   "exp_note": "",
   "fit": "open",
-  "role_type": "Data",
+  "role_type": "AI/ML",
   "skills_matched": [
    "JavaScript",
    "LLMs",
@@ -1591,18 +1592,18 @@
   ],
   "skills_to_learn": [
    "Snowflake",
-   "Azure Databricks",
+   "Azure",
    "PySpark",
    "Tableau",
    "Teradata",
-   "Angular"
+   "Azure Databricks"
   ],
   "match_pct": 40,
   "priority": 6.2,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-27T14:18:13.437448+00:00",
   "first_check": false,
-  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_reason": "Entry-level data science role focusing on practical AI/ML without stated experience minimums.",
   "ai_by": "gemini"
  },
  {
@@ -1844,18 +1845,18 @@
   ],
   "skills_to_learn": [
    "Ansible",
-   "Power BI",
    "NetBackup",
-   "ServiceNow",
-   "Jenkins",
-   "Power BI/Tableau"
+   "PowerBI",
+   "ServiceNow APIs",
+   "Power BI",
+   "ServiceNow"
   ],
   "match_pct": 67,
   "priority": 6.3,
   "est_ctc_lpa": "~15-20",
   "found_at": "2026-10-27T14:18:13.437448+00:00",
   "first_check": false,
-  "ai_reason": "No specific years of experience or seniority level are stated in the job posting.",
+  "ai_reason": "No experience level specified, aligning with entry-level automation engineering tasks.",
   "ai_by": "gemini"
  },
  {
@@ -1978,7 +1979,7 @@
   "location_group": "Other India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_matched": [
    "LLMs"
@@ -1996,7 +1997,7 @@
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-27T04:38:28.149330+00:00",
   "first_check": false,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: it is not a software/tech role",
   "ai_by": "gemini"
  },
  {
@@ -2203,7 +2204,7 @@
   "location_group": "Central/West India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "DevOps/SRE/Cloud",
   "skills_matched": [
    "AWS",
@@ -2226,7 +2227,7 @@
   "est_ctc_lpa": "~12-18",
   "found_at": "2026-10-26T15:14:24.258244+00:00",
   "first_check": false,
-  "ai_reason": "No experience level or years of experience are explicitly stated in the job posting.",
+  "ai_reason": "mid-level duties: Requires in-depth technical knowledge and experience in their assigned area of expertise",
   "ai_by": "gemini"
  },
  {
@@ -2330,7 +2331,7 @@
   "location_group": "Central/West India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "DevOps/SRE/Cloud",
   "skills_matched": [
    "AWS",
@@ -2354,7 +2355,7 @@
   "est_ctc_lpa": "~12-18",
   "found_at": "2026-10-26T15:14:24.258244+00:00",
   "first_check": false,
-  "ai_reason": "No specific years of experience stated.",
+  "ai_reason": "senior-level duties: They lead and supervise a team, guiding and supporting professional development",
   "ai_by": "gemini"
  },
  {
@@ -2432,7 +2433,8 @@
   "found_at": "2026-10-26T15:14:24.258244+00:00",
   "first_check": false,
   "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Deutsche Bank::/job/Pune---Margarpatta/Engineer--AS_R0447438",
@@ -2564,9 +2566,10 @@
    "SQL"
   ],
   "skills_to_learn": [
+   "Python",
    "R",
-   "C#",
    "Hadoop",
+   "C#",
    "Semiconductor manufacturing",
    "ML basics"
   ],
@@ -2575,7 +2578,7 @@
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-26T04:19:39.383846+00:00",
   "first_check": false,
-  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_reason": "Open to new graduates with CS bachelor's degree in smart manufacturing and machine learning.",
   "ai_by": "gemini"
  },
  {
@@ -2904,22 +2907,23 @@
   "location_group": "Other India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "QA/Test",
   "skills_matched": [],
   "skills_to_learn": [
-   "Supply Chain Planning",
-   "Manufacturing Execution System",
-   "Inventory Management",
-   "Data Analysis",
-   "SAP"
+   "Supply Chain Management",
+   "Inventory Control",
+   "Demand Planning",
+   "ERP",
+   "Data Analytics",
+   "Supply Chain Planning"
   ],
   "match_pct": null,
   "priority": 6.3,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: it is not a software/tech role (hardware, sales, pre-sales, support, pure business)",
   "ai_by": "gemini"
  },
  {
@@ -3042,13 +3046,15 @@
   "location_group": "South India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_matched": [],
   "skills_to_learn": [
-   "CMOS",
    "Verilog",
    "SPICE",
+   "CMOS",
+   "DRAM Design",
+   "Hardware Verification",
    "DRAM"
   ],
   "match_pct": null,
@@ -3056,7 +3062,7 @@
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: It requires specialized domain background in hardware/VLSI (CMOS circuit designs, Verilog simulation",
   "ai_by": "gemini"
  },
  {
@@ -3121,36 +3127,6 @@
   ],
   "match_pct": 0,
   "priority": 5.0,
-  "est_ctc_lpa": "~15-24",
-  "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
-  "id": "Micron::42982153",
-  "company": "Micron",
-  "title": "Engineer, GQ OPS -REL Process",
-  "location": "Gujarat, India",
-  "url": "https://careers.micron.com/careers/job/42982153",
-  "posted": "2026-07-10T00:00:00+00:00",
-  "dept": "Quality",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "Other India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "DevOps/SRE/Cloud",
-  "skills_matched": [],
-  "skills_to_learn": [
-   "Semiconductor processing",
-   "Device physics",
-   "JEDEC standards"
-  ],
-  "match_pct": null,
-  "priority": 6.3,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
@@ -3283,7 +3259,7 @@
   "min_years": 1,
   "exp_note": ", or related field. 1-4 years embedded systems development, device dr",
   "fit": "stretch",
-  "role_type": "Backend",
+  "role_type": "SWE",
   "skills_matched": [
    "C++",
    "Python",
@@ -3291,18 +3267,18 @@
   ],
   "skills_to_learn": [
    "Embedded C",
-   "Device Drivers",
-   "ARM Architecture",
-   "Perforce",
-   "Oscilloscope",
-   "C#"
+   "RTOS",
+   "Wireless Protocols",
+   "Digital Signal Processing",
+   "C++",
+   "Device Drivers"
   ],
   "match_pct": 60,
   "priority": 6.2,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "Job asks for 1-4 years of experience",
+  "ai_reason": "No experience level or years of experience specified in the snippet.",
   "ai_by": "gemini"
  },
  {
@@ -3679,43 +3655,6 @@
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
   "ai_reason": "Entry-level quantitative analyst role welcoming fresh graduates.",
-  "ai_by": "gemini"
- },
- {
-  "id": "Synopsys::https://careers.synopsys.com/job/noida/memory-ip-design-engineer/44408/102338082320",
-  "company": "Synopsys",
-  "title": "Memory IP Design Engineer",
-  "location": "Noida",
-  "url": "https://careers.synopsys.com/job/noida/memory-ip-design-engineer/44408/102338082320",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "North India",
-  "min_years": 0,
-  "exp_note": "ed technical field. 0 to 2 years of hands-on experience in CMOS circuit",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_matched": [
-   "LLMs",
-   "Networking basics",
-   "Python"
-  ],
-  "skills_to_learn": [
-   "CMOS circuit design",
-   "Cadence Virtuoso",
-   "SRAM/ROM design",
-   "VLSI",
-   "Perl",
-   "Embedded C"
-  ],
-  "match_pct": 60,
-  "priority": 6.4,
-  "est_ctc_lpa": "~15-24",
-  "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": false,
-  "ai_reason": "AI rejected without quoting the posting - kept",
   "ai_by": "gemini"
  },
  {
@@ -5309,18 +5248,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Mobile",
   "skills_to_learn": [
    "Swift",
-   "SwiftUI",
    "Kotlin",
+   "SwiftUI",
    "Jetpack Compose",
    "React Native",
    "Android"
   ],
   "match_pct": 20,
-  "ai_reason": "No specific years of experience or seniority level is stated in the posting.",
+  "ai_reason": "mid-level duties: Today, one engineer runs the whole iOS app alone.",
   "ai_by": "gemini"
  },
  {
@@ -7591,11 +7530,11 @@
    "Terraform",
    "Ansible",
    "Datadog",
-   "DynamoDB",
-   "Bash"
+   "Elasticache",
+   "DynamoDB"
   ],
   "match_pct": 57,
-  "ai_reason": "Job asks for 1 year to 2 years of experience.",
+  "ai_reason": "open to 1-2 years and internship experience",
   "ai_by": "gemini"
  },
  {
@@ -9307,7 +9246,7 @@
   "role_type": "Frontend",
   "skills_to_learn": [],
   "match_pct": null,
-  "ai_reason": "Job description details are missing from the posting.",
+  "ai_reason": "Job description details failed to load, but title indicates a standard entry-level frontend role.",
   "ai_by": "gemini"
  },
  {
@@ -9875,13 +9814,13 @@
   "skills_to_learn": [
    "SAP Administration",
    "Power Automate",
-   "PowerShell",
+   "Microsoft Copilot",
    "ITIL",
-   "Azure DevOps",
-   "Ansible"
+   "PowerShell",
+   "Azure DevOps"
   ],
   "match_pct": 56,
-  "ai_reason": "No specific experience or seniority level is stated in the job description.",
+  "ai_reason": "No experience or seniority is stated in the posting.",
   "ai_by": "gemini"
  },
  {
@@ -9987,43 +9926,6 @@
   ],
   "match_pct": 100,
   "ai_reason": "mid-level duties: Project management experience, including planning, execution, and coordination of teams",
-  "ai_by": "gemini"
- },
- {
-  "id": "Bosch Global Software Technologies::744000152510308",
-  "company": "Bosch Global Software Technologies",
-  "title": "C# & C++ developer",
-  "location": "hosur road bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000152510308",
-  "posted": "2026-09-29T17:59:32.784000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "CI/CD",
-   "Python"
-  ],
-  "priority": 6.2,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "C#",
-   "WPF",
-   "WinForms",
-   "DirectX",
-   "Autofac",
-   "Bash"
-  ],
-  "match_pct": 60,
-  "ai_reason": "AI rejected without quoting the posting - kept",
   "ai_by": "gemini"
  },
  {
@@ -10667,18 +10569,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "QA/Test",
   "skills_to_learn": [
    "Selenium",
    "Cucumber",
-   "TestNG",
    "REST Assured",
+   "TestNG",
    "JIRA",
    "Jenkins"
   ],
   "match_pct": 71,
-  "ai_reason": "No minimum years of experience stated in the job description.",
+  "ai_reason": "mid-level duties: Requires in-depth technical knowledge and experience in their assigned area of expertise",
   "ai_by": "gemini"
  },
  {
@@ -10751,18 +10653,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Data",
   "skills_to_learn": [
    "Databricks",
+   "AWS Glue",
+   "Apache Spark",
    "Hadoop",
-   "Spark",
-   "Hive",
-   "OpenShift",
-   "Bash"
+   "Kubernetes",
+   "Spark"
   ],
   "match_pct": 60,
-  "ai_reason": "No specific experience years stated",
+  "ai_reason": "mid-level duties: Requires in-depth technical knowledge and experience in their assigned area of expertise",
   "ai_by": "gemini"
  },
  {
@@ -10866,7 +10768,7 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "QA/Test",
   "skills_to_learn": [
    "Selenium",
@@ -10877,7 +10779,7 @@
    "Playwright/Cypress"
   ],
   "match_pct": 60,
-  "ai_reason": "No specific experience or seniority level is stated in the job description.",
+  "ai_reason": "mid-level duties: Requires in-depth technical knowledge and experience in their assigned area of expertise",
   "ai_by": "gemini"
  },
  {
@@ -11028,13 +10930,13 @@
   "skills_to_learn": [
    "Snowflake",
    "PySpark",
+   "Apache Iceberg",
    "Tableau",
    "Power BI",
-   "Apache Iceberg",
    "ML basics"
   ],
   "match_pct": 60,
-  "ai_reason": "No specific experience level or seniority is explicitly stated in the posting text.",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
@@ -11072,7 +10974,8 @@
   ],
   "match_pct": 60,
   "ai_reason": "No specific experience years or seniority level is stated in the job description.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/IFC---Service-Engineer_JR-0000117024-1",
@@ -11444,7 +11347,7 @@
    "Jenkins"
   ],
   "match_pct": 60,
-  "ai_reason": "Requires 1-2 years of experience.",
+  "ai_reason": "Matches candidate's 0-2 year experience window and technical background.",
   "ai_by": "gemini"
  },
  {
@@ -11721,12 +11624,12 @@
    "Cribl",
    "OpenTelemetry",
    "ClickHouse",
-   "Terraform",
    "Grafana",
+   "Terraform",
    "Prometheus/Grafana"
   ],
   "match_pct": 67,
-  "ai_reason": "No specific experience years required; title says Senior Associate but body has no minimum years.",
+  "ai_reason": "No experience minimum stated; role is open for application.",
   "ai_by": "gemini"
  },
  {
@@ -11847,15 +11750,15 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Rust",
-   "Kubernetes",
+   "TypeScript",
    "Azure",
+   "Kubernetes",
+   "Rust",
    "Shell scripting",
-   "OAuth",
-   "Bash"
+   "OAuth"
   ],
   "match_pct": 70,
-  "ai_reason": "No specific years of experience or seniority stated.",
+  "ai_reason": "No experience or seniority years are stated in the posting.",
   "ai_by": "gemini"
  },
  {
@@ -11971,7 +11874,8 @@
   ],
   "match_pct": 73,
   "ai_reason": "No experience or seniority requirements stated in the posting.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Honeywell::157456",
@@ -12149,7 +12053,7 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Windows",
@@ -12160,7 +12064,7 @@
    "ML basics"
   ],
   "match_pct": 50,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: The posting does not contain any actual job description or requirements.",
   "ai_by": "gemini"
  },
  {
