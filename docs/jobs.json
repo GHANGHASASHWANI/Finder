@@ -284,7 +284,8 @@
   "priority": 6.8,
   "est_ctc_lpa": "~10-15",
   "found_at": "2026-10-30T14:58:28.747930+00:00",
-  "first_check": false
+  "first_check": false,
+  "ai_skip": true
  },
  {
   "id": "Intuit::https://jobs.intuit.com/job/bengaluru/software-engineer-1/27595/102630301968",
@@ -655,8 +656,8 @@
   "location_group": "Central/West India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
+  "fit": "doubtful",
+  "role_type": "Backend",
   "skills_matched": [
    "Java",
    "PostgreSQL",
@@ -664,13 +665,20 @@
    "System design"
   ],
   "skills_to_learn": [
+   "Camunda BPMN",
+   "Spring Boot",
+   "Oracle",
+   "MS-SQL",
+   "Java 17/21",
    "Spring"
   ],
   "match_pct": 80,
   "priority": 6.9,
   "est_ctc_lpa": "~12-18",
   "found_at": "2026-10-29T15:08:03.684082+00:00",
-  "first_check": false
+  "first_check": false,
+  "ai_reason": "mid-level duties: They lead and supervise a team, guiding and supporting professional development",
+  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Chennai-DLF-IT-Park/Automation-test-engineer_JR-0000121766",
@@ -1224,6 +1232,7 @@
   "skills_to_learn": [
    "Jenkins",
    "Groovy",
+   "Shell",
    "GitHub Actions"
   ],
   "match_pct": 83,
@@ -1231,7 +1240,7 @@
   "est_ctc_lpa": "~5-8",
   "found_at": "2026-10-28T05:12:15.031930+00:00",
   "first_check": false,
-  "ai_reason": "Targeting 2026 engineering graduates",
+  "ai_reason": "Targeting 2026 batch fresh graduates.",
   "ai_by": "gemini"
  },
  {
@@ -2319,7 +2328,7 @@
   "location_group": "Central/West India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "QA/Test",
   "skills_matched": [
    "Git",
@@ -2328,8 +2337,9 @@
   ],
   "skills_to_learn": [
    "IBM Sterling",
-   "Sterling File Gateway",
    "Sterling Integrator",
+   "Sterling File Gateway",
+   "Sterling Control Centre",
    "Connect:Direct",
    "Jenkins"
   ],
@@ -2338,7 +2348,7 @@
   "est_ctc_lpa": "~12-18",
   "found_at": "2026-10-26T15:14:24.258244+00:00",
   "first_check": false,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "mid-level duties: Requires in-depth technical knowledge and experience in their assigned area of expertise",
   "ai_by": "gemini"
  },
  {
@@ -2486,7 +2496,8 @@
   "found_at": "2026-10-26T15:14:24.258244+00:00",
   "first_check": false,
   "ai_reason": "No experience level explicitly stated.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Micron::45118242",
@@ -3207,15 +3218,15 @@
    "MIPI DSI",
    "Gerrit",
    "Embedded Linux",
-   "Android",
-   "Embedded C"
+   "Display Drivers",
+   "Android"
   ],
   "match_pct": 75,
   "priority": 6.8,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "1-2 years of embedded software development experience",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
@@ -3360,7 +3371,7 @@
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "Prefers 1+ year of experience with Programming Language",
+  "ai_reason": "No experience or seniority requirements specified in the truncated description.",
   "ai_by": "gemini"
  },
  {
@@ -3389,6 +3400,7 @@
   "skills_to_learn": [
    "C",
    "Perforce",
+   "Embedded Software",
    "Embedded C"
   ],
   "match_pct": 83,
@@ -3396,7 +3408,7 @@
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "Preferred 1+ year of experience with programming languages",
+  "ai_reason": "Prefers 1+ year of experience with programming languages and databases.",
   "ai_by": "gemini"
  },
  {
@@ -3779,7 +3791,8 @@
   "found_at": "2026-10-23T13:17:08.090376+00:00",
   "first_check": false,
   "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Cisco::/job/Bangalore-India/Cloud-Engineer_2025418-1",
@@ -3942,7 +3955,8 @@
   "found_at": "2026-10-23T13:17:08.090376+00:00",
   "first_check": false,
   "ai_reason": "No specific years of experience stated in the job description.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Chennai-DLF-IT-Park/Software-Engineer---JAVA_JR-0000125347",
@@ -3987,7 +4001,8 @@
   "found_at": "2026-10-23T13:17:08.090376+00:00",
   "first_check": false,
   "ai_reason": "No experience level or years of experience is explicitly stated in the job posting.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Chennai-DLF-IT-Park/Software-Engineer---JAVA_JR-0000125348",
@@ -4032,7 +4047,8 @@
   "found_at": "2026-10-23T13:17:08.090376+00:00",
   "first_check": false,
   "ai_reason": "No specific experience years stated",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Deutsche Bank::/job/Mumbai-Nirlon-Knowledge-Park/Graduate-2027_R0446459",
@@ -4091,18 +4107,19 @@
    "Python"
   ],
   "skills_to_learn": [
-   "L2/L3 networking protocols",
-   "TCP/IP routing",
-   "Network routers/switches",
+   "Python",
+   "Unix",
+   "TCP/IP",
+   "Routing Protocols",
    "Kubernetes",
-   "Red Hat OS internals"
+   "L2/L3 networking protocols"
   ],
   "match_pct": 75,
   "priority": 6.8,
   "est_ctc_lpa": "~15-25",
   "found_at": "2026-10-23T13:17:08.090376+00:00",
   "first_check": false,
-  "ai_reason": "Minimum 1-2 years of hands-on software development experience",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
@@ -5949,11 +5966,11 @@
    "Terraform",
    "Ansible",
    "OpenShift",
-   "Portworx",
-   "Azure"
+   "VMware Tanzu",
+   "Portworx"
   ],
   "match_pct": 43,
-  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_reason": "The role is open with no explicit experience requirements mentioned.",
   "ai_by": "gemini"
  },
  {
@@ -6360,18 +6377,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Linux packaging (Debian, RPM, ",
    "Yocto",
-   "Bootloaders and firmware",
-   "Graphics stacks",
-   "Embedded C",
-   "Kubernetes"
+   "Linux packaging",
+   "Debian",
+   "RPM",
+   "Embedded Systems",
+   "Linux packaging (Debian, RPM, "
   ],
   "match_pct": 71,
-  "ai_reason": "No experience or seniority level is explicitly stated in the job description.",
+  "ai_reason": "mid-level duties: Participate as technical lead on complex customer engagements",
   "ai_by": "gemini"
  },
  {
@@ -6475,16 +6492,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "fresher",
-  "role_type": "SWE",
+  "role_type": "Backend",
   "skills_to_learn": [
    "Rust",
    "Linux Kernel",
    "Device Drivers",
+   "OS Internals",
    "Bash",
    "Embedded C"
   ],
   "match_pct": 50,
-  "ai_reason": "Explicitly targets recent university graduates and early career professionals for junior roles.",
+  "ai_reason": "Targeted at recent university graduates and early career professionals for junior kernel roles.",
   "ai_by": "gemini"
  },
  {
@@ -6512,17 +6530,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "fresher",
-  "role_type": "SWE",
+  "role_type": "Backend",
   "skills_to_learn": [
    "Rust",
    "Go",
    "Flutter",
-   "Debian packaging",
-   "Snap packaging",
-   "Embedded C"
+   "Debian Packaging",
+   "Snapcraft",
+   "Debian packaging"
   ],
   "match_pct": 50,
-  "ai_reason": "Targeting new graduates and early careers engineers for junior roles.",
+  "ai_reason": "Explicitly targets new graduates and early careers engineers for junior roles.",
   "ai_by": "gemini"
  },
  {
@@ -6792,13 +6810,13 @@
   "skills_to_learn": [
    "Rust",
    "Go",
+   "FIPS/Common Criteria",
    "Linux Kernel",
-   "Cryptographic APIs",
-   "FIPS Compliance",
-   "PHP"
+   "Threat Modeling",
+   "Cryptographic APIs"
   ],
   "match_pct": 67,
-  "ai_reason": "No minimum years of experience or seniority is stated in the job posting.",
+  "ai_reason": "Open to new grads and security-focused software engineers.",
   "ai_by": "gemini"
  },
  {
@@ -8978,49 +8996,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Cisco::/job/Bangalore-India/IT-Software-Engineer_2026189",
-  "company": "Cisco",
-  "title": "IT Software Engineer",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/IT-Software-Engineer_2026189",
-  "posted": "2026-10-16T15:16:20.390043+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 1,
-  "skills_matched": [
-   "C++",
-   "CI/CD",
-   "Java",
-   "JavaScript",
-   "LLMs",
-   "OOP",
-   "Python",
-   "SQL",
-   "TypeScript"
-  ],
-  "priority": 7.1,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "valent. Experience: 1-3 years of experience in an IT analyst, softwar",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Siemens Teamcenter",
-   "Active Workspace",
-   "BMIDE",
-   "Enterprise PLM",
-   "Supply Chain IT Systems",
-   "Power BI/Tableau"
-  ],
-  "match_pct": 90,
-  "ai_reason": "Experience: 1-3 years of experience in an IT analyst, software developer, or system configurator role.",
-  "ai_by": "gemini"
- },
- {
   "id": "Cisco::/job/Bangalore-India/Software-Engineer_2028048-1",
   "company": "Cisco",
   "title": "Software Engineer",
@@ -9054,7 +9029,8 @@
   ],
   "match_pct": 86,
   "ai_reason": "Bachelor’s (0 to 2 years Experience)",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Cisco::/job/Bangalore-India/Software-Engineer_2019628-1",
@@ -9775,15 +9751,15 @@
   "fit": "open",
   "role_type": "Security",
   "skills_to_learn": [
-   "Identity and Access Management",
-   "Security Frameworks (NIST, CIS",
-   "Vulnerability Assessment Tools",
+   "IAM",
+   "Vulnerability Management",
    "Network Security",
-   "Endpoint Security",
-   "Azure"
+   "Penetration Testing",
+   "Security Frameworks",
+   "Identity and Access Management"
   ],
   "match_pct": 67,
-  "ai_reason": "No experience or seniority requirements are stated in the job posting.",
+  "ai_reason": "No experience years or degree specified; open to junior security engineers.",
   "ai_by": "gemini"
  },
  {
@@ -10695,7 +10671,8 @@
   ],
   "match_pct": 80,
   "ai_reason": "No experience or seniority requirements are stated in the posting.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Automation-Engineer_JR-0000069743",
@@ -10810,7 +10787,8 @@
   ],
   "match_pct": 83,
   "ai_reason": "No experience or seniority explicitly stated in the posting.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/GTSM---Site-Reliability-Engineer---CB-P_JR-0000106664",
@@ -10857,7 +10835,8 @@
   ],
   "match_pct": 81,
   "ai_reason": "No experience or seniority requirements stated in the posting.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Recon-Developer_JR-0000102834",
@@ -11131,44 +11110,6 @@
   ],
   "match_pct": 73,
   "ai_reason": "No experience or seniority requirements specified in the posting.",
-  "ai_by": "gemini"
- },
- {
-  "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Test-Engineer_JR-0000119044",
-  "company": "Barclays",
-  "title": "Test Engineer",
-  "location": "Pune, Gera Commerzone SEZ",
-  "url": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Pune-Gera-Commerzone-SEZ/Test-Engineer_JR-0000119044",
-  "posted": "2026-10-09T15:16:32.535913+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Quant/Finance",
-  "location_group": "Central/West India",
-  "min_years": null,
-  "skills_matched": [
-   "Git",
-   "Java",
-   "Linux",
-   "SQL",
-   "System design"
-  ],
-  "priority": 6.9,
-  "est_ctc_lpa": "~12-18",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "QA/Test",
-  "skills_to_learn": [
-   "Cucumber/Gherkin",
-   "Selenium",
-   "Global PayPlus",
-   "Connect Direct",
-   "MQ middleware"
-  ],
-  "match_pct": 83,
-  "ai_reason": "No experience or seniority requirements are explicitly stated in the job description.",
   "ai_by": "gemini"
  },
  {
@@ -12132,12 +12073,12 @@
    "OpenTelemetry",
    "Grafana",
    "ClickHouse",
-   "Cribl",
-   "BigPanda",
-   "Prometheus/Grafana"
+   "Datadog",
+   "Prometheus",
+   "Cribl"
   ],
   "match_pct": 88,
-  "ai_reason": "No specific years of experience or seniority restrictions mentioned in the posting text.",
+  "ai_reason": "No minimum years or degree required specified in the posting.",
   "ai_by": "gemini"
  },
  {
