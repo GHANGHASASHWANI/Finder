@@ -1,5 +1,47 @@
 [
  {
+  "id": "Western Digital / Sandisk::744000158892829",
+  "company": "Western Digital / Sandisk",
+  "title": "Engineer, Data Analytics Engineering",
+  "location": "Bengaluru, KA, in",
+  "url": "https://jobs.smartrecruiters.com/WesternDigital/744000158892829",
+  "posted": "2026-10-31T13:58:53.839000+00:00",
+  "dept": "",
+  "comp": "",
+  "tier": 5,
+  "segment": "Big Tech/MNC",
+  "location_group": "South India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "Data",
+  "skills_matched": [
+   "AWS",
+   "Java",
+   "LLMs",
+   "LangChain",
+   "Python",
+   "REST APIs",
+   "System design",
+   "Vector DBs"
+  ],
+  "skills_to_learn": [
+   "Apache Spark",
+   "Apache Airflow",
+   "Hadoop",
+   "Hive",
+   "Scala",
+   "Airflow"
+  ],
+  "match_pct": 57,
+  "priority": 6.2,
+  "est_ctc_lpa": "~15-20",
+  "found_at": "2026-10-31T14:27:08.301687+00:00",
+  "first_check": false,
+  "ai_reason": "No experience or seniority specified; fits entry-level candidate background.",
+  "ai_by": "gemini"
+ },
+ {
   "id": "PayPal::/job/Bangalore-Karnataka-India/Software-Engineer---iOS_R0138550-1",
   "company": "PayPal",
   "title": "Software Engineer - iOS",
@@ -1290,19 +1332,19 @@
    "Python"
   ],
   "skills_to_learn": [
-   "Bash",
    "Perl",
-   "HPC concepts",
    "EDA tools",
+   "HPC infrastructure",
    "Environment Modules",
-   "Azure"
+   "Job Schedulers",
+   "Bash"
   ],
   "match_pct": 50,
   "priority": 6.5,
   "est_ctc_lpa": "~18-28",
   "found_at": "2026-10-28T05:12:15.031930+00:00",
   "first_check": false,
-  "ai_reason": "No specific experience level or years required mentioned in the description.",
+  "ai_reason": "Open junior tools engineering role requiring Linux and scripting skills.",
   "ai_by": "gemini"
  },
  {
@@ -1600,7 +1642,8 @@
   "found_at": "2026-10-27T14:18:13.437448+00:00",
   "first_check": false,
   "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Application-Developer_JR-0000120004",
@@ -2005,7 +2048,7 @@
   "est_ctc_lpa": "~18-25",
   "found_at": "2026-10-26T15:14:24.258244+00:00",
   "first_check": false,
-  "ai_reason": "No experience or seniority requirements stated in the job posting.",
+  "ai_reason": "General software engineering role with no experience level specified in the snippet.",
   "ai_by": "gemini"
  },
  {
@@ -2200,7 +2243,7 @@
   "location_group": "Central/West India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_matched": [
    "AWS",
@@ -2229,7 +2272,7 @@
   "est_ctc_lpa": "~12-18",
   "found_at": "2026-10-26T15:14:24.258244+00:00",
   "first_check": false,
-  "ai_reason": "No explicit years of experience or seniority level is stated in the posting.",
+  "ai_reason": "senior-level duties: Assistant Vice President Expectations ... Lead a team performing complex tasks",
   "ai_by": "gemini"
  },
  {
@@ -2246,8 +2289,8 @@
   "location_group": "Central/West India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
-  "role_type": "Software Engineer",
+  "fit": "doubtful",
+  "role_type": "Backend",
   "skills_matched": [
    "Docker",
    "Git",
@@ -2258,19 +2301,19 @@
    "System design"
   ],
   "skills_to_learn": [
+   "Django/Flask/FastAPI",
+   "Airflow",
+   "GitLab Duo",
    "Django",
    "Flask",
-   "FastAPI",
-   "GitLab Duo",
-   "Airflow",
-   "Django/Flask"
+   "FastAPI"
   ],
   "match_pct": 70,
   "priority": 6.6,
   "est_ctc_lpa": "~12-18",
   "found_at": "2026-10-26T15:14:24.258244+00:00",
   "first_check": false,
-  "ai_reason": "No experience or seniority explicitly stated in the posting.",
+  "ai_reason": "mid-level duties: Experience in developing backend components like- Data processing modules, Database queries and access layer",
   "ai_by": "gemini"
  },
  {
@@ -2427,7 +2470,8 @@
   "found_at": "2026-10-26T15:14:24.258244+00:00",
   "first_check": false,
   "ai_reason": "No experience or seniority is stated in the posting.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Deutsche Bank::/job/Pune---Margarpatta/Requirements-Engineer--AS_R0447433",
@@ -2766,6 +2810,8 @@
   "role_type": "QA/Test",
   "skills_matched": [],
   "skills_to_learn": [
+   "Testing frameworks",
+   "Automation tools",
    "Automation Testing",
    "Selenium"
   ],
@@ -2774,7 +2820,7 @@
   "est_ctc_lpa": "~18-28",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": false,
-  "ai_reason": "No experience or seniority requirements stated in the posting.",
+  "ai_reason": "Entry-level software engineering role with no experience specified.",
   "ai_by": "gemini"
  },
  {
@@ -3010,22 +3056,23 @@
   "location_group": "South India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_matched": [],
   "skills_to_learn": [
    "Verilog",
    "SPICE",
    "CMOS",
-   "DRAM",
-   "VLSI"
+   "DRAM Architecture",
+   "VLSI Verification",
+   "DRAM"
   ],
   "match_pct": null,
   "priority": 6.5,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: It requires specialised domain background in VLSI/ASIC (CMOS circuit designs, SPICE and Verilog simu",
   "ai_by": "gemini"
  },
  {
@@ -3447,7 +3494,7 @@
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "No experience requirement stated",
+  "ai_reason": "Entry level software engineering role requiring Python and ML frameworks, matching candidate background.",
   "ai_by": "gemini"
  },
  {
@@ -4083,7 +4130,8 @@
   "found_at": "2026-10-23T13:17:08.090376+00:00",
   "first_check": false,
   "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "HPE (incl. Juniper Networks)::/job/Bengaluru-Karntaka-India/Test-Automation--L2--L3-Protocols_1212151-2",
@@ -4266,43 +4314,6 @@
   "found_at": "2026-10-22T17:48:36.280765+00:00",
   "first_check": false,
   "ai_reason": "No years of experience requirement is specified in the posting.",
-  "ai_by": "gemini"
- },
- {
-  "id": "Arm::https://careers.arm.com/job/lund/compiler-engineer-machine-learning/33099/94847322016",
-  "company": "Arm",
-  "title": "Compiler Engineer (Machine Learning)",
-  "location": "",
-  "url": "https://careers.arm.com/job/lund/compiler-engineer-machine-learning/33099/94847322016",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "Unknown (check page)",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Software Engineering",
-  "skills_matched": [
-   "C++",
-   "CI/CD",
-   "Python"
-  ],
-  "skills_to_learn": [
-   "Compilers",
-   "Embedded C/C++",
-   "RTOS",
-   "Bare-metal",
-   "Computer Architecture",
-   "Embedded C"
-  ],
-  "match_pct": 60,
-  "priority": 6.6,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T17:15:52.975660+00:00",
-  "first_check": false,
-  "ai_reason": "No minimum years of experience are specified in the job posting.",
   "ai_by": "gemini"
  },
  {
@@ -6343,13 +6354,13 @@
   "skills_to_learn": [
    "Go",
    "Rust",
+   "C++",
    "LXD",
-   "Kubernetes",
    "OpenStack",
-   "Ruby"
+   "Kubernetes"
   ],
   "match_pct": 60,
-  "ai_reason": "No specific experience level or number of years is stated in the job description.",
+  "ai_reason": "General selection process with no minimum years of experience stated.",
   "ai_by": "gemini"
  },
  {
@@ -6419,13 +6430,15 @@
   "fit": "open",
   "role_type": "Backend",
   "skills_to_learn": [
-   "Golang",
-   "Flutter",
    "Go",
-   "Rust"
+   "Linux system administration",
+   "Juju",
+   "LXD",
+   "Microk8s",
+   "Golang"
   ],
   "match_pct": 62,
-  "ai_reason": "No experience or seniority explicitly required as they hire engineers of all levels.",
+  "ai_reason": "Open to all levels of seniority including graduates.",
   "ai_by": "gemini"
  },
  {
@@ -6768,15 +6781,15 @@
   "fit": "open",
   "role_type": "Backend",
   "skills_to_learn": [
-   "Golang",
+   "Go",
    "Rust",
    "Kubernetes",
    "gRPC",
-   "Debian/Ubuntu packaging",
-   "Flutter"
+   "OpenStack",
+   "Golang"
   ],
   "match_pct": 64,
-  "ai_reason": "This is a general track role spanning all levels of seniority with no explicit experience minimum stated.",
+  "ai_reason": "General track role spanning all seniority levels with no specific experience minimum required.",
   "ai_by": "gemini"
  },
  {
@@ -7061,43 +7074,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Canonical::6076942",
-  "company": "Canonical",
-  "title": "Ubuntu Linux Kernel Engineer - BIOS/Firmware",
-  "location": "Home Based - APAC",
-  "url": "https://job-boards.greenhouse.io/canonical/jobs/6076942",
-  "posted": "2024-06-27T19:38:34-04:00",
-  "dept": "Devices Engineering",
-  "comp": "",
-  "tier": 4,
-  "segment": "AI/Remote",
-  "location_group": "Remote",
-  "min_years": null,
-  "skills_matched": [
-   "Git",
-   "Linux",
-   "Python"
-  ],
-  "priority": 6.8,
-  "est_ctc_lpa": "~15-30 (est.)",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "DevOps/SRE/Cloud",
-  "skills_to_learn": [
-   "UEFI",
-   "ACPI",
-   "Coreboot",
-   "Firmware Test Suite",
-   "Linux Kernel Development",
-   "Bash"
-  ],
-  "match_pct": 60,
-  "ai_reason": "No experience or seniority is stated in the posting.",
-  "ai_by": "gemini"
- },
- {
   "id": "Canonical::2925180",
   "company": "Canonical",
   "title": "Ubuntu Security Engineer",
@@ -7123,17 +7099,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "fresher",
-  "role_type": "DevOps/SRE/Cloud",
+  "role_type": "Security",
   "skills_to_learn": [
-   "Go",
    "Rust",
+   "Go",
+   "Vulnerability Assessment",
+   "Security Auditing",
    "Vulnerability management",
-   "Source code auditing",
-   "Security compliance",
-   "PHP"
+   "Source code auditing"
   ],
   "match_pct": 62,
-  "ai_reason": "We are looking for candidates across all levels of experience, from Graduate to Senior.",
+  "ai_reason": "Explicitly targets candidates from graduate level onwards with no minimum experience.",
   "ai_by": "gemini"
  },
  {
@@ -7200,18 +7176,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Backend",
   "skills_to_learn": [
-   "Python",
    "FastAPI",
    "PySpark",
    "Databricks",
    "Plotly Dash",
-   "Django/Flask"
+   "CloudWatch",
+   "Python"
   ],
   "match_pct": 60,
-  "ai_reason": "No years of experience or seniority explicitly stated in the requirements.",
+  "ai_reason": "mid-level duties: Take technical ownership of projects: shape solutions, break down work, and drive execution with the team",
   "ai_by": "gemini"
  },
  {
@@ -7409,18 +7385,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Backend",
   "skills_to_learn": [
-   "Ruby on Rails",
+   "Ruby",
+   "Rails",
    "Go",
    "gRPC",
    "Kubernetes",
-   "Prometheus",
-   "Ruby"
+   "Ruby on Rails"
   ],
   "match_pct": 62,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "mid-level duties: As an Intermediate Backend Engineer",
   "ai_by": "gemini"
  },
  {
@@ -8924,41 +8900,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Cisco::/job/Bangalore-India/Software-Engineer_2026331-1",
-  "company": "Cisco",
-  "title": "Software Engineer",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Engineer_2026331-1",
-  "posted": "2026-10-22T15:16:19.466802+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 0,
-  "skills_matched": [
-   "C++",
-   "Networking basics",
-   "Python"
-  ],
-  "priority": 6.8,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "Qualification MS + 0-2 years or BS + 1-3 years of experience Strong",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Wi-Fi 802.11",
-   "Wireshark",
-   "Embedded Systems",
-   "Embedded C"
-  ],
-  "match_pct": 75,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
   "id": "Cisco::/job/Bangalore-India/Cloud-Engineer_2023504-1",
   "company": "Cisco",
   "title": "Cloud Engineer",
@@ -9116,15 +9057,15 @@
   "fit": "stretch",
   "role_type": "Full-stack",
   "skills_to_learn": [
-   "Go",
    "Angular",
+   "Python",
+   "Go",
    "Jenkins",
    "Kubernetes",
-   "Argo CD",
-   "ML basics"
+   "Argo CD"
   ],
   "match_pct": 79,
-  "ai_reason": "Requires 1 to 2 years of software engineering experience",
+  "ai_reason": "Requires 1 to 2 years of software engineering experience.",
   "ai_by": "gemini"
  },
  {
@@ -9154,56 +9095,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Ansible",
    "Terraform",
-   "Cisco CCNP/CCIE",
-   "SD-WAN",
+   "Cisco Networking",
+   "BGP",
    "VMware",
-   "Azure"
+   "Cisco CCNP/CCIE"
   ],
   "match_pct": 58,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
-  "id": "Cisco::/job/Bangalore-India/Technical-Projects-Systems-Engineer_2018479",
-  "company": "Cisco",
-  "title": "Technical Projects Systems Engineer",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Technical-Projects-Systems-Engineer_2018479",
-  "posted": "2026-09-22T15:16:26.254751+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "AWS",
-   "Networking basics",
-   "Python",
-   "SQL"
-  ],
-  "priority": 6.8,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "DevOps/SRE/Cloud",
-  "skills_to_learn": [
-   "CCNP/CCIE",
-   "Cisco SD-WAN",
-   "BGP",
-   "MPLS",
-   "VMware",
-   "Azure"
-  ],
-  "match_pct": 57,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: It requires specialised domain background in telecom protocols (L2/L3, MPLS) that the candidate lack",
   "ai_by": "gemini"
  },
  {
@@ -9647,45 +9550,8 @@
   ],
   "match_pct": 100,
   "ai_reason": "Job targets college grads and requests \"1+ years of experience in AI workload and GPU architecture\"",
-  "ai_by": "gemini"
- },
- {
-  "id": "Intel::/job/India-Bangalore/LLM---Agentic-AI-Performance-Engineer_JR0287957",
-  "company": "Intel",
-  "title": "LLM & Agentic AI Performance Engineer",
-  "location": "India, Bangalore",
-  "url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/India-Bangalore/LLM---Agentic-AI-Performance-Engineer_JR0287957",
-  "posted": "2026-10-16T15:16:30.662675+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "Caching",
-   "LLMs",
-   "Linux",
-   "Python"
-  ],
-  "priority": 6.8,
-  "est_ctc_lpa": "~15-22",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "AI/ML",
-  "skills_to_learn": [
-   "vLLM",
-   "VTune",
-   "Kernel profiling",
-   "Hardware performance counters",
-   "Rust"
-  ],
-  "match_pct": 83,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Intel::/job/India-Bangalore/Software-Enabling-and-Optimization-Engineer_JR0287256",
@@ -11306,7 +11172,8 @@
   ],
   "match_pct": 73,
   "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Mumbai-Nirlon-Knowledge-Park-BX-9th--11-12-floor/Data-Engineer---Analyst_JR-0000110756",
@@ -12193,15 +12060,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "QA/Test",
+  "role_type": "AI/ML",
   "skills_to_learn": [
    "LLM evaluation frameworks",
-   "Agentic system testing",
+   "Agentic testing",
    "Test automation pipelines",
+   "Regulated compliance",
+   "Agentic system testing",
    "ML basics"
   ],
   "match_pct": 75,
-  "ai_reason": "No specific experience level or years of experience stated in the job description.",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
