@@ -2645,53 +2645,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Full-Stack-Engineer_JR-0000123256-1",
-  "company": "Barclays",
-  "title": "Full Stack Engineer",
-  "location": "Pune, Gera Commerzone SEZ",
-  "url": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Pune-Gera-Commerzone-SEZ/Full-Stack-Engineer_JR-0000123256-1",
-  "posted": "2026-10-24T12:35:24.824327+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Quant/Finance",
-  "location_group": "Central/West India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Full-stack",
-  "skills_matched": [
-   "AWS",
-   "CI/CD",
-   "Caching",
-   "Docker",
-   "Git",
-   "Java",
-   "JavaScript",
-   "Kafka",
-   "Microservices",
-   "REST APIs",
-   "React",
-   "SQL",
-   "System design"
-  ],
-  "skills_to_learn": [
-   "Java",
-   "Spring Boot",
-   "Hibernate",
-   "OpenShift",
-   "Angular",
-   "Selenium"
-  ],
-  "match_pct": 81,
-  "priority": 6.9,
-  "est_ctc_lpa": "~12-18",
-  "found_at": "2026-10-24T12:35:13.039292+00:00",
-  "first_check": false,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
   "id": "Google::105109659337007814",
   "company": "Google",
   "title": "Cloud AI Engineer (English)",
@@ -3120,25 +3073,25 @@
   "location_group": "South India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_matched": [
    "System design"
   ],
   "skills_to_learn": [
    "Verilog",
-   "Analog Circuits",
-   "TCL",
    "Design Compiler",
+   "TCL",
+   "Analog circuits",
    "PrimeTime",
-   "Embedded C"
+   "Analog Circuits"
   ],
   "match_pct": 50,
   "priority": 6.5,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: it is not a software/tech role (hardware, sales, pre-sales, support, pure business)",
   "ai_by": "gemini"
  },
  {
@@ -3218,22 +3171,23 @@
   "location_group": "South India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_matched": [],
   "skills_to_learn": [
    "VLSI",
-   "Analog Circuits",
+   "Circuit Design",
    "Layout",
    "Parasitic Modeling",
-   "Memory Design"
+   "Verilog",
+   "Analog Circuits"
   ],
   "match_pct": null,
   "priority": 6.5,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: It requires domain background in hardware, VLSI/ASIC design and circuits which the candidate lacks.",
   "ai_by": "gemini"
  },
  {
@@ -3576,41 +3530,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Qualcomm::446720545289",
-  "company": "Qualcomm",
-  "title": "Engineer - Audio DSP",
-  "location": "Hyderabad, Telangāna, India",
-  "url": "https://careers.qualcomm.com/careers/job/446720545289",
-  "posted": "2026-09-01T00:00:00+00:00",
-  "dept": "Software Engineering",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 1,
-  "exp_note": "mary: Experience of 1+ years on any DSP/Embedded processor with prof",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_matched": [
-   "C++",
-   "REST APIs"
-  ],
-  "skills_to_learn": [
-   "DSP",
-   "Embedded C",
-   "Real-time Operating Systems",
-   "Audio DSP",
-   "Trace32"
-  ],
-  "match_pct": 67,
-  "priority": 6.5,
-  "est_ctc_lpa": "~15-24",
-  "found_at": "2026-10-23T19:59:35.810512+00:00",
-  "first_check": true,
-  "ai_reason": "Requires 1+ years of experience on DSP/Embedded processor.",
-  "ai_by": "gemini"
- },
- {
   "id": "Qualcomm::446717819532",
   "company": "Qualcomm",
   "title": "Engineer - Camera Systems (3A)",
@@ -3634,19 +3553,19 @@
    "REST APIs"
   ],
   "skills_to_learn": [
+   "Camera Systems",
+   "Image Signal Processing",
+   "C++",
    "Embedded Systems",
-   "Image Processing",
    "Computer Vision",
-   "SIMD",
-   "Jenkins",
-   "Embedded C"
+   "Image Processing"
   ],
   "match_pct": 71,
   "priority": 6.5,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "0-2 years of experience in multimedia/embedded technologies",
+  "ai_reason": "No experience or seniority requirements mentioned in the truncated text.",
   "ai_by": "gemini"
  },
  {
@@ -3856,7 +3775,7 @@
   "min_years": 1,
   "exp_note": "al experience, with 1-3 years of professional backend software develo",
   "fit": "stretch",
-  "role_type": "DevOps/SRE/Cloud",
+  "role_type": "Backend",
   "skills_matched": [
    "AWS",
    "CI/CD",
@@ -3878,19 +3797,19 @@
    "WebSockets"
   ],
   "skills_to_learn": [
+   "Java",
    "Quarkus",
    "gRPC",
-   "Protocol Buffers",
-   "Kubernetes",
-   "Helm",
-   "Azure"
+   "Protobuf",
+   "OpenTelemetry",
+   "Protocol Buffers"
   ],
   "match_pct": 72,
   "priority": 6.5,
   "est_ctc_lpa": "~18-28",
   "found_at": "2026-10-23T13:17:08.090376+00:00",
   "first_check": false,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "Asks for 1-3 years of professional experience, slightly stretching the candidate's 1 year.",
   "ai_by": "gemini"
  },
  {
@@ -6578,18 +6497,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
-  "role_type": "Security",
+  "fit": "doubtful",
+  "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "C",
    "OpenSSL",
-   "Linux security APIs",
-   "Shell scripting",
-   "FIPS 140-3",
-   "Ansible"
+   "Linux Cryptography",
+   "FIPS standards",
+   "CIS benchmarks",
+   "Linux security APIs"
   ],
   "match_pct": 50,
-  "ai_reason": "No experience or seniority level is explicitly stated in the posting.",
+  "ai_reason": "mid-level duties: Significantly experienced engineer",
   "ai_by": "gemini"
  },
  {
@@ -6742,13 +6661,13 @@
   "skills_to_learn": [
    "Kubernetes",
    "Airflow",
-   "Apache Trino",
+   "Kubeflow",
    "MLflow",
-   "dbt",
-   "Azure"
+   "Apache Trino",
+   "dbt"
   ],
   "match_pct": 50,
-  "ai_reason": "No specific years of experience or seniority are stated in the posting.",
+  "ai_reason": "Open to graduates and self-taught paths with no minimum experience stated.",
   "ai_by": "gemini"
  },
  {
@@ -7463,15 +7382,17 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Full-stack",
   "skills_to_learn": [
    "Ruby",
+   "ATS platforms",
+   "HR tech integrations",
    "Customer-facing tools",
    "HR tech APIs"
   ],
   "match_pct": 50,
-  "ai_reason": "No explicit experience requirement stated in the posting.",
+  "ai_reason": "mid-level duties: A customer-facing technical lead with enough full-stack depth",
   "ai_by": "gemini"
  },
  {
@@ -7532,37 +7453,11 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null,
-  "ai_reason": "No experience or seniority level is explicitly stated in the posting text.",
-  "ai_by": "gemini"
- },
- {
-  "id": "Goldman Sachs::122565",
-  "company": "Goldman Sachs",
-  "title": "Wealth Management-Bengaluru-Associate-Software Engineering",
-  "location": "Bengaluru",
-  "url": "https://higher.gs.com/roles/122565",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Quant/Finance",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 6.5,
-  "est_ctc_lpa": "~25-32",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null,
-  "ai_reason": "No experience or seniority level is stated in the posting.",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: It is an Associate role, which requires several years of experience above entry level.",
   "ai_by": "gemini"
  },
  {
@@ -8444,7 +8339,7 @@
   "role_type": "AI/ML",
   "skills_to_learn": [],
   "match_pct": null,
-  "ai_reason": "No experience or seniority stated.",
+  "ai_reason": "No experience or seniority requirements are stated in the provided text.",
   "ai_by": "gemini"
  },
  {
@@ -8470,7 +8365,7 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null,
-  "ai_reason": "No experience or seniority requirements specified in the posting.",
+  "ai_reason": "General software engineering role with no experience or degree requirements stated.",
   "ai_by": "gemini"
  },
  {
@@ -8496,7 +8391,7 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null,
-  "ai_reason": "No experience or seniority explicitly stated in the snippet.",
+  "ai_reason": "General software engineering role with no experience or degree requirements explicitly stated.",
   "ai_by": "gemini"
  },
  {
@@ -8522,7 +8417,7 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null,
-  "ai_reason": "No experience or seniority stated in the posting.",
+  "ai_reason": "General software engineering role with no explicit experience or degree requirements stated.",
   "ai_by": "gemini"
  },
  {
@@ -8548,7 +8443,7 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null,
-  "ai_reason": "No experience or seniority stated in the posting.",
+  "ai_reason": "General software engineering role with no explicit experience or degree requirements stated.",
   "ai_by": "gemini"
  },
  {
@@ -8574,7 +8469,7 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null,
-  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_reason": "General software engineering role with no experience or seniority restrictions explicitly stated.",
   "ai_by": "gemini"
  },
  {
@@ -8600,7 +8495,7 @@
   "role_type": "Backend",
   "skills_to_learn": [],
   "match_pct": null,
-  "ai_reason": "No experience or seniority requirements are stated in the posting text.",
+  "ai_reason": "Software engineer role with no stated experience or degree requirement.",
   "ai_by": "gemini"
  },
  {
@@ -8694,7 +8589,7 @@
    "Malware Analysis"
   ],
   "match_pct": null,
-  "ai_reason": "No experience or seniority level is stated in the provided text.",
+  "ai_reason": "Job description is empty; posting lacks any experience or seniority requirements.",
   "ai_by": "gemini"
  },
  {
@@ -8784,7 +8679,7 @@
   "role_type": "SWE",
   "skills_to_learn": [],
   "match_pct": null,
-  "ai_reason": "No experience or seniority explicitly stated in the brief description.",
+  "ai_reason": "General software engineering role with no explicit experience or seniority requirements stated.",
   "ai_by": "gemini"
  },
  {
@@ -8811,7 +8706,8 @@
   "skills_to_learn": [],
   "match_pct": null,
   "ai_reason": "No experience or seniority requirements stated in the posting.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Docusign::29718",
@@ -8866,11 +8762,12 @@
    "Workday",
    "People Analytics",
    "HRIS",
-   "Business Process Configuration",
-   "Reports"
+   "Integration Tools",
+   "Report Writer",
+   "Business Process Configuration"
   ],
   "match_pct": null,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "The job posting text is incomplete and does not state experience requirements.",
   "ai_by": "gemini"
  },
  {
@@ -9471,12 +9368,14 @@
   "role_type": "Full-stack",
   "skills_to_learn": [
    "Storybook",
+   "Python (Django/FastAPI usually",
+   "ClickHouse",
    "PostHog analytics",
    "Django/Flask",
    "Spark/PySpark"
   ],
   "match_pct": 67,
-  "ai_reason": "No experience or seniority requirements stated in the posting.",
+  "ai_reason": "No experience level is strictly required; role focuses on product engineering and building.",
   "ai_by": "gemini"
  },
  {
@@ -9552,41 +9451,6 @@
   "ai_reason": "Job targets college grads and requests \"1+ years of experience in AI workload and GPU architecture\"",
   "ai_by": "gemini",
   "ai_skip": true
- },
- {
-  "id": "Intel::/job/India-Bangalore/Software-Enabling-and-Optimization-Engineer_JR0287256",
-  "company": "Intel",
-  "title": "Software Enabling and Optimization Engineer",
-  "location": "India, Bangalore",
-  "url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/India-Bangalore/Software-Enabling-and-Optimization-Engineer_JR0287256",
-  "posted": "2026-09-22T15:16:31.395826+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "C++",
-   "Python"
-  ],
-  "priority": 6.5,
-  "est_ctc_lpa": "~15-22",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Backend",
-  "skills_to_learn": [
-   "WinDBG",
-   "Windows Driver Frameworks",
-   "Audio subsystem architecture",
-   "SoC architecture",
-   "Embedded C"
-  ],
-  "match_pct": 67,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
  },
  {
   "id": "JioHotstar (JioStar, incl. Disney Star)::/job/Bengaluru/Security-Engineer--Enterprise-_JR10173",
@@ -10221,10 +10085,13 @@
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Ansible",
+   "Linux Administration",
+   "Patch Management",
+   "Networking fundamentals",
    "Bash"
   ],
   "match_pct": 71,
-  "ai_reason": "No experience or seniority requirements are explicitly stated in the job posting.",
+  "ai_reason": "No experience or seniority explicitly stated, matching the candidate's profile.",
   "ai_by": "gemini"
  },
  {
@@ -10934,51 +10801,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Barclays::/job/Chennai-DLF-IT-Park/Data-Engineer_JR-0000131242",
-  "company": "Barclays",
-  "title": "Data Engineer",
-  "location": "Chennai, DLF IT Park",
-  "url": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Chennai-DLF-IT-Park/Data-Engineer_JR-0000131242",
-  "posted": "2026-10-12T15:16:32.535902+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Quant/Finance",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [
-   "AWS",
-   "CI/CD",
-   "DSA",
-   "Linux",
-   "MongoDB",
-   "Networking basics",
-   "Node.js",
-   "Python",
-   "S3",
-   "SQL",
-   "System design"
-  ],
-  "priority": 6.5,
-  "est_ctc_lpa": "~12-18",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Data",
-  "skills_to_learn": [
-   "Qlik Sense",
-   "QlikView",
-   "Snowflake",
-   "ETL",
-   "Data Warehousing",
-   "Bash"
-  ],
-  "match_pct": 73,
-  "ai_reason": "No experience or seniority requirements specified in the posting.",
-  "ai_by": "gemini"
- },
- {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Cloud-Data-Engineer_JR-0000117802-1",
   "company": "Barclays",
   "title": "DevOps Engineer (EDP Analytics Portal)",
@@ -11572,17 +11394,17 @@
   "first_check": true,
   "exp_note": "sirable. Typically, 1-3 years’ experience. Knowledge and Skills: Prog",
   "fit": "stretch",
-  "role_type": "DevOps/SRE/Cloud",
+  "role_type": "Cloud/DevOps",
   "skills_to_learn": [
    "Golang",
    "Kubernetes",
-   "OpenVZ",
+   "GitHub Actions",
    "KVM",
-   "Azure",
-   "Go"
+   "OpenVZ",
+   "Azure"
   ],
   "match_pct": 73,
-  "ai_reason": "Typically, 1-3 years’ experience.",
+  "ai_reason": "open",
   "ai_by": "gemini"
  },
  {
