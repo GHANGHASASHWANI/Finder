@@ -1188,32 +1188,6 @@
   "first_check": false
  },
  {
-  "id": "Tesco Technology::https://careers.tesco.com/en_GB/careers/JobDetail/Automation-Maintenance-Engineer/218293",
-  "company": "Tesco Technology",
-  "title": "Automation Maintenance Engineer",
-  "location": "",
-  "url": "https://careers.tesco.com/en_GB/careers/JobDetail/Automation-Maintenance-Engineer/218293",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Global SaaS/Infra",
-  "location_group": "Unknown (check page)",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_matched": [],
-  "skills_to_learn": [],
-  "match_pct": null,
-  "priority": 5.7,
-  "est_ctc_lpa": "~15",
-  "found_at": "2026-10-28T15:00:03.131111+00:00",
-  "first_check": false,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
   "id": "GitLab::8916232002",
   "company": "GitLab",
   "title": "Software Engineer, Delivery : Release",
@@ -1699,7 +1673,7 @@
   "location_group": "South India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Data",
   "skills_matched": [
    "DSA",
@@ -1719,7 +1693,7 @@
   "est_ctc_lpa": "~12-18",
   "found_at": "2026-10-27T14:18:13.437448+00:00",
   "first_check": false,
-  "ai_reason": "No specific experience years required in the posting.",
+  "ai_reason": "mid-level duties: Requires in-depth technical knowledge and experience in their assigned area of expertise",
   "ai_by": "gemini"
  },
  {
@@ -1761,7 +1735,8 @@
   "found_at": "2026-10-27T14:18:13.437448+00:00",
   "first_check": false,
   "ai_reason": "No explicit experience or seniority required in the provided text.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Test-Automation-Engineer_JR-0000125678",
@@ -1784,15 +1759,16 @@
    "Test Automation",
    "Selenium",
    "JUnit",
-   "TestNG",
-   "Cucumber"
+   "Cypress",
+   "Appium",
+   "TestNG"
   ],
   "match_pct": null,
   "priority": 6.0,
   "est_ctc_lpa": "~12-18",
   "found_at": "2026-10-27T14:18:13.437448+00:00",
   "first_check": false,
-  "ai_reason": "No experience or seniority requirements are explicitly stated in the job description.",
+  "ai_reason": "Open role for a Test Automation Engineer in Pune without stated experience or degree requirements.",
   "ai_by": "gemini"
  },
  {
@@ -1944,7 +1920,7 @@
   "location_group": "Other India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_matched": [
    "LLMs"
@@ -1954,15 +1930,15 @@
    "Capacity Planning",
    "Operations Research",
    "Supply Chain",
-   "Manufacturing",
-   "ML basics"
+   "Manufacturing Analytics",
+   "Manufacturing"
   ],
   "match_pct": 33,
   "priority": 5.7,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-27T04:38:28.149330+00:00",
   "first_check": false,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: it is not a software/tech role (hardware, sales, pre-sales, support, pure business)",
   "ai_by": "gemini"
  },
  {
@@ -2163,32 +2139,6 @@
   "est_ctc_lpa": "~6-10",
   "found_at": "2026-10-26T15:14:24.258244+00:00",
   "first_check": false
- },
- {
-  "id": "Siemens Healthineers::P-100810",
-  "company": "Siemens Healthineers",
-  "title": "DevOps Engineer – Agentic Engineering",
-  "location": "Bengaluru, Karnataka, India",
-  "url": "https://careers.siemens-healthineers.com/global/en/job/P-100810",
-  "posted": "2026-10-26T05:05:13.723000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "DevOps/SRE/Cloud",
-  "skills_matched": [],
-  "skills_to_learn": [],
-  "match_pct": null,
-  "priority": 5.9,
-  "est_ctc_lpa": "~6-10",
-  "found_at": "2026-10-26T15:14:24.258244+00:00",
-  "first_check": false,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Devops-Engineer_JR-0000118118-1",
@@ -2504,7 +2454,8 @@
   "found_at": "2026-10-26T15:14:24.258244+00:00",
   "first_check": false,
   "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Mastercard::/job/Pune-India/Software-Engineer_R-290498-1",
@@ -4131,6 +4082,8 @@
    "Kotlin",
    "Jetpack Compose",
    "Android SDK",
+   "A/B testing tools",
+   "Audio streaming APIs",
    "Android"
   ],
   "match_pct": 0,
@@ -4138,7 +4091,7 @@
   "est_ctc_lpa": "~30-60 (est.)",
   "found_at": "2026-10-22T17:48:36.280765+00:00",
   "first_check": false,
-  "ai_reason": "No experience or seniority level is explicitly stated in the job posting.",
+  "ai_reason": "No experience requirements or seniority constraints stated.",
   "ai_by": "gemini"
  },
  {
@@ -4161,17 +4114,17 @@
   "skills_to_learn": [
    "Swift",
    "SwiftUI",
-   "iOS Development",
-   "A/B Testing",
-   "Audio Streaming",
-   "iOS"
+   "iOS development",
+   "A/B testing",
+   "Audio streaming",
+   "iOS Development"
   ],
   "match_pct": 0,
   "priority": 5.6,
   "est_ctc_lpa": "~30-60 (est.)",
   "found_at": "2026-10-22T17:48:36.280765+00:00",
   "first_check": false,
-  "ai_reason": "No years of experience requirement is specified in the posting.",
+  "ai_reason": "No years of experience or seniority explicitly stated, matching open criteria.",
   "ai_by": "gemini"
  },
  {
@@ -5225,7 +5178,8 @@
   ],
   "match_pct": 0,
   "ai_reason": "No specific years of experience or seniority are stated in the posting requirements.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "ElevenLabs::1b90a2b2-1352-458d-b2b7-3900f6e02df5",
@@ -7131,7 +7085,7 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Mobile",
   "skills_to_learn": [
    "Swift",
@@ -7142,7 +7096,7 @@
    "iOS"
   ],
   "match_pct": 33,
-  "ai_reason": "No specific years of experience stated in the posting",
+  "ai_reason": "mid-level duties: each engineer is the Directly Responsible Individual (DRI) for an area they own and evolve",
   "ai_by": "gemini"
  },
  {
@@ -8710,69 +8664,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Cisco::/job/Bangalore-India/Software-Engineer_2026818-1",
-  "company": "Cisco",
-  "title": "Software Engineer",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Software-Engineer_2026818-1",
-  "posted": "2026-10-22T15:16:19.466777+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 0,
-  "skills_matched": [],
-  "priority": 5.9,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "ions: • Bachelors + 2 years of related experience OR Masters + 0 ye",
-  "fit": "stretch",
-  "role_type": "SWE",
-  "skills_to_learn": [],
-  "match_pct": null,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
-  "id": "Cisco::/job/Bangalore-India/Cloud-Engineer_2023504-1",
-  "company": "Cisco",
-  "title": "Cloud Engineer",
-  "location": "Bangalore, India",
-  "url": "https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Bangalore-India/Cloud-Engineer_2023504-1",
-  "posted": "2026-10-20T15:16:19.949654+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": 0,
-  "skills_matched": [
-   "Docker",
-   "Java",
-   "Python"
-  ],
-  "priority": 5.6,
-  "est_ctc_lpa": "~18-28",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "helor's degree plus 2 years of related experience, or Master's degr",
-  "fit": "stretch",
-  "role_type": "DevOps/SRE/Cloud",
-  "skills_to_learn": [
-   "Kubernetes",
-   "Java Spring",
-   "Prometheus",
-   "Elasticsearch",
-   "Grafana",
-   "Prometheus/Grafana"
-  ],
-  "match_pct": 43,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
   "id": "Cisco::/job/Bangalore-India/Software-Engineer_2028048-1",
   "company": "Cisco",
   "title": "Software Engineer",
@@ -9072,14 +8963,15 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "Full-stack",
+  "role_type": "Frontend",
   "skills_to_learn": [
    "Webflow",
    "SEO",
+   "Analytics",
    "Marketing Automation"
   ],
   "match_pct": null,
-  "ai_reason": "No experience or seniority requirements stated in the posting.",
+  "ai_reason": "Open role with no experience or seniority specified.",
   "ai_by": "gemini"
  },
  {
@@ -9157,7 +9049,7 @@
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [],
   "match_pct": null,
-  "ai_reason": "No experience or seniority requirements are stated in the posting text.",
+  "ai_reason": "Job description is empty or removed, but candidate is open to DevOps roles.",
   "ai_by": "gemini"
  },
  {
@@ -9340,17 +9232,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Go",
    "Terraform",
    "Kubernetes",
    "GCP",
+   "Infrastructure as Code",
    "Azure"
   ],
   "match_pct": 43,
-  "ai_reason": "No specific years of experience or seniority explicitly stated in qualifications.",
+  "ai_reason": "mid-level duties: You are an experienced software engineer",
   "ai_by": "gemini"
  },
  {
@@ -9459,10 +9352,11 @@
    "C#",
    "Jenkins",
    "TeamCity",
+   "DTest Framework",
    "Game Testing Frameworks"
   ],
   "match_pct": 50,
-  "ai_reason": "No experience or seniority is stated in the posting.",
+  "ai_reason": "No experience or seniority explicitly stated, matching the candidate's profile for an entry-level software/automation role.",
   "ai_by": "gemini"
  },
  {
@@ -9754,37 +9648,6 @@
   "match_pct": null
  },
  {
-  "id": "Bosch Global Software Technologies::744000154656049",
-  "company": "Bosch Global Software Technologies",
-  "title": "Automotive Systems Diagnostic and troubleshooting Engineer",
-  "location": "bangalore, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154656049",
-  "posted": "2026-10-09T11:47:08.294000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 5.9,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "Automotive diagnostics",
-   "OBD-II",
-   "Vehicle electrical systems",
-   "Authoring tools"
-  ],
-  "match_pct": null,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
   "id": "Bosch Global Software Technologies::744000153674539",
   "company": "Bosch Global Software Technologies",
   "title": "Infrastructure, Automation & Integration Engineer",
@@ -9929,36 +9792,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Bosch Global Software Technologies::744000152388899",
-  "company": "Bosch Global Software Technologies",
-  "title": "2026/03: HW Developer (PS-DC Projects)",
-  "location": "bengaluru, in",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000152388899",
-  "posted": "2026-09-29T11:20:10.642000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "skills_matched": [],
-  "priority": 5.9,
-  "est_ctc_lpa": "~5-8",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
-  "skills_to_learn": [
-   "LTspice",
-   "PCB Design",
-   "Power Electronics"
-  ],
-  "match_pct": null,
-  "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
- },
- {
   "id": "Bosch Global Software Technologies::744000127855103",
   "company": "Bosch Global Software Technologies",
   "title": "Linux Administrator + DevSecOps Engineer",
@@ -10073,7 +9906,8 @@
   ],
   "match_pct": 50,
   "ai_reason": "No experience or seniority is stated in the posting.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Siemens Healthineers::P-100743",
@@ -10373,18 +10207,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Data",
   "skills_to_learn": [
    "Power BI",
    "Tableau",
    "Teradata",
+   "JIRA",
    "Data Product operating models",
-   "Embedded C",
-   "ML basics"
+   "Embedded C"
   ],
   "match_pct": 50,
-  "ai_reason": "No specific years of experience or seniority level is stated in the posting.",
+  "ai_reason": "mid-level duties: Requires in-depth technical knowledge and experience in their assigned area of expertise",
   "ai_by": "gemini"
  },
  {
@@ -10668,41 +10502,6 @@
   "ai_by": "gemini"
  },
  {
-  "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Colleague-Experience-Analytics---Adoption-Engineer_JR-0000123921",
-  "company": "Barclays",
-  "title": "Colleague Experience Analytics & Adoption Engineer",
-  "location": "Pune, Gera Commerzone SEZ",
-  "url": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Pune-Gera-Commerzone-SEZ/Colleague-Experience-Analytics---Adoption-Engineer_JR-0000123921",
-  "posted": "2026-10-12T15:16:32.535892+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Quant/Finance",
-  "location_group": "Central/West India",
-  "min_years": null,
-  "skills_matched": [
-   "System design"
-  ],
-  "priority": 5.4,
-  "est_ctc_lpa": "~12-18",
-  "found_at": "2026-10-22T15:16:13.119749+00:00",
-  "first_check": true,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Data",
-  "skills_to_learn": [
-   "Microsoft Viva",
-   "Microsoft Fabric",
-   "Power BI",
-   "Azure Data Services",
-   "Workforce Analytics",
-   "Azure"
-  ],
-  "match_pct": 33,
-  "ai_reason": "No explicit experience requirement stated in the description.",
-  "ai_by": "gemini"
- },
- {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Cloud-Data-Engineer_JR-0000117802-1",
   "company": "Barclays",
   "title": "DevOps Engineer (EDP Analytics Portal)",
@@ -10743,7 +10542,8 @@
   ],
   "match_pct": 53,
   "ai_reason": "AI rejected without quoting the posting - kept",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Test-Engineer_JR-0000114158-1",
@@ -11056,7 +10856,8 @@
   ],
   "match_pct": 54,
   "ai_reason": "No experience or seniority is stated in the posting.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "Barclays::/job/Pune-Gera-Commerzone-SEZ/Full-Stack-Engineer_JR-0000127775",
@@ -11386,12 +11187,12 @@
    "Golang",
    "Kubernetes",
    "Prometheus",
-   "Grafana",
    "Terraform",
-   "Ansible"
+   "Ansible",
+   "Grafana"
   ],
   "match_pct": 48,
-  "ai_reason": "Explicitly requests '0–2 years of hands-on experience'",
+  "ai_reason": "Role asks for 0-2 years of experience.",
   "ai_by": "gemini"
  },
  {
@@ -11544,18 +11345,18 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Kubernetes",
    "Terraform",
-   "Helm",
    "Azure DevOps",
+   "Helm",
    "Prometheus",
    "Azure"
   ],
   "match_pct": 56,
-  "ai_reason": "No specific experience requirement stated for this talent community.",
+  "ai_reason": "mid-level duties: Guide junior engineers",
   "ai_by": "gemini"
  },
  {
@@ -11592,7 +11393,8 @@
   ],
   "match_pct": 50,
   "ai_reason": "No experience or seniority requirements specified in the posting.",
-  "ai_by": "gemini"
+  "ai_by": "gemini",
+  "ai_skip": true
  },
  {
   "id": "LSEG::/job/IND-BLR-Divyasree-Technopolis/Observability-Platform-Engineer_R0121185-1",
@@ -11700,17 +11502,17 @@
   "first_check": true,
   "exp_note": "",
   "fit": "open",
-  "role_type": "Software Engineer",
+  "role_type": "SWE",
   "skills_to_learn": [
    "VueJS",
    "Flask",
    "PowerShell",
-   "Infrastructure as Code (IaC)",
-   "Static Analysis Tools",
-   "Azure"
+   "Terraform",
+   "Static Analysis Tooling",
+   "Infrastructure as Code (IaC)"
   ],
   "match_pct": 60,
-  "ai_reason": "No explicit minimum years of experience required in the posting.",
+  "ai_reason": "No minimum years of experience are specified.",
   "ai_by": "gemini"
  },
  {
