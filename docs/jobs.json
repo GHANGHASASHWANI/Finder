@@ -1,5 +1,37 @@
 [
  {
+  "id": "LinkedIn::https://in.linkedin.com/jobs/view/software-engineer-ios-at-linkedin-4478748682?position=10&pageNum=0&refId=ro%2BtPApFwrzZGe1n1TOZ2g%3D%3D&trackingId=4kr7YDxu7RM5FFRNbkmLTQ%3D%3D",
+  "company": "LinkedIn",
+  "title": "Software Engineer_iOS",
+  "location": "",
+  "url": "https://in.linkedin.com/jobs/view/software-engineer-ios-at-linkedin-4478748682?position=10&pageNum=0&refId=ro%2BtPApFwrzZGe1n1TOZ2g%3D%3D&trackingId=4kr7YDxu7RM5FFRNbkmLTQ%3D%3D",
+  "posted": null,
+  "dept": "",
+  "comp": "",
+  "tier": 1,
+  "segment": "Big Tech/MNC",
+  "location_group": "Unknown (check page)",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "Mobile",
+  "skills_matched": [
+   "Networking basics"
+  ],
+  "skills_to_learn": [
+   "Swift",
+   "Objective-C",
+   "iOS Development"
+  ],
+  "match_pct": 100,
+  "priority": 9.0,
+  "est_ctc_lpa": "40-50",
+  "found_at": "2026-11-01T14:54:37.972972+00:00",
+  "first_check": false,
+  "ai_reason": "No requirements or experience levels specified in the provided text.",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Western Digital / Sandisk::744000158892829",
   "company": "Western Digital / Sandisk",
   "title": "Engineer, Data Analytics Engineering",
@@ -1149,18 +1181,18 @@
   "skills_matched": [],
   "skills_to_learn": [
    "Kubernetes",
-   "Terraform",
    "Prometheus",
    "Grafana",
-   "Ansible",
-   "Embedded C"
+   "Terraform",
+   "Go",
+   "Ansible"
   ],
   "match_pct": 0,
   "priority": 5.1,
   "est_ctc_lpa": "~21-27",
   "found_at": "2026-10-28T15:00:03.131111+00:00",
   "first_check": false,
-  "ai_reason": "No experience or seniority requirements are stated in the posting text.",
+  "ai_reason": "No experience or seniority requirements stated in the job description.",
   "ai_by": "gemini"
  },
  {
@@ -3065,7 +3097,7 @@
   "location_group": "South India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "SWE",
   "skills_matched": [],
   "skills_to_learn": [
@@ -3073,15 +3105,15 @@
    "TCL",
    "PERL",
    "Digital Logic",
-   "Analog Circuits",
-   "Embedded C"
+   "NAND Flash",
+   "Analog Circuits"
   ],
   "match_pct": 0,
   "priority": 5.0,
   "est_ctc_lpa": "~15-24",
   "found_at": "2026-10-23T19:59:35.810512+00:00",
   "first_check": true,
-  "ai_reason": "AI rejected without quoting the posting - kept",
+  "ai_reason": "AI thinks it is not a fit but quoted nothing: it is not a software/tech role (hardware, sales, pre-sales, support, pure business)",
   "ai_by": "gemini"
  },
  {
@@ -7555,14 +7587,14 @@
   "role_type": "QA/Test",
   "skills_to_learn": [
    "Selenium",
-   "TestNG",
-   "Postman",
    "Appium",
-   "JMeter",
-   "Embedded C"
+   "Postman",
+   "JUnit",
+   "TestNG",
+   "JMeter"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience requirements specified in the posting",
+  "ai_reason": "The posting has no experience or seniority requirements stated.",
   "ai_by": "gemini"
  },
  {
@@ -7587,15 +7619,15 @@
   "fit": "open",
   "role_type": "Backend",
   "skills_to_learn": [
+   "Payment Gateways",
+   "Distributed Systems",
    "Functional Programming",
    "Haskell",
    "PureScript",
-   "Scala",
-   "Embedded C",
-   "ML basics"
+   "Scala"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements are stated in the posting text.",
+  "ai_reason": "Backend engineering role matching candidate profile; no experience or degree explicitly required.",
   "ai_by": "gemini"
  },
  {
@@ -7620,15 +7652,15 @@
   "fit": "open",
   "role_type": "Backend",
   "skills_to_learn": [
+   "Payment Gateway APIs",
+   "Distributed Systems",
    "Functional Programming",
    "Haskell",
    "PureScript",
-   "Embedded C",
-   "ML basics",
-   "Ruby"
+   "Embedded C"
   ],
   "match_pct": 0,
-  "ai_reason": "No specific experience or seniority requirements are stated in the posting.",
+  "ai_reason": "General backend software engineering role with no explicit experience or degree requirements stated in the snippet.",
   "ai_by": "gemini"
  },
  {
@@ -7658,7 +7690,7 @@
    "Ruby"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements stated in the job posting.",
+  "ai_reason": "General careers page with no specific experience or seniority requirements stated.",
   "ai_by": "gemini"
  },
  {
@@ -7684,14 +7716,14 @@
   "role_type": "QA/Test",
   "skills_to_learn": [
    "Selenium",
-   "Appium",
+   "TestNG",
    "Postman",
-   "Jest",
    "JMeter",
-   "Embedded C"
+   "Appium",
+   "Jest"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements specified in the text",
+  "ai_reason": "The posting outlines company products and background but omits specific experience or requirements.",
   "ai_by": "gemini"
  },
  {
@@ -7724,7 +7756,7 @@
    "ML basics"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements specified in the text.",
+  "ai_reason": "The posting contains product and company descriptions but no specific requirements, experience limits, or eligibility criteria.",
   "ai_by": "gemini"
  },
  {
@@ -7757,7 +7789,7 @@
    "Ruby"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements are stated in the provided text.",
+  "ai_reason": "General software role with no stated experience minimum.",
   "ai_by": "gemini"
  },
  {
@@ -7782,15 +7814,15 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
+   "Kubernetes",
+   "Terraform",
    "Prometheus",
    "Grafana",
-   "Terraform",
-   "Kubernetes",
-   "Embedded C",
-   "ML basics"
+   "Ansible",
+   "Embedded C"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements specified in the provided text.",
+  "ai_reason": "No experience or seniority is stated in the job description.",
   "ai_by": "gemini"
  },
  {
@@ -7815,15 +7847,15 @@
   "fit": "open",
   "role_type": "Frontend",
   "skills_to_learn": [
+   "Advanced React",
+   "Frontend Architecture",
+   "State Management",
    "React Native",
    "Redux",
-   "Web Performance Optimization",
-   "CSS Architecture",
-   "Embedded C",
-   "ML basics"
+   "Web Performance Optimization"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements specified in the posting text.",
+  "ai_reason": "General software engineering role open for applications.",
   "ai_by": "gemini"
  },
  {
@@ -7853,7 +7885,7 @@
    "Ruby"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements are stated in the posting.",
+  "ai_reason": "No experience or degree requirements stated in the provided text.",
   "ai_by": "gemini"
  },
  {
@@ -7880,13 +7912,13 @@
   "skills_to_learn": [
    "PyTorch",
    "TensorFlow",
-   "MLflow",
    "Hugging Face",
-   "LLMOps",
-   "Embedded C"
+   "Vector DBs",
+   "MLflow",
+   "LLMOps"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements specified in the job posting.",
+  "ai_reason": "No experience or seniority requirements specified in the provided description.",
   "ai_by": "gemini"
  },
  {
@@ -7912,13 +7944,14 @@
   "role_type": "Backend",
   "skills_to_learn": [
    "Payment Gateways",
+   "UPI integrations",
+   "PCI-DSS compliance",
    "PSP Integrations",
    "Embedded C",
-   "ML basics",
-   "Ruby"
+   "ML basics"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience requirement stated in the job posting text.",
+  "ai_reason": "No experience or degree specified in the provided text.",
   "ai_by": "gemini"
  },
  {
@@ -7943,15 +7976,15 @@
   "fit": "open",
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
-   "Kubernetes",
    "Prometheus",
    "Grafana",
+   "Kubernetes",
    "Terraform",
    "Ansible",
    "Embedded C"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements specified in the job posting.",
+  "ai_reason": "No experience or seniority mentioned in the text.",
   "ai_by": "gemini"
  },
  {
@@ -7977,14 +8010,14 @@
   "role_type": "DevOps/SRE/Cloud",
   "skills_to_learn": [
    "Kubernetes",
+   "Terraform",
    "Prometheus",
    "Grafana",
-   "Terraform",
-   "Embedded C",
-   "ML basics"
+   "Ansible",
+   "Embedded C"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements are stated in the posting text.",
+  "ai_reason": "No experience or seniority mentioned in posting.",
   "ai_by": "gemini"
  },
  {
@@ -8009,15 +8042,15 @@
   "fit": "open",
   "role_type": "Frontend",
   "skills_to_learn": [
+   "Advanced React",
+   "State Management",
+   "Web Performance Optimization",
+   "CSS Architecture",
    "React Native",
-   "Redux",
-   "HTML/CSS",
-   "Webpack",
-   "Embedded C",
-   "ML basics"
+   "Redux"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements specified in the posting",
+  "ai_reason": "General software engineering role for a product company, no experience level specified.",
   "ai_by": "gemini"
  },
  {
@@ -8042,15 +8075,15 @@
   "fit": "open",
   "role_type": "AI/ML",
   "skills_to_learn": [
-   "TensorFlow",
+   "MLOps",
    "PyTorch",
+   "TensorFlow",
    "MLflow",
    "Embedded C",
-   "ML basics",
-   "Ruby"
+   "ML basics"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements specified in the job posting.",
+  "ai_reason": "No experience requirements or seniority constraints specified in the posting text.",
   "ai_by": "gemini"
  },
  {
@@ -8075,12 +8108,15 @@
   "fit": "open",
   "role_type": "AI/ML",
   "skills_to_learn": [
+   "MLOps",
+   "PyTorch",
+   "TensorFlow",
    "Embedded C",
    "ML basics",
    "Ruby"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements specified in the job posting.",
+  "ai_reason": "Job posting lacks experience requirements or seniority details.",
   "ai_by": "gemini"
  },
  {
@@ -8105,15 +8141,15 @@
   "fit": "open",
   "role_type": "Frontend",
   "skills_to_learn": [
-   "React Native",
+   "React",
    "Redux",
-   "Web Performance Optimization",
-   "CSS Architecture",
-   "Embedded C",
-   "ML basics"
+   "HTML/CSS",
+   "Webpack",
+   "React Native",
+   "Web Performance Optimization"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements specified in the job description.",
+  "ai_reason": "Job posting lacks experience requirements or seniority details, making it open to fresh graduates.",
   "ai_by": "gemini"
  },
  {
@@ -8138,15 +8174,15 @@
   "fit": "open",
   "role_type": "QA/Test",
   "skills_to_learn": [
-   "Automation Testing",
    "Selenium",
+   "TestNG",
    "Postman",
    "Appium",
    "JMeter",
-   "Embedded C"
+   "Automation Testing"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience level is specified in the job posting text.",
+  "ai_reason": "The posting outlines company products and services without stating experience or seniority requirements.",
   "ai_by": "gemini"
  },
  {
@@ -8171,12 +8207,15 @@
   "fit": "open",
   "role_type": "AI/ML",
   "skills_to_learn": [
+   "LLMOps",
+   "Vector Databases",
+   "PyTorch",
    "Embedded C",
    "ML basics",
    "Ruby"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements specified in the job posting text.",
+  "ai_reason": "No experience requirements stated in posting",
   "ai_by": "gemini"
  },
  {
@@ -8201,12 +8240,14 @@
   "fit": "open",
   "role_type": "AI/ML",
   "skills_to_learn": [
+   "TensorFlow",
+   "PyTorch",
    "Embedded C",
    "ML basics",
    "Ruby"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements specified in the posting",
+  "ai_reason": "No experience or degree requirements stated in the job description.",
   "ai_by": "gemini"
  },
  {
@@ -8451,7 +8492,7 @@
    "Mobile Architecture"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirements stated in the provided text.",
+  "ai_reason": "Software engineering role with no experience or degree requirements stated.",
   "ai_by": "gemini"
  },
  {
@@ -8509,11 +8550,13 @@
   "skills_to_learn": [
    "Swift",
    "Objective-C",
-   "iOS Development",
-   "iOS"
+   "iOS SDK",
+   "Xcode",
+   "Mobile UI/UX",
+   "iOS Development"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority stated.",
+  "ai_reason": "Junior software role with no experience level explicitly required in the posting snippet.",
   "ai_by": "gemini"
  },
  {
@@ -8546,7 +8589,7 @@
    "iOS"
   ],
   "match_pct": 0,
-  "ai_reason": "No experience or seniority requirement stated in the description.",
+  "ai_reason": "General software engineering role with no explicit experience or seniority requirements stated in the posting.",
   "ai_by": "gemini"
  },
  {
@@ -10606,7 +10649,7 @@
   "found_at": "2026-10-22T15:16:13.119749+00:00",
   "first_check": true,
   "exp_note": "",
-  "fit": "open",
+  "fit": "doubtful",
   "role_type": "Data",
   "skills_to_learn": [
    "PySpark",
@@ -10617,7 +10660,7 @@
    "Azure"
   ],
   "match_pct": 33,
-  "ai_reason": "No specific years of experience or seniority stated.",
+  "ai_reason": "mid-level duties: Requires in-depth technical knowledge and experience in their assigned area of expertise",
   "ai_by": "gemini"
  },
  {
