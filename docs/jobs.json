@@ -2975,29 +2975,5 @@
   "first_check": false,
   "ai_reason": "Open junior tools engineering role requiring Linux and scripting skills.",
   "ai_by": "gemini"
- },
- {
-  "id": "JPMorgan Chase::210803762",
-  "company": "JPMorgan Chase",
-  "title": "Testing Associate",
-  "location": "Mumbai, Maharashtra, India",
-  "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210803762",
-  "posted": "2026-10-27T00:00:00+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 4,
-  "segment": "Quant/Finance",
-  "location_group": "Central/West India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "unverified",
-  "role_type": "QA/Test",
-  "skills_matched": [],
-  "skills_to_learn": [],
-  "match_pct": null,
-  "priority": 5.7,
-  "est_ctc_lpa": "~18-22",
-  "found_at": "2026-10-27T20:33:42.420790+00:00",
-  "first_check": false
  }
 ]
