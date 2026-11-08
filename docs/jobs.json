@@ -2589,51 +2589,5 @@
   "first_check": false,
   "ai_reason": "none",
   "ai_by": "gemini"
- },
- {
-  "id": "LSEG::/job/IND-BLR-Divyasree-Technopolis/Associate-Software-Engineer_R0124079",
-  "company": "LSEG",
-  "title": "Associate Software Engineer",
-  "location": "IND-BLR-Divyasree Technopolis",
-  "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-BLR-Divyasree-Technopolis/Associate-Software-Engineer_R0124079",
-  "posted": "2026-10-29T05:23:45.819921+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Quant/Finance",
-  "location_group": "Other India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
-  "skills_matched": [
-   "AWS",
-   "C++",
-   "CI/CD",
-   "DSA",
-   "Docker",
-   "Git",
-   "Java",
-   "Lambda",
-   "PostgreSQL",
-   "Python",
-   "REST APIs",
-   "SQL"
-  ],
-  "skills_to_learn": [
-   "Python",
-   "AWS Lambda",
-   "pytest",
-   "Terraform",
-   "Docker",
-   "C#"
-  ],
-  "match_pct": 67,
-  "priority": 6.9,
-  "est_ctc_lpa": "~10-15",
-  "found_at": "2026-10-29T05:23:28.376201+00:00",
-  "first_check": false,
-  "ai_reason": "Explicitly targets early-career software engineers and new graduates.",
-  "ai_by": "gemini"
  }
 ]
