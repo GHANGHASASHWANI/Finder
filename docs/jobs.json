@@ -1807,47 +1807,5 @@
   "first_check": false,
   "ai_reason": "No requirements or experience levels specified in the provided text.",
   "ai_by": "gemini"
- },
- {
-  "id": "Western Digital / Sandisk::744000158892829",
-  "company": "Western Digital / Sandisk",
-  "title": "Engineer, Data Analytics Engineering",
-  "location": "Bengaluru, KA, in",
-  "url": "https://jobs.smartrecruiters.com/WesternDigital/744000158892829",
-  "posted": "2026-10-31T13:58:53.839000+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "open",
-  "role_type": "Data",
-  "skills_matched": [
-   "AWS",
-   "Java",
-   "LLMs",
-   "LangChain",
-   "Python",
-   "REST APIs",
-   "System design",
-   "Vector DBs"
-  ],
-  "skills_to_learn": [
-   "Apache Spark",
-   "Apache Airflow",
-   "Hadoop",
-   "Hive",
-   "Scala",
-   "Airflow"
-  ],
-  "match_pct": 57,
-  "priority": 6.2,
-  "est_ctc_lpa": "~15-20",
-  "found_at": "2026-10-31T14:27:08.301687+00:00",
-  "first_check": false,
-  "ai_reason": "No experience or seniority specified; fits entry-level candidate background.",
-  "ai_by": "gemini"
  }
 ]
