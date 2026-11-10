@@ -1,5 +1,40 @@
 [
  {
+  "id": "PayU India::https://careers.payu.in/PayU/job/Gurgaon-Software-Engineer/3523680/",
+  "company": "PayU India",
+  "title": "Software Engineer",
+  "location": "",
+  "url": "https://careers.payu.in/PayU/job/Gurgaon-Software-Engineer/3523680/",
+  "posted": null,
+  "dept": "",
+  "comp": "",
+  "tier": 5,
+  "segment": "Indian Consumer/Fintech",
+  "location_group": "Unknown (check page)",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "Mobile",
+  "skills_matched": [
+   "System design"
+  ],
+  "skills_to_learn": [
+   "Kotlin",
+   "Jetpack Compose",
+   "Retrofit",
+   "Dagger",
+   "Android SDK",
+   "Android"
+  ],
+  "match_pct": 33,
+  "priority": 5.1,
+  "est_ctc_lpa": "~14-20",
+  "found_at": "2026-11-10T02:38:11.550622+00:00",
+  "first_check": false,
+  "ai_reason": "Open software engineering role requiring Android and Kotlin skills.",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Google::143561253581660870",
   "company": "Google",
   "title": "Software Engineer, Payments",
@@ -1693,85 +1728,6 @@
   "found_at": "2026-10-31T14:27:08.301687+00:00",
   "first_check": false,
   "ai_reason": "No experience or seniority specified; fits entry-level candidate background.",
-  "ai_by": "gemini"
- },
- {
-  "id": "PayPal::/job/Bangalore-Karnataka-India/Software-Engineer---iOS_R0138550-1",
-  "company": "PayPal",
-  "title": "Software Engineer - iOS",
-  "location": "India (2 Locations)",
-  "url": "https://paypal.wd1.myworkdayjobs.com/en-US/jobs/job/Bangalore-Karnataka-India/Software-Engineer---iOS_R0138550-1",
-  "posted": "2026-10-30T20:38:16.812856+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 3,
-  "segment": "Quant/Finance",
-  "location_group": "Other India",
-  "min_years": 1,
-  "exp_note": "mum Qualifications: 1+ years relevant experience and a Bachelor’s de",
-  "fit": "stretch",
-  "role_type": "Mobile",
-  "skills_matched": [
-   "CI/CD",
-   "GraphQL",
-   "Networking basics",
-   "REST APIs"
-  ],
-  "skills_to_learn": [
-   "Swift",
-   "SwiftUI",
-   "UIKit",
-   "Core Bluetooth",
-   "Objective-C",
-   "iOS"
-  ],
-  "match_pct": 67,
-  "priority": 6.9,
-  "est_ctc_lpa": "~25-35",
-  "found_at": "2026-10-30T20:38:12.264411+00:00",
-  "first_check": false,
-  "ai_reason": "open",
-  "ai_by": "gemini"
- },
- {
-  "id": "PayPal::/job/Bangalore-Karnataka-India/Software-Engineer---Backend--Java-_R0138270-1",
-  "company": "PayPal",
-  "title": "Software Engineer - Backend (Java)",
-  "location": "Bangalore, Karnataka, India",
-  "url": "https://paypal.wd1.myworkdayjobs.com/en-US/jobs/job/Bangalore-Karnataka-India/Software-Engineer---Backend--Java-_R0138270-1",
-  "posted": "2026-10-30T20:38:16.812869+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 3,
-  "segment": "Quant/Finance",
-  "location_group": "South India",
-  "min_years": 1,
-  "exp_note": "mum Qualifications: 1+ years relevant experience and a Bachelor’s de",
-  "fit": "stretch",
-  "role_type": "Backend",
-  "skills_matched": [
-   "DSA",
-   "Java",
-   "Microservices",
-   "OOP",
-   "REST APIs",
-   "SQL",
-   "System design"
-  ],
-  "skills_to_learn": [
-   "Java",
-   "Spring framework",
-   "J2EE",
-   "Design Patterns",
-   "Microservices",
-   "Spring"
-  ],
-  "match_pct": 88,
-  "priority": 7.7,
-  "est_ctc_lpa": "~25-35",
-  "found_at": "2026-10-30T20:38:12.264411+00:00",
-  "first_check": false,
-  "ai_reason": "Role asks for 1+ years relevant experience",
   "ai_by": "gemini"
  }
 ]
