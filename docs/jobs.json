@@ -1778,29 +1778,5 @@
   "est_ctc_lpa": "~6-10",
   "found_at": "2026-11-06T11:58:06.416894+00:00",
   "first_check": false
- },
- {
-  "id": "GE HealthCare::/job/IND19-01-Bengaluru-EPIP-122-Phase-II/Software-Engineer_R4049014-1",
-  "company": "GE HealthCare",
-  "title": "Software Engineer",
-  "location": "IND19-01-Bengaluru-EPIP 122 (Phase II)",
-  "url": "https://gehc.wd5.myworkdayjobs.com/en-US/GEHC_ExternalSite/job/IND19-01-Bengaluru-EPIP-122-Phase-II/Software-Engineer_R4049014-1",
-  "posted": null,
-  "dept": "",
-  "comp": "",
-  "tier": 5,
-  "segment": "MNC Engineering",
-  "location_group": "South India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "unverified",
-  "role_type": "SWE",
-  "skills_matched": [],
-  "skills_to_learn": [],
-  "match_pct": null,
-  "priority": 5.0,
-  "est_ctc_lpa": "~6-10",
-  "found_at": "2026-11-05T20:03:25.401621+00:00",
-  "first_check": false
  }
 ]
