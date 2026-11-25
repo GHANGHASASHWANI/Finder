@@ -1,5 +1,44 @@
 [
  {
+  "id": "Google::111448128854336198",
+  "company": "Google",
+  "title": "Data Engineer",
+  "location": "Pune, Maharashtra, India",
+  "url": "https://www.google.com/about/careers/applications/jobs/results/111448128854336198-data-engineer",
+  "posted": null,
+  "dept": "",
+  "comp": "",
+  "tier": 1,
+  "segment": "Big Tech/MNC",
+  "location_group": "Central/West India",
+  "min_years": null,
+  "exp_note": "",
+  "fit": "open",
+  "role_type": "Data",
+  "skills_matched": [
+   "LLMs",
+   "Python",
+   "RAG",
+   "SQL",
+   "Vector DBs"
+  ],
+  "skills_to_learn": [
+   "Apache Spark",
+   "Databricks",
+   "BigQuery",
+   "Snowflake",
+   "Google Cloud Platform",
+   "GCP"
+  ],
+  "match_pct": 56,
+  "priority": 8.1,
+  "est_ctc_lpa": "35-50",
+  "found_at": "2026-11-25T00:32:05.375769+00:00",
+  "first_check": false,
+  "ai_reason": "Matches candidate's skills and targets early experience.",
+  "ai_by": "gemini"
+ },
+ {
   "id": "Google::123778327126123206",
   "company": "Google",
   "title": "Software Engineer II, AI Security",
