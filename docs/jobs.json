@@ -208,15 +208,17 @@
   "location_group": "South India",
   "min_years": null,
   "exp_note": "",
-  "fit": "open",
-  "role_type": "SWE",
+  "fit": "doubtful",
+  "role_type": "Data",
   "skills_matched": [],
   "skills_to_learn": [],
   "match_pct": null,
   "priority": 6.5,
   "est_ctc_lpa": "~18-25",
   "found_at": "2026-11-25T14:06:20.472861+00:00",
-  "first_check": false
+  "first_check": false,
+  "ai_reason": "mid-level duties: Product Data Scientist",
+  "ai_by": "gemini"
  },
  {
   "id": "Docusign::32178",
@@ -2697,40 +2699,6 @@
   "found_at": "2026-11-16T05:57:02.756066+00:00",
   "first_check": false,
   "ai_reason": "No experience or seniority explicitly stated.",
-  "ai_by": "gemini"
- },
- {
-  "id": "Salesforce::/job/India---Hyderabad/Systems-Engineering-Associate_JR368441",
-  "company": "Salesforce",
-  "title": "Systems Engineering Associate",
-  "location": "India - Hyderabad",
-  "url": "https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/India---Hyderabad/Systems-Engineering-Associate_JR368441",
-  "posted": "2026-11-15T15:32:59.171637+00:00",
-  "dept": "",
-  "comp": "",
-  "tier": 3,
-  "segment": "Big Tech/MNC",
-  "location_group": "South India",
-  "min_years": null,
-  "exp_note": "",
-  "fit": "fresher",
-  "role_type": "SWE",
-  "skills_matched": [
-   "System design"
-  ],
-  "skills_to_learn": [
-   "Salesforce",
-   "Apex",
-   "Visualforce",
-   "IT systems",
-   "Enterprise applications"
-  ],
-  "match_pct": 100,
-  "priority": 8.6,
-  "est_ctc_lpa": "30-45",
-  "found_at": "2026-11-15T15:32:54.700246+00:00",
-  "first_check": false,
-  "ai_reason": "Targeted at new graduates through the university recruiting program.",
   "ai_by": "gemini"
  }
 ]
